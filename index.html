@@ -50,9 +50,28 @@
   .tabs {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
     padding: 1.5rem 1rem 0;
     flex-wrap: wrap;
+  }
+
+  .tab-group {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .tab-group .tab {
+    border: none;
+    border-radius: 0;
+    border-right: 1px solid var(--border);
+  }
+
+  .tab-group .tab:last-child {
+    border-right: none;
   }
 
   .tab {
@@ -373,11 +392,15 @@
 </header>
 
 <div class="tabs">
-  <button class="tab active" data-key="season">Full Season</button>
-  <button class="tab" data-key="last30">Last 30 Days</button>
-  <button class="tab" data-key="last15">Last 15 Days</button>
-  <span class="tab-divider"></span>
-  <button class="tab" data-key="calendar">5-Day Pitchers</button>
+  <div class="tab-group">
+    <button class="tab active" data-key="season">Full Season</button>
+    <button class="tab" data-key="last30">Last 30 Days</button>
+    <button class="tab" data-key="last15">Last 15 Days</button>
+  </div>
+  <div class="tab-group">
+    <button class="tab active" data-view="rankings">Team Rank</button>
+    <button class="tab" data-view="calendar">Calendar</button>
+  </div>
 </div>
 
 <div class="container">
@@ -586,43 +609,37 @@
 
   // ── Tab switching ───────────────────────────────────────────────
 
-  function switchTab(key) {
-    const isCalendar = key === 'calendar';
+  let activeView = 'rankings'; // 'rankings' or 'calendar'
 
-    if (!isCalendar) {
-      // Update active window and highlight the window button
-      activeWindow = key;
-      document.querySelectorAll('.tab:not([data-key="calendar"])')
-        .forEach(t => t.classList.toggle('active', t.dataset.key === key));
-    }
-
-    activeKey = key;
-
-    const calView = document.getElementById('calendar-view');
-    const rankView = document.getElementById('rankings-view');
-    const calTab = document.querySelector('.tab[data-key="calendar"]');
-
-    if (isCalendar) {
-      // Switch to calendar view
-      rankView.style.display = 'none';
-      calView.style.display = 'block';
-      calTab.classList.add('active');
-      if (statsData) renderCalendar(activeWindow);
-    } else {
-      // Show rankings; if calendar was open, re-render it with new window too
-      const calWasOpen = calView.style.display === 'block';
-      rankView.style.display = 'block';
-      calView.style.display = 'none';
-      calTab.classList.remove('active');
-      if (statsData) {
-        renderTable(statsData[key]);
-        if (calWasOpen) renderCalendar(key);
-      }
+  function switchWindow(key) {
+    activeWindow = key;
+    document.querySelectorAll('.tab[data-key]')
+      .forEach(t => t.classList.toggle('active', t.dataset.key === key));
+    if (statsData) {
+      if (activeView === 'rankings') renderTable(statsData[key]);
+      else renderCalendar(key);
     }
   }
 
-  document.querySelectorAll('.tab').forEach(btn => {
-    btn.addEventListener('click', () => switchTab(btn.dataset.key));
+  function switchView(view) {
+    activeView = view;
+    document.querySelectorAll('.tab[data-view]')
+      .forEach(t => t.classList.toggle('active', t.dataset.view === view));
+    const isCalendar = view === 'calendar';
+    document.getElementById('rankings-view').style.display = isCalendar ? 'none' : 'block';
+    document.getElementById('calendar-view').style.display = isCalendar ? 'block' : 'none';
+    if (statsData) {
+      if (isCalendar) renderCalendar(activeWindow);
+      else renderTable(statsData[activeWindow]);
+    }
+  }
+
+  document.querySelectorAll('.tab[data-key]').forEach(btn => {
+    btn.addEventListener('click', () => switchWindow(btn.dataset.key));
+  });
+
+  document.querySelectorAll('.tab[data-view]').forEach(btn => {
+    btn.addEventListener('click', () => switchView(btn.dataset.view));
   });
 
   // ── Team modal ──────────────────────────────────────────────────
@@ -697,7 +714,7 @@
     .then(data => {
       statsData = data;
       document.getElementById('updated').textContent = `Updated: ${data.updated}`;
-      renderTable(data[activeKey]);
+      renderTable(data[activeWindow]);
     })
     .catch(err => {
       document.getElementById('table-wrap').innerHTML =
