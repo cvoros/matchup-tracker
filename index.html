@@ -82,6 +82,7 @@
     padding: 0 1rem;
   }
 
+  /* Rankings table */
   .table-wrap {
     overflow-x: auto;
     border-radius: 8px;
@@ -115,6 +116,7 @@
   tbody tr {
     border-bottom: 1px solid var(--border);
     transition: background 0.1s;
+    cursor: pointer;
   }
 
   tbody tr:last-child { border-bottom: none; }
@@ -142,6 +144,105 @@
     font-size: 0.95rem;
   }
 
+  /* Calendar view */
+  #calendar-view { display: none; }
+
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 700px) {
+    .cal-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 400px) {
+    .cal-grid { grid-template-columns: 1fr; }
+  }
+
+  .cal-col {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .cal-header {
+    background: rgba(230,180,76,0.12);
+    border-bottom: 1px solid var(--border);
+    padding: 0.6rem 0.75rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .cal-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    cursor: default;
+  }
+
+  .cal-entry:last-child { border-bottom: none; }
+
+  .cal-entry:nth-child(even) { background: rgba(255,255,255,0.02); }
+
+  .cal-rank {
+    font-size: 0.65rem;
+    color: var(--muted);
+  }
+
+  .cal-pitcher {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .cal-pitcher.tbd {
+    color: var(--muted);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .cal-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 0.1rem;
+  }
+
+  .cal-hand {
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    background: rgba(230,180,76,0.15);
+    color: var(--gold);
+  }
+
+  .cal-loading {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    grid-column: 1 / -1;
+  }
+
+  .cal-error {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: var(--red);
+    font-size: 0.85rem;
+    grid-column: 1 / -1;
+  }
+
+  /* Modal */
   footer {
     text-align: center;
     margin-top: 2rem;
@@ -165,9 +266,6 @@
     font-size: 0.9rem;
   }
 
-  tbody tr { cursor: pointer; }
-
-  /* Modal */
   .modal-backdrop {
     display: none;
     position: fixed;
@@ -271,11 +369,20 @@
   <button class="tab active" data-key="season">Full Season</button>
   <button class="tab" data-key="last30">Last 30 Days</button>
   <button class="tab" data-key="last15">Last 15 Days</button>
+  <button class="tab" data-key="calendar">5-Day Pitchers</button>
 </div>
 
 <div class="container">
-  <div class="table-wrap" id="table-wrap">
-    <div class="loading">Loading stats…</div>
+  <div id="rankings-view">
+    <div class="table-wrap" id="table-wrap">
+      <div class="loading">Loading stats…</div>
+    </div>
+  </div>
+
+  <div id="calendar-view">
+    <div class="cal-grid" id="cal-grid">
+      <div class="cal-loading">Loading schedule…</div>
+    </div>
   </div>
 </div>
 
@@ -296,6 +403,19 @@
 <script>
   let statsData = null;
   let activeKey = 'season';
+  let calendarLoaded = false;
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function fmtDate(iso) {
+    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const [y, m, d] = iso.split('-').map(Number);
+    const dt = new Date(y, m - 1, d);
+    return `${days[dt.getDay()]} ${months[m-1]} ${d}`;
+  }
+
+  function dateKey(iso) { return iso.slice(0, 10); }
 
   function compColor(composite) {
     const t = (composite - 1) / 29;
@@ -303,6 +423,8 @@
     if (t >= 0.35) return 'var(--yellow)';
     return 'var(--red)';
   }
+
+  // ── Rankings table ──────────────────────────────────────────────
 
   function renderTable(rows) {
     const wrap = document.getElementById('table-wrap');
@@ -313,10 +435,8 @@
 
     const trs = rows.map(r => {
       const cls = r.rank <= 5 ? 'top5' : r.rank > rows.length - 5 ? 'bot5' : '';
-
       const rpgCls = r.r_rank >= 21 ? 'green' : r.r_rank <= 10 ? 'red' : 'yellow';
       const kpgCls = r.k_rank >= 21 ? 'green' : r.k_rank <= 10 ? 'red' : 'yellow';
-
       const compStyle = `color:${compColor(r.composite)}`;
 
       return `<tr class="${cls}" data-team="${r.team}" data-team-id="${r.teamId}">
@@ -340,25 +460,143 @@
     </table>`;
 
     wrap.querySelectorAll('tbody tr').forEach(tr => {
-      tr.addEventListener('click', () => {
-        openTeamModal(tr.dataset.team, Number(tr.dataset.teamId));
-      });
+      tr.addEventListener('click', () => openTeamModal(tr.dataset.team, Number(tr.dataset.teamId)));
     });
   }
 
+  // ── Calendar view ───────────────────────────────────────────────
+
+  async function renderCalendar() {
+    const grid = document.getElementById('cal-grid');
+    grid.innerHTML = '<div class="cal-loading">Loading schedule…</div>';
+
+    // Build composite rank lookup from season data (teamId → rank + composite)
+    const rankMap = {};
+    if (statsData) {
+      for (const r of statsData.season) {
+        rankMap[r.teamId] = { rank: r.rank, composite: r.composite, team: r.team };
+      }
+    }
+
+    const today = new Date();
+    const end = new Date(today);
+    end.setDate(end.getDate() + 4);
+    const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+
+    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1` +
+      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher`;
+
+    let data;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      data = await res.json();
+    } catch (err) {
+      grid.innerHTML = `<div class="cal-error">Failed to load schedule.<br><small>${err.message}</small></div>`;
+      return;
+    }
+
+    // Build date → sorted pitcher entries
+    const dateMap = {};
+    for (const dateObj of (data.dates || [])) {
+      const dk = dateObj.date;
+      if (!dateMap[dk]) dateMap[dk] = [];
+
+      for (const g of dateObj.games) {
+        const homeId = g.teams.home.team.id;
+        const awayId = g.teams.away.team.id;
+
+        // Away pitcher faces home batters → rank by home team's composite
+        const awayPitcher = g.teams.away.probablePitcher;
+        const homeRank = rankMap[homeId];
+        if (homeRank) {
+          dateMap[dk].push({
+            battingTeamId: homeId,
+            battingTeam: g.teams.home.team.name,
+            rank: homeRank.rank,
+            composite: homeRank.composite,
+            pitcher: awayPitcher || null,
+            venue: 'home',
+          });
+        }
+
+        // Home pitcher faces away batters → rank by away team's composite
+        const homePitcher = g.teams.home.probablePitcher;
+        const awayRank = rankMap[awayId];
+        if (awayRank) {
+          dateMap[dk].push({
+            battingTeamId: awayId,
+            battingTeam: g.teams.away.team.name,
+            rank: awayRank.rank,
+            composite: awayRank.composite,
+            pitcher: homePitcher || null,
+            venue: 'away',
+          });
+        }
+      }
+    }
+
+    // Sort each day by batting team composite descending (best matchup on top)
+    for (const dk of Object.keys(dateMap)) {
+      dateMap[dk].sort((a, b) => b.composite - a.composite);
+    }
+
+    const days = [];
+    for (let i = 0; i < 5; i++) {
+      const d = new Date(today);
+      d.setDate(d.getDate() + i);
+      days.push(fmt(d));
+    }
+
+    grid.innerHTML = days.map(dk => {
+      const entries = dateMap[dk] || [];
+      const header = `<div class="cal-header">${fmtDate(dk)}</div>`;
+
+      if (!entries.length) {
+        return `<div class="cal-col">${header}<div class="cal-entry" style="color:var(--muted);font-size:0.8rem;padding:0.75rem">No games</div></div>`;
+      }
+
+      const rows = entries.map(e => {
+        const name = e.pitcher?.fullName;
+        const hand = e.pitcher?.pitchHand?.code;
+        const teamShort = e.battingTeam.replace(/^.+ /, '');
+        const rankColor = compColor(e.composite);
+
+        return `<div class="cal-entry">
+          <div class="cal-rank" style="color:${rankColor}">vs ${teamShort} — #${e.rank}</div>
+          <div class="cal-pitcher${name ? '' : ' tbd'}">${name || 'TBD'}</div>
+          <div class="cal-meta">
+            ${hand ? `<span class="cal-hand">${hand}HP</span>` : ''}
+          </div>
+        </div>`;
+      }).join('');
+
+      return `<div class="cal-col">${header}${rows}</div>`;
+    }).join('');
+
+    calendarLoaded = true;
+  }
+
+  // ── Tab switching ───────────────────────────────────────────────
+
   function switchTab(key) {
     activeKey = key;
-    document.querySelectorAll('.tab').forEach(t => {
-      t.classList.toggle('active', t.dataset.key === key);
-    });
-    if (statsData) renderTable(statsData[key]);
+    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.key === key));
+
+    const isCalendar = key === 'calendar';
+    document.getElementById('rankings-view').style.display = isCalendar ? 'none' : 'block';
+    document.getElementById('calendar-view').style.display = isCalendar ? 'block' : 'none';
+
+    if (isCalendar && !calendarLoaded) renderCalendar();
+    else if (!isCalendar && statsData) renderTable(statsData[key]);
   }
 
   document.querySelectorAll('.tab').forEach(btn => {
     btn.addEventListener('click', () => switchTab(btn.dataset.key));
   });
 
-  // Modal logic
+  // ── Team modal ──────────────────────────────────────────────────
+
   const backdrop = document.getElementById('modal-backdrop');
   const modalTitle = document.getElementById('modal-title');
   const pitcherList = document.getElementById('pitcher-list');
@@ -368,16 +606,6 @@
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
   function closeModal() { backdrop.classList.remove('open'); }
-
-  function pad(n) { return String(n).padStart(2, '0'); }
-
-  function fmtDate(iso) {
-    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    const [y, m, d] = iso.split('-').map(Number);
-    const date = new Date(y, m - 1, d);
-    return `${days[date.getDay()]} ${months[m-1]} ${d}`;
-  }
 
   async function openTeamModal(teamName, teamId) {
     modalTitle.textContent = teamName;
@@ -428,6 +656,8 @@
       pitcherList.innerHTML = `<div class="modal-error">Failed to load schedule.<br><small>${err.message}</small></div>`;
     }
   }
+
+  // ── Boot ────────────────────────────────────────────────────────
 
   fetch('./data/stats.json')
     .then(r => {
