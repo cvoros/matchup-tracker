@@ -406,8 +406,8 @@
         const opp = isHome ? g.teams.away.team.name : g.teams.home.team.name;
         const prefix = isHome ? 'vs' : '@';
         const pitcher = isHome
-          ? g.teams.home.probablePitcher
-          : g.teams.away.probablePitcher;
+          ? g.teams.away.probablePitcher
+          : g.teams.home.probablePitcher;
 
         const name = pitcher ? pitcher.fullName : null;
         const hand = pitcher?.pitchHand?.code || null;
