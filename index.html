@@ -163,6 +163,100 @@
     color: var(--red);
     font-size: 0.9rem;
   }
+
+  tbody tr { cursor: pointer; }
+
+  /* Modal */
+  .modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .modal-backdrop.open { display: flex; }
+
+  .modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 480px;
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .modal-close:hover { color: var(--text); }
+
+  .modal h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+
+  .modal-sub {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-bottom: 1.25rem;
+  }
+
+  .pitcher-list { display: flex; flex-direction: column; gap: 0.5rem; }
+
+  .pitcher-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .pitcher-date {
+    font-size: 0.75rem;
+    color: var(--muted);
+    min-width: 3.5rem;
+  }
+
+  .pitcher-opp {
+    font-size: 0.8rem;
+    color: var(--text);
+    min-width: 5rem;
+  }
+
+  .pitcher-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  .pitcher-hand {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.15rem 0.45rem;
+    border-radius: 4px;
+    background: rgba(230,180,76,0.15);
+    color: var(--gold);
+  }
+
+  .pitcher-tbd { color: var(--muted); font-style: italic; }
+  .modal-loading { color: var(--muted); font-size: 0.875rem; text-align: center; padding: 1.5rem 0; }
+  .modal-error { color: var(--red); font-size: 0.875rem; text-align: center; padding: 1rem 0; }
 </style>
 </head>
 <body>
@@ -181,6 +275,16 @@
 <div class="container">
   <div class="table-wrap" id="table-wrap">
     <div class="loading">Loading stats…</div>
+  </div>
+</div>
+
+<!-- Pitcher Modal -->
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal">
+    <button class="modal-close" id="modal-close">✕</button>
+    <h2 id="modal-title"></h2>
+    <div class="modal-sub">Probable pitchers — next 5 days</div>
+    <div class="pitcher-list" id="pitcher-list"></div>
   </div>
 </div>
 
@@ -214,7 +318,7 @@
 
       const compStyle = `color:${compColor(r.composite)}`;
 
-      return `<tr class="${cls}">
+      return `<tr class="${cls}" data-team="${r.team}" data-team-id="${r.teamId}">
         <td>${r.rank}</td>
         <td>${r.team}</td>
         <td class="${rpgCls}">${r.rpg.toFixed(2)}</td>
@@ -233,6 +337,12 @@
       </tr></thead>
       <tbody>${trs}</tbody>
     </table>`;
+
+    wrap.querySelectorAll('tbody tr').forEach(tr => {
+      tr.addEventListener('click', () => {
+        openTeamModal(tr.dataset.team, Number(tr.dataset.teamId));
+      });
+    });
   }
 
   function switchTab(key) {
@@ -246,6 +356,75 @@
   document.querySelectorAll('.tab').forEach(btn => {
     btn.addEventListener('click', () => switchTab(btn.dataset.key));
   });
+
+  // Modal logic
+  const backdrop = document.getElementById('modal-backdrop');
+  const modalTitle = document.getElementById('modal-title');
+  const pitcherList = document.getElementById('pitcher-list');
+
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  backdrop.addEventListener('click', e => { if (e.target === backdrop) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  function closeModal() { backdrop.classList.remove('open'); }
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function fmtDate(iso) {
+    const [, m, d] = iso.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return `${months[+m-1]} ${+d}`;
+  }
+
+  async function openTeamModal(teamName, teamId) {
+    modalTitle.textContent = teamName;
+    pitcherList.innerHTML = '<div class="modal-loading">Loading schedule…</div>';
+    backdrop.classList.add('open');
+
+    const today = new Date();
+    const end = new Date(today);
+    end.setDate(end.getDate() + 4);
+    const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+
+    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${teamId}` +
+      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher,team&gameType=R`;
+
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      const games = (data.dates || []).flatMap(d => d.games || []);
+
+      if (!games.length) {
+        pitcherList.innerHTML = '<div class="modal-loading">No games scheduled in the next 5 days.</div>';
+        return;
+      }
+
+      pitcherList.innerHTML = games.map(g => {
+        const isHome = g.teams.home.team.id === teamId;
+        const opp = isHome ? g.teams.away.team.name : g.teams.home.team.name;
+        const prefix = isHome ? 'vs' : '@';
+        const pitcher = isHome
+          ? g.teams.home.probablePitcher
+          : g.teams.away.probablePitcher;
+
+        const name = pitcher ? pitcher.fullName : null;
+        const hand = pitcher?.pitchHand?.code || null;
+
+        return `<div class="pitcher-row">
+          <span class="pitcher-date">${fmtDate(g.gameDate.slice(0,10))}</span>
+          <span class="pitcher-opp">${prefix} ${opp.replace(/^.+ /, '')}</span>
+          ${name
+            ? `<span class="pitcher-name">${name}</span>${hand ? `<span class="pitcher-hand">${hand}HP</span>` : ''}`
+            : `<span class="pitcher-name pitcher-tbd">TBD</span>`}
+        </div>`;
+      }).join('');
+
+    } catch (err) {
+      pitcherList.innerHTML = `<div class="modal-error">Failed to load schedule.<br><small>${err.message}</small></div>`;
+    }
+  }
 
   fetch('./data/stats.json')
     .then(r => {
