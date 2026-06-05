@@ -387,7 +387,7 @@
     const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 
     const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${teamId}` +
-      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher,team&gameType=R`;
+      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher`;
 
     try {
       const res = await fetch(url);
