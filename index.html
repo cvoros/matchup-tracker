@@ -536,9 +536,9 @@
       }
     }
 
-    // Sort each day by batting team composite descending (best matchup on top)
+    // Sort each day by batting team rank ascending (rank 1 = best matchup on top)
     for (const dk of Object.keys(dateMap)) {
-      dateMap[dk].sort((a, b) => b.composite - a.composite);
+      dateMap[dk].sort((a, b) => a.rank - b.rank);
     }
 
     const days = [];
