@@ -69,6 +69,13 @@
 
   .tab:hover { border-color: var(--gold); color: var(--text); }
 
+  .tab-divider {
+    width: 1px;
+    background: var(--border);
+    margin: 0 0.25rem;
+    align-self: stretch;
+  }
+
   .tab.active {
     background: var(--gold);
     border-color: var(--gold);
@@ -369,6 +376,7 @@
   <button class="tab active" data-key="season">Full Season</button>
   <button class="tab" data-key="last30">Last 30 Days</button>
   <button class="tab" data-key="last15">Last 15 Days</button>
+  <span class="tab-divider"></span>
   <button class="tab" data-key="calendar">5-Day Pitchers</button>
 </div>
 
@@ -403,7 +411,7 @@
 <script>
   let statsData = null;
   let activeKey = 'season';
-  let calendarLoaded = false;
+  let activeWindow = 'season'; // tracks season / last30 / last15 independently of calendar tab
 
   function pad(n) { return String(n).padStart(2, '0'); }
 
@@ -466,14 +474,14 @@
 
   // ── Calendar view ───────────────────────────────────────────────
 
-  async function renderCalendar() {
+  async function renderCalendar(window) {
     const grid = document.getElementById('cal-grid');
     grid.innerHTML = '<div class="cal-loading">Loading schedule…</div>';
 
-    // Build composite rank lookup from season data (teamId → rank + composite)
+    // Build composite rank lookup from the active window (season / last30 / last15)
     const rankMap = {};
     if (statsData) {
-      for (const r of statsData.season) {
+      for (const r of statsData[window]) {
         rankMap[r.teamId] = { rank: r.rank, composite: r.composite, team: r.team };
       }
     }
@@ -574,21 +582,43 @@
       return `<div class="cal-col">${header}${rows}</div>`;
     }).join('');
 
-    calendarLoaded = true;
   }
 
   // ── Tab switching ───────────────────────────────────────────────
 
   function switchTab(key) {
-    activeKey = key;
-    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.key === key));
-
     const isCalendar = key === 'calendar';
-    document.getElementById('rankings-view').style.display = isCalendar ? 'none' : 'block';
-    document.getElementById('calendar-view').style.display = isCalendar ? 'block' : 'none';
 
-    if (isCalendar && !calendarLoaded) renderCalendar();
-    else if (!isCalendar && statsData) renderTable(statsData[key]);
+    if (!isCalendar) {
+      // Update active window and highlight the window button
+      activeWindow = key;
+      document.querySelectorAll('.tab:not([data-key="calendar"])')
+        .forEach(t => t.classList.toggle('active', t.dataset.key === key));
+    }
+
+    activeKey = key;
+
+    const calView = document.getElementById('calendar-view');
+    const rankView = document.getElementById('rankings-view');
+    const calTab = document.querySelector('.tab[data-key="calendar"]');
+
+    if (isCalendar) {
+      // Switch to calendar view
+      rankView.style.display = 'none';
+      calView.style.display = 'block';
+      calTab.classList.add('active');
+      if (statsData) renderCalendar(activeWindow);
+    } else {
+      // Show rankings; if calendar was open, re-render it with new window too
+      const calWasOpen = calView.style.display === 'block';
+      rankView.style.display = 'block';
+      calView.style.display = 'none';
+      calTab.classList.remove('active');
+      if (statsData) {
+        renderTable(statsData[key]);
+        if (calWasOpen) renderCalendar(key);
+      }
+    }
   }
 
   document.querySelectorAll('.tab').forEach(btn => {
