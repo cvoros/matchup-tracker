@@ -133,8 +133,9 @@
   td:nth-child(1) { font-weight: 700; color: var(--gold); width: 3rem; }
   td:nth-child(2) { text-align: left; font-weight: 500; }
 
-  .green { color: var(--green); font-weight: 600; }
-  .red   { color: var(--red);   font-weight: 600; }
+  .green  { color: var(--green);  font-weight: 600; }
+  .yellow { color: var(--yellow); font-weight: 600; }
+  .red    { color: var(--red);    font-weight: 600; }
 
   .comp {
     font-weight: 700;
@@ -313,8 +314,8 @@
     const trs = rows.map(r => {
       const cls = r.rank <= 5 ? 'top5' : r.rank > rows.length - 5 ? 'bot5' : '';
 
-      const rpgCls = r.r_rank >= 21 ? 'green' : r.r_rank <= 10 ? 'red' : '';
-      const kpgCls = r.k_rank >= 21 ? 'green' : r.k_rank <= 10 ? 'red' : '';
+      const rpgCls = r.r_rank >= 21 ? 'green' : r.r_rank <= 10 ? 'red' : 'yellow';
+      const kpgCls = r.k_rank >= 21 ? 'green' : r.k_rank <= 10 ? 'red' : 'yellow';
 
       const compStyle = `color:${compColor(r.composite)}`;
 
