@@ -231,7 +231,7 @@
   .pitcher-date {
     font-size: 0.75rem;
     color: var(--muted);
-    min-width: 3.5rem;
+    min-width: 6rem;
   }
 
   .pitcher-opp {
@@ -372,9 +372,11 @@
   function pad(n) { return String(n).padStart(2, '0'); }
 
   function fmtDate(iso) {
-    const [, m, d] = iso.split('-');
+    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
     const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    return `${months[+m-1]} ${+d}`;
+    const [y, m, d] = iso.split('-').map(Number);
+    const date = new Date(y, m - 1, d);
+    return `${days[date.getDay()]} ${months[m-1]} ${d}`;
   }
 
   async function openTeamModal(teamName, teamId) {
