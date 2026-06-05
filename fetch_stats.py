@@ -1,4 +1,5 @@
 import json
+import os
 import requests
 from datetime import date, timedelta
 
@@ -102,6 +103,7 @@ def main():
         "last15": last15,
     }
 
+    os.makedirs("data", exist_ok=True)
     with open("data/stats.json", "w") as f:
         json.dump(output, f, indent=2)
 
