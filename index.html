@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>⚾ Streaming Matchup Rankings</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #21262d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --gold: #e6b44c;
+    --green: #3fb950;
+    --red: #f85149;
+    --yellow: #d29922;
+  }
+
+  body {
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 0 0 3rem;
+  }
+
+  header {
+    background: linear-gradient(180deg, #0d1b2e 0%, var(--bg) 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 2rem 1.5rem 1.5rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--gold);
+  }
+
+  header p {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem 0;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .tab:hover { border-color: var(--gold); color: var(--text); }
+
+  .tab.active {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: #0d1117;
+    font-weight: 700;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 1.5rem auto 0;
+    padding: 0 1rem;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+
+  thead tr {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    padding: 0.75rem 1rem;
+    text-align: right;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  th:nth-child(2) { text-align: left; }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.1s;
+  }
+
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+  tbody tr:hover { background: rgba(255,255,255,0.05); }
+
+  tbody tr.top5 { border-left: 3px solid rgba(63, 185, 80, 0.5); }
+  tbody tr.bot5 { border-left: 3px solid rgba(248, 81, 73, 0.4); }
+
+  td {
+    padding: 0.7rem 1rem;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  td:nth-child(1) { font-weight: 700; color: var(--gold); width: 3rem; }
+  td:nth-child(2) { text-align: left; font-weight: 500; }
+
+  .green { color: var(--green); font-weight: 600; }
+  .red   { color: var(--red);   font-weight: 600; }
+
+  .comp {
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+    padding: 0 1rem;
+    line-height: 1.6;
+  }
+
+  .loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .error {
+    text-align: center;
+    padding: 2rem;
+    color: var(--red);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚾ Streaming Matchup Rankings</h1>
+  <p id="updated">Loading…</p>
+</header>
+
+<div class="tabs">
+  <button class="tab active" data-key="season">Full Season</button>
+  <button class="tab" data-key="last30">Last 30 Days</button>
+  <button class="tab" data-key="last15">Last 15 Days</button>
+</div>
+
+<div class="container">
+  <div class="table-wrap" id="table-wrap">
+    <div class="loading">Loading stats…</div>
+  </div>
+</div>
+
+<footer>
+  Composite = avg of K/G rank + R/G rank. Higher = better streaming matchup for ESPN H2H points leagues.
+</footer>
+
+<script>
+  let statsData = null;
+  let activeKey = 'season';
+
+  function compColor(composite) {
+    const t = (composite - 1) / 29;
+    if (t >= 0.6) return 'var(--green)';
+    if (t >= 0.35) return 'var(--yellow)';
+    return 'var(--red)';
+  }
+
+  function renderTable(rows) {
+    const wrap = document.getElementById('table-wrap');
+    if (!rows || !rows.length) {
+      wrap.innerHTML = '<div class="error">No data available.</div>';
+      return;
+    }
+
+    const trs = rows.map(r => {
+      const cls = r.rank <= 5 ? 'top5' : r.rank > rows.length - 5 ? 'bot5' : '';
+
+      const rpgCls = r.r_rank >= 21 ? 'green' : r.r_rank <= 10 ? 'red' : '';
+      const kpgCls = r.k_rank >= 21 ? 'green' : r.k_rank <= 10 ? 'red' : '';
+
+      const compStyle = `color:${compColor(r.composite)}`;
+
+      return `<tr class="${cls}">
+        <td>${r.rank}</td>
+        <td>${r.team}</td>
+        <td class="${rpgCls}">${r.rpg.toFixed(2)}</td>
+        <td class="${kpgCls}">${r.kpg.toFixed(2)}</td>
+        <td class="comp" style="${compStyle}">${r.composite.toFixed(1)}</td>
+      </tr>`;
+    }).join('');
+
+    wrap.innerHTML = `<table>
+      <thead><tr>
+        <th>Rank</th>
+        <th style="text-align:left">Team</th>
+        <th>R/G</th>
+        <th>K/G</th>
+        <th>Composite</th>
+      </tr></thead>
+      <tbody>${trs}</tbody>
+    </table>`;
+  }
+
+  function switchTab(key) {
+    activeKey = key;
+    document.querySelectorAll('.tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.key === key);
+    });
+    if (statsData) renderTable(statsData[key]);
+  }
+
+  document.querySelectorAll('.tab').forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.key));
+  });
+
+  fetch('./data/stats.json')
+    .then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    })
+    .then(data => {
+      statsData = data;
+      document.getElementById('updated').textContent = `Updated: ${data.updated}`;
+      renderTable(data[activeKey]);
+    })
+    .catch(err => {
+      document.getElementById('table-wrap').innerHTML =
+        `<div class="error">Failed to load stats.json — run fetch_stats.py first.<br><small>${err.message}</small></div>`;
+    });
+</script>
+</body>
+</html>
