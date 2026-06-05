@@ -9,7 +9,7 @@ BASE = "https://statsapi.mlb.com/api/v1/teams/stats"
 def fetch_stats(params: dict) -> list[dict]:
     r = requests.get(BASE, params=params, timeout=30)
     r.raise_for_status()
-    return r.json()["teamStats"][0]["splits"]
+    return r.json()["stats"][0]["splits"]
 
 
 def extract_rows(splits: list[dict]) -> list[dict]:
