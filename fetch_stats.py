@@ -98,18 +98,20 @@ def main():
     today = date.today()
     common = dict(season=SEASON, sportId=1, group="hitting", gameType="R")
 
-    season_params = {**common, "stats": "season"}
+    season_params = {**common, "stats": "season", "sitCodes": "sp"}
     last30_params = {
         **common,
         "stats": "byDateRange",
         "startDate": (today - timedelta(days=30)).strftime("%Y-%m-%d"),
         "endDate": today.strftime("%Y-%m-%d"),
+        "sitCodes": "sp",
     }
     last15_params = {
         **common,
         "stats": "byDateRange",
         "startDate": (today - timedelta(days=15)).strftime("%Y-%m-%d"),
         "endDate": today.strftime("%Y-%m-%d"),
+        "sitCodes": "sp",
     }
 
     print("Fetching team abbreviations...")
