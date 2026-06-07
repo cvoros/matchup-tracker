@@ -5,6 +5,14 @@ from datetime import date, timedelta
 
 SEASON = 2026
 BASE = "https://statsapi.mlb.com/api/v1/teams/stats"
+TEAMS_URL = "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Y"
+
+
+def fetch_abbr_map() -> dict:
+    """Returns {teamId: abbreviation} for all active MLB teams."""
+    r = requests.get(TEAMS_URL, timeout=30)
+    r.raise_for_status()
+    return {t["id"]: t["abbreviation"] for t in r.json()["teams"]}
 
 # Weighted score per game (from the streaming pitcher's perspective):
 #   K/G  × +1.0  (batter Ks = outs, good for pitcher)
@@ -21,18 +29,19 @@ def fetch_stats(params: dict) -> list[dict]:
     return r.json()["stats"][0]["splits"]
 
 
-def extract_rows(splits: list[dict]) -> list[dict]:
+def extract_rows(splits: list[dict], abbr_map: dict) -> list[dict]:
     rows = []
     for s in splits:
         stat = s["stat"]
         gp = int(stat.get("gamesPlayed", 0))
         if gp == 0:
             continue
+        tid = s["team"]["id"]
         rows.append(
             {
                 "team": s["team"]["name"],
-                "abbr": s["team"].get("abbreviation", s["team"]["name"][:3].upper()),
-                "teamId": s["team"]["id"],
+                "abbr": abbr_map.get(tid, s["team"]["name"][:3].upper()),
+                "teamId": tid,
                 "gp": gp,
                 "runs": int(stat.get("runs", 0)),
                 "ks": int(stat.get("strikeOuts", 0)),
@@ -79,9 +88,9 @@ def compute_scores(rows: list[dict]) -> list[dict]:
     return results
 
 
-def build_window(params: dict) -> list[dict]:
+def build_window(params: dict, abbr_map: dict) -> list[dict]:
     splits = fetch_stats(params)
-    rows = extract_rows(splits)
+    rows = extract_rows(splits, abbr_map)
     return compute_scores(rows)
 
 
@@ -103,12 +112,15 @@ def main():
         "endDate": today.strftime("%Y-%m-%d"),
     }
 
+    print("Fetching team abbreviations...")
+    abbr_map = fetch_abbr_map()
+
     print("Fetching full season stats...")
-    season = build_window(season_params)
+    season = build_window(season_params, abbr_map)
     print("Fetching last 30 days stats...")
-    last30 = build_window(last30_params)
+    last30 = build_window(last30_params, abbr_map)
     print("Fetching last 15 days stats...")
-    last15 = build_window(last15_params)
+    last15 = build_window(last15_params, abbr_map)
 
     output = {
         "updated": today.strftime("%Y-%m-%d"),
