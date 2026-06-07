@@ -179,7 +179,7 @@
     gap: 0.75rem;
   }
 
-  @media (orientation: portrait) and (max-width: 600px) {
+  @media (orientation: portrait) and (max-width: 767px) {
     table th:nth-child(3),
     table td:nth-child(3),
     table th:nth-child(4),
@@ -188,6 +188,8 @@
     table td:nth-child(5),
     table th:nth-child(6),
     table td:nth-child(6) { display: none; }
+    table th:nth-child(7),
+    table td:nth-child(7) { display: table-cell; }
   }
 
   @media (max-width: 700px) {
