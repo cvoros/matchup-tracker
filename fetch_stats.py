@@ -20,7 +20,7 @@ def fetch_abbr_map() -> dict:
 #   BB/G × -0.5  (walks hurt, less than hits)
 #   R/G  × -2.0  (runs are the biggest fantasy damage)
 # Higher score = better matchup for streaming pitcher
-WEIGHTS = {"kpg": 1.0, "hpg": -1.0, "bbpg": -0.5, "rpg": -2.0}
+WEIGHTS = {"kpg": 1.0, "hpg": -1.0, "bbpg": -1.0, "rpg": -2.0}
 
 
 def fetch_stats(params: dict) -> list[dict]:
