@@ -6,6 +6,14 @@ from datetime import date, timedelta
 SEASON = 2026
 BASE = "https://statsapi.mlb.com/api/v1/teams/stats"
 
+# Weighted score per game (from the streaming pitcher's perspective):
+#   K/G  × +1.0  (batter Ks = outs, good for pitcher)
+#   H/G  × -1.0  (hits hurt)
+#   BB/G × -0.5  (walks hurt, less than hits)
+#   R/G  × -2.0  (runs are the biggest fantasy damage)
+# Higher score = better matchup for streaming pitcher
+WEIGHTS = {"kpg": 1.0, "hpg": -1.0, "bbpg": -0.5, "rpg": -2.0}
+
 
 def fetch_stats(params: dict) -> list[dict]:
     r = requests.get(BASE, params=params, timeout=30)
@@ -27,37 +35,42 @@ def extract_rows(splits: list[dict]) -> list[dict]:
                 "gp": gp,
                 "runs": int(stat.get("runs", 0)),
                 "ks": int(stat.get("strikeOuts", 0)),
+                "hits": int(stat.get("hits", 0)),
+                "bb": int(stat.get("baseOnBalls", 0)),
             }
         )
     return rows
 
 
-def rank_and_score(rows: list[dict]) -> list[dict]:
-    # R/G: lower = better matchup → rank 30 = fewest runs = best
-    sorted_rpg = sorted(rows, key=lambda x: x["rpg"], reverse=True)
-    r_rank_map = {r["team"]: i + 1 for i, r in enumerate(sorted_rpg)}
-
-    # K/G: higher = better matchup → rank 30 = most Ks = best
-    sorted_kpg = sorted(rows, key=lambda x: x["kpg"])
-    k_rank_map = {r["team"]: i + 1 for i, r in enumerate(sorted_kpg)}
-
+def compute_scores(rows: list[dict]) -> list[dict]:
     results = []
     for row in rows:
-        rr = r_rank_map[row["team"]]
-        kr = k_rank_map[row["team"]]
+        gp = row["gp"]
+        rpg  = row["runs"] / gp
+        kpg  = row["ks"]   / gp
+        hpg  = row["hits"] / gp
+        bbpg = row["bb"]   / gp
+
+        score = (
+            kpg  * WEIGHTS["kpg"]  +
+            hpg  * WEIGHTS["hpg"]  +
+            bbpg * WEIGHTS["bbpg"] +
+            rpg  * WEIGHTS["rpg"]
+        )
+
         results.append(
             {
-                "team": row["team"],
+                "team":  row["team"],
                 "teamId": row["teamId"],
-                "rpg": round(row["rpg"], 2),
-                "kpg": round(row["kpg"], 2),
-                "r_rank": rr,
-                "k_rank": kr,
-                "composite": round((rr + kr) / 2, 1),
+                "rpg":   round(rpg,  2),
+                "kpg":   round(kpg,  2),
+                "hpg":   round(hpg,  2),
+                "bbpg":  round(bbpg, 2),
+                "score": round(score, 2),
             }
         )
 
-    results.sort(key=lambda x: x["composite"], reverse=True)
+    results.sort(key=lambda x: x["score"], reverse=True)
     for i, r in enumerate(results):
         r["rank"] = i + 1
 
@@ -67,10 +80,7 @@ def rank_and_score(rows: list[dict]) -> list[dict]:
 def build_window(params: dict) -> list[dict]:
     splits = fetch_stats(params)
     rows = extract_rows(splits)
-    for row in rows:
-        row["rpg"] = row["runs"] / row["gp"]
-        row["kpg"] = row["ks"] / row["gp"]
-    return rank_and_score(rows)
+    return compute_scores(rows)
 
 
 def main():

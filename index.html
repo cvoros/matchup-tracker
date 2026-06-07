@@ -428,7 +428,7 @@
 </div>
 
 <footer>
-  Composite = avg of K/G rank + R/G rank. Higher = better streaming matchup for ESPN H2H points leagues.
+  Score = K/G − H/G − 0.5×BB/G − 2×R/G &nbsp;|&nbsp; Higher = better streaming matchup for ESPN H2H points leagues.
 </footer>
 
 <script>
@@ -448,10 +448,20 @@
 
   function dateKey(iso) { return iso.slice(0, 10); }
 
-  function compColor(composite) {
-    const t = (composite - 1) / 29;
+  function scoreColor(score, allScores) {
+    const max = Math.max(...allScores);
+    const min = Math.min(...allScores);
+    const t = (score - min) / (max - min || 1);
     if (t >= 0.6) return 'var(--green)';
-    if (t >= 0.35) return 'var(--yellow)';
+    if (t >= 0.3) return 'var(--yellow)';
+    return 'var(--red)';
+  }
+
+  // Keep compColor for calendar (uses rank 1-30)
+  function compColor(rank) {
+    const t = 1 - (rank - 1) / 29;
+    if (t >= 0.6) return 'var(--green)';
+    if (t >= 0.3) return 'var(--yellow)';
     return 'var(--red)';
   }
 
@@ -464,18 +474,29 @@
       return;
     }
 
+    const allScores = rows.map(r => r.score);
+    const n = rows.length;
+
     const trs = rows.map(r => {
-      const cls = r.rank <= 5 ? 'top5' : r.rank > rows.length - 5 ? 'bot5' : '';
-      const rpgCls = r.r_rank >= 21 ? 'green' : r.r_rank <= 10 ? 'red' : 'yellow';
-      const kpgCls = r.k_rank >= 21 ? 'green' : r.k_rank <= 10 ? 'red' : 'yellow';
-      const compStyle = `color:${compColor(r.composite)}`;
+      const cls = r.rank <= 5 ? 'top5' : r.rank > n - 5 ? 'bot5' : '';
+
+      // Per-stat coloring: higher K/G = good (green), lower = red
+      //                    lower H/G, BB/G, R/G = good (green), higher = red
+      const kCls  = r.rank <= 10 ? 'green' : r.rank > n - 10 ? 'red' : 'yellow';
+      const hCls  = r.rank <= 10 ? 'green' : r.rank > n - 10 ? 'red' : 'yellow';
+      const bbCls = r.rank <= 10 ? 'green' : r.rank > n - 10 ? 'red' : 'yellow';
+      const rCls  = r.rank <= 10 ? 'green' : r.rank > n - 10 ? 'red' : 'yellow';
+
+      const scoreStyle = `color:${scoreColor(r.score, allScores)};font-weight:700`;
 
       return `<tr class="${cls}" data-team="${r.team}" data-team-id="${r.teamId}">
         <td>${r.rank}</td>
         <td>${r.team}</td>
-        <td class="${rpgCls}">${r.rpg.toFixed(2)}</td>
-        <td class="${kpgCls}">${r.kpg.toFixed(2)}</td>
-        <td class="comp" style="${compStyle}">${r.composite.toFixed(1)}</td>
+        <td class="${kCls}">${r.kpg.toFixed(2)}</td>
+        <td class="${hCls}">${r.hpg.toFixed(2)}</td>
+        <td class="${bbCls}">${r.bbpg.toFixed(2)}</td>
+        <td class="${rCls}">${r.rpg.toFixed(2)}</td>
+        <td style="${scoreStyle}">${r.score.toFixed(2)}</td>
       </tr>`;
     }).join('');
 
@@ -483,9 +504,11 @@
       <thead><tr>
         <th>Rank</th>
         <th style="text-align:left">Team</th>
-        <th>R/G</th>
-        <th>K/G</th>
-        <th>Composite</th>
+        <th title="Strikeouts per game — higher is better">K/G ↑</th>
+        <th title="Hits per game — lower is better">H/G ↓</th>
+        <th title="Walks per game — lower is better">BB/G ↓</th>
+        <th title="Runs per game — lower is better">R/G ↓</th>
+        <th title="Score = K/G − H/G − 0.5×BB/G − 2×R/G">Score</th>
       </tr></thead>
       <tbody>${trs}</tbody>
     </table>`;
@@ -591,10 +614,9 @@
         const name = e.pitcher?.fullName;
         const hand = e.pitcher?.pitchHand?.code;
         const teamShort = e.battingTeam.replace(/^.+ /, '');
-        const rankColor = compColor(e.composite);
 
         return `<div class="cal-entry">
-          <div class="cal-rank" style="color:${rankColor}">vs ${teamShort} — #${e.rank}</div>
+          <div class="cal-rank" style="color:${compColor(e.rank)}">vs ${teamShort} — #${e.rank}</div>
           <div class="cal-pitcher${name ? '' : ' tbd'}">${name || 'TBD'}</div>
           <div class="cal-meta">
             ${hand ? `<span class="cal-hand">${hand}HP</span>` : ''}
