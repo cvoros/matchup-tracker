@@ -31,6 +31,7 @@ def extract_rows(splits: list[dict]) -> list[dict]:
         rows.append(
             {
                 "team": s["team"]["name"],
+                "abbr": s["team"].get("abbreviation", s["team"]["name"][:3].upper()),
                 "teamId": s["team"]["id"],
                 "gp": gp,
                 "runs": int(stat.get("runs", 0)),
@@ -61,6 +62,7 @@ def compute_scores(rows: list[dict]) -> list[dict]:
         results.append(
             {
                 "team":  row["team"],
+                "abbr":  row["abbr"],
                 "teamId": row["teamId"],
                 "rpg":   round(rpg,  2),
                 "kpg":   round(kpg,  2),

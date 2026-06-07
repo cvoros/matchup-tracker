@@ -492,7 +492,7 @@
       const rankColor = scoreColor(r.score, allScores);
       return `<tr class="${cls}" data-team="${r.team}" data-team-id="${r.teamId}">
         <td style="color:${rankColor}">${r.rank}</td>
-        <td>${r.team}</td>
+        <td title="${r.team}">${r.abbr || r.team}</td>
         <td class="${kCls}">${r.kpg.toFixed(2)}</td>
         <td class="${hCls}">${r.hpg.toFixed(2)}</td>
         <td class="${bbCls}">${r.bbpg.toFixed(2)}</td>
