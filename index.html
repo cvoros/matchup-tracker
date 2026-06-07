@@ -158,7 +158,7 @@
     white-space: nowrap;
   }
 
-  td:nth-child(1) { font-weight: 700; color: var(--gold); width: 3rem; }
+  td:nth-child(1) { font-weight: 700; width: 3rem; }
   td:nth-child(2) { text-align: left; font-weight: 500; }
 
   .green  { color: var(--green);  font-weight: 600; }
@@ -489,8 +489,9 @@
 
       const scoreStyle = `color:${scoreColor(r.score, allScores)};font-weight:700`;
 
+      const rankColor = scoreColor(r.score, allScores);
       return `<tr class="${cls}" data-team="${r.team}" data-team-id="${r.teamId}">
-        <td>${r.rank}</td>
+        <td style="color:${rankColor}">${r.rank}</td>
         <td>${r.team}</td>
         <td class="${kCls}">${r.kpg.toFixed(2)}</td>
         <td class="${hCls}">${r.hpg.toFixed(2)}</td>
