@@ -406,15 +406,23 @@
 
 <div class="tabs">
   <div class="tab-group">
-    <button class="tab active" data-key="season">Full Season</button>
-    <button class="tab" data-key="last30">Last 30 Days</button>
-    <button class="tab" data-key="last15">Last 15 Days</button>
-    <button class="tab" data-key="vslhp">vs LHP</button>
-    <button class="tab" data-key="vsrhp">vs RHP</button>
+    <button class="tab active" data-window="season">Full Season</button>
+    <button class="tab" data-window="last30">Last 30 Days</button>
+    <button class="tab" data-window="last15">Last 15 Days</button>
+  </div>
+  <div class="tab-group">
+    <button class="tab active" data-hand="all">All</button>
+    <button class="tab" data-hand="vslhp">vs LHP</button>
+    <button class="tab" data-hand="vsrhp">vs RHP</button>
   </div>
   <div class="tab-group">
     <button class="tab active" data-view="rankings">Team Rank</button>
     <button class="tab" data-view="calendar">Calendar</button>
+  </div>
+</div>
+<div class="container" id="platoon-notice" style="display:none;padding-top:0.75rem">
+  <div style="font-size:0.75rem;color:var(--muted);text-align:center">
+    Platoon splits use full-season data only — date window ignored
   </div>
 </div>
 
@@ -536,14 +544,14 @@
 
   // ── Calendar view ───────────────────────────────────────────────
 
-  async function renderCalendar(window) {
+  async function renderCalendar(dataKey) {
     const grid = document.getElementById('cal-grid');
     grid.innerHTML = '<div class="cal-loading">Loading schedule…</div>';
 
-    // Build composite rank lookup from the active window (season / last30 / last15)
+    // Build composite rank lookup from the active data key
     const rankMap = {};
     if (statsData) {
-      for (const r of statsData[window]) {
+      for (const r of statsData[dataKey]) {
         rankMap[r.teamId] = { rank: r.rank, composite: r.composite, team: r.team };
       }
     }
@@ -647,16 +655,39 @@
 
   // ── Tab switching ───────────────────────────────────────────────
 
-  let activeView = 'rankings'; // 'rankings' or 'calendar'
+  let activeView   = 'rankings';
+  let activeHand   = 'all';
 
-  function switchWindow(key) {
-    activeWindow = key;
-    document.querySelectorAll('.tab[data-key]')
-      .forEach(t => t.classList.toggle('active', t.dataset.key === key));
-    if (statsData) {
-      if (activeView === 'rankings') renderTable(statsData[key]);
-      else renderCalendar(key);
-    }
+  function activeDataKey() {
+    // Platoon splits are season-only; ignore time window when hand is set
+    if (activeHand !== 'all') return activeHand;
+    return activeWindow;
+  }
+
+  function updatePlatoonNotice() {
+    const notice = document.getElementById('platoon-notice');
+    notice.style.display = activeHand !== 'all' ? 'block' : 'none';
+  }
+
+  function refreshView() {
+    if (!statsData) return;
+    if (activeView === 'rankings') renderTable(statsData[activeDataKey()]);
+    else renderCalendar(activeDataKey());
+  }
+
+  function switchWindow(w) {
+    activeWindow = w;
+    document.querySelectorAll('.tab[data-window]')
+      .forEach(t => t.classList.toggle('active', t.dataset.window === w));
+    refreshView();
+  }
+
+  function switchHand(h) {
+    activeHand = h;
+    document.querySelectorAll('.tab[data-hand]')
+      .forEach(t => t.classList.toggle('active', t.dataset.hand === h));
+    updatePlatoonNotice();
+    refreshView();
   }
 
   function switchView(view) {
@@ -666,19 +697,15 @@
     const isCalendar = view === 'calendar';
     document.getElementById('rankings-view').style.display = isCalendar ? 'none' : 'block';
     document.getElementById('calendar-view').style.display = isCalendar ? 'block' : 'none';
-    if (statsData) {
-      if (isCalendar) renderCalendar(activeWindow);
-      else renderTable(statsData[activeWindow]);
-    }
+    refreshView();
   }
 
-  document.querySelectorAll('.tab[data-key]').forEach(btn => {
-    btn.addEventListener('click', () => switchWindow(btn.dataset.key));
-  });
-
-  document.querySelectorAll('.tab[data-view]').forEach(btn => {
-    btn.addEventListener('click', () => switchView(btn.dataset.view));
-  });
+  document.querySelectorAll('.tab[data-window]').forEach(btn =>
+    btn.addEventListener('click', () => switchWindow(btn.dataset.window)));
+  document.querySelectorAll('.tab[data-hand]').forEach(btn =>
+    btn.addEventListener('click', () => switchHand(btn.dataset.hand)));
+  document.querySelectorAll('.tab[data-view]').forEach(btn =>
+    btn.addEventListener('click', () => switchView(btn.dataset.view)));
 
   // ── Team modal ──────────────────────────────────────────────────
 
@@ -752,7 +779,7 @@
     .then(data => {
       statsData = data;
       document.getElementById('updated').textContent = `Updated: ${data.updated}`;
-      renderTable(data[activeWindow]);
+      renderTable(data[activeDataKey()]);
     })
     .catch(err => {
       document.getElementById('table-wrap').innerHTML =
