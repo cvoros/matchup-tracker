@@ -7,20 +7,20 @@ SEASON = 2026
 BASE = "https://statsapi.mlb.com/api/v1/teams/stats"
 TEAMS_URL = "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Y"
 
+# Weighted score per game (from the streaming pitcher's perspective):
+#   K/G  × +1.0  (batter Ks = outs, good for pitcher)
+#   H/G  × -1.0  (hits hurt)
+#   BB/G × -1.0  (walks hurt)
+#   R/G  × -2.0  (runs are the biggest fantasy damage)
+# Higher score = better matchup for streaming pitcher
+WEIGHTS = {"kpg": 1.0, "hpg": -1.0, "bbpg": -1.0, "rpg": -2.0}
+
 
 def fetch_abbr_map() -> dict:
     """Returns {teamId: abbreviation} for all active MLB teams."""
     r = requests.get(TEAMS_URL, timeout=30)
     r.raise_for_status()
     return {t["id"]: t["abbreviation"] for t in r.json()["teams"]}
-
-# Weighted score per game (from the streaming pitcher's perspective):
-#   K/G  × +1.0  (batter Ks = outs, good for pitcher)
-#   H/G  × -1.0  (hits hurt)
-#   BB/G × -0.5  (walks hurt, less than hits)
-#   R/G  × -2.0  (runs are the biggest fantasy damage)
-# Higher score = better matchup for streaming pitcher
-WEIGHTS = {"kpg": 1.0, "hpg": -1.0, "bbpg": -1.0, "rpg": -2.0}
 
 
 def fetch_stats(params: dict) -> list[dict]:
@@ -29,7 +29,8 @@ def fetch_stats(params: dict) -> list[dict]:
     return r.json()["stats"][0]["splits"]
 
 
-def extract_rows(splits: list[dict], abbr_map: dict) -> list[dict]:
+def extract_rows(splits: list[dict], abbr_map: dict, use_rbi: bool = False) -> list[dict]:
+    """Extract per-team rows. use_rbi=True for statSplits which lacks 'runs'."""
     rows = []
     for s in splits:
         stat = s["stat"]
@@ -37,13 +38,14 @@ def extract_rows(splits: list[dict], abbr_map: dict) -> list[dict]:
         if gp == 0:
             continue
         tid = s["team"]["id"]
+        runs = int(stat.get("rbi", 0)) if use_rbi else int(stat.get("runs", 0))
         rows.append(
             {
                 "team": s["team"]["name"],
                 "abbr": abbr_map.get(tid, s["team"]["name"][:3].upper()),
                 "teamId": tid,
                 "gp": gp,
-                "runs": int(stat.get("runs", 0)),
+                "runs": runs,
                 "ks": int(stat.get("strikeOuts", 0)),
                 "hits": int(stat.get("hits", 0)),
                 "bb": int(stat.get("baseOnBalls", 0)),
@@ -70,14 +72,14 @@ def compute_scores(rows: list[dict]) -> list[dict]:
 
         results.append(
             {
-                "team":  row["team"],
-                "abbr":  row["abbr"],
+                "team":   row["team"],
+                "abbr":   row["abbr"],
                 "teamId": row["teamId"],
-                "rpg":   round(rpg,  2),
-                "kpg":   round(kpg,  2),
-                "hpg":   round(hpg,  2),
-                "bbpg":  round(bbpg, 2),
-                "_raw":  raw,
+                "rpg":    round(rpg,  2),
+                "kpg":    round(kpg,  2),
+                "hpg":    round(hpg,  2),
+                "bbpg":   round(bbpg, 2),
+                "_raw":   raw,
             }
         )
 
@@ -97,9 +99,9 @@ def compute_scores(rows: list[dict]) -> list[dict]:
     return results
 
 
-def build_window(params: dict, abbr_map: dict) -> list[dict]:
+def build_window(params: dict, abbr_map: dict, use_rbi: bool = False) -> list[dict]:
     splits = fetch_stats(params)
-    rows = extract_rows(splits, abbr_map)
+    rows = extract_rows(splits, abbr_map, use_rbi=use_rbi)
     return compute_scores(rows)
 
 
@@ -107,21 +109,18 @@ def main():
     today = date.today()
     common = dict(season=SEASON, sportId=1, group="hitting", gameType="R")
 
-    season_params = {**common, "stats": "season", "sitCodes": "sp"}
-    last30_params = {
-        **common,
-        "stats": "byDateRange",
-        "startDate": (today - timedelta(days=30)).strftime("%Y-%m-%d"),
-        "endDate": today.strftime("%Y-%m-%d"),
-        "sitCodes": "sp",
-    }
-    last15_params = {
-        **common,
-        "stats": "byDateRange",
-        "startDate": (today - timedelta(days=15)).strftime("%Y-%m-%d"),
-        "endDate": today.strftime("%Y-%m-%d"),
-        "sitCodes": "sp",
-    }
+    # Standard windows — vs all starting pitchers
+    season_params = {**common, "stats": "season",      "sitCodes": "sp"}
+    last30_params  = {**common, "stats": "byDateRange", "sitCodes": "sp",
+                      "startDate": (today - timedelta(days=30)).strftime("%Y-%m-%d"),
+                      "endDate":   today.strftime("%Y-%m-%d")}
+    last15_params  = {**common, "stats": "byDateRange", "sitCodes": "sp",
+                      "startDate": (today - timedelta(days=15)).strftime("%Y-%m-%d"),
+                      "endDate":   today.strftime("%Y-%m-%d")}
+
+    # Platoon splits — vs LHP / vs RHP starters (statSplits, uses rbi as run proxy)
+    vslhp_params = {**common, "stats": "statSplits", "sitCodes": "vl"}
+    vsrhp_params = {**common, "stats": "statSplits", "sitCodes": "vr"}
 
     print("Fetching team abbreviations...")
     abbr_map = fetch_abbr_map()
@@ -132,12 +131,18 @@ def main():
     last30 = build_window(last30_params, abbr_map)
     print("Fetching last 15 days stats...")
     last15 = build_window(last15_params, abbr_map)
+    print("Fetching vs LHP stats...")
+    vslhp = build_window(vslhp_params, abbr_map, use_rbi=True)
+    print("Fetching vs RHP stats...")
+    vsrhp = build_window(vsrhp_params, abbr_map, use_rbi=True)
 
     output = {
         "updated": today.strftime("%Y-%m-%d"),
         "season": season,
         "last30": last30,
         "last15": last15,
+        "vslhp":  vslhp,
+        "vsrhp":  vsrhp,
     }
 
     os.makedirs("data", exist_ok=True)
