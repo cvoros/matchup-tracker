@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 1.5rem 1rem 0;
     flex-wrap: wrap;
   }
@@ -72,6 +72,14 @@
 
   .tab-group .tab:last-child {
     border-right: none;
+  }
+
+  .tab-group-divider {
+    width: 1px;
+    height: 28px;
+    background: #444c56;
+    margin: 0 0.5rem;
+    align-self: center;
   }
 
   .tab {
@@ -410,11 +418,13 @@
     <button class="tab" data-window="last30">Last 30 Days</button>
     <button class="tab" data-window="last15">Last 15 Days</button>
   </div>
+  <div class="tab-group-divider"></div>
   <div class="tab-group">
     <button class="tab active" data-hand="all">All</button>
     <button class="tab" data-hand="vslhp">vs LHP</button>
     <button class="tab" data-hand="vsrhp">vs RHP</button>
   </div>
+  <div class="tab-group-divider"></div>
   <div class="tab-group">
     <button class="tab active" data-view="rankings">Team Rank</button>
     <button class="tab" data-view="calendar">Calendar</button>
