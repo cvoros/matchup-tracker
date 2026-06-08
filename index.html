@@ -466,6 +466,30 @@
 
   function pad(n) { return String(n).padStart(2, '0'); }
 
+  // Batch-fetch pitchHand for a list of pitcher IDs from the People API
+  async function fetchPitchHands(ids) {
+    if (!ids.length) return {};
+    try {
+      const res = await fetch(`https://statsapi.mlb.com/api/v1/people?personIds=${ids.join(',')}`);
+      if (!res.ok) return {};
+      const data = await res.json();
+      const map = {};
+      for (const p of (data.people || [])) {
+        map[p.id] = p.pitchHand?.code || null;
+      }
+      return map;
+    } catch { return {}; }
+  }
+
+  // Build teamId → abbr from loaded statsData
+  function buildAbbrMap() {
+    const map = {};
+    if (statsData) {
+      for (const r of statsData.season) map[r.teamId] = r.abbr;
+    }
+    return map;
+  }
+
   function fmtDate(iso) {
     const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
     const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -569,7 +593,7 @@
     const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 
     const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1` +
-      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher(note%2CpitchHand)`;
+      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher`;
 
     let data;
     try {
@@ -580,6 +604,18 @@
       grid.innerHTML = `<div class="cal-error">Failed to load schedule.<br><small>${err.message}</small></div>`;
       return;
     }
+
+    // Collect all pitcher IDs then batch-fetch handedness
+    const allPitcherIds = [];
+    for (const dateObj of (data.dates || [])) {
+      for (const g of dateObj.games) {
+        const hp = g.teams.home.probablePitcher;
+        const ap = g.teams.away.probablePitcher;
+        if (hp) allPitcherIds.push(hp.id);
+        if (ap) allPitcherIds.push(ap.id);
+      }
+    }
+    const pitchHandMap = await fetchPitchHands([...new Set(allPitcherIds)]);
 
     // Build date → sorted pitcher entries
     const dateMap = {};
@@ -596,12 +632,12 @@
         const homeRank = rankMap[homeId];
         if (homeRank) {
           dateMap[dk].push({
-            battingTeamId: homeId,
             battingTeam: g.teams.home.team.name,
             rank: homeRank.rank,
             composite: homeRank.composite,
-            pitcher: awayPitcher || null,
-            pitcherTeamAbbr: abbrMap[awayId] || g.teams.away.team.abbreviation || '',
+            pitcherName: awayPitcher?.fullName || null,
+            pitcherHand: awayPitcher ? (pitchHandMap[awayPitcher.id] || null) : null,
+            pitcherTeamAbbr: abbrMap[awayId] || '',
           });
         }
 
@@ -610,12 +646,12 @@
         const awayRank = rankMap[awayId];
         if (awayRank) {
           dateMap[dk].push({
-            battingTeamId: awayId,
             battingTeam: g.teams.away.team.name,
             rank: awayRank.rank,
             composite: awayRank.composite,
-            pitcher: homePitcher || null,
-            pitcherTeamAbbr: abbrMap[homeId] || g.teams.home.team.abbreviation || '',
+            pitcherName: homePitcher?.fullName || null,
+            pitcherHand: homePitcher ? (pitchHandMap[homePitcher.id] || null) : null,
+            pitcherTeamAbbr: abbrMap[homeId] || '',
           });
         }
       }
@@ -642,14 +678,16 @@
       }
 
       const rows = entries.map(e => {
-        const name = e.pitcher?.fullName;
-        const hand = e.pitcher?.pitchHand?.code;
+        const name = e.pitcherName;
+        const hand = e.pitcherHand;
         const teamShort = e.battingTeam.replace(/^.+ /, '');
         const pitcherTeam = e.pitcherTeamAbbr;
 
         return `<div class="cal-entry">
           <div class="cal-rank" style="color:${compColor(e.rank)}">vs ${teamShort} — #${e.rank}</div>
-          <div class="cal-pitcher${name ? '' : ' tbd'}">${name ? `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>${name}${hand ? `, ${hand}HP` : ''}` : 'TBD'}</div>
+          <div class="cal-pitcher${name ? '' : ' tbd'}">${name
+            ? `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>${name}${hand ? `, ${hand}HP` : ''}`
+            : 'TBD'}</div>
         </div>`;
       }).join('');
 
@@ -737,7 +775,7 @@ function refreshView() {
     const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 
     const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${teamId}` +
-      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher(note%2CpitchHand)`;
+      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher`;
 
     try {
       const res = await fetch(url);
@@ -751,6 +789,15 @@ function refreshView() {
         return;
       }
 
+      // Batch-fetch handedness for all pitchers in this team's schedule
+      const pitcherIds = games.flatMap(g => {
+        const p = g.teams.home.team.id === teamId
+          ? g.teams.away.probablePitcher
+          : g.teams.home.probablePitcher;
+        return p ? [p.id] : [];
+      });
+      const pitchHandMap = await fetchPitchHands([...new Set(pitcherIds)]);
+
       pitcherList.innerHTML = games.map(g => {
         const isHome = g.teams.home.team.id === teamId;
         const opp = isHome ? g.teams.away.team.name : g.teams.home.team.name;
@@ -759,8 +806,8 @@ function refreshView() {
           ? g.teams.away.probablePitcher
           : g.teams.home.probablePitcher;
 
-        const name = pitcher ? pitcher.fullName : null;
-        const hand = pitcher?.pitchHand?.code || null;
+        const name = pitcher?.fullName || null;
+        const hand = pitcher ? (pitchHandMap[pitcher.id] || null) : null;
 
         return `<div class="pitcher-row">
           <span class="pitcher-date">${fmtDate(g.gameDate.slice(0,10))}</span>
