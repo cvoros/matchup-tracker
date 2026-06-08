@@ -441,7 +441,7 @@
 </div>
 
 <footer>
-  Stats vs starting pitchers only &nbsp;·&nbsp; Score = K/G − H/G − BB/G − 2×R/G &nbsp;·&nbsp; Higher = better streaming matchup for ESPN H2H points leagues.
+  Stats vs starting pitchers only &nbsp;·&nbsp; Score = 1.0–10.0 scale (K/G − H/G − BB/G − 2×R/G, normalized) &nbsp;·&nbsp; Higher = better streaming matchup for ESPN H2H points leagues.
 </footer>
 
 <script>
@@ -522,7 +522,7 @@
         <th title="Hits per game — lower is better">H/G ↓</th>
         <th title="Walks per game — lower is better">BB/G ↓</th>
         <th title="Runs per game — lower is better">R/G ↓</th>
-        <th title="Score = K/G − H/G − BB/G − 2×R/G">Score</th>
+        <th title="Score: 1.0–10.0 scale. K/G − H/G − BB/G − 2×R/G, normalized. Higher = better.">Score</th>
       </tr></thead>
       <tbody>${trs}</tbody>
     </table>`;

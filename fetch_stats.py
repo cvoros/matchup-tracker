@@ -61,7 +61,7 @@ def compute_scores(rows: list[dict]) -> list[dict]:
         hpg  = row["hits"] / gp
         bbpg = row["bb"]   / gp
 
-        score = (
+        raw = (
             kpg  * WEIGHTS["kpg"]  +
             hpg  * WEIGHTS["hpg"]  +
             bbpg * WEIGHTS["bbpg"] +
@@ -77,9 +77,18 @@ def compute_scores(rows: list[dict]) -> list[dict]:
                 "kpg":   round(kpg,  2),
                 "hpg":   round(hpg,  2),
                 "bbpg":  round(bbpg, 2),
-                "score": round(score, 2),
+                "_raw":  raw,
             }
         )
+
+    # Normalize raw scores to 1.0–10.0 scale
+    raw_scores = [r["_raw"] for r in results]
+    lo, hi = min(raw_scores), max(raw_scores)
+    span = hi - lo or 1
+
+    for r in results:
+        r["score"] = round(1.0 + (r["_raw"] - lo) / span * 9.0, 1)
+        del r["_raw"]
 
     results.sort(key=lambda x: x["score"], reverse=True)
     for i, r in enumerate(results):
