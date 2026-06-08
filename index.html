@@ -567,7 +567,7 @@
     const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 
     const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1` +
-      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher`;
+      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher(note%2CpitchHand)`;
 
     let data;
     try {
@@ -734,7 +734,7 @@ function refreshView() {
     const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 
     const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${teamId}` +
-      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher`;
+      `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher(note%2CpitchHand)`;
 
     try {
       const res = await fetch(url);
