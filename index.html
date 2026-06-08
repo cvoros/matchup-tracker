@@ -646,10 +646,7 @@
 
         return `<div class="cal-entry">
           <div class="cal-rank" style="color:${compColor(e.rank)}">vs ${teamShort} — #${e.rank}</div>
-          <div class="cal-pitcher${name ? '' : ' tbd'}">${name || 'TBD'}</div>
-          <div class="cal-meta">
-            ${hand ? `<span class="cal-hand">${hand}HP</span>` : ''}
-          </div>
+          <div class="cal-pitcher${name ? '' : ' tbd'}">${name ? `${name}, ${hand ? hand + 'HP' : ''}` : 'TBD'}</div>
         </div>`;
       }).join('');
 
@@ -766,7 +763,7 @@ function refreshView() {
           <span class="pitcher-date">${fmtDate(g.gameDate.slice(0,10))}</span>
           <span class="pitcher-opp">${prefix} ${opp.replace(/^.+ /, '')}</span>
           ${name
-            ? `<span class="pitcher-name">${name}</span>${hand ? `<span class="pitcher-hand">${hand}HP</span>` : ''}`
+            ? `<span class="pitcher-name">${name}${hand ? `, ${hand}HP` : ''}</span>`
             : `<span class="pitcher-name pitcher-tbd">TBD</span>`}
         </div>`;
       }).join('');
