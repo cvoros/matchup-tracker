@@ -553,11 +553,13 @@
     const grid = document.getElementById('cal-grid');
     grid.innerHTML = '<div class="cal-loading">Loading schedule…</div>';
 
-    // Build composite rank lookup from the active data key
+    // Build composite rank lookup and abbr map from the active data key
     const rankMap = {};
+    const abbrMap = {};
     if (statsData) {
       for (const r of statsData[dataKey]) {
         rankMap[r.teamId] = { rank: r.rank, composite: r.composite, team: r.team };
+        abbrMap[r.teamId] = r.abbr;
       }
     }
 
@@ -599,7 +601,7 @@
             rank: homeRank.rank,
             composite: homeRank.composite,
             pitcher: awayPitcher || null,
-            venue: 'home',
+            pitcherTeamAbbr: abbrMap[awayId] || g.teams.away.team.abbreviation || '',
           });
         }
 
@@ -613,7 +615,7 @@
             rank: awayRank.rank,
             composite: awayRank.composite,
             pitcher: homePitcher || null,
-            venue: 'away',
+            pitcherTeamAbbr: abbrMap[homeId] || g.teams.home.team.abbreviation || '',
           });
         }
       }
@@ -643,10 +645,11 @@
         const name = e.pitcher?.fullName;
         const hand = e.pitcher?.pitchHand?.code;
         const teamShort = e.battingTeam.replace(/^.+ /, '');
+        const pitcherTeam = e.pitcherTeamAbbr;
 
         return `<div class="cal-entry">
           <div class="cal-rank" style="color:${compColor(e.rank)}">vs ${teamShort} — #${e.rank}</div>
-          <div class="cal-pitcher${name ? '' : ' tbd'}">${name ? `${name}, ${hand ? hand + 'HP' : ''}` : 'TBD'}</div>
+          <div class="cal-pitcher${name ? '' : ' tbd'}">${name ? `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>${name}${hand ? `, ${hand}HP` : ''}` : 'TBD'}</div>
         </div>`;
       }).join('');
 
