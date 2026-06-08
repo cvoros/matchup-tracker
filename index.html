@@ -430,11 +430,6 @@
     <button class="tab" data-view="calendar">Calendar</button>
   </div>
 </div>
-<div class="container" id="platoon-notice" style="display:none;padding-top:0.75rem">
-  <div style="font-size:0.75rem;color:var(--muted);text-align:center">
-    Platoon splits use full-season data only — date window ignored
-  </div>
-</div>
 
 <div class="container">
   <div id="rankings-view">
@@ -674,12 +669,7 @@
     return activeWindow;
   }
 
-  function updatePlatoonNotice() {
-    const notice = document.getElementById('platoon-notice');
-    notice.style.display = activeHand !== 'all' ? 'block' : 'none';
-  }
-
-  function refreshView() {
+function refreshView() {
     if (!statsData) return;
     if (activeView === 'rankings') renderTable(statsData[activeDataKey()]);
     else renderCalendar(activeDataKey());
@@ -698,7 +688,12 @@
     activeHand = h;
     document.querySelectorAll('.tab[data-hand]')
       .forEach(t => t.classList.toggle('active', t.dataset.hand === h));
-    updatePlatoonNotice();
+    // Force Full Season selection when a platoon split is chosen
+    if (h !== 'all') {
+      activeWindow = 'season';
+      document.querySelectorAll('.tab[data-window]')
+        .forEach(t => t.classList.toggle('active', t.dataset.window === 'season'));
+    }
     refreshView();
   }
 
