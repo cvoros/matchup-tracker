@@ -679,7 +679,9 @@
     activeWindow = w;
     document.querySelectorAll('.tab[data-window]')
       .forEach(t => t.classList.toggle('active', t.dataset.window === w));
-    refreshView();
+    // Time windows can't combine with platoon splits — reset to All
+    if (activeHand !== 'all') switchHand('all');
+    else refreshView();
   }
 
   function switchHand(h) {
