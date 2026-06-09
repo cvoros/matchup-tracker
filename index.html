@@ -146,6 +146,7 @@
   }
 
   th:nth-child(2) { text-align: left; }
+  thead th:hover { color: var(--text); }
 
   tbody tr {
     border-bottom: 1px solid var(--border);
@@ -519,6 +520,19 @@
 
   // ── Rankings table ──────────────────────────────────────────────
 
+  let sortCol = 'rank';
+  let sortAsc = true;
+
+  function sortedRows(rows) {
+    const r = [...rows];
+    const asc = sortAsc ? 1 : -1;
+    r.sort((a, b) => {
+      const va = a[sortCol], vb = b[sortCol];
+      return (va < vb ? -1 : va > vb ? 1 : 0) * asc;
+    });
+    return r;
+  }
+
   function renderTable(rows) {
     const wrap = document.getElementById('table-wrap');
     if (!rows || !rows.length) {
@@ -526,6 +540,7 @@
       return;
     }
 
+    const sorted = sortedRows(rows);
     const allScores = rows.map(r => r.score);
     const n = rows.length;
 
@@ -541,7 +556,7 @@
 
     const statCls = (rank) => rank <= 10 ? 'red' : rank > n - 10 ? 'green' : 'yellow';
 
-    const trs = rows.map(r => {
+    const trs = sorted.map(r => {
       const cls = r.rank <= 5 ? 'top5' : r.rank > n - 5 ? 'bot5' : '';
 
       const kCls  = statCls(kRank[r.teamId]);
@@ -563,21 +578,39 @@
       </tr>`;
     }).join('');
 
+    const cols = [
+      { key: 'rank',  label: 'Rank',  align: 'right' },
+      { key: 'abbr',  label: 'Team',  align: 'left'  },
+      { key: 'kpg',   label: 'K/G ↑', align: 'right', title: 'Strikeouts per game — higher is better' },
+      { key: 'hpg',   label: 'H/G ↓', align: 'right', title: 'Hits per game — lower is better' },
+      { key: 'bbpg',  label: 'BB/G ↓',align: 'right', title: 'Walks per game — lower is better' },
+      { key: 'rpg',   label: 'R/G ↓', align: 'right', title: 'Runs per game — lower is better' },
+      { key: 'score', label: 'Score', align: 'right', title: 'Score: 1.0–10.0 scale. Higher = better.' },
+    ];
+
+    const ths = cols.map(c => {
+      const active = sortCol === c.key;
+      const arrow = active ? (sortAsc ? ' ▲' : ' ▼') : '';
+      const style = `text-align:${c.align};cursor:pointer;user-select:none${active ? ';color:var(--gold)' : ''}`;
+      return `<th data-col="${c.key}" style="${style}" title="${c.title || ''}">${c.label}${arrow}</th>`;
+    }).join('');
+
     wrap.innerHTML = `<table>
-      <thead><tr>
-        <th>Rank</th>
-        <th style="text-align:left">Team</th>
-        <th title="Strikeouts per game — higher is better">K/G ↑</th>
-        <th title="Hits per game — lower is better">H/G ↓</th>
-        <th title="Walks per game — lower is better">BB/G ↓</th>
-        <th title="Runs per game — lower is better">R/G ↓</th>
-        <th title="Score: 1.0–10.0 scale. K/G − H/G − BB/G − 2×R/G, normalized. Higher = better.">Score</th>
-      </tr></thead>
+      <thead><tr>${ths}</tr></thead>
       <tbody>${trs}</tbody>
     </table>`;
 
     wrap.querySelectorAll('tbody tr').forEach(tr => {
       tr.addEventListener('click', () => openTeamModal(tr.dataset.team, Number(tr.dataset.teamId)));
+    });
+
+    wrap.querySelectorAll('thead th[data-col]').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = th.dataset.col;
+        if (sortCol === col) sortAsc = !sortAsc;
+        else { sortCol = col; sortAsc = col === 'rank' || col === 'abbr'; }
+        renderTable(rows);
+      });
     });
   }
 
