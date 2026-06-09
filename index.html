@@ -529,15 +529,25 @@
     const allScores = rows.map(r => r.score);
     const n = rows.length;
 
+    // Compute per-stat ranks (1 = worst for the pitcher, n = best)
+    const byKpg  = [...rows].sort((a, b) => a.kpg  - b.kpg);   // lower K/G = worse
+    const byHpg  = [...rows].sort((a, b) => b.hpg  - a.hpg);   // higher H/G = worse
+    const byBbpg = [...rows].sort((a, b) => b.bbpg - a.bbpg);  // higher BB/G = worse
+    const byRpg  = [...rows].sort((a, b) => b.rpg  - a.rpg);   // higher R/G = worse
+    const kRank  = Object.fromEntries(byKpg.map( (r, i) => [r.teamId, i + 1]));
+    const hRank  = Object.fromEntries(byHpg.map( (r, i) => [r.teamId, i + 1]));
+    const bbRank = Object.fromEntries(byBbpg.map((r, i) => [r.teamId, i + 1]));
+    const rRank  = Object.fromEntries(byRpg.map( (r, i) => [r.teamId, i + 1]));
+
+    const statCls = (rank) => rank <= 10 ? 'red' : rank > n - 10 ? 'green' : 'yellow';
+
     const trs = rows.map(r => {
       const cls = r.rank <= 5 ? 'top5' : r.rank > n - 5 ? 'bot5' : '';
 
-      // Per-stat coloring: higher K/G = good (green), lower = red
-      //                    lower H/G, BB/G, R/G = good (green), higher = red
-      const kCls  = r.rank <= 10 ? 'green' : r.rank > n - 10 ? 'red' : 'yellow';
-      const hCls  = r.rank <= 10 ? 'green' : r.rank > n - 10 ? 'red' : 'yellow';
-      const bbCls = r.rank <= 10 ? 'green' : r.rank > n - 10 ? 'red' : 'yellow';
-      const rCls  = r.rank <= 10 ? 'green' : r.rank > n - 10 ? 'red' : 'yellow';
+      const kCls  = statCls(kRank[r.teamId]);
+      const hCls  = statCls(hRank[r.teamId]);
+      const bbCls = statCls(bbRank[r.teamId]);
+      const rCls  = statCls(rRank[r.teamId]);
 
       const scoreStyle = `color:${scoreColor(r.score, allScores)};font-weight:700`;
 
