@@ -614,6 +614,42 @@
     });
   }
 
+  // ── ESPN probable pitcher fallback ─────────────────────────────
+  // Returns { "YYYY-MM-DD:ABBR": { fullName, espnId } } for all games in range.
+  // Used to fill null probablePitcher slots that MLB API hasn't published yet.
+  async function fetchEspnProbables(startDate, endDate) {
+    const map = {};
+    const cur = new Date(startDate);
+    const end = new Date(endDate);
+    while (cur <= end) {
+      const ds = cur.toISOString().slice(0,10).replace(/-/g,'');
+      try {
+        const res = await fetch(
+          `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${ds}`
+        );
+        if (!res.ok) { cur.setDate(cur.getDate()+1); continue; }
+        const data = await res.json();
+        for (const event of (data.events || [])) {
+          const comp = event.competitions?.[0];
+          if (!comp) continue;
+          for (const team of (comp.competitors || [])) {
+            const abbr = team.team?.abbreviation;
+            const prob = team.probables?.[0];
+            if (abbr && prob?.athlete) {
+              const date = cur.toISOString().slice(0,10);
+              map[`${date}:${abbr}`] = {
+                fullName: prob.athlete.fullName,
+                espnId: prob.athlete.id,
+              };
+            }
+          }
+        }
+      } catch (_) { /* ESPN down — silently skip */ }
+      cur.setDate(cur.getDate() + 1);
+    }
+    return map;
+  }
+
   // ── Calendar view ───────────────────────────────────────────────
 
   async function renderCalendar(dataKey) {
@@ -648,7 +684,16 @@
       return;
     }
 
-    // Collect all pitcher IDs then batch-fetch handedness
+    // Fetch ESPN fallback probables in parallel with handedness lookup
+    const [espnMap] = await Promise.all([
+      fetchEspnProbables(fmt(today), fmt(end)),
+    ]);
+
+    // Build reverse abbr map for ESPN lookup: { ABBR: teamId }
+    const abbrToId = {};
+    for (const [tid, abbr] of Object.entries(abbrMap)) abbrToId[abbr] = Number(tid);
+
+    // Collect MLB pitcher IDs
     const allPitcherIds = [];
     for (const dateObj of (data.dates || [])) {
       for (const g of dateObj.games) {
@@ -658,7 +703,41 @@
         if (ap) allPitcherIds.push(ap.id);
       }
     }
+
+    // For ESPN-only pitchers (MLB returned null), search MLB by name to get IDs
+    const espnNameToMlbId = {};
+    const missingNames = new Set();
+    for (const dateObj of (data.dates || [])) {
+      for (const g of dateObj.games) {
+        const dk = dateObj.date;
+        for (const side of ['home', 'away']) {
+          if (!g.teams[side].probablePitcher) {
+            const abbr = abbrMap[g.teams[side].team.id];
+            const espn = espnMap[`${dk}:${abbr}`];
+            if (espn) missingNames.add(espn.fullName);
+          }
+        }
+      }
+    }
+    await Promise.all([...missingNames].map(async name => {
+      try {
+        const r = await fetch(`https://statsapi.mlb.com/api/v1/people/search?names=${encodeURIComponent(name)}&sportId=1`);
+        const d = await r.json();
+        const person = (d.people || [])[0];
+        if (person) { espnNameToMlbId[name] = person.id; allPitcherIds.push(person.id); }
+      } catch (_) {}
+    }));
+
     const pitchHandMap = await fetchPitchHands([...new Set(allPitcherIds)]);
+
+    // Helper: get pitcher info for a slot, falling back to ESPN if MLB is null
+    function resolvePitcher(mlbPitcher, date, teamAbbr) {
+      if (mlbPitcher) return { name: mlbPitcher.fullName, hand: pitchHandMap[mlbPitcher.id] || null };
+      const espn = espnMap[`${date}:${teamAbbr}`];
+      if (!espn) return { name: null, hand: null };
+      const mlbId = espnNameToMlbId[espn.fullName];
+      return { name: espn.fullName, hand: mlbId ? (pitchHandMap[mlbId] || null) : null };
+    }
 
     // Build date → sorted pitcher entries
     const dateMap = {};
@@ -671,30 +750,32 @@
         const awayId = g.teams.away.team.id;
 
         // Away pitcher faces home batters → rank by home team's composite
-        const awayPitcher = g.teams.away.probablePitcher;
+        const awayAbbr = abbrMap[awayId] || '';
+        const { name: awayName, hand: awayHand } = resolvePitcher(g.teams.away.probablePitcher, dk, awayAbbr);
         const homeRank = rankMap[homeId];
         if (homeRank) {
           dateMap[dk].push({
             battingTeam: g.teams.home.team.name,
             rank: homeRank.rank,
             composite: homeRank.composite,
-            pitcherName: awayPitcher?.fullName || null,
-            pitcherHand: awayPitcher ? (pitchHandMap[awayPitcher.id] || null) : null,
-            pitcherTeamAbbr: abbrMap[awayId] || '',
+            pitcherName: awayName,
+            pitcherHand: awayHand,
+            pitcherTeamAbbr: awayAbbr,
           });
         }
 
         // Home pitcher faces away batters → rank by away team's composite
-        const homePitcher = g.teams.home.probablePitcher;
+        const homeAbbr = abbrMap[homeId] || '';
+        const { name: homeName, hand: homeHand } = resolvePitcher(g.teams.home.probablePitcher, dk, homeAbbr);
         const awayRank = rankMap[awayId];
         if (awayRank) {
           dateMap[dk].push({
             battingTeam: g.teams.away.team.name,
             rank: awayRank.rank,
             composite: awayRank.composite,
-            pitcherName: homePitcher?.fullName || null,
-            pitcherHand: homePitcher ? (pitchHandMap[homePitcher.id] || null) : null,
-            pitcherTeamAbbr: abbrMap[homeId] || '',
+            pitcherName: homeName,
+            pitcherHand: homeHand,
+            pitcherTeamAbbr: homeAbbr,
           });
         }
       }
@@ -812,6 +893,8 @@ function refreshView() {
     pitcherList.innerHTML = '<div class="modal-loading">Loading schedule…</div>';
     backdrop.classList.add('open');
 
+    const abbrMap = buildAbbrMap();
+
     const today = new Date();
     const end = new Date(today);
     end.setDate(end.getDate() + 4);
@@ -832,28 +915,60 @@ function refreshView() {
         return;
       }
 
-      // Batch-fetch handedness for all pitchers in this team's schedule
-      const pitcherIds = games.flatMap(g => {
-        const p = g.teams.home.team.id === teamId
-          ? g.teams.away.probablePitcher
-          : g.teams.home.probablePitcher;
-        return p ? [p.id] : [];
-      });
+      // Fetch ESPN fallback and MLB pitcher IDs in parallel
+      const fmtModal = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+      const todayModal = new Date();
+      const endModal = new Date(todayModal); endModal.setDate(endModal.getDate() + 4);
+      const espnMap = await fetchEspnProbables(fmtModal(todayModal), fmtModal(endModal));
+
+      // Collect MLB pitcher IDs; find ESPN-only pitchers by name
+      const pitcherIds = [];
+      const missingNames = new Set();
+      for (const g of games) {
+        const isHome = g.teams.home.team.id === teamId;
+        const oppSide = isHome ? 'away' : 'home';
+        const p = g.teams[oppSide].probablePitcher;
+        if (p) {
+          pitcherIds.push(p.id);
+        } else {
+          const oppAbbr = abbrMap[g.teams[oppSide].team.id] || '';
+          const dk = g.gameDate.slice(0, 10);
+          const espn = espnMap[`${dk}:${oppAbbr}`];
+          if (espn) missingNames.add(espn.fullName);
+        }
+      }
+      const espnNameToMlbId = {};
+      await Promise.all([...missingNames].map(async name => {
+        try {
+          const r = await fetch(`https://statsapi.mlb.com/api/v1/people/search?names=${encodeURIComponent(name)}&sportId=1`);
+          const d = await r.json();
+          const person = (d.people || [])[0];
+          if (person) { espnNameToMlbId[name] = person.id; pitcherIds.push(person.id); }
+        } catch (_) {}
+      }));
       const pitchHandMap = await fetchPitchHands([...new Set(pitcherIds)]);
 
       pitcherList.innerHTML = games.map(g => {
         const isHome = g.teams.home.team.id === teamId;
         const opp = isHome ? g.teams.away.team.name : g.teams.home.team.name;
+        const oppSide = isHome ? 'away' : 'home';
         const prefix = isHome ? 'vs' : '@';
-        const pitcher = isHome
-          ? g.teams.away.probablePitcher
-          : g.teams.home.probablePitcher;
-
-        const name = pitcher?.fullName || null;
-        const hand = pitcher ? (pitchHandMap[pitcher.id] || null) : null;
+        const dk = g.gameDate.slice(0, 10);
+        const mlbPitcher = g.teams[oppSide].probablePitcher;
+        const oppAbbr = abbrMap[g.teams[oppSide].team.id] || '';
+        let name = mlbPitcher?.fullName || null;
+        let hand = mlbPitcher ? (pitchHandMap[mlbPitcher.id] || null) : null;
+        if (!name) {
+          const espn = espnMap[`${dk}:${oppAbbr}`];
+          if (espn) {
+            name = espn.fullName;
+            const mlbId = espnNameToMlbId[espn.fullName];
+            hand = mlbId ? (pitchHandMap[mlbId] || null) : null;
+          }
+        }
 
         return `<div class="pitcher-row">
-          <span class="pitcher-date">${fmtDate(g.gameDate.slice(0,10))}</span>
+          <span class="pitcher-date">${fmtDate(dk)}</span>
           <span class="pitcher-opp">${prefix} ${opp.replace(/^.+ /, '')}</span>
           ${name
             ? `<span class="pitcher-name">${name}${hand ? `, ${hand}HP` : ''}</span>`
