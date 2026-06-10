@@ -730,7 +730,7 @@
           <div class="cal-rank" style="color:${compColor(e.rank)}">vs ${teamShort} — #${e.rank}</div>
           <div class="cal-pitcher${name ? '' : ' tbd'}">${name
             ? `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>${name}${hand ? `, ${hand}HP` : ''}`
-            : 'TBD'}</div>
+            : `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>TBD`}</div>
         </div>`;
       }).join('');
 
