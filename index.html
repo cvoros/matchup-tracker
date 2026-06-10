@@ -756,6 +756,7 @@
         if (homeRank) {
           dateMap[dk].push({
             battingTeam: g.teams.home.team.name,
+            battingTeamAbbr: abbrMap[homeId] || '',
             rank: homeRank.rank,
             composite: homeRank.composite,
             pitcherName: awayName,
@@ -771,6 +772,7 @@
         if (awayRank) {
           dateMap[dk].push({
             battingTeam: g.teams.away.team.name,
+            battingTeamAbbr: abbrMap[awayId] || '',
             rank: awayRank.rank,
             composite: awayRank.composite,
             pitcherName: homeName,
@@ -804,7 +806,7 @@
       const rows = entries.map(e => {
         const name = e.pitcherName;
         const hand = e.pitcherHand;
-        const teamShort = e.battingTeam.replace(/^.+ /, '');
+        const teamShort = e.battingTeamAbbr || e.battingTeam.replace(/^.+ /, '');
         const pitcherTeam = e.pitcherTeamAbbr;
 
         return `<div class="cal-entry">
