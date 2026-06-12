@@ -1,0 +1,320 @@
+{
+  "updated": "2026-06-12",
+  "myTeamId": 7,
+  "myTeamName": "Devil Ray Guns",
+  "myTeamAbbr": "DRG",
+  "roster": [
+    {
+      "name": "Max Fried",
+      "mlbId": 32685,
+      "positionId": 1
+    },
+    {
+      "name": "Jesus Luzardo",
+      "mlbId": 39667,
+      "positionId": 1
+    },
+    {
+      "name": "Mason Miller",
+      "mlbId": 4730225,
+      "positionId": 11
+    },
+    {
+      "name": "Jacob deGrom",
+      "mlbId": 32796,
+      "positionId": 1
+    },
+    {
+      "name": "Nolan McLean",
+      "mlbId": 4433874,
+      "positionId": 1
+    },
+    {
+      "name": "Zack Wheeler",
+      "mlbId": 31267,
+      "positionId": 1
+    },
+    {
+      "name": "Bryce Elder",
+      "mlbId": 4301067,
+      "positionId": 1
+    },
+    {
+      "name": "Hunter Greene",
+      "mlbId": 39635,
+      "positionId": 1
+    },
+    {
+      "name": "Roki Sasaki",
+      "mlbId": 5134638,
+      "positionId": 1
+    },
+    {
+      "name": "Ranger Suarez",
+      "mlbId": 39817,
+      "positionId": 1
+    },
+    {
+      "name": "Shane Baz",
+      "mlbId": 39639,
+      "positionId": 1
+    },
+    {
+      "name": "Spencer Arrighetti",
+      "mlbId": 4726080,
+      "positionId": 1
+    }
+  ],
+  "freeAgents": [
+    {
+      "name": "Justin Wrobleski",
+      "mlbId": 4417203,
+      "status": "WAIVERS"
+    },
+    {
+      "name": "Kyle Bradish",
+      "mlbId": 4311625,
+      "status": "WAIVERS"
+    },
+    {
+      "name": "Eury Perez",
+      "mlbId": 4917854,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Taj Bradley",
+      "mlbId": 42480,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Zac Gallen",
+      "mlbId": 39910,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Andrew Abbott",
+      "mlbId": 4414528,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Foster Griffin",
+      "mlbId": 33773,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Matthew Boyd",
+      "mlbId": 34401,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Aaron Nola",
+      "mlbId": 33709,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Kris Bubic",
+      "mlbId": 41201,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Ryan Pepiot",
+      "mlbId": 4208281,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Randy Vasquez",
+      "mlbId": 4722847,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Griffin Jax",
+      "mlbId": 42604,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Seth Lugo",
+      "mlbId": 34873,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Trevor Rogers",
+      "mlbId": 39640,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Merrill Kelly",
+      "mlbId": 32968,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "J.T. Ginn",
+      "mlbId": 4414002,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Bubba Chandler",
+      "mlbId": 4683325,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Shane Bieber",
+      "mlbId": 40912,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Bailey Ober",
+      "mlbId": 3107919,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Troy Melton",
+      "mlbId": 5294127,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Clay Holmes",
+      "mlbId": 32827,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Jared Jones",
+      "mlbId": 4918156,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Joey Cantillo",
+      "mlbId": 42488,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Stephen Kolek",
+      "mlbId": 5190073,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Cade Cavalli",
+      "mlbId": 4308037,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Jeffrey Springs",
+      "mlbId": 35397,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Grant Holmes",
+      "mlbId": 33840,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Walbert Urena",
+      "mlbId": 5197476,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Spencer Schwellenbach",
+      "mlbId": 4424862,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Grant Taylor",
+      "mlbId": 4927630,
+      "status": "WAIVERS"
+    },
+    {
+      "name": "Sean Burke",
+      "mlbId": 4867679,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Martin Perez",
+      "mlbId": 31098,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Ryne Nelson",
+      "mlbId": 4916269,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Peter Lambert",
+      "mlbId": 39898,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Ian Seymour",
+      "mlbId": 4669425,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Zebby Matthews",
+      "mlbId": 4791597,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Joe Musgrove",
+      "mlbId": 34848,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Andrew Painter",
+      "mlbId": 4872683,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Cade Horton",
+      "mlbId": 4692526,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Yusei Kikuchi",
+      "mlbId": 41415,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Keider Montero",
+      "mlbId": 5182933,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Chase Dollander",
+      "mlbId": 4719068,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Corbin Burnes",
+      "mlbId": 39878,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Kodai Senga",
+      "mlbId": 4142421,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Walker Buehler",
+      "mlbId": 39251,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Chad Patrick",
+      "mlbId": 5131708,
+      "status": "WAIVERS"
+    },
+    {
+      "name": "Trevor McDonald",
+      "mlbId": 5185136,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Brady Singer",
+      "mlbId": 41172,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Anthony Kay",
+      "mlbId": 40947,
+      "status": "FREEAGENT"
+    }
+  ]
+}
