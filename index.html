@@ -527,7 +527,7 @@
 
   function fantasyBadge(name) {
     const status = pitcherFantasyStatus(name);
-    if (status === 'mine') return '<span class="badge-mine">🔒 MINE</span>';
+    if (status === 'mine') return '<span class="badge-mine"><svg viewBox="0 0 24 24" width="9" height="9" fill="currentColor" style="vertical-align:-0.5px"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 5a3 3 0 1 1 6 0v3H9V7z"/></svg> MINE</span>';
     if (status === 'fa')   return '<span class="badge-fa">★ FA</span>';
     return '';
   }
