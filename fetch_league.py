@@ -4,10 +4,13 @@ Fetches ESPN Fantasy league data and writes data/league.json.
 Required env vars:
   ESPN_LEAGUE_ID  — league ID from the fantasy URL
   ESPN_S2         — espn_s2 cookie value
-  ESPN_SWID       — SWID cookie value (used to identify your team)
+  ESPN_SWID       — SWID cookie value (used to pick the default team)
 
 If any env var is missing the script exits 0 silently so the
 workflow still passes for users who haven't configured it.
+
+Privacy: output contains team names/abbrevs/rosters only — no owner
+names, SWIDs, or member info.
 """
 
 import json
@@ -37,36 +40,23 @@ def espn_get(url, cookies, params=None, headers=None):
     return r.json()
 
 
-def find_my_team(teams, swid):
-    """Return the team whose primaryOwner matches the SWID."""
-    for t in teams:
-        if t.get("primaryOwner") == swid:
-            return t
-    return None
-
-
-def fetch_roster_pitchers(base_url, cookies, my_team_id):
-    """Return list of SP/RP on my roster with mlbId."""
-    data = espn_get(base_url, cookies, params={"view": "mRoster"})
-    my_team = next((t for t in data["teams"] if t["id"] == my_team_id), None)
-    if not my_team:
-        return []
-
+def extract_pitchers(team) -> list[dict]:
+    """SP/RP entries from a team's roster. IDs are ESPN player IDs."""
     pitchers = []
-    for entry in my_team["roster"]["entries"]:
+    for entry in team.get("roster", {}).get("entries", []):
         player = entry["playerPoolEntry"]["player"]
         pos_id = player.get("defaultPositionId")
         if pos_id in (1, 11):  # 1=SP, 11=RP
             pitchers.append({
                 "name": player["fullName"],
-                "mlbId": player["id"],
+                "espnId": player["id"],
                 "positionId": pos_id,
             })
     return pitchers
 
 
 def fetch_free_agents(base_url, cookies):
-    """Return FA/waiver SPs sorted by % owned descending."""
+    """FA/waiver SPs sorted by % owned descending."""
     data = espn_get(
         base_url,
         cookies,
@@ -84,12 +74,11 @@ def fetch_free_agents(base_url, cookies):
     for entry in data.get("players", []):
         player = entry.get("player", {})
         name = player.get("fullName")
-        mlb_id = player.get("id")
-        if not name or not mlb_id:
+        if not name:
             continue
         result.append({
             "name": name,
-            "mlbId": mlb_id,
+            "espnId": player.get("id"),
             "status": entry.get("status", "FREEAGENT"),
         })
     return result
@@ -100,21 +89,23 @@ def main():
     cookies = {"espn_s2": espn_s2, "SWID": swid}
     base_url = BASE.format(season=SEASON, lid=league_id)
 
-    print("Fetching league teams...")
-    team_data = espn_get(base_url, cookies, params={"view": "mTeam"})
-    teams = team_data["teams"]
+    print("Fetching teams and rosters...")
+    data = espn_get(base_url, cookies, params={"view": ["mTeam", "mRoster"]})
+    teams_raw = data["teams"]
 
-    my_team = find_my_team(teams, swid)
-    if not my_team:
-        print(f"Could not find team for SWID {swid} — check ESPN_SWID.")
-        sys.exit(1)
+    default_team_id = None
+    teams = []
+    for t in teams_raw:
+        if t.get("primaryOwner") == swid:
+            default_team_id = t["id"]
+        teams.append({
+            "id": t["id"],
+            "name": t.get("name", ""),
+            "abbrev": t.get("abbrev", ""),
+            "pitchers": extract_pitchers(t),
+        })
 
-    my_team_id = my_team["id"]
-    print(f"My team: [{my_team_id}] {my_team['name']} ({my_team['abbrev']})")
-
-    print("Fetching roster...")
-    roster = fetch_roster_pitchers(base_url, cookies, my_team_id)
-    print(f"  {len(roster)} pitchers on roster")
+    print(f"  {len(teams)} teams, default team id: {default_team_id}")
 
     print("Fetching free agents...")
     free_agents = fetch_free_agents(base_url, cookies)
@@ -122,10 +113,8 @@ def main():
 
     output = {
         "updated": date.today().strftime("%Y-%m-%d"),
-        "myTeamId": my_team_id,
-        "myTeamName": my_team["name"],
-        "myTeamAbbr": my_team["abbrev"],
-        "roster": roster,
+        "defaultTeamId": default_team_id,
+        "teams": teams,
         "freeAgents": free_agents,
     }
 
@@ -133,7 +122,7 @@ def main():
     with open("data/league.json", "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"Wrote data/league.json")
+    print("Wrote data/league.json")
 
 
 if __name__ == "__main__":

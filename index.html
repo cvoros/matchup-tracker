@@ -404,6 +404,17 @@
   .pitcher-tbd { color: var(--muted); font-style: italic; }
   .modal-loading { color: var(--muted); font-size: 0.875rem; text-align: center; padding: 1.5rem 0; }
   .modal-error { color: var(--red); font-size: 0.875rem; text-align: center; padding: 1rem 0; }
+
+  #team-select {
+    background: var(--surface); color: var(--text); border: 1px solid var(--border);
+    border-radius: 6px; padding: 0.25rem 0.5rem; font-size: 0.8rem; cursor: pointer;
+  }
+  .badge-mine, .badge-fa {
+    display: inline-block; font-size: 0.65rem; font-weight: 700;
+    padding: 0 0.3rem; border-radius: 4px; margin-left: 0.35rem; vertical-align: middle;
+  }
+  .badge-mine { color: var(--gold); border: 1px solid var(--gold); }
+  .badge-fa   { color: var(--green); border: 1px solid var(--green); }
 </style>
 </head>
 <body>
@@ -411,6 +422,10 @@
 <header>
   <h1>⚾ Streaming Matchup Rankings</h1>
   <p id="updated">Loading…</p>
+  <div id="league-bar" style="display:none;margin-top:0.5rem">
+    <label for="team-select" style="color:var(--muted);font-size:0.8rem;margin-right:0.4rem">My team:</label>
+    <select id="team-select"></select>
+  </div>
 </header>
 
 <div class="tabs">
@@ -489,6 +504,51 @@
       for (const r of statsData.season) map[r.teamId] = r.abbr;
     }
     return map;
+  }
+
+  // ── Fantasy league integration (optional league.json) ──────────
+  let leagueData = null;
+  let myFantasyTeamId = null;
+
+  // Accent-insensitive, case-insensitive name key (ESPN vs MLB spellings)
+  function normName(name) {
+    return name.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
+  }
+
+  // Returns 'mine' | 'fa' | null for a pitcher name
+  function pitcherFantasyStatus(name) {
+    if (!leagueData || !name) return null;
+    const key = normName(name);
+    const myTeam = leagueData.teams.find(t => t.id === myFantasyTeamId);
+    if (myTeam && myTeam.pitchers.some(p => normName(p.name) === key)) return 'mine';
+    if (leagueData.freeAgents.some(p => normName(p.name) === key)) return 'fa';
+    return null;
+  }
+
+  function fantasyBadge(name) {
+    const status = pitcherFantasyStatus(name);
+    if (status === 'mine') return '<span class="badge-mine">★ MINE</span>';
+    if (status === 'fa')   return '<span class="badge-fa">FA</span>';
+    return '';
+  }
+
+  function initLeagueBar() {
+    if (!leagueData || !leagueData.teams?.length) return;
+    const saved = Number(localStorage.getItem('fantasyTeamId'));
+    myFantasyTeamId = leagueData.teams.some(t => t.id === saved)
+      ? saved
+      : (leagueData.defaultTeamId ?? leagueData.teams[0].id);
+
+    const select = document.getElementById('team-select');
+    select.innerHTML = leagueData.teams
+      .map(t => `<option value="${t.id}"${t.id === myFantasyTeamId ? ' selected' : ''}>${t.name.trim()}</option>`)
+      .join('');
+    select.addEventListener('change', () => {
+      myFantasyTeamId = Number(select.value);
+      localStorage.setItem('fantasyTeamId', select.value);
+      refreshView();
+    });
+    document.getElementById('league-bar').style.display = '';
   }
 
   function fmtDate(iso) {
@@ -812,7 +872,7 @@
         return `<div class="cal-entry">
           <div class="cal-rank" style="color:${compColor(e.rank)}">vs ${teamShort} — #${e.rank}</div>
           <div class="cal-pitcher${name ? '' : ' tbd'}">${name
-            ? `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>${name}${hand ? `, ${hand}HP` : ''}`
+            ? `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>${name}${hand ? `, ${hand}HP` : ''}${fantasyBadge(name)}`
             : `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>TBD`}</div>
         </div>`;
       }).join('');
@@ -973,7 +1033,7 @@ function refreshView() {
           <span class="pitcher-date">${fmtDate(dk)}</span>
           <span class="pitcher-opp">${prefix} ${opp.replace(/^.+ /, '')}</span>
           ${name
-            ? `<span class="pitcher-name">${name}${hand ? `, ${hand}HP` : ''}</span>`
+            ? `<span class="pitcher-name">${name}${hand ? `, ${hand}HP` : ''}${fantasyBadge(name)}</span>`
             : `<span class="pitcher-name pitcher-tbd">TBD</span>`}
         </div>`;
       }).join('');
@@ -985,14 +1045,24 @@ function refreshView() {
 
   // ── Boot ────────────────────────────────────────────────────────
 
+  // League data is optional — site works fine without it
+  const leagueReady = fetch('./data/league.json?v=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+      leagueData = data;
+      initLeagueBar();
+    })
+    .catch(() => {});
+
   fetch('./data/stats.json?v=' + Date.now())
     .then(r => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       return r.json();
     })
-    .then(data => {
+    .then(async data => {
       statsData = data;
       document.getElementById('updated').textContent = `Updated: ${data.updated}`;
+      await leagueReady; // ensure badges render on first paint
       renderTable(data[activeDataKey()]);
     })
     .catch(err => {
