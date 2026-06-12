@@ -24,11 +24,18 @@ jobs:
       - name: Fetch stats
         run: python fetch_stats.py
 
+      - name: Fetch league data
+        env:
+          ESPN_LEAGUE_ID: ${{ secrets.ESPN_LEAGUE_ID }}
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python fetch_league.py
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stats.json
+          git add data/stats.json data/league.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
