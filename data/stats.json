@@ -117,7 +117,7 @@
       "teamId": 116,
       "rpg": 4.13,
       "kpg": 8.52,
-      "hpg": 7.84,
+      "hpg": 7.83,
       "bbpg": 3.77,
       "score": 7.4,
       "rank": 11
@@ -134,17 +134,6 @@
       "rank": 12
     },
     {
-      "team": "Cleveland Guardians",
-      "abbr": "CLE",
-      "teamId": 114,
-      "rpg": 4.04,
-      "kpg": 7.77,
-      "hpg": 7.57,
-      "bbpg": 3.91,
-      "score": 6.8,
-      "rank": 13
-    },
-    {
       "team": "San Francisco Giants",
       "abbr": "SF",
       "teamId": 137,
@@ -153,7 +142,7 @@
       "hpg": 9.01,
       "bbpg": 2.3,
       "score": 6.7,
-      "rank": 14
+      "rank": 13
     },
     {
       "team": "Arizona Diamondbacks",
@@ -163,6 +152,17 @@
       "kpg": 7.59,
       "hpg": 7.9,
       "bbpg": 3.04,
+      "score": 6.7,
+      "rank": 14
+    },
+    {
+      "team": "Cleveland Guardians",
+      "abbr": "CLE",
+      "teamId": 114,
+      "rpg": 4.04,
+      "kpg": 7.77,
+      "hpg": 7.59,
+      "bbpg": 3.91,
       "score": 6.7,
       "rank": 15
     },
@@ -383,7 +383,7 @@
       "teamId": 114,
       "rpg": 3.85,
       "kpg": 8.35,
-      "hpg": 7.77,
+      "hpg": 7.81,
       "bbpg": 3.31,
       "score": 7.5,
       "rank": 5
@@ -416,7 +416,7 @@
       "teamId": 116,
       "rpg": 4.0,
       "kpg": 8.74,
-      "hpg": 7.48,
+      "hpg": 7.44,
       "bbpg": 3.7,
       "score": 7.5,
       "rank": 8
@@ -682,7 +682,7 @@
       "teamId": 114,
       "rpg": 3.58,
       "kpg": 9.42,
-      "hpg": 7.92,
+      "hpg": 8.0,
       "bbpg": 2.92,
       "score": 8.9,
       "rank": 2
@@ -858,7 +858,7 @@
       "teamId": 116,
       "rpg": 5.23,
       "kpg": 8.31,
-      "hpg": 8.08,
+      "hpg": 8.0,
       "bbpg": 3.85,
       "score": 5.5,
       "rank": 18
@@ -1399,11 +1399,11 @@
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
-      "rpg": 2.56,
+      "rpg": 2.57,
       "kpg": 5.51,
-      "hpg": 5.26,
+      "hpg": 5.28,
       "bbpg": 2.78,
-      "score": 8.6,
+      "score": 8.5,
       "rank": 7
     },
     {
@@ -1445,9 +1445,9 @@
       "teamId": 116,
       "rpg": 2.86,
       "kpg": 6.3,
-      "hpg": 6.07,
+      "hpg": 6.06,
       "bbpg": 2.43,
-      "score": 8.1,
+      "score": 8.2,
       "rank": 11
     },
     {
