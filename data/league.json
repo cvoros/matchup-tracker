@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12",
+  "updated": "2026-06-13",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -117,6 +117,11 @@
         {
           "name": "Freddy Peralta",
           "espnId": 39825,
+          "positionId": 1
+        },
+        {
+          "name": "Griffin Canning",
+          "espnId": 41065,
           "positionId": 1
         }
       ]
@@ -610,6 +615,11 @@
   ],
   "freeAgents": [
     {
+      "name": "Spencer Strider",
+      "espnId": 4307825,
+      "status": "WAIVERS"
+    },
+    {
       "name": "Justin Wrobleski",
       "espnId": 4417203,
       "status": "WAIVERS"
@@ -700,6 +710,11 @@
       "status": "FREEAGENT"
     },
     {
+      "name": "Tatsuya Imai",
+      "espnId": 5330833,
+      "status": "WAIVERS"
+    },
+    {
       "name": "Shane Bieber",
       "espnId": 40912,
       "status": "FREEAGENT"
@@ -730,11 +745,6 @@
       "status": "FREEAGENT"
     },
     {
-      "name": "Stephen Kolek",
-      "espnId": 5190073,
-      "status": "FREEAGENT"
-    },
-    {
       "name": "Cade Cavalli",
       "espnId": 4308037,
       "status": "FREEAGENT"
@@ -745,13 +755,13 @@
       "status": "FREEAGENT"
     },
     {
-      "name": "Grant Holmes",
-      "espnId": 33840,
+      "name": "Stephen Kolek",
+      "espnId": 5190073,
       "status": "FREEAGENT"
     },
     {
-      "name": "Walbert Urena",
-      "espnId": 5197476,
+      "name": "Grant Holmes",
+      "espnId": 33840,
       "status": "FREEAGENT"
     },
     {
@@ -760,14 +770,14 @@
       "status": "FREEAGENT"
     },
     {
-      "name": "Grant Taylor",
-      "espnId": 4927630,
-      "status": "WAIVERS"
-    },
-    {
       "name": "Sean Burke",
       "espnId": 4867679,
       "status": "FREEAGENT"
+    },
+    {
+      "name": "Grant Taylor",
+      "espnId": 4927630,
+      "status": "WAIVERS"
     },
     {
       "name": "Martin Perez",
@@ -780,23 +790,23 @@
       "status": "FREEAGENT"
     },
     {
-      "name": "Peter Lambert",
-      "espnId": 39898,
-      "status": "FREEAGENT"
-    },
-    {
       "name": "Ian Seymour",
       "espnId": 4669425,
       "status": "FREEAGENT"
     },
     {
-      "name": "Zebby Matthews",
-      "espnId": 4791597,
+      "name": "Peter Lambert",
+      "espnId": 39898,
       "status": "FREEAGENT"
     },
     {
       "name": "Joe Musgrove",
       "espnId": 34848,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Zebby Matthews",
+      "espnId": 4791597,
       "status": "FREEAGENT"
     },
     {
@@ -825,6 +835,11 @@
       "status": "FREEAGENT"
     },
     {
+      "name": "Trevor McDonald",
+      "espnId": 5185136,
+      "status": "FREEAGENT"
+    },
+    {
       "name": "Corbin Burnes",
       "espnId": 39878,
       "status": "FREEAGENT"
@@ -845,18 +860,8 @@
       "status": "WAIVERS"
     },
     {
-      "name": "Trevor McDonald",
-      "espnId": 5185136,
-      "status": "FREEAGENT"
-    },
-    {
-      "name": "Brady Singer",
-      "espnId": 41172,
-      "status": "FREEAGENT"
-    },
-    {
-      "name": "Anthony Kay",
-      "espnId": 40947,
+      "name": "Matthew Liberatore",
+      "espnId": 41173,
       "status": "FREEAGENT"
     }
   ]
