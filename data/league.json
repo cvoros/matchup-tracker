@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18",
+  "updated": "2026-06-19",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -229,8 +229,8 @@
           "positionId": 11
         },
         {
-          "name": "Kyle Bradish",
-          "espnId": 4311625,
+          "name": "Ryan Weathers",
+          "espnId": 41178,
           "positionId": 1
         }
       ]
@@ -291,8 +291,8 @@
           "positionId": 1
         },
         {
-          "name": "Nick Lodolo",
-          "espnId": 42433,
+          "name": "Cade Cavalli",
+          "espnId": 4308037,
           "positionId": 1
         }
       ]
@@ -343,13 +343,13 @@
           "positionId": 11
         },
         {
-          "name": "Peter Lambert",
-          "espnId": 39898,
-          "positionId": 11
+          "name": "Martin Perez",
+          "espnId": 31098,
+          "positionId": 1
         },
         {
-          "name": "Javier Assad",
-          "espnId": 5002950,
+          "name": "Noah Cameron",
+          "espnId": 4417208,
           "positionId": 1
         }
       ]
@@ -467,9 +467,9 @@
           "positionId": 1
         },
         {
-          "name": "Tanner Scott",
-          "espnId": 35135,
-          "positionId": 11
+          "name": "Sean Manaea",
+          "espnId": 33244,
+          "positionId": 1
         }
       ]
     },
@@ -582,7 +582,7 @@
     {
       "name": "Bryce Elder",
       "espnId": 4301067,
-      "status": "WAIVERS"
+      "status": "FREEAGENT"
     },
     {
       "name": "Cole Ragans",
@@ -600,6 +600,11 @@
       "status": "WAIVERS"
     },
     {
+      "name": "MacKenzie Gore",
+      "espnId": 39636,
+      "status": "WAIVERS"
+    },
+    {
       "name": "Eury Perez",
       "espnId": 4917854,
       "status": "FREEAGENT"
@@ -607,7 +612,7 @@
     {
       "name": "Robbie Ray",
       "espnId": 32175,
-      "status": "WAIVERS"
+      "status": "FREEAGENT"
     },
     {
       "name": "Nick Lodolo",
@@ -650,24 +655,14 @@
       "status": "FREEAGENT"
     },
     {
-      "name": "Griffin Jax",
-      "espnId": 42604,
-      "status": "FREEAGENT"
-    },
-    {
       "name": "Shane Baz",
       "espnId": 39639,
-      "status": "WAIVERS"
+      "status": "FREEAGENT"
     },
     {
       "name": "Trevor Rogers",
       "espnId": 39640,
       "status": "FREEAGENT"
-    },
-    {
-      "name": "Edward Cabrera",
-      "espnId": 40944,
-      "status": "WAIVERS"
     },
     {
       "name": "Randy Vasquez",
@@ -680,6 +675,11 @@
       "status": "FREEAGENT"
     },
     {
+      "name": "Edward Cabrera",
+      "espnId": 40944,
+      "status": "FREEAGENT"
+    },
+    {
       "name": "Seth Lugo",
       "espnId": 34873,
       "status": "FREEAGENT"
@@ -687,7 +687,7 @@
     {
       "name": "Merrill Kelly",
       "espnId": 32968,
-      "status": "WAIVERS"
+      "status": "FREEAGENT"
     },
     {
       "name": "Stephen Kolek",
@@ -695,28 +695,18 @@
       "status": "WAIVERS"
     },
     {
-      "name": "Bubba Chandler",
-      "espnId": 4683325,
-      "status": "FREEAGENT"
-    },
-    {
       "name": "Shane Bieber",
       "espnId": 40912,
       "status": "FREEAGENT"
     },
     {
-      "name": "Gage Jump",
-      "espnId": 5023852,
+      "name": "Martin Perez",
+      "espnId": 31098,
       "status": "FREEAGENT"
     },
     {
       "name": "Jack Leiter",
       "espnId": 4622181,
-      "status": "FREEAGENT"
-    },
-    {
-      "name": "Tatsuya Imai",
-      "espnId": 5330833,
       "status": "FREEAGENT"
     },
     {
@@ -730,23 +720,8 @@
       "status": "FREEAGENT"
     },
     {
-      "name": "Peter Lambert",
-      "espnId": 39898,
-      "status": "WAIVERS"
-    },
-    {
       "name": "Joey Cantillo",
       "espnId": 42488,
-      "status": "FREEAGENT"
-    },
-    {
-      "name": "Brandon Young",
-      "espnId": 4414339,
-      "status": "WAIVERS"
-    },
-    {
-      "name": "Jared Jones",
-      "espnId": 4918156,
       "status": "FREEAGENT"
     },
     {
@@ -755,18 +730,28 @@
       "status": "FREEAGENT"
     },
     {
+      "name": "Peter Lambert",
+      "espnId": 39898,
+      "status": "WAIVERS"
+    },
+    {
+      "name": "Cade Cavalli",
+      "espnId": 4308037,
+      "status": "WAIVERS"
+    },
+    {
+      "name": "Jared Jones",
+      "espnId": 4918156,
+      "status": "FREEAGENT"
+    },
+    {
       "name": "Jeffrey Springs",
       "espnId": 35397,
       "status": "FREEAGENT"
     },
     {
-      "name": "Javier Assad",
-      "espnId": 5002950,
-      "status": "FREEAGENT"
-    },
-    {
-      "name": "Grant Holmes",
-      "espnId": 33840,
+      "name": "Brandon Young",
+      "espnId": 4414339,
       "status": "FREEAGENT"
     },
     {
@@ -780,14 +765,19 @@
       "status": "FREEAGENT"
     },
     {
+      "name": "Grant Holmes",
+      "espnId": 33840,
+      "status": "FREEAGENT"
+    },
+    {
       "name": "Andre Pallante",
       "espnId": 4109034,
-      "status": "WAIVERS"
+      "status": "FREEAGENT"
     },
     {
       "name": "Ryne Nelson",
       "espnId": 4916269,
-      "status": "WAIVERS"
+      "status": "FREEAGENT"
     },
     {
       "name": "Sean Burke",
@@ -797,6 +787,11 @@
     {
       "name": "Ian Seymour",
       "espnId": 4669425,
+      "status": "FREEAGENT"
+    },
+    {
+      "name": "Javier Assad",
+      "espnId": 5002950,
       "status": "FREEAGENT"
     },
     {
@@ -820,13 +815,18 @@
       "status": "FREEAGENT"
     },
     {
-      "name": "Kodai Senga",
-      "espnId": 4142421,
+      "name": "Yoendrys Gomez",
+      "espnId": 42898,
       "status": "FREEAGENT"
     },
     {
-      "name": "Yoendrys Gomez",
-      "espnId": 42898,
+      "name": "Andrew Painter",
+      "espnId": 4872683,
+      "status": "WAIVERS"
+    },
+    {
+      "name": "Kodai Senga",
+      "espnId": 4142421,
       "status": "FREEAGENT"
     }
   ]
