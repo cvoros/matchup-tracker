@@ -515,14 +515,22 @@
     return name.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
   }
 
-  // Returns 'mine' | 'fa' | null for a pitcher name
+  // Returns 'mine' | 'fa' | null for a pitcher name.
+  // Ownership is derived from every team's roster (the authoritative
+  // source) — anyone not rostered by any team is a free agent.
   function pitcherFantasyStatus(name) {
     if (!leagueData || !name) return null;
     const key = normName(name);
-    const myTeam = leagueData.teams.find(t => t.id === myFantasyTeamId);
-    if (myTeam && myTeam.pitchers.some(p => normName(p.name) === key)) return 'mine';
-    if (leagueData.freeAgents.some(p => normName(p.name) === key)) return 'fa';
-    return null;
+    let onMyTeam = false, onOtherTeam = false;
+    for (const t of leagueData.teams) {
+      if (t.pitchers.some(p => normName(p.name) === key)) {
+        if (t.id === myFantasyTeamId) onMyTeam = true;
+        else onOtherTeam = true;
+      }
+    }
+    if (onMyTeam) return 'mine';
+    if (onOtherTeam) return null;   // rostered by an opponent — not available
+    return 'fa';                    // not on any roster — free agent
   }
 
   function fantasyBadge(name) {

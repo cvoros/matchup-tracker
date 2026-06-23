@@ -21,7 +21,6 @@ from datetime import date
 
 SEASON = 2026
 BASE = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/{lid}"
-FA_LIMIT = 50  # how many FA/waiver SPs to include
 
 
 def get_env():
@@ -55,35 +54,6 @@ def extract_pitchers(team) -> list[dict]:
     return pitchers
 
 
-def fetch_free_agents(base_url, cookies):
-    """FA/waiver SPs sorted by % owned descending."""
-    data = espn_get(
-        base_url,
-        cookies,
-        params={"view": "kona_player_info"},
-        headers={"x-fantasy-filter": json.dumps({
-            "players": {
-                "filterStatus": {"value": ["FREEAGENT", "WAIVERS"]},
-                "filterSlotIds": {"value": [14]},  # SP slot
-                "limit": FA_LIMIT,
-                "sortPercOwned": {"sortPriority": 1, "sortAsc": False},
-            }
-        })},
-    )
-    result = []
-    for entry in data.get("players", []):
-        player = entry.get("player", {})
-        name = player.get("fullName")
-        if not name:
-            continue
-        result.append({
-            "name": name,
-            "espnId": player.get("id"),
-            "status": entry.get("status", "FREEAGENT"),
-        })
-    return result
-
-
 def main():
     league_id, espn_s2, swid = get_env()
     cookies = {"espn_s2": espn_s2, "SWID": swid}
@@ -107,15 +77,12 @@ def main():
 
     print(f"  {len(teams)} teams, default team id: {default_team_id}")
 
-    print("Fetching free agents...")
-    free_agents = fetch_free_agents(base_url, cookies)
-    print(f"  {len(free_agents)} FA/waiver SPs")
-
+    # Ownership (mine / opponent / free agent) is derived in the UI from
+    # these rosters — anyone not rostered by any team is a free agent.
     output = {
         "updated": date.today().strftime("%Y-%m-%d"),
         "defaultTeamId": default_team_id,
         "teams": teams,
-        "freeAgents": free_agents,
     }
 
     os.makedirs("data", exist_ok=True)
