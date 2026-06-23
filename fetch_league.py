@@ -59,8 +59,20 @@ def main():
     cookies = {"espn_s2": espn_s2, "SWID": swid}
     base_url = BASE.format(season=SEASON, lid=league_id)
 
+    # ESPN returns rosters as of a given scoring period. The default
+    # (current) period lags behind pending moves — managers add pitchers
+    # for upcoming starts that only show up in the *next* period. Fetch
+    # that next period so ownership reflects the latest roster intent.
+    print("Fetching league metadata...")
+    meta = espn_get(base_url, cookies, params={"view": "mTeam"})
+    latest = meta.get("status", {}).get("latestScoringPeriod") \
+        or meta.get("scoringPeriodId", 0)
+    next_period = latest + 1
+    print(f"  latest scoring period {latest}, fetching rosters as of {next_period}")
+
     print("Fetching teams and rosters...")
-    data = espn_get(base_url, cookies, params={"view": ["mTeam", "mRoster"]})
+    data = espn_get(base_url, cookies,
+                    params={"view": ["mTeam", "mRoster"], "scoringPeriodId": next_period})
     teams_raw = data["teams"]
 
     default_team_id = None

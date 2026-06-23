@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-23",
-  "updatedAt": "2026-06-23T21:06:10+00:00",
+  "updatedAt": "2026-06-23T22:12:06+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -292,14 +292,14 @@
           "positionId": 1
         },
         {
-          "name": "Robbie Ray",
-          "espnId": 32175,
-          "positionId": 1
-        },
-        {
           "name": "Eury Perez",
           "espnId": 4917854,
           "positionId": 1
+        },
+        {
+          "name": "Griffin Jax",
+          "espnId": 42604,
+          "positionId": 11
         }
       ]
     },
@@ -458,24 +458,24 @@
           "positionId": 11
         },
         {
-          "name": "Sean Burke",
-          "espnId": 4867679,
-          "positionId": 1
-        },
-        {
           "name": "Michael Soroka",
           "espnId": 34984,
           "positionId": 1
         },
         {
-          "name": "Peter Lambert",
-          "espnId": 39898,
-          "positionId": 11
-        },
-        {
           "name": "Tanner Scott",
           "espnId": 35135,
           "positionId": 11
+        },
+        {
+          "name": "Martin Perez",
+          "espnId": 31098,
+          "positionId": 1
+        },
+        {
+          "name": "Will Warren",
+          "espnId": 5132011,
+          "positionId": 1
         }
       ]
     },
@@ -584,11 +584,6 @@
         {
           "name": "Kyle Bradish",
           "espnId": 4311625,
-          "positionId": 1
-        },
-        {
-          "name": "Shane Baz",
-          "espnId": 39639,
           "positionId": 1
         }
       ]
