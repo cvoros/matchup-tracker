@@ -1,7 +1,7 @@
 import json
 import os
 import requests
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 SEASON = 2026
 BASE = "https://statsapi.mlb.com/api/v1/teams/stats"
@@ -138,6 +138,7 @@ def main():
 
     output = {
         "updated": today.strftime("%Y-%m-%d"),
+        "updatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "season": season,
         "last30": last30,
         "last15": last15,

@@ -17,7 +17,7 @@ import json
 import os
 import sys
 import requests
-from datetime import date
+from datetime import date, datetime, timezone
 
 SEASON = 2026
 BASE = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/{lid}"
@@ -81,6 +81,7 @@ def main():
     # these rosters — anyone not rostered by any team is a free agent.
     output = {
         "updated": date.today().strftime("%Y-%m-%d"),
+        "updatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "defaultTeamId": default_team_id,
         "teams": teams,
     }

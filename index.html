@@ -472,7 +472,7 @@
 </div>
 
 <footer>
-  Full Season/30/15: vs starting pitchers only &nbsp;·&nbsp; vs LHP/vs RHP: all pitcher appearances &nbsp;·&nbsp; Score = 1.0–10.0 (K/G − H/G − BB/G − 2×R/G, normalized) &nbsp;·&nbsp; Higher = better streaming matchup for ESPN H2H points leagues.
+  Full Season/30/15: vs starting pitchers only &nbsp;·&nbsp; vs LHP/vs RHP: all pitcher appearances &nbsp;·&nbsp; Score = 1.0–10.0 (K/G − H/G − BB/G − 2×R/G, normalized) &nbsp;·&nbsp; Higher = better streaming matchup for ESPN H2H points leagues. &nbsp;·&nbsp; Fantasy league data updates every 6 hrs.
 </footer>
 
 <script>
@@ -495,6 +495,20 @@
       }
       return map;
     } catch { return {}; }
+  }
+
+  // Format an ISO timestamp (or date) as Mountain Time, e.g. "Jun 23, 2026, 2:00 PM MDT"
+  function fmtUpdated(data) {
+    if (!data.updatedAt) {
+      // Date-only (older data): show as-is, no timezone shift
+      return data.updated || '';
+    }
+    const dt = new Date(data.updatedAt);
+    if (isNaN(dt)) return data.updated || '';
+    return dt.toLocaleString('en-US', {
+      timeZone: 'America/Denver', month: 'short', day: 'numeric', year: 'numeric',
+      hour: 'numeric', minute: '2-digit', timeZoneName: 'short',
+    });
   }
 
   // Build teamId → abbr from loaded statsData
@@ -1069,7 +1083,7 @@ function refreshView() {
     })
     .then(async data => {
       statsData = data;
-      document.getElementById('updated').textContent = `Updated: ${data.updated}`;
+      document.getElementById('updated').textContent = `Updated: ${fmtUpdated(data)}`;
       await leagueReady; // ensure badges render on first paint
       renderTable(data[activeDataKey()]);
     })
