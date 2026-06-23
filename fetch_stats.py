@@ -117,6 +117,9 @@ def main():
     last15_params  = {**common, "stats": "byDateRange", "sitCodes": "sp",
                       "startDate": (today - timedelta(days=15)).strftime("%Y-%m-%d"),
                       "endDate":   today.strftime("%Y-%m-%d")}
+    last7_params   = {**common, "stats": "byDateRange", "sitCodes": "sp",
+                      "startDate": (today - timedelta(days=7)).strftime("%Y-%m-%d"),
+                      "endDate":   today.strftime("%Y-%m-%d")}
 
     # Platoon splits — vs LHP / vs RHP starters (statSplits, uses rbi as run proxy)
     vslhp_params = {**common, "stats": "statSplits", "sitCodes": "vl"}
@@ -131,6 +134,8 @@ def main():
     last30 = build_window(last30_params, abbr_map)
     print("Fetching last 15 days stats...")
     last15 = build_window(last15_params, abbr_map)
+    print("Fetching last 7 days stats...")
+    last7 = build_window(last7_params, abbr_map)
     print("Fetching vs LHP stats...")
     vslhp = build_window(vslhp_params, abbr_map, use_rbi=True)
     print("Fetching vs RHP stats...")
@@ -142,6 +147,7 @@ def main():
         "season": season,
         "last30": last30,
         "last15": last15,
+        "last7":  last7,
         "vslhp":  vslhp,
         "vsrhp":  vsrhp,
     }
