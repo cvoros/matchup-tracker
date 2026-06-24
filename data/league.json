@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-24",
-  "updatedAt": "2026-06-24T16:22:37+00:00",
+  "updatedAt": "2026-06-24T18:52:05+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -277,11 +277,6 @@
           "positionId": 1
         },
         {
-          "name": "Shane McClanahan",
-          "espnId": 41199,
-          "positionId": 1
-        },
-        {
           "name": "Hunter Greene",
           "espnId": 39635,
           "positionId": 1
@@ -297,9 +292,14 @@
           "positionId": 1
         },
         {
-          "name": "Griffin Jax",
-          "espnId": 42604,
+          "name": "Troy Melton",
+          "espnId": 5294127,
           "positionId": 11
+        },
+        {
+          "name": "Landen Roupp",
+          "espnId": 4345404,
+          "positionId": 1
         }
       ]
     },
@@ -471,6 +471,11 @@
           "name": "Will Warren",
           "espnId": 5132011,
           "positionId": 1
+        },
+        {
+          "name": "Trevor Megill",
+          "espnId": 40080,
+          "positionId": 11
         }
       ]
     },
