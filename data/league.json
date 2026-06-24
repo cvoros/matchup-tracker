@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-24",
-  "updatedAt": "2026-06-24T20:48:45+00:00",
+  "updatedAt": "2026-06-24T22:18:01+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -396,11 +396,6 @@
           "positionId": 1
         },
         {
-          "name": "Ranger Suarez",
-          "espnId": 39817,
-          "positionId": 1
-        },
-        {
           "name": "Spencer Arrighetti",
           "espnId": 4726080,
           "positionId": 1
@@ -408,6 +403,11 @@
         {
           "name": "J.T. Ginn",
           "espnId": 4414002,
+          "positionId": 1
+        },
+        {
+          "name": "Matthew Boyd",
+          "espnId": 34401,
           "positionId": 1
         }
       ]
