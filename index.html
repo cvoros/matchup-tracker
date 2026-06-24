@@ -584,22 +584,16 @@
 
   function dateKey(iso) { return iso.slice(0, 10); }
 
-  function scoreColor(score, allScores) {
-    const max = Math.max(...allScores);
-    const min = Math.min(...allScores);
-    const t = (score - min) / (max - min || 1);
-    if (t >= 0.6) return 'var(--green)';
-    if (t >= 0.3) return 'var(--yellow)';
+  // Tercile color by composite rank (1 = best matchup). Even 10/10/10
+  // split across the 30 teams — consistent with the per-stat columns.
+  function rankTierColor(rank) {
+    if (rank <= 10) return 'var(--green)';
+    if (rank <= 20) return 'var(--yellow)';
     return 'var(--red)';
   }
 
-  // Keep compColor for calendar (uses rank 1-30)
-  function compColor(rank) {
-    const t = 1 - (rank - 1) / 29;
-    if (t >= 0.6) return 'var(--green)';
-    if (t >= 0.3) return 'var(--yellow)';
-    return 'var(--red)';
-  }
+  // Calendar uses the same tier coloring (rank 1-30)
+  const compColor = rankTierColor;
 
   // ── Rankings table ──────────────────────────────────────────────
 
@@ -624,7 +618,6 @@
     }
 
     const sorted = sortedRows(rows);
-    const allScores = rows.map(r => r.score);
     const n = rows.length;
 
     // Compute per-stat ranks (1 = worst for the pitcher, n = best)
@@ -647,11 +640,11 @@
       const bbCls = statCls(bbRank[r.teamId]);
       const rCls  = statCls(rRank[r.teamId]);
 
-      const scoreStyle = `color:${scoreColor(r.score, allScores)};font-weight:700`;
+      const tierColor = rankTierColor(r.rank);
+      const scoreStyle = `color:${tierColor};font-weight:700`;
 
-      const rankColor = scoreColor(r.score, allScores);
       return `<tr class="${cls}" data-team="${r.team}" data-team-id="${r.teamId}">
-        <td style="color:${rankColor}">${r.rank}</td>
+        <td style="color:${tierColor}">${r.rank}</td>
         <td title="${r.team}">${r.abbr || r.team}</td>
         <td class="${kCls}">${r.kpg.toFixed(2)}</td>
         <td class="${hCls}">${r.hpg.toFixed(2)}</td>
