@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-24",
-  "updatedAt": "2026-06-24T03:36:03+00:00",
+  "updatedAt": "2026-06-24T07:41:27+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -339,11 +339,6 @@
           "positionId": 11
         },
         {
-          "name": "Paul Sewald",
-          "espnId": 35009,
-          "positionId": 11
-        },
-        {
           "name": "Andres Munoz",
           "espnId": 40939,
           "positionId": 11
@@ -352,6 +347,11 @@
           "name": "David Bednar",
           "espnId": 38303,
           "positionId": 11
+        },
+        {
+          "name": "Javier Assad",
+          "espnId": 5002950,
+          "positionId": 1
         }
       ]
     },
