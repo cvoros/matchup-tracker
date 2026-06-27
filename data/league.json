@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-27",
-  "updatedAt": "2026-06-27T09:28:43+00:00",
+  "updatedAt": "2026-06-27T11:27:29+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -465,6 +465,11 @@
         {
           "name": "Brandon Sproat",
           "espnId": 4621041,
+          "positionId": 1
+        },
+        {
+          "name": "Ryan Weathers",
+          "espnId": 41178,
           "positionId": 1
         }
       ]
