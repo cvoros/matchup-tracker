@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-27",
-  "updatedAt": "2026-06-27T06:52:41+00:00",
+  "updatedAt": "2026-06-27T09:28:43+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -341,6 +341,11 @@
         {
           "name": "David Bednar",
           "espnId": 38303,
+          "positionId": 11
+        },
+        {
+          "name": "Tanner Scott",
+          "espnId": 35135,
           "positionId": 11
         }
       ]
