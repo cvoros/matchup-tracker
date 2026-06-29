@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-29",
-  "updatedAt": "2026-06-29T14:51:43+00:00",
+  "updatedAt": "2026-06-29T17:36:49+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -242,11 +242,6 @@
       "abbrev": "BIG",
       "pitchers": [
         {
-          "name": "Gerrit Cole",
-          "espnId": 32081,
-          "positionId": 1
-        },
-        {
           "name": "Parker Messick",
           "espnId": 4619898,
           "positionId": 1
@@ -300,6 +295,11 @@
           "name": "Landen Roupp",
           "espnId": 4345404,
           "positionId": 1
+        },
+        {
+          "name": "Griffin Jax",
+          "espnId": 42604,
+          "positionId": 11
         }
       ]
     },
