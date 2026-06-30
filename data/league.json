@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-30",
-  "updatedAt": "2026-06-30T00:12:31+00:00",
+  "updatedAt": "2026-06-30T05:03:33+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -163,11 +163,6 @@
           "positionId": 1
         },
         {
-          "name": "Kyle Leahy",
-          "espnId": 5006093,
-          "positionId": 11
-        },
-        {
           "name": "Eric Lauer",
           "espnId": 39915,
           "positionId": 1
@@ -176,6 +171,11 @@
           "name": "Peter Lambert",
           "espnId": 39898,
           "positionId": 11
+        },
+        {
+          "name": "Bubba Chandler",
+          "espnId": 4683325,
+          "positionId": 1
         }
       ]
     },
@@ -401,13 +401,13 @@
           "positionId": 1
         },
         {
-          "name": "J.T. Ginn",
-          "espnId": 4414002,
+          "name": "Matthew Boyd",
+          "espnId": 34401,
           "positionId": 1
         },
         {
-          "name": "Matthew Boyd",
-          "espnId": 34401,
+          "name": "Robbie Ray",
+          "espnId": 32175,
           "positionId": 1
         }
       ]
@@ -577,9 +577,9 @@
           "positionId": 1
         },
         {
-          "name": "Shane Baz",
-          "espnId": 39639,
-          "positionId": 1
+          "name": "Trevor Megill",
+          "espnId": 40080,
+          "positionId": 11
         }
       ]
     }
