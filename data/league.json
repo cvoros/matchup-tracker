@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-02",
-  "updatedAt": "2026-07-02T15:23:57+00:00",
+  "updatedAt": "2026-07-02T17:48:06+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -386,11 +386,6 @@
           "positionId": 1
         },
         {
-          "name": "Matthew Boyd",
-          "espnId": 34401,
-          "positionId": 1
-        },
-        {
           "name": "Robbie Ray",
           "espnId": 32175,
           "positionId": 1
@@ -398,6 +393,11 @@
         {
           "name": "Kyle Bradish",
           "espnId": 4311625,
+          "positionId": 1
+        },
+        {
+          "name": "Jake Bennett",
+          "espnId": 4654024,
           "positionId": 1
         }
       ]
@@ -453,18 +453,18 @@
           "positionId": 1
         },
         {
-          "name": "Walbert Urena",
-          "espnId": 5197476,
-          "positionId": 1
-        },
-        {
-          "name": "Nick Martinez",
-          "espnId": 33372,
-          "positionId": 1
-        },
-        {
           "name": "Sean Burke",
           "espnId": 4867679,
+          "positionId": 1
+        },
+        {
+          "name": "Griffin Jax",
+          "espnId": 42604,
+          "positionId": 11
+        },
+        {
+          "name": "Christian Scott",
+          "espnId": 4414215,
           "positionId": 1
         }
       ]

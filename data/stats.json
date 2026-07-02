@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-02",
-  "updatedAt": "2026-07-02T15:23:57+00:00",
+  "updatedAt": "2026-07-02T17:48:06+00:00",
   "season": [
     {
       "team": "San Diego Padres",
@@ -94,11 +94,11 @@
       "team": "Philadelphia Phillies",
       "abbr": "PHI",
       "teamId": 143,
-      "rpg": 4.52,
-      "kpg": 8.76,
-      "hpg": 8.02,
-      "bbpg": 2.92,
-      "score": 8.3,
+      "rpg": 4.48,
+      "kpg": 8.7,
+      "hpg": 7.95,
+      "bbpg": 2.91,
+      "score": 8.4,
       "rank": 9
     },
     {
@@ -270,11 +270,11 @@
       "team": "Pittsburgh Pirates",
       "abbr": "PIT",
       "teamId": 134,
-      "rpg": 5.13,
-      "kpg": 9.45,
-      "hpg": 8.97,
-      "bbpg": 3.72,
-      "score": 4.6,
+      "rpg": 5.07,
+      "kpg": 9.39,
+      "hpg": 8.9,
+      "bbpg": 3.7,
+      "score": 4.8,
       "rank": 25
     },
     {
@@ -522,6 +522,17 @@
       "rank": 17
     },
     {
+      "team": "Pittsburgh Pirates",
+      "abbr": "PIT",
+      "teamId": 134,
+      "rpg": 5.18,
+      "kpg": 9.68,
+      "hpg": 9.18,
+      "bbpg": 3.29,
+      "score": 4.9,
+      "rank": 18
+    },
+    {
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
@@ -530,7 +541,7 @@
       "hpg": 8.54,
       "bbpg": 3.38,
       "score": 4.7,
-      "rank": 18
+      "rank": 19
     },
     {
       "team": "Washington Nationals",
@@ -541,18 +552,18 @@
       "hpg": 8.63,
       "bbpg": 2.78,
       "score": 4.7,
-      "rank": 19
+      "rank": 20
     },
     {
-      "team": "Pittsburgh Pirates",
-      "abbr": "PIT",
-      "teamId": 134,
-      "rpg": 5.37,
-      "kpg": 9.89,
-      "hpg": 9.41,
-      "bbpg": 3.33,
-      "score": 4.4,
-      "rank": 20
+      "team": "Philadelphia Phillies",
+      "abbr": "PHI",
+      "teamId": 143,
+      "rpg": 5.66,
+      "kpg": 9.45,
+      "hpg": 8.9,
+      "bbpg": 2.9,
+      "score": 4.3,
+      "rank": 21
     },
     {
       "team": "Athletics",
@@ -563,7 +574,7 @@
       "hpg": 8.68,
       "bbpg": 3.43,
       "score": 4.3,
-      "rank": 21
+      "rank": 22
     },
     {
       "team": "Kansas City Royals",
@@ -574,7 +585,7 @@
       "hpg": 8.89,
       "bbpg": 3.0,
       "score": 4.2,
-      "rank": 22
+      "rank": 23
     },
     {
       "team": "Miami Marlins",
@@ -585,17 +596,6 @@
       "hpg": 8.81,
       "bbpg": 3.31,
       "score": 4.1,
-      "rank": 23
-    },
-    {
-      "team": "Philadelphia Phillies",
-      "abbr": "PHI",
-      "teamId": 143,
-      "rpg": 5.82,
-      "kpg": 9.64,
-      "hpg": 9.14,
-      "bbpg": 2.93,
-      "score": 3.9,
       "rank": 24
     },
     {
@@ -898,6 +898,17 @@
       "rank": 21
     },
     {
+      "team": "Pittsburgh Pirates",
+      "abbr": "PIT",
+      "teamId": 134,
+      "rpg": 5.64,
+      "kpg": 10.07,
+      "hpg": 9.79,
+      "bbpg": 2.86,
+      "score": 5.8,
+      "rank": 22
+    },
+    {
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
@@ -906,18 +917,18 @@
       "hpg": 9.15,
       "bbpg": 4.0,
       "score": 5.5,
-      "rank": 22
+      "rank": 23
     },
     {
-      "team": "Pittsburgh Pirates",
-      "abbr": "PIT",
-      "teamId": 134,
-      "rpg": 6.08,
-      "kpg": 10.54,
-      "hpg": 10.31,
-      "bbpg": 2.92,
-      "score": 5.3,
-      "rank": 23
+      "team": "Philadelphia Phillies",
+      "abbr": "PHI",
+      "teamId": 143,
+      "rpg": 6.27,
+      "kpg": 9.4,
+      "hpg": 9.6,
+      "bbpg": 2.47,
+      "score": 5.1,
+      "rank": 24
     },
     {
       "team": "Arizona Diamondbacks",
@@ -928,17 +939,6 @@
       "hpg": 8.23,
       "bbpg": 3.62,
       "score": 4.8,
-      "rank": 24
-    },
-    {
-      "team": "Philadelphia Phillies",
-      "abbr": "PHI",
-      "teamId": 143,
-      "rpg": 6.64,
-      "kpg": 9.79,
-      "hpg": 10.14,
-      "bbpg": 2.5,
-      "score": 4.7,
       "rank": 25
     },
     {
@@ -1153,6 +1153,17 @@
       "rank": 14
     },
     {
+      "team": "Pittsburgh Pirates",
+      "abbr": "PIT",
+      "teamId": 134,
+      "rpg": 5.25,
+      "kpg": 11.12,
+      "hpg": 8.75,
+      "bbpg": 3.38,
+      "score": 5.7,
+      "rank": 15
+    },
+    {
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
@@ -1161,7 +1172,7 @@
       "hpg": 8.67,
       "bbpg": 4.0,
       "score": 5.7,
-      "rank": 15
+      "rank": 16
     },
     {
       "team": "Athletics",
@@ -1172,17 +1183,6 @@
       "hpg": 9.43,
       "bbpg": 2.71,
       "score": 5.3,
-      "rank": 16
-    },
-    {
-      "team": "Pittsburgh Pirates",
-      "abbr": "PIT",
-      "teamId": 134,
-      "rpg": 6.0,
-      "kpg": 12.14,
-      "hpg": 9.57,
-      "bbpg": 3.57,
-      "score": 5.1,
       "rank": 17
     },
     {
@@ -1197,6 +1197,17 @@
       "rank": 18
     },
     {
+      "team": "Philadelphia Phillies",
+      "abbr": "PHI",
+      "teamId": 143,
+      "rpg": 5.62,
+      "kpg": 9.5,
+      "hpg": 8.88,
+      "bbpg": 3.0,
+      "score": 4.8,
+      "rank": 19
+    },
+    {
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
@@ -1205,7 +1216,7 @@
       "hpg": 9.17,
       "bbpg": 4.17,
       "score": 4.5,
-      "rank": 19
+      "rank": 20
     },
     {
       "team": "Texas Rangers",
@@ -1216,7 +1227,7 @@
       "hpg": 9.0,
       "bbpg": 4.0,
       "score": 4.5,
-      "rank": 20
+      "rank": 21
     },
     {
       "team": "San Diego Padres",
@@ -1227,7 +1238,7 @@
       "hpg": 9.5,
       "bbpg": 3.83,
       "score": 4.3,
-      "rank": 21
+      "rank": 22
     },
     {
       "team": "Colorado Rockies",
@@ -1238,7 +1249,7 @@
       "hpg": 8.67,
       "bbpg": 3.33,
       "score": 4.2,
-      "rank": 22
+      "rank": 23
     },
     {
       "team": "Detroit Tigers",
@@ -1249,17 +1260,6 @@
       "hpg": 8.43,
       "bbpg": 3.43,
       "score": 4.2,
-      "rank": 23
-    },
-    {
-      "team": "Philadelphia Phillies",
-      "abbr": "PHI",
-      "teamId": 143,
-      "rpg": 6.29,
-      "kpg": 10.29,
-      "hpg": 9.86,
-      "bbpg": 3.14,
-      "score": 4.1,
       "rank": 24
     },
     {
