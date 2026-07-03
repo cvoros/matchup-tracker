@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-03",
-  "updatedAt": "2026-07-03T03:16:25+00:00",
+  "updatedAt": "2026-07-03T07:20:24+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -381,11 +381,6 @@
           "positionId": 1
         },
         {
-          "name": "Roki Sasaki",
-          "espnId": 5134638,
-          "positionId": 1
-        },
-        {
           "name": "Robbie Ray",
           "espnId": 32175,
           "positionId": 1
@@ -398,6 +393,11 @@
         {
           "name": "Jake Bennett",
           "espnId": 4654024,
+          "positionId": 1
+        },
+        {
+          "name": "Brandon Young",
+          "espnId": 4414339,
           "positionId": 1
         }
       ]
@@ -490,11 +490,6 @@
           "positionId": 1
         },
         {
-          "name": "Gregory Soto",
-          "espnId": 39804,
-          "positionId": 11
-        },
-        {
           "name": "Eduardo Rodriguez",
           "espnId": 32675,
           "positionId": 1
@@ -512,6 +507,11 @@
         {
           "name": "Ranger Suarez",
           "espnId": 39817,
+          "positionId": 1
+        },
+        {
+          "name": "Taj Bradley",
+          "espnId": 42480,
           "positionId": 1
         }
       ]
