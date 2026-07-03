@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-03",
-  "updatedAt": "2026-07-03T15:12:25+00:00",
+  "updatedAt": "2026-07-03T17:25:54+00:00",
   "season": [
     {
       "team": "New York Mets",
@@ -63,7 +63,7 @@
       "teamId": 108,
       "rpg": 4.44,
       "kpg": 9.43,
-      "hpg": 8.02,
+      "hpg": 8.01,
       "bbpg": 3.3,
       "score": 9.2,
       "rank": 6
@@ -107,9 +107,9 @@
       "teamId": 140,
       "rpg": 4.14,
       "kpg": 8.38,
-      "hpg": 8.23,
+      "hpg": 8.22,
       "bbpg": 3.33,
-      "score": 8.1,
+      "score": 8.2,
       "rank": 10
     },
     {
@@ -461,7 +461,7 @@
       "teamId": 108,
       "rpg": 4.85,
       "kpg": 9.54,
-      "hpg": 8.81,
+      "hpg": 8.77,
       "bbpg": 2.88,
       "score": 6.6,
       "rank": 12
@@ -494,7 +494,7 @@
       "teamId": 140,
       "rpg": 4.37,
       "kpg": 7.85,
-      "hpg": 9.26,
+      "hpg": 9.22,
       "bbpg": 3.0,
       "score": 5.3,
       "rank": 15
@@ -755,6 +755,17 @@
       "rank": 8
     },
     {
+      "team": "Los Angeles Angels",
+      "abbr": "LAA",
+      "teamId": 108,
+      "rpg": 4.38,
+      "kpg": 9.62,
+      "hpg": 8.0,
+      "bbpg": 2.92,
+      "score": 7.0,
+      "rank": 9
+    },
+    {
       "team": "Toronto Blue Jays",
       "abbr": "TOR",
       "teamId": 141,
@@ -762,17 +773,6 @@
       "kpg": 8.08,
       "hpg": 8.08,
       "bbpg": 2.31,
-      "score": 6.9,
-      "rank": 9
-    },
-    {
-      "team": "Los Angeles Angels",
-      "abbr": "LAA",
-      "teamId": 108,
-      "rpg": 4.38,
-      "kpg": 9.62,
-      "hpg": 8.08,
-      "bbpg": 2.92,
       "score": 6.9,
       "rank": 10
     },
@@ -914,7 +914,7 @@
       "teamId": 140,
       "rpg": 5.0,
       "kpg": 8.13,
-      "hpg": 9.8,
+      "hpg": 9.73,
       "bbpg": 3.53,
       "score": 4.7,
       "rank": 23
@@ -1026,9 +1026,9 @@
       "teamId": 108,
       "rpg": 2.83,
       "kpg": 8.0,
-      "hpg": 7.33,
+      "hpg": 7.17,
       "bbpg": 2.0,
-      "score": 7.4,
+      "score": 7.5,
       "rank": 3
     },
     {
@@ -1235,9 +1235,9 @@
       "teamId": 140,
       "rpg": 5.57,
       "kpg": 8.43,
-      "hpg": 10.0,
+      "hpg": 9.86,
       "bbpg": 3.71,
-      "score": 3.8,
+      "score": 3.9,
       "rank": 22
     },
     {
@@ -1723,7 +1723,7 @@
       "teamId": 108,
       "rpg": 3.16,
       "kpg": 6.95,
-      "hpg": 6.02,
+      "hpg": 6.01,
       "bbpg": 2.3,
       "score": 8.9,
       "rank": 6
@@ -1811,9 +1811,9 @@
       "teamId": 140,
       "rpg": 2.94,
       "kpg": 6.15,
-      "hpg": 6.23,
+      "hpg": 6.22,
       "bbpg": 2.47,
-      "score": 7.4,
+      "score": 7.5,
       "rank": 14
     },
     {
