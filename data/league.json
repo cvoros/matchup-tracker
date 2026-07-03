@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-02",
-  "updatedAt": "2026-07-02T23:07:18+00:00",
+  "updated": "2026-07-03",
+  "updatedAt": "2026-07-03T03:16:25+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -433,11 +433,6 @@
           "positionId": 1
         },
         {
-          "name": "Dustin May",
-          "espnId": 40937,
-          "positionId": 1
-        },
-        {
           "name": "Jacob Latz",
           "espnId": 3210625,
           "positionId": 11
@@ -465,6 +460,11 @@
         {
           "name": "Christian Scott",
           "espnId": 4414215,
+          "positionId": 1
+        },
+        {
+          "name": "Tanner Bibee",
+          "espnId": 4345278,
           "positionId": 1
         }
       ]
