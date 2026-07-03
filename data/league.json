@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-03",
-  "updatedAt": "2026-07-03T21:06:22+00:00",
+  "updatedAt": "2026-07-03T23:04:13+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -466,6 +466,11 @@
           "name": "Tanner Bibee",
           "espnId": 4345278,
           "positionId": 1
+        },
+        {
+          "name": "Zebby Matthews",
+          "espnId": 4791597,
+          "positionId": 1
         }
       ]
     },
@@ -570,6 +575,11 @@
           "name": "Gerrit Cole",
           "espnId": 32081,
           "positionId": 1
+        },
+        {
+          "name": "David Bednar",
+          "espnId": 38303,
+          "positionId": 11
         }
       ]
     }
