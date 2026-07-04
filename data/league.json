@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-03",
-  "updatedAt": "2026-07-03T23:04:13+00:00",
+  "updated": "2026-07-04",
+  "updatedAt": "2026-07-04T02:55:10+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -171,6 +171,11 @@
           "name": "Ian Seymour",
           "espnId": 4669425,
           "positionId": 11
+        },
+        {
+          "name": "Shane Bieber",
+          "espnId": 40912,
+          "positionId": 1
         }
       ]
     },
@@ -456,11 +461,6 @@
           "name": "Griffin Jax",
           "espnId": 42604,
           "positionId": 11
-        },
-        {
-          "name": "Christian Scott",
-          "espnId": 4414215,
-          "positionId": 1
         },
         {
           "name": "Tanner Bibee",
