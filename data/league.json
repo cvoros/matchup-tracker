@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-04",
-  "updatedAt": "2026-07-04T06:21:20+00:00",
+  "updatedAt": "2026-07-04T09:23:11+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -428,11 +428,6 @@
           "positionId": 1
         },
         {
-          "name": "Davis Martin",
-          "espnId": 42823,
-          "positionId": 1
-        },
-        {
           "name": "Carlos Rodon",
           "espnId": 33696,
           "positionId": 1
@@ -470,6 +465,11 @@
         {
           "name": "Zebby Matthews",
           "espnId": 4791597,
+          "positionId": 1
+        },
+        {
+          "name": "Nick Martinez",
+          "espnId": 33372,
           "positionId": 1
         }
       ]
