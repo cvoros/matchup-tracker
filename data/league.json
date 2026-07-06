@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-06",
-  "updatedAt": "2026-07-06T17:43:27+00:00",
+  "updatedAt": "2026-07-06T19:57:13+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -230,9 +230,9 @@
           "positionId": 1
         },
         {
-          "name": "Nick Lodolo",
-          "espnId": 42433,
-          "positionId": 1
+          "name": "Joey Cantillo",
+          "espnId": 42488,
+          "positionId": 11
         }
       ]
     },
@@ -438,11 +438,6 @@
           "positionId": 1
         },
         {
-          "name": "Griffin Jax",
-          "espnId": 42604,
-          "positionId": 11
-        },
-        {
           "name": "Nick Martinez",
           "espnId": 33372,
           "positionId": 1
@@ -456,6 +451,11 @@
           "name": "Tanner Scott",
           "espnId": 35135,
           "positionId": 11
+        },
+        {
+          "name": "J.T. Ginn",
+          "espnId": 4414002,
+          "positionId": 1
         }
       ]
     },
