@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-06",
-  "updatedAt": "2026-07-06T19:57:13+00:00",
+  "updatedAt": "2026-07-06T21:41:01+00:00",
   "season": [
     {
       "team": "San Diego Padres",
@@ -73,9 +73,9 @@
       "abbr": "PHI",
       "teamId": 143,
       "rpg": 4.43,
-      "kpg": 8.71,
-      "hpg": 7.97,
-      "bbpg": 2.91,
+      "kpg": 8.79,
+      "hpg": 8.01,
+      "bbpg": 2.95,
       "score": 8.5,
       "rank": 7
     },
@@ -135,17 +135,6 @@
       "rank": 12
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 4.15,
-      "kpg": 7.98,
-      "hpg": 8.12,
-      "bbpg": 3.18,
-      "score": 7.5,
-      "rank": 13
-    },
-    {
       "team": "Baltimore Orioles",
       "abbr": "BAL",
       "teamId": 110,
@@ -154,6 +143,17 @@
       "hpg": 7.92,
       "bbpg": 3.85,
       "score": 7.3,
+      "rank": 13
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 4.22,
+      "kpg": 8.01,
+      "hpg": 8.23,
+      "bbpg": 3.21,
+      "score": 7.1,
       "rank": 14
     },
     {
@@ -522,26 +522,15 @@
       "rank": 17
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 4.78,
-      "kpg": 7.81,
-      "hpg": 8.74,
-      "bbpg": 2.41,
-      "score": 5.5,
-      "rank": 18
-    },
-    {
       "team": "Philadelphia Phillies",
       "abbr": "PHI",
       "teamId": 143,
       "rpg": 5.46,
-      "kpg": 9.68,
-      "hpg": 8.75,
-      "bbpg": 2.86,
+      "kpg": 9.93,
+      "hpg": 8.89,
+      "bbpg": 2.96,
       "score": 5.5,
-      "rank": 19
+      "rank": 18
     },
     {
       "team": "Tampa Bay Rays",
@@ -552,7 +541,7 @@
       "hpg": 8.52,
       "bbpg": 3.44,
       "score": 4.7,
-      "rank": 20
+      "rank": 19
     },
     {
       "team": "Washington Nationals",
@@ -563,6 +552,17 @@
       "hpg": 8.7,
       "bbpg": 2.85,
       "score": 4.7,
+      "rank": 20
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 5.0,
+      "kpg": 7.93,
+      "hpg": 9.11,
+      "bbpg": 2.52,
+      "score": 4.6,
       "rank": 21
     },
     {
@@ -722,17 +722,6 @@
       "rank": 5
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 4.07,
-      "kpg": 8.5,
-      "hpg": 7.21,
-      "bbpg": 1.86,
-      "score": 6.8,
-      "rank": 6
-    },
-    {
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
@@ -741,7 +730,7 @@
       "hpg": 7.79,
       "bbpg": 3.14,
       "score": 6.6,
-      "rank": 7
+      "rank": 6
     },
     {
       "team": "San Francisco Giants",
@@ -752,6 +741,17 @@
       "hpg": 7.92,
       "bbpg": 2.54,
       "score": 6.3,
+      "rank": 7
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 4.5,
+      "kpg": 8.71,
+      "hpg": 7.93,
+      "bbpg": 2.07,
+      "score": 5.9,
       "rank": 8
     },
     {
@@ -858,9 +858,9 @@
       "abbr": "PHI",
       "teamId": 143,
       "rpg": 5.33,
-      "kpg": 9.33,
-      "hpg": 9.0,
-      "bbpg": 2.73,
+      "kpg": 9.8,
+      "hpg": 9.27,
+      "bbpg": 2.93,
       "score": 4.3,
       "rank": 18
     },
@@ -1032,17 +1032,6 @@
       "rank": 3
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 3.5,
-      "kpg": 8.17,
-      "hpg": 7.0,
-      "bbpg": 1.17,
-      "score": 8.7,
-      "rank": 4
-    },
-    {
       "team": "Cincinnati Reds",
       "abbr": "CIN",
       "teamId": 113,
@@ -1051,7 +1040,7 @@
       "hpg": 7.71,
       "bbpg": 2.86,
       "score": 8.3,
-      "rank": 5
+      "rank": 4
     },
     {
       "team": "Seattle Mariners",
@@ -1062,7 +1051,7 @@
       "hpg": 7.0,
       "bbpg": 2.67,
       "score": 7.9,
-      "rank": 6
+      "rank": 5
     },
     {
       "team": "Houston Astros",
@@ -1073,6 +1062,17 @@
       "hpg": 7.0,
       "bbpg": 2.5,
       "score": 7.6,
+      "rank": 6
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 4.5,
+      "kpg": 8.67,
+      "hpg": 8.67,
+      "bbpg": 1.67,
+      "score": 7.3,
       "rank": 7
     },
     {
@@ -1146,9 +1146,9 @@
       "abbr": "PHI",
       "teamId": 143,
       "rpg": 5.0,
-      "kpg": 9.29,
-      "hpg": 8.43,
-      "bbpg": 3.14,
+      "kpg": 10.29,
+      "hpg": 9.0,
+      "bbpg": 3.57,
       "score": 6.7,
       "rank": 14
     },
@@ -1467,10 +1467,10 @@
       "abbr": "PHI",
       "teamId": 143,
       "rpg": 1.47,
-      "kpg": 3.3,
-      "hpg": 2.75,
-      "bbpg": 1.21,
-      "score": 7.3,
+      "kpg": 3.34,
+      "hpg": 2.78,
+      "bbpg": 1.24,
+      "score": 7.2,
       "rank": 13
     },
     {
@@ -1540,17 +1540,6 @@
       "rank": 19
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 1.47,
-      "kpg": 2.95,
-      "hpg": 3.14,
-      "bbpg": 1.09,
-      "score": 5.5,
-      "rank": 20
-    },
-    {
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
@@ -1559,7 +1548,7 @@
       "hpg": 2.59,
       "bbpg": 1.14,
       "score": 5.2,
-      "rank": 21
+      "rank": 20
     },
     {
       "team": "Boston Red Sox",
@@ -1570,7 +1559,7 @@
       "hpg": 2.71,
       "bbpg": 0.99,
       "score": 4.9,
-      "rank": 22
+      "rank": 21
     },
     {
       "team": "Tampa Bay Rays",
@@ -1581,6 +1570,17 @@
       "hpg": 2.88,
       "bbpg": 1.18,
       "score": 4.9,
+      "rank": 22
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 1.54,
+      "kpg": 2.97,
+      "hpg": 3.3,
+      "bbpg": 1.09,
+      "score": 4.7,
       "rank": 23
     },
     {
@@ -1729,17 +1729,6 @@
       "rank": 6
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 2.71,
-      "kpg": 5.57,
-      "hpg": 5.48,
-      "bbpg": 2.28,
-      "score": 8.7,
-      "rank": 7
-    },
-    {
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
@@ -1748,7 +1737,29 @@
       "hpg": 5.93,
       "bbpg": 2.38,
       "score": 8.7,
+      "rank": 7
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 2.73,
+      "kpg": 5.53,
+      "hpg": 5.47,
+      "bbpg": 2.3,
+      "score": 8.6,
       "rank": 8
+    },
+    {
+      "team": "Philadelphia Phillies",
+      "abbr": "PHI",
+      "teamId": 143,
+      "rpg": 3.08,
+      "kpg": 6.07,
+      "hpg": 5.76,
+      "bbpg": 1.93,
+      "score": 8.4,
+      "rank": 9
     },
     {
       "team": "San Diego Padres",
@@ -1759,17 +1770,6 @@
       "hpg": 5.45,
       "bbpg": 2.64,
       "score": 8.3,
-      "rank": 9
-    },
-    {
-      "team": "Philadelphia Phillies",
-      "abbr": "PHI",
-      "teamId": 143,
-      "rpg": 3.11,
-      "kpg": 6.07,
-      "hpg": 5.78,
-      "bbpg": 1.93,
-      "score": 8.2,
       "rank": 10
     },
     {
