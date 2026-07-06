@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-06",
-  "updatedAt": "2026-07-06T10:21:48+00:00",
+  "updatedAt": "2026-07-06T14:25:29+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -287,11 +287,6 @@
           "positionId": 1
         },
         {
-          "name": "Gage Jump",
-          "espnId": 5023852,
-          "positionId": 1
-        },
-        {
           "name": "Eury Perez",
           "espnId": 4917854,
           "positionId": 1
@@ -299,6 +294,11 @@
         {
           "name": "Troy Melton",
           "espnId": 5294127,
+          "positionId": 11
+        },
+        {
+          "name": "Ian Seymour",
+          "espnId": 4669425,
           "positionId": 11
         }
       ]
