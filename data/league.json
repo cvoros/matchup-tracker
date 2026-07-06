@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-06",
-  "updatedAt": "2026-07-06T00:05:33+00:00",
+  "updatedAt": "2026-07-06T05:11:36+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -168,11 +168,6 @@
           "positionId": 1
         },
         {
-          "name": "Martin Perez",
-          "espnId": 31098,
-          "positionId": 1
-        },
-        {
           "name": "Peter Lambert",
           "espnId": 39898,
           "positionId": 11
@@ -180,6 +175,11 @@
         {
           "name": "Brandon Sproat",
           "espnId": 4621041,
+          "positionId": 1
+        },
+        {
+          "name": "Landen Roupp",
+          "espnId": 4345404,
           "positionId": 1
         }
       ]
@@ -337,11 +337,6 @@
           "name": "Andres Munoz",
           "espnId": 40939,
           "positionId": 11
-        },
-        {
-          "name": "Cade Cavalli",
-          "espnId": 4308037,
-          "positionId": 1
         },
         {
           "name": "Ryan Weathers",
