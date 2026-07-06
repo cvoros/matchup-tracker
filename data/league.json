@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-06",
-  "updatedAt": "2026-07-06T05:11:36+00:00",
+  "updatedAt": "2026-07-06T10:21:48+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -168,11 +168,6 @@
           "positionId": 1
         },
         {
-          "name": "Peter Lambert",
-          "espnId": 39898,
-          "positionId": 11
-        },
-        {
           "name": "Brandon Sproat",
           "espnId": 4621041,
           "positionId": 1
@@ -180,6 +175,11 @@
         {
           "name": "Landen Roupp",
           "espnId": 4345404,
+          "positionId": 1
+        },
+        {
+          "name": "Eric Lauer",
+          "espnId": 39915,
           "positionId": 1
         }
       ]
@@ -453,11 +453,6 @@
           "positionId": 11
         },
         {
-          "name": "Tanner Bibee",
-          "espnId": 4345278,
-          "positionId": 1
-        },
-        {
           "name": "Nick Martinez",
           "espnId": 33372,
           "positionId": 1
@@ -465,6 +460,11 @@
         {
           "name": "Riley O'Brien",
           "espnId": 41509,
+          "positionId": 11
+        },
+        {
+          "name": "Tanner Scott",
+          "espnId": 35135,
           "positionId": 11
         }
       ]
