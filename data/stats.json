@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-07",
-  "updatedAt": "2026-07-07T19:02:15+00:00",
+  "updatedAt": "2026-07-07T21:24:12+00:00",
   "season": [
     {
       "team": "San Diego Padres",
@@ -227,9 +227,9 @@
       "abbr": "STL",
       "teamId": 138,
       "rpg": 4.6,
-      "kpg": 7.66,
-      "hpg": 8.26,
-      "bbpg": 3.26,
+      "kpg": 7.75,
+      "hpg": 8.28,
+      "bbpg": 3.27,
       "score": 5.3,
       "rank": 21
     },
@@ -314,11 +314,11 @@
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
-      "rpg": 5.06,
-      "kpg": 8.14,
-      "hpg": 8.58,
-      "bbpg": 4.08,
-      "score": 2.9,
+      "rpg": 5.08,
+      "kpg": 8.18,
+      "hpg": 8.66,
+      "bbpg": 4.11,
+      "score": 2.7,
       "rank": 29
     },
     {
@@ -555,17 +555,6 @@
       "rank": 20
     },
     {
-      "team": "Milwaukee Brewers",
-      "abbr": "MIL",
-      "teamId": 158,
-      "rpg": 4.93,
-      "kpg": 8.46,
-      "hpg": 9.14,
-      "bbpg": 3.39,
-      "score": 4.7,
-      "rank": 21
-    },
-    {
       "team": "Washington Nationals",
       "abbr": "WSH",
       "teamId": 120,
@@ -574,6 +563,17 @@
       "hpg": 8.89,
       "bbpg": 2.78,
       "score": 4.5,
+      "rank": 21
+    },
+    {
+      "team": "Milwaukee Brewers",
+      "abbr": "MIL",
+      "teamId": 158,
+      "rpg": 5.0,
+      "kpg": 8.57,
+      "hpg": 9.39,
+      "bbpg": 3.5,
+      "score": 4.4,
       "rank": 22
     },
     {
@@ -603,10 +603,10 @@
       "abbr": "STL",
       "teamId": 138,
       "rpg": 5.04,
-      "kpg": 6.59,
-      "hpg": 8.44,
-      "bbpg": 3.11,
-      "score": 3.7,
+      "kpg": 6.89,
+      "hpg": 8.52,
+      "bbpg": 3.15,
+      "score": 3.9,
       "rank": 25
     },
     {
@@ -766,17 +766,6 @@
       "rank": 9
     },
     {
-      "team": "Milwaukee Brewers",
-      "abbr": "MIL",
-      "teamId": 158,
-      "rpg": 3.87,
-      "kpg": 8.2,
-      "hpg": 7.93,
-      "bbpg": 3.27,
-      "score": 5.8,
-      "rank": 10
-    },
-    {
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
@@ -785,7 +774,7 @@
       "hpg": 8.21,
       "bbpg": 4.0,
       "score": 5.6,
-      "rank": 11
+      "rank": 10
     },
     {
       "team": "San Francisco Giants",
@@ -796,17 +785,28 @@
       "hpg": 8.23,
       "bbpg": 2.77,
       "score": 5.5,
-      "rank": 12
+      "rank": 11
     },
     {
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
       "rpg": 4.29,
-      "kpg": 6.79,
-      "hpg": 7.36,
-      "bbpg": 2.57,
-      "score": 5.3,
+      "kpg": 7.36,
+      "hpg": 7.5,
+      "bbpg": 2.64,
+      "score": 5.5,
+      "rank": 12
+    },
+    {
+      "team": "Milwaukee Brewers",
+      "abbr": "MIL",
+      "teamId": 158,
+      "rpg": 4.0,
+      "kpg": 8.4,
+      "hpg": 8.4,
+      "bbpg": 3.47,
+      "score": 5.4,
       "rank": 13
     },
     {
@@ -1109,17 +1109,6 @@
       "rank": 10
     },
     {
-      "team": "Milwaukee Brewers",
-      "abbr": "MIL",
-      "teamId": 158,
-      "rpg": 4.0,
-      "kpg": 7.38,
-      "hpg": 8.5,
-      "bbpg": 2.75,
-      "score": 6.6,
-      "rank": 11
-    },
-    {
       "team": "Philadelphia Phillies",
       "abbr": "PHI",
       "teamId": 143,
@@ -1128,7 +1117,7 @@
       "hpg": 9.0,
       "bbpg": 3.67,
       "score": 6.5,
-      "rank": 12
+      "rank": 11
     },
     {
       "team": "Detroit Tigers",
@@ -1139,7 +1128,7 @@
       "hpg": 8.8,
       "bbpg": 2.6,
       "score": 6.2,
-      "rank": 13
+      "rank": 12
     },
     {
       "team": "Tampa Bay Rays",
@@ -1150,7 +1139,7 @@
       "hpg": 7.86,
       "bbpg": 3.57,
       "score": 6.2,
-      "rank": 14
+      "rank": 13
     },
     {
       "team": "Chicago White Sox",
@@ -1161,6 +1150,17 @@
       "hpg": 8.17,
       "bbpg": 3.5,
       "score": 6.2,
+      "rank": 14
+    },
+    {
+      "team": "Milwaukee Brewers",
+      "abbr": "MIL",
+      "teamId": 158,
+      "rpg": 4.25,
+      "kpg": 7.75,
+      "hpg": 9.38,
+      "bbpg": 3.12,
+      "score": 6.1,
       "rank": 15
     },
     {
@@ -1230,6 +1230,17 @@
       "rank": 21
     },
     {
+      "team": "St. Louis Cardinals",
+      "abbr": "STL",
+      "teamId": 138,
+      "rpg": 5.88,
+      "kpg": 8.12,
+      "hpg": 8.38,
+      "bbpg": 2.88,
+      "score": 5.5,
+      "rank": 22
+    },
+    {
       "team": "San Francisco Giants",
       "abbr": "SF",
       "teamId": 137,
@@ -1238,17 +1249,6 @@
       "hpg": 9.17,
       "bbpg": 2.83,
       "score": 5.4,
-      "rank": 22
-    },
-    {
-      "team": "St. Louis Cardinals",
-      "abbr": "STL",
-      "teamId": 138,
-      "rpg": 5.88,
-      "kpg": 7.12,
-      "hpg": 8.12,
-      "bbpg": 2.75,
-      "score": 5.3,
       "rank": 23
     },
     {
@@ -1532,22 +1532,22 @@
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
-      "rpg": 1.39,
-      "kpg": 2.85,
-      "hpg": 2.81,
-      "bbpg": 1.43,
-      "score": 5.7,
+      "rpg": 1.43,
+      "kpg": 2.86,
+      "hpg": 2.88,
+      "bbpg": 1.45,
+      "score": 5.3,
       "rank": 19
     },
     {
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
-      "rpg": 1.35,
-      "kpg": 2.06,
-      "hpg": 2.63,
-      "bbpg": 1.15,
-      "score": 5.0,
+      "rpg": 1.33,
+      "kpg": 2.05,
+      "hpg": 2.62,
+      "bbpg": 1.14,
+      "score": 5.1,
       "rank": 20
     },
     {
@@ -1831,11 +1831,11 @@
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
-      "rpg": 3.22,
-      "kpg": 5.78,
-      "hpg": 5.83,
-      "bbpg": 2.19,
-      "score": 6.5,
+      "rpg": 3.23,
+      "kpg": 5.86,
+      "hpg": 5.84,
+      "bbpg": 2.2,
+      "score": 6.6,
       "rank": 16
     },
     {
@@ -1963,11 +1963,11 @@
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
-      "rpg": 3.6,
-      "kpg": 5.75,
-      "hpg": 6.22,
-      "bbpg": 2.88,
-      "score": 2.7,
+      "rpg": 3.56,
+      "kpg": 5.7,
+      "hpg": 6.17,
+      "bbpg": 2.85,
+      "score": 2.9,
       "rank": 28
     },
     {
