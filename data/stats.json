@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-07",
-  "updatedAt": "2026-07-07T13:22:09+00:00",
+  "updatedAt": "2026-07-07T16:31:06+00:00",
   "season": [
     {
       "team": "San Diego Padres",
@@ -184,7 +184,7 @@
       "teamId": 117,
       "rpg": 4.56,
       "kpg": 8.17,
-      "hpg": 8.14,
+      "hpg": 8.13,
       "bbpg": 3.28,
       "score": 6.3,
       "rank": 17
@@ -450,7 +450,7 @@
       "teamId": 117,
       "rpg": 4.33,
       "kpg": 8.11,
-      "hpg": 7.7,
+      "hpg": 7.67,
       "bbpg": 3.15,
       "score": 7.0,
       "rank": 11
@@ -832,6 +832,17 @@
       "rank": 15
     },
     {
+      "team": "Houston Astros",
+      "abbr": "HOU",
+      "teamId": 117,
+      "rpg": 4.86,
+      "kpg": 8.07,
+      "hpg": 7.93,
+      "bbpg": 3.14,
+      "score": 4.8,
+      "rank": 16
+    },
+    {
       "team": "Arizona Diamondbacks",
       "abbr": "AZ",
       "teamId": 109,
@@ -840,7 +851,7 @@
       "hpg": 7.69,
       "bbpg": 3.0,
       "score": 4.8,
-      "rank": 16
+      "rank": 17
     },
     {
       "team": "Philadelphia Phillies",
@@ -851,7 +862,7 @@
       "hpg": 9.29,
       "bbpg": 2.93,
       "score": 4.7,
-      "rank": 17
+      "rank": 18
     },
     {
       "team": "Detroit Tigers",
@@ -861,17 +872,6 @@
       "kpg": 8.92,
       "hpg": 8.54,
       "bbpg": 3.15,
-      "score": 4.7,
-      "rank": 18
-    },
-    {
-      "team": "Houston Astros",
-      "abbr": "HOU",
-      "teamId": 117,
-      "rpg": 4.86,
-      "kpg": 8.07,
-      "hpg": 8.0,
-      "bbpg": 3.14,
       "score": 4.7,
       "rank": 19
     },
@@ -1164,6 +1164,17 @@
       "rank": 15
     },
     {
+      "team": "Houston Astros",
+      "abbr": "HOU",
+      "teamId": 117,
+      "rpg": 5.5,
+      "kpg": 8.0,
+      "hpg": 7.83,
+      "bbpg": 2.5,
+      "score": 6.1,
+      "rank": 16
+    },
+    {
       "team": "Baltimore Orioles",
       "abbr": "BAL",
       "teamId": 110,
@@ -1172,7 +1183,7 @@
       "hpg": 7.4,
       "bbpg": 5.2,
       "score": 6.1,
-      "rank": 16
+      "rank": 17
     },
     {
       "team": "New York Mets",
@@ -1182,17 +1193,6 @@
       "kpg": 8.5,
       "hpg": 9.17,
       "bbpg": 3.17,
-      "score": 6.0,
-      "rank": 17
-    },
-    {
-      "team": "Houston Astros",
-      "abbr": "HOU",
-      "teamId": 117,
-      "rpg": 5.5,
-      "kpg": 8.0,
-      "hpg": 8.0,
-      "bbpg": 2.5,
       "score": 6.0,
       "rank": 18
     },
@@ -1888,7 +1888,7 @@
       "teamId": 117,
       "rpg": 3.34,
       "kpg": 6.37,
-      "hpg": 6.24,
+      "hpg": 6.23,
       "bbpg": 2.62,
       "score": 5.5,
       "rank": 21
