@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-10",
-  "updatedAt": "2026-07-10T22:02:42+00:00",
+  "updatedAt": "2026-07-10T23:57:34+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -233,6 +233,11 @@
           "name": "Nick Lodolo",
           "espnId": 42433,
           "positionId": 1
+        },
+        {
+          "name": "Gage Jump",
+          "espnId": 5023852,
+          "positionId": 1
         }
       ]
     },
@@ -458,14 +463,14 @@
           "positionId": 11
         },
         {
-          "name": "Zebby Matthews",
-          "espnId": 4791597,
-          "positionId": 1
-        },
-        {
           "name": "Peter Lambert",
           "espnId": 39898,
           "positionId": 11
+        },
+        {
+          "name": "Cade Cavalli",
+          "espnId": 4308037,
+          "positionId": 1
         }
       ]
     },
