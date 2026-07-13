@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-13",
-  "updatedAt": "2026-07-13T06:19:08+00:00",
+  "updatedAt": "2026-07-13T10:26:26+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -458,11 +458,6 @@
           "positionId": 11
         },
         {
-          "name": "J.T. Ginn",
-          "espnId": 4414002,
-          "positionId": 1
-        },
-        {
           "name": "Riley O'Brien",
           "espnId": 41509,
           "positionId": 11
@@ -470,6 +465,11 @@
         {
           "name": "David Bednar",
           "espnId": 38303,
+          "positionId": 11
+        },
+        {
+          "name": "Peter Lambert",
+          "espnId": 39898,
           "positionId": 11
         }
       ]
