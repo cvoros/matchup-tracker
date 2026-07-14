@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-14",
-  "updatedAt": "2026-07-14T17:14:10+00:00",
+  "updatedAt": "2026-07-14T19:19:50+00:00",
   "season": [
     {
       "team": "Cincinnati Reds",
@@ -41,7 +41,7 @@
       "teamId": 108,
       "rpg": 4.43,
       "kpg": 9.45,
-      "hpg": 8.1,
+      "hpg": 8.09,
       "bbpg": 3.21,
       "score": 9.2,
       "rank": 4
@@ -135,17 +135,6 @@
       "rank": 12
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 4.24,
-      "kpg": 8.07,
-      "hpg": 8.28,
-      "bbpg": 3.2,
-      "score": 7.2,
-      "rank": 13
-    },
-    {
       "team": "Athletics",
       "abbr": "ATH",
       "teamId": 133,
@@ -154,6 +143,17 @@
       "hpg": 8.28,
       "bbpg": 3.54,
       "score": 7.2,
+      "rank": 13
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 4.24,
+      "kpg": 8.07,
+      "hpg": 8.29,
+      "bbpg": 3.2,
+      "score": 7.1,
       "rank": 14
     },
     {
@@ -261,7 +261,7 @@
       "teamId": 142,
       "rpg": 4.86,
       "kpg": 8.21,
-      "hpg": 8.35,
+      "hpg": 8.36,
       "bbpg": 3.33,
       "score": 4.9,
       "rank": 24
@@ -395,7 +395,7 @@
       "teamId": 108,
       "rpg": 4.23,
       "kpg": 9.5,
-      "hpg": 8.46,
+      "hpg": 8.42,
       "bbpg": 2.62,
       "score": 7.5,
       "rank": 6
@@ -549,7 +549,7 @@
       "teamId": 118,
       "rpg": 4.88,
       "kpg": 8.23,
-      "hpg": 8.92,
+      "hpg": 8.96,
       "bbpg": 2.46,
       "score": 4.9,
       "rank": 20
@@ -637,9 +637,9 @@
       "teamId": 142,
       "rpg": 5.52,
       "kpg": 7.36,
-      "hpg": 9.48,
+      "hpg": 9.52,
       "bbpg": 3.32,
-      "score": 1.8,
+      "score": 1.7,
       "rank": 28
     },
     {
@@ -744,17 +744,6 @@
       "rank": 7
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 4.5,
-      "kpg": 8.83,
-      "hpg": 8.83,
-      "bbpg": 2.33,
-      "score": 6.5,
-      "rank": 8
-    },
-    {
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
@@ -763,6 +752,17 @@
       "hpg": 6.93,
       "bbpg": 2.57,
       "score": 6.5,
+      "rank": 8
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 4.5,
+      "kpg": 8.83,
+      "hpg": 8.92,
+      "bbpg": 2.33,
+      "score": 6.4,
       "rank": 9
     },
     {
@@ -837,7 +837,7 @@
       "teamId": 142,
       "rpg": 4.92,
       "kpg": 8.83,
-      "hpg": 8.25,
+      "hpg": 8.33,
       "bbpg": 3.75,
       "score": 5.4,
       "rank": 16
@@ -1131,17 +1131,6 @@
       "rank": 12
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 4.5,
-      "kpg": 9.0,
-      "hpg": 9.0,
-      "bbpg": 3.0,
-      "score": 5.0,
-      "rank": 13
-    },
-    {
       "team": "Miami Marlins",
       "abbr": "MIA",
       "teamId": 146,
@@ -1150,6 +1139,17 @@
       "hpg": 8.33,
       "bbpg": 3.33,
       "score": 5.0,
+      "rank": 13
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 4.5,
+      "kpg": 9.0,
+      "hpg": 9.17,
+      "bbpg": 3.0,
+      "score": 4.9,
       "rank": 14
     },
     {
@@ -1457,9 +1457,9 @@
       "teamId": 108,
       "rpg": 1.52,
       "kpg": 3.31,
-      "hpg": 2.72,
+      "hpg": 2.71,
       "bbpg": 1.2,
-      "score": 6.7,
+      "score": 6.8,
       "rank": 12
     },
     {
@@ -1751,17 +1751,6 @@
       "rank": 8
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 2.8,
-      "kpg": 5.62,
-      "hpg": 5.6,
-      "bbpg": 2.33,
-      "score": 7.8,
-      "rank": 9
-    },
-    {
       "team": "Arizona Diamondbacks",
       "abbr": "AZ",
       "teamId": 109,
@@ -1770,6 +1759,17 @@
       "hpg": 5.54,
       "bbpg": 2.4,
       "score": 7.8,
+      "rank": 9
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 2.8,
+      "kpg": 5.62,
+      "hpg": 5.61,
+      "bbpg": 2.33,
+      "score": 7.7,
       "rank": 10
     },
     {
@@ -1910,7 +1910,7 @@
       "teamId": 142,
       "rpg": 3.45,
       "kpg": 5.78,
-      "hpg": 6.18,
+      "hpg": 6.19,
       "bbpg": 2.23,
       "score": 4.2,
       "rank": 23
