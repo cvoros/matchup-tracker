@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-17",
-  "updatedAt": "2026-07-17T17:11:40+00:00",
+  "updatedAt": "2026-07-17T19:08:28+00:00",
   "season": [
     {
       "team": "Cincinnati Reds",
@@ -80,17 +80,6 @@
       "rank": 7
     },
     {
-      "team": "Boston Red Sox",
-      "abbr": "BOS",
-      "teamId": 111,
-      "rpg": 4.1,
-      "kpg": 8.24,
-      "hpg": 8.13,
-      "bbpg": 3.04,
-      "score": 8.5,
-      "rank": 8
-    },
-    {
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
@@ -99,6 +88,17 @@
       "hpg": 7.81,
       "bbpg": 3.59,
       "score": 8.4,
+      "rank": 8
+    },
+    {
+      "team": "Boston Red Sox",
+      "abbr": "BOS",
+      "teamId": 111,
+      "rpg": 4.13,
+      "kpg": 8.22,
+      "hpg": 8.15,
+      "bbpg": 3.02,
+      "score": 8.3,
       "rank": 9
     },
     {
@@ -270,11 +270,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 4.52,
-      "kpg": 7.15,
-      "hpg": 8.63,
-      "bbpg": 3.5,
-      "score": 3.5,
+      "rpg": 4.47,
+      "kpg": 7.11,
+      "hpg": 8.55,
+      "bbpg": 3.47,
+      "score": 3.7,
       "rank": 25
     },
     {
@@ -467,17 +467,6 @@
       "rank": 12
     },
     {
-      "team": "Boston Red Sox",
-      "abbr": "BOS",
-      "teamId": 111,
-      "rpg": 4.42,
-      "kpg": 8.08,
-      "hpg": 7.71,
-      "bbpg": 3.5,
-      "score": 6.0,
-      "rank": 13
-    },
-    {
       "team": "Philadelphia Phillies",
       "abbr": "PHI",
       "teamId": 143,
@@ -486,6 +475,17 @@
       "hpg": 8.72,
       "bbpg": 2.76,
       "score": 5.9,
+      "rank": 13
+    },
+    {
+      "team": "Boston Red Sox",
+      "abbr": "BOS",
+      "teamId": 111,
+      "rpg": 4.52,
+      "kpg": 8.0,
+      "hpg": 7.8,
+      "bbpg": 3.4,
+      "score": 5.8,
       "rank": 14
     },
     {
@@ -577,6 +577,17 @@
       "rank": 22
     },
     {
+      "team": "Tampa Bay Rays",
+      "abbr": "TB",
+      "teamId": 139,
+      "rpg": 4.56,
+      "kpg": 6.6,
+      "hpg": 8.56,
+      "bbpg": 2.96,
+      "score": 4.4,
+      "rank": 23
+    },
+    {
       "team": "Arizona Diamondbacks",
       "abbr": "AZ",
       "teamId": 109,
@@ -585,17 +596,6 @@
       "hpg": 8.0,
       "bbpg": 3.48,
       "score": 4.1,
-      "rank": 23
-    },
-    {
-      "team": "Tampa Bay Rays",
-      "abbr": "TB",
-      "teamId": 139,
-      "rpg": 4.75,
-      "kpg": 6.75,
-      "hpg": 8.88,
-      "bbpg": 3.04,
-      "score": 3.9,
       "rank": 24
     },
     {
@@ -755,6 +755,17 @@
       "rank": 8
     },
     {
+      "team": "Tampa Bay Rays",
+      "abbr": "TB",
+      "teamId": 139,
+      "rpg": 3.75,
+      "kpg": 6.92,
+      "hpg": 7.5,
+      "bbpg": 2.33,
+      "score": 6.2,
+      "rank": 9
+    },
+    {
       "team": "Chicago Cubs",
       "abbr": "CHC",
       "teamId": 112,
@@ -763,7 +774,7 @@
       "hpg": 7.56,
       "bbpg": 3.0,
       "score": 6.0,
-      "rank": 9
+      "rank": 10
     },
     {
       "team": "San Diego Padres",
@@ -774,7 +785,7 @@
       "hpg": 7.73,
       "bbpg": 3.73,
       "score": 5.9,
-      "rank": 10
+      "rank": 11
     },
     {
       "team": "Chicago White Sox",
@@ -785,17 +796,6 @@
       "hpg": 7.8,
       "bbpg": 2.7,
       "score": 5.8,
-      "rank": 11
-    },
-    {
-      "team": "Tampa Bay Rays",
-      "abbr": "TB",
-      "teamId": 139,
-      "rpg": 4.09,
-      "kpg": 7.27,
-      "hpg": 8.09,
-      "bbpg": 2.45,
-      "score": 5.6,
       "rank": 12
     },
     {
@@ -934,11 +934,11 @@
       "team": "Boston Red Sox",
       "abbr": "BOS",
       "teamId": 111,
-      "rpg": 5.33,
-      "kpg": 8.56,
-      "hpg": 8.22,
-      "bbpg": 4.44,
-      "score": 3.8,
+      "rpg": 5.5,
+      "kpg": 8.3,
+      "hpg": 8.4,
+      "bbpg": 4.1,
+      "score": 3.6,
       "rank": 25
     },
     {
@@ -1164,14 +1164,14 @@
       "rank": 15
     },
     {
-      "team": "Boston Red Sox",
-      "abbr": "BOS",
-      "teamId": 111,
-      "rpg": 4.33,
-      "kpg": 8.33,
-      "hpg": 7.0,
-      "bbpg": 4.67,
-      "score": 4.4,
+      "team": "Tampa Bay Rays",
+      "abbr": "TB",
+      "teamId": 139,
+      "rpg": 3.75,
+      "kpg": 5.5,
+      "hpg": 7.75,
+      "bbpg": 2.0,
+      "score": 4.6,
       "rank": 16
     },
     {
@@ -1197,6 +1197,17 @@
       "rank": 18
     },
     {
+      "team": "Boston Red Sox",
+      "abbr": "BOS",
+      "teamId": 111,
+      "rpg": 5.0,
+      "kpg": 7.75,
+      "hpg": 7.75,
+      "bbpg": 3.75,
+      "score": 3.7,
+      "rank": 19
+    },
+    {
       "team": "San Francisco Giants",
       "abbr": "SF",
       "teamId": 137,
@@ -1205,7 +1216,7 @@
       "hpg": 8.67,
       "bbpg": 4.0,
       "score": 3.5,
-      "rank": 19
+      "rank": 20
     },
     {
       "team": "New York Yankees",
@@ -1216,7 +1227,7 @@
       "hpg": 10.0,
       "bbpg": 3.33,
       "score": 3.4,
-      "rank": 20
+      "rank": 21
     },
     {
       "team": "Minnesota Twins",
@@ -1227,7 +1238,7 @@
       "hpg": 8.0,
       "bbpg": 3.33,
       "score": 3.2,
-      "rank": 21
+      "rank": 22
     },
     {
       "team": "Texas Rangers",
@@ -1238,7 +1249,7 @@
       "hpg": 8.67,
       "bbpg": 4.33,
       "score": 3.2,
-      "rank": 22
+      "rank": 23
     },
     {
       "team": "Baltimore Orioles",
@@ -1249,17 +1260,6 @@
       "hpg": 9.0,
       "bbpg": 3.0,
       "score": 2.8,
-      "rank": 23
-    },
-    {
-      "team": "Tampa Bay Rays",
-      "abbr": "TB",
-      "teamId": 139,
-      "rpg": 5.0,
-      "kpg": 6.33,
-      "hpg": 10.0,
-      "bbpg": 2.33,
-      "score": 2.6,
       "rank": 24
     },
     {
