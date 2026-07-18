@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-18",
-  "updatedAt": "2026-07-18T22:49:52+00:00",
+  "updatedAt": "2026-07-18T23:53:55+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -478,13 +478,13 @@
           "positionId": 1
         },
         {
-          "name": "Davis Martin",
-          "espnId": 42823,
-          "positionId": 1
-        },
-        {
           "name": "Peter Lambert",
           "espnId": 39898,
+          "positionId": 11
+        },
+        {
+          "name": "Kyle Leahy",
+          "espnId": 5006093,
           "positionId": 11
         }
       ]
