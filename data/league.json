@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-18",
-  "updatedAt": "2026-07-18T19:03:30+00:00",
+  "updatedAt": "2026-07-18T20:47:34+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -299,6 +299,11 @@
         {
           "name": "Ian Seymour",
           "espnId": 4669425,
+          "positionId": 11
+        },
+        {
+          "name": "Joey Cantillo",
+          "espnId": 42488,
           "positionId": 11
         }
       ]
