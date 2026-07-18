@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-18",
-  "updatedAt": "2026-07-18T20:47:34+00:00",
+  "updatedAt": "2026-07-18T21:51:11+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -473,11 +473,6 @@
           "positionId": 11
         },
         {
-          "name": "Tanner Scott",
-          "espnId": 35135,
-          "positionId": 11
-        },
-        {
           "name": "Roki Sasaki",
           "espnId": 5134638,
           "positionId": 1
@@ -486,6 +481,11 @@
           "name": "Davis Martin",
           "espnId": 42823,
           "positionId": 1
+        },
+        {
+          "name": "Peter Lambert",
+          "espnId": 39898,
+          "positionId": 11
         }
       ]
     },
