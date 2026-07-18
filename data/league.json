@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-18",
-  "updatedAt": "2026-07-18T13:14:41+00:00",
+  "updatedAt": "2026-07-18T14:52:13+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -170,6 +170,11 @@
         {
           "name": "Dustin May",
           "espnId": 40937,
+          "positionId": 1
+        },
+        {
+          "name": "Brandon Pfaadt",
+          "espnId": 4721302,
           "positionId": 1
         }
       ]
