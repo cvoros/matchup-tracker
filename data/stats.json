@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-20",
-  "updatedAt": "2026-07-20T21:59:36+00:00",
+  "updatedAt": "2026-07-20T23:08:45+00:00",
   "season": [
     {
       "team": "Seattle Mariners",
@@ -39,11 +39,11 @@
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
-      "rpg": 3.92,
-      "kpg": 8.44,
-      "hpg": 7.56,
-      "bbpg": 3.6,
-      "score": 9.5,
+      "rpg": 3.91,
+      "kpg": 8.37,
+      "hpg": 7.51,
+      "bbpg": 3.56,
+      "score": 9.6,
       "rank": 4
     },
     {
@@ -248,11 +248,11 @@
       "team": "Minnesota Twins",
       "abbr": "MIN",
       "teamId": 142,
-      "rpg": 4.79,
-      "kpg": 8.17,
-      "hpg": 8.34,
-      "bbpg": 3.3,
-      "score": 5.0,
+      "rpg": 4.75,
+      "kpg": 8.11,
+      "hpg": 8.28,
+      "bbpg": 3.28,
+      "score": 5.1,
       "rank": 23
     },
     {
@@ -360,10 +360,10 @@
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
-      "rpg": 3.79,
-      "kpg": 9.92,
-      "hpg": 7.79,
-      "bbpg": 2.79,
+      "rpg": 3.76,
+      "kpg": 9.56,
+      "hpg": 7.6,
+      "bbpg": 2.68,
       "score": 7.7,
       "rank": 3
     },
@@ -577,6 +577,17 @@
       "rank": 22
     },
     {
+      "team": "Minnesota Twins",
+      "abbr": "MIN",
+      "teamId": 142,
+      "rpg": 4.67,
+      "kpg": 7.08,
+      "hpg": 8.58,
+      "bbpg": 3.08,
+      "score": 2.9,
+      "rank": 23
+    },
+    {
       "team": "Los Angeles Dodgers",
       "abbr": "LAD",
       "teamId": 119,
@@ -585,7 +596,7 @@
       "hpg": 8.58,
       "bbpg": 3.75,
       "score": 2.8,
-      "rank": 23
+      "rank": 24
     },
     {
       "team": "San Diego Padres",
@@ -596,17 +607,6 @@
       "hpg": 8.52,
       "bbpg": 4.0,
       "score": 2.7,
-      "rank": 24
-    },
-    {
-      "team": "Minnesota Twins",
-      "abbr": "MIN",
-      "teamId": 142,
-      "rpg": 4.83,
-      "kpg": 7.3,
-      "hpg": 8.87,
-      "bbpg": 3.17,
-      "score": 2.5,
       "rank": 25
     },
     {
@@ -692,11 +692,11 @@
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
-      "rpg": 3.6,
-      "kpg": 10.4,
-      "hpg": 8.0,
-      "bbpg": 2.6,
-      "score": 9.6,
+      "rpg": 3.55,
+      "kpg": 9.55,
+      "hpg": 7.55,
+      "bbpg": 2.36,
+      "score": 9.5,
       "rank": 3
     },
     {
@@ -777,6 +777,17 @@
       "rank": 10
     },
     {
+      "team": "Minnesota Twins",
+      "abbr": "MIN",
+      "teamId": 142,
+      "rpg": 3.45,
+      "kpg": 6.91,
+      "hpg": 7.82,
+      "bbpg": 3.09,
+      "score": 7.0,
+      "rank": 11
+    },
+    {
       "team": "Chicago White Sox",
       "abbr": "CWS",
       "teamId": 145,
@@ -785,7 +796,7 @@
       "hpg": 7.5,
       "bbpg": 2.7,
       "score": 6.9,
-      "rank": 11
+      "rank": 12
     },
     {
       "team": "Colorado Rockies",
@@ -796,7 +807,7 @@
       "hpg": 7.82,
       "bbpg": 2.91,
       "score": 6.8,
-      "rank": 12
+      "rank": 13
     },
     {
       "team": "Baltimore Orioles",
@@ -807,7 +818,7 @@
       "hpg": 7.3,
       "bbpg": 4.2,
       "score": 6.7,
-      "rank": 13
+      "rank": 14
     },
     {
       "team": "Cincinnati Reds",
@@ -818,17 +829,6 @@
       "hpg": 8.7,
       "bbpg": 2.7,
       "score": 6.6,
-      "rank": 14
-    },
-    {
-      "team": "Minnesota Twins",
-      "abbr": "MIN",
-      "teamId": 142,
-      "rpg": 3.7,
-      "kpg": 7.4,
-      "hpg": 8.4,
-      "bbpg": 3.3,
-      "score": 6.4,
       "rank": 15
     },
     {
@@ -1021,17 +1021,6 @@
       "rank": 2
     },
     {
-      "team": "Cleveland Guardians",
-      "abbr": "CLE",
-      "teamId": 114,
-      "rpg": 2.33,
-      "kpg": 11.33,
-      "hpg": 8.0,
-      "bbpg": 2.33,
-      "score": 9.4,
-      "rank": 3
-    },
-    {
       "team": "New York Yankees",
       "abbr": "NYY",
       "teamId": 147,
@@ -1040,7 +1029,7 @@
       "hpg": 6.0,
       "bbpg": 2.67,
       "score": 9.3,
-      "rank": 4
+      "rank": 3
     },
     {
       "team": "Toronto Blue Jays",
@@ -1051,6 +1040,17 @@
       "hpg": 5.33,
       "bbpg": 2.67,
       "score": 9.2,
+      "rank": 4
+    },
+    {
+      "team": "Cleveland Guardians",
+      "abbr": "CLE",
+      "teamId": 114,
+      "rpg": 2.5,
+      "kpg": 8.75,
+      "hpg": 6.75,
+      "bbpg": 1.75,
+      "score": 9.1,
       "rank": 5
     },
     {
@@ -1098,6 +1098,17 @@
       "rank": 9
     },
     {
+      "team": "Minnesota Twins",
+      "abbr": "MIN",
+      "teamId": 142,
+      "rpg": 2.25,
+      "kpg": 5.75,
+      "hpg": 6.25,
+      "bbpg": 2.0,
+      "score": 8.3,
+      "rank": 10
+    },
+    {
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
@@ -1106,7 +1117,7 @@
       "hpg": 7.0,
       "bbpg": 1.67,
       "score": 8.2,
-      "rank": 10
+      "rank": 11
     },
     {
       "team": "Los Angeles Dodgers",
@@ -1117,7 +1128,7 @@
       "hpg": 6.33,
       "bbpg": 4.33,
       "score": 8.1,
-      "rank": 11
+      "rank": 12
     },
     {
       "team": "Tampa Bay Rays",
@@ -1128,17 +1139,6 @@
       "hpg": 7.0,
       "bbpg": 2.75,
       "score": 8.0,
-      "rank": 12
-    },
-    {
-      "team": "Minnesota Twins",
-      "abbr": "MIN",
-      "teamId": 142,
-      "rpg": 2.67,
-      "kpg": 7.0,
-      "hpg": 7.67,
-      "bbpg": 2.33,
-      "score": 7.9,
       "rank": 13
     },
     {
