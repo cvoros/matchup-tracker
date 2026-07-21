@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-20",
-  "updatedAt": "2026-07-20T23:08:46+00:00",
+  "updated": "2026-07-21",
+  "updatedAt": "2026-07-21T02:40:31+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -242,6 +242,11 @@
         {
           "name": "Freddy Peralta",
           "espnId": 39825,
+          "positionId": 1
+        },
+        {
+          "name": "Brandon Sproat",
+          "espnId": 4621041,
           "positionId": 1
         }
       ]
@@ -597,8 +602,8 @@
           "positionId": 1
         },
         {
-          "name": "Ryan Weathers",
-          "espnId": 41178,
+          "name": "Matthew Liberatore",
+          "espnId": 41173,
           "positionId": 1
         }
       ]
