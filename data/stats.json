@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-25",
-  "updatedAt": "2026-07-25T16:57:14+00:00",
+  "updatedAt": "2026-07-25T18:00:23+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -83,11 +83,11 @@
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
-      "rpg": 4.22,
-      "kpg": 8.72,
-      "hpg": 7.83,
-      "bbpg": 3.49,
-      "score": 8.8,
+      "rpg": 4.19,
+      "kpg": 8.66,
+      "hpg": 7.78,
+      "bbpg": 3.47,
+      "score": 8.9,
       "rank": 8
     },
     {
@@ -138,11 +138,11 @@
       "team": "Kansas City Royals",
       "abbr": "KC",
       "teamId": 118,
-      "rpg": 4.21,
-      "kpg": 8.08,
-      "hpg": 8.3,
-      "bbpg": 3.15,
-      "score": 7.4,
+      "rpg": 4.18,
+      "kpg": 8.02,
+      "hpg": 8.25,
+      "bbpg": 3.12,
+      "score": 7.5,
       "rank": 13
     },
     {
@@ -379,6 +379,17 @@
       "rank": 4
     },
     {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 3.8,
+      "kpg": 8.36,
+      "hpg": 8.0,
+      "bbpg": 2.36,
+      "score": 6.9,
+      "rank": 5
+    },
+    {
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
@@ -387,7 +398,7 @@
       "hpg": 6.84,
       "bbpg": 2.64,
       "score": 6.9,
-      "rank": 5
+      "rank": 6
     },
     {
       "team": "Seattle Mariners",
@@ -398,17 +409,6 @@
       "hpg": 7.3,
       "bbpg": 3.39,
       "score": 6.8,
-      "rank": 6
-    },
-    {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 3.92,
-      "kpg": 8.62,
-      "hpg": 8.21,
-      "bbpg": 2.46,
-      "score": 6.7,
       "rank": 7
     },
     {
@@ -456,6 +456,17 @@
       "rank": 11
     },
     {
+      "team": "Detroit Tigers",
+      "abbr": "DET",
+      "teamId": 116,
+      "rpg": 4.64,
+      "kpg": 8.8,
+      "hpg": 7.76,
+      "bbpg": 2.92,
+      "score": 5.6,
+      "rank": 12
+    },
+    {
       "team": "Baltimore Orioles",
       "abbr": "BAL",
       "teamId": 110,
@@ -464,7 +475,7 @@
       "hpg": 7.59,
       "bbpg": 4.36,
       "score": 5.5,
-      "rank": 12
+      "rank": 13
     },
     {
       "team": "New York Mets",
@@ -474,17 +485,6 @@
       "kpg": 8.62,
       "hpg": 8.21,
       "bbpg": 3.79,
-      "score": 5.4,
-      "rank": 13
-    },
-    {
-      "team": "Detroit Tigers",
-      "abbr": "DET",
-      "teamId": 116,
-      "rpg": 4.79,
-      "kpg": 9.08,
-      "hpg": 7.96,
-      "bbpg": 3.0,
       "score": 5.4,
       "rank": 14
     },
@@ -722,6 +722,17 @@
       "rank": 5
     },
     {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 3.17,
+      "kpg": 7.83,
+      "hpg": 7.67,
+      "bbpg": 2.0,
+      "score": 8.1,
+      "rank": 6
+    },
+    {
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
@@ -730,18 +741,18 @@
       "hpg": 6.55,
       "bbpg": 3.18,
       "score": 8.0,
-      "rank": 6
+      "rank": 7
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 3.36,
-      "kpg": 8.36,
-      "hpg": 8.09,
-      "bbpg": 2.18,
+      "team": "Detroit Tigers",
+      "abbr": "DET",
+      "teamId": 116,
+      "rpg": 3.75,
+      "kpg": 8.42,
+      "hpg": 7.25,
+      "bbpg": 2.33,
       "score": 7.8,
-      "rank": 7
+      "rank": 8
     },
     {
       "team": "Toronto Blue Jays",
@@ -752,17 +763,6 @@
       "hpg": 7.0,
       "bbpg": 2.64,
       "score": 7.6,
-      "rank": 8
-    },
-    {
-      "team": "Detroit Tigers",
-      "abbr": "DET",
-      "teamId": 116,
-      "rpg": 4.0,
-      "kpg": 9.0,
-      "hpg": 7.64,
-      "bbpg": 2.45,
-      "score": 7.5,
       "rank": 9
     },
     {
@@ -1087,6 +1087,17 @@
       "rank": 8
     },
     {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 3.12,
+      "kpg": 7.25,
+      "hpg": 7.25,
+      "bbpg": 2.0,
+      "score": 8.3,
+      "rank": 9
+    },
+    {
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
@@ -1095,7 +1106,7 @@
       "hpg": 7.14,
       "bbpg": 3.0,
       "score": 8.3,
-      "rank": 9
+      "rank": 10
     },
     {
       "team": "Minnesota Twins",
@@ -1106,17 +1117,6 @@
       "hpg": 7.29,
       "bbpg": 3.29,
       "score": 8.2,
-      "rank": 10
-    },
-    {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 3.43,
-      "kpg": 8.0,
-      "hpg": 7.86,
-      "bbpg": 2.29,
-      "score": 8.0,
       "rank": 11
     },
     {
@@ -1134,11 +1134,11 @@
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
-      "rpg": 4.29,
-      "kpg": 8.14,
-      "hpg": 8.29,
-      "bbpg": 2.43,
-      "score": 6.9,
+      "rpg": 3.88,
+      "kpg": 7.38,
+      "hpg": 7.62,
+      "bbpg": 2.25,
+      "score": 7.3,
       "rank": 13
     },
     {
