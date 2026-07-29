@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-29",
-  "updatedAt": "2026-07-29T15:32:18+00:00",
+  "updatedAt": "2026-07-29T17:14:35+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -103,6 +103,11 @@
         {
           "name": "Robert Gasser",
           "espnId": 4918251,
+          "positionId": 1
+        },
+        {
+          "name": "AJ Smith-Shawver",
+          "espnId": 4917640,
           "positionId": 1
         }
       ]
@@ -225,9 +230,9 @@
           "positionId": 11
         },
         {
-          "name": "Ian Seymour",
-          "espnId": 4669425,
-          "positionId": 11
+          "name": "Ryan Weathers",
+          "espnId": 41178,
+          "positionId": 1
         }
       ]
     },
@@ -461,6 +466,11 @@
           "name": "Tyler Glasnow",
           "espnId": 33190,
           "positionId": 1
+        },
+        {
+          "name": "Jacob Latz",
+          "espnId": 3210625,
+          "positionId": 11
         }
       ]
     },
