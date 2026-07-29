@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-29",
-  "updatedAt": "2026-07-29T13:00:05+00:00",
+  "updatedAt": "2026-07-29T15:32:17+00:00",
   "season": [
     {
       "team": "Cincinnati Reds",
@@ -1916,17 +1916,6 @@
       "rank": 23
     },
     {
-      "team": "Tampa Bay Rays",
-      "abbr": "TB",
-      "teamId": 139,
-      "rpg": 2.99,
-      "kpg": 5.08,
-      "hpg": 6.08,
-      "bbpg": 2.42,
-      "score": 4.7,
-      "rank": 24
-    },
-    {
       "team": "Miami Marlins",
       "abbr": "MIA",
       "teamId": 146,
@@ -1935,6 +1924,17 @@
       "hpg": 6.3,
       "bbpg": 2.47,
       "score": 4.7,
+      "rank": 24
+    },
+    {
+      "team": "Tampa Bay Rays",
+      "abbr": "TB",
+      "teamId": 139,
+      "rpg": 3.0,
+      "kpg": 5.08,
+      "hpg": 6.08,
+      "bbpg": 2.42,
+      "score": 4.6,
       "rank": 25
     },
     {
