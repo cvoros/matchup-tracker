@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-29",
-  "updatedAt": "2026-07-29T07:42:58+00:00",
+  "updatedAt": "2026-07-29T10:38:33+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -282,14 +282,14 @@
           "positionId": 1
         },
         {
-          "name": "Landen Roupp",
-          "espnId": 4345404,
-          "positionId": 1
-        },
-        {
           "name": "Griffin Jax",
           "espnId": 42604,
           "positionId": 11
+        },
+        {
+          "name": "Shane Drohan",
+          "espnId": 4315203,
+          "positionId": 1
         }
       ]
     },
@@ -448,13 +448,18 @@
           "positionId": 11
         },
         {
-          "name": "Clay Holmes",
-          "espnId": 32827,
+          "name": "Brandon Young",
+          "espnId": 4414339,
           "positionId": 1
         },
         {
-          "name": "Brandon Young",
-          "espnId": 4414339,
+          "name": "Blake Snell",
+          "espnId": 33748,
+          "positionId": 1
+        },
+        {
+          "name": "Tyler Glasnow",
+          "espnId": 33190,
           "positionId": 1
         }
       ]
@@ -562,8 +567,8 @@
           "positionId": 1
         },
         {
-          "name": "Shane Bieber",
-          "espnId": 40912,
+          "name": "Matthew Boyd",
+          "espnId": 34401,
           "positionId": 1
         }
       ]
