@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-29",
-  "updatedAt": "2026-07-29T17:14:35+00:00",
+  "updatedAt": "2026-07-29T19:15:29+00:00",
   "defaultTeamId": 7,
   "teams": [
     {
@@ -448,11 +448,6 @@
           "positionId": 1
         },
         {
-          "name": "Peter Lambert",
-          "espnId": 39898,
-          "positionId": 11
-        },
-        {
           "name": "Brandon Young",
           "espnId": 4414339,
           "positionId": 1
@@ -470,6 +465,11 @@
         {
           "name": "Jacob Latz",
           "espnId": 3210625,
+          "positionId": 11
+        },
+        {
+          "name": "Kyle Leahy",
+          "espnId": 5006093,
           "positionId": 11
         }
       ]
