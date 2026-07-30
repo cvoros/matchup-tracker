@@ -54,6 +54,36 @@ def extract_pitchers(team) -> list[dict]:
     return pitchers
 
 
+def fetch_fa_pitcher_ids(base_url, cookies) -> list[dict]:
+    """FA/waiver pitchers (SP + RP eligible) as {name, espnId} — used only
+    to hyperlink FA names to their ESPN fantasy player page. Badge
+    determination is roster-derived and does not depend on this list.
+    Slots 14=SP, 15=RP; some openers/bulk arms are RP-eligible in ESPN
+    but start games, so both slots are needed to cover every pitcher
+    that can appear as a probable starter. ~1,900 exist league-wide;
+    2,500 leaves headroom."""
+    data = espn_get(
+        base_url,
+        cookies,
+        params={"view": "kona_player_info"},
+        headers={"x-fantasy-filter": json.dumps({
+            "players": {
+                "filterStatus": {"value": ["FREEAGENT", "WAIVERS"]},
+                "filterSlotIds": {"value": [14, 15]},
+                "limit": 2500,
+                "sortPercOwned": {"sortPriority": 1, "sortAsc": False},
+            }
+        })},
+    )
+    out = []
+    for entry in data.get("players", []):
+        player = entry.get("player", {})
+        name, pid = player.get("fullName"), player.get("id")
+        if name and pid:
+            out.append({"name": name, "espnId": pid})
+    return out
+
+
 def main():
     league_id, espn_s2, swid = get_env()
     cookies = {"espn_s2": espn_s2, "SWID": swid}
@@ -89,13 +119,20 @@ def main():
 
     print(f"  {len(teams)} teams, default team id: {default_team_id}")
 
+    print("Fetching free-agent SP ids (for name links)...")
+    free_agents = fetch_fa_pitcher_ids(base_url, cookies)
+    print(f"  {len(free_agents)} FA/waiver SP ids")
+
     # Ownership (mine / opponent / free agent) is derived in the UI from
-    # these rosters — anyone not rostered by any team is a free agent.
+    # the rosters — anyone not rostered by any team is a free agent. The
+    # freeAgents list is only a name->espnId lookup for hyperlinking.
     output = {
         "updated": date.today().strftime("%Y-%m-%d"),
         "updatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "leagueId": league_id,
         "defaultTeamId": default_team_id,
         "teams": teams,
+        "freeAgents": free_agents,
     }
 
     os.makedirs("data", exist_ok=True)

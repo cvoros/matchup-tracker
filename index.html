@@ -415,6 +415,8 @@
   }
   .badge-mine { color: #fff; background: #3b82f6; border: 1px solid #3b82f6; }
   .badge-fa   { color: #fff; background: #a855f7; border: 1px solid #a855f7; }
+  .fa-link { color: inherit; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 2px; }
+  .fa-link:hover { color: #a855f7; }
 </style>
 </head>
 <body>
@@ -555,8 +557,37 @@
     return '';
   }
 
+  // normName(name) → ESPN athlete id, from rosters + FA list
+  let nameToEspnId = {};
+  function buildEspnIdMap() {
+    nameToEspnId = {};
+    if (!leagueData) return;
+    for (const t of leagueData.teams)
+      for (const p of t.pitchers)
+        if (p.espnId) nameToEspnId[normName(p.name)] = p.espnId;
+    for (const p of (leagueData.freeAgents || []))
+      if (p.espnId) nameToEspnId[normName(p.name)] = p.espnId;
+  }
+
+  // Free agents link to their ESPN Fantasy player card (add/research view,
+  // scoped to this league) so you can assess and grab a pickup without
+  // leaving the flow. Requires being logged into ESPN — anyone not signed
+  // in gets ESPN's own login prompt first. Other pitchers render as plain
+  // text.
+  function pitcherNameHtml(name) {
+    if (pitcherFantasyStatus(name) === 'fa') {
+      const id = nameToEspnId[normName(name)];
+      if (id && leagueData?.leagueId) {
+        const url = `https://fantasy.espn.com/baseball/players/add?leagueId=${leagueData.leagueId}&playerId=${id}`;
+        return `<a class="fa-link" href="${url}" target="_blank" rel="noopener">${name}</a>`;
+      }
+    }
+    return name;
+  }
+
   function initLeagueBar() {
     if (!leagueData || !leagueData.teams?.length) return;
+    buildEspnIdMap();
     const saved = Number(localStorage.getItem('fantasyTeamId'));
     myFantasyTeamId = leagueData.teams.some(t => t.id === saved)
       ? saved
@@ -888,7 +919,7 @@
         return `<div class="cal-entry">
           <div class="cal-rank" style="color:${compColor(e.rank)}">vs ${teamShort} — #${e.rank}</div>
           <div class="cal-pitcher${name ? '' : ' tbd'}">${name
-            ? `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>${name}${hand ? `, ${hand}HP` : ''}${fantasyBadge(name)}`
+            ? `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>${pitcherNameHtml(name)}${hand ? `, ${hand}HP` : ''}${fantasyBadge(name)}`
             : `<span style="color:var(--muted);font-weight:400;margin-right:0.3rem">${pitcherTeam}</span>TBD`}</div>
         </div>`;
       }).join('');
@@ -1049,7 +1080,7 @@ function refreshView() {
           <span class="pitcher-date">${fmtDate(dk)}</span>
           <span class="pitcher-opp">${prefix} ${opp.replace(/^.+ /, '')}</span>
           ${name
-            ? `<span class="pitcher-name">${name}${hand ? `, ${hand}HP` : ''}${fantasyBadge(name)}</span>`
+            ? `<span class="pitcher-name">${pitcherNameHtml(name)}${hand ? `, ${hand}HP` : ''}${fantasyBadge(name)}</span>`
             : `<span class="pitcher-name pitcher-tbd">TBD</span>`}
         </div>`;
       }).join('');
