@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-04",
-  "updatedAt": "2026-08-04T04:13:29+00:00",
+  "updatedAt": "2026-08-04T07:39:26+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -1345,11 +1345,11 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 1.05,
-      "kpg": 2.58,
-      "hpg": 2.48,
-      "bbpg": 0.96,
-      "score": 9.8,
+      "rpg": 1.03,
+      "kpg": 2.55,
+      "hpg": 2.45,
+      "bbpg": 0.95,
+      "score": 9.9,
       "rank": 2
     },
     {
@@ -1441,6 +1441,17 @@
       "rank": 10
     },
     {
+      "team": "New York Mets",
+      "abbr": "NYM",
+      "teamId": 121,
+      "rpg": 1.37,
+      "kpg": 2.88,
+      "hpg": 2.65,
+      "bbpg": 1.08,
+      "score": 7.7,
+      "rank": 11
+    },
+    {
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
@@ -1449,17 +1460,6 @@
       "hpg": 2.4,
       "bbpg": 1.33,
       "score": 7.7,
-      "rank": 11
-    },
-    {
-      "team": "New York Mets",
-      "abbr": "NYM",
-      "teamId": 121,
-      "rpg": 1.37,
-      "kpg": 2.88,
-      "hpg": 2.65,
-      "bbpg": 1.08,
-      "score": 7.6,
       "rank": 12
     },
     {
@@ -1591,7 +1591,7 @@
       "kpg": 2.56,
       "hpg": 3.06,
       "bbpg": 1.09,
-      "score": 4.6,
+      "score": 4.7,
       "rank": 24
     },
     {
@@ -1624,7 +1624,7 @@
       "kpg": 2.77,
       "hpg": 3.11,
       "bbpg": 1.29,
-      "score": 3.7,
+      "score": 3.8,
       "rank": 27
     },
     {
@@ -1635,7 +1635,7 @@
       "kpg": 3.1,
       "hpg": 3.08,
       "bbpg": 1.29,
-      "score": 3.6,
+      "score": 3.7,
       "rank": 28
     },
     {
@@ -1821,10 +1821,10 @@
       "abbr": "AZ",
       "teamId": 109,
       "rpg": 3.04,
-      "kpg": 5.66,
+      "kpg": 5.65,
       "hpg": 5.69,
-      "bbpg": 2.47,
-      "score": 6.2,
+      "bbpg": 2.48,
+      "score": 6.1,
       "rank": 15
     },
     {
@@ -1853,11 +1853,11 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 3.29,
-      "kpg": 6.29,
+      "rpg": 3.27,
+      "kpg": 6.28,
       "hpg": 5.85,
-      "bbpg": 2.69,
-      "score": 5.5,
+      "bbpg": 2.67,
+      "score": 5.7,
       "rank": 18
     },
     {
