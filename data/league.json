@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-08",
-  "updatedAt": "2026-08-08T18:36:19+00:00",
+  "updatedAt": "2026-08-08T19:29:23+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -293,13 +293,13 @@
           "positionId": 1
         },
         {
-          "name": "Robert Gasser",
-          "espnId": 4918251,
+          "name": "Michael McGreevy",
+          "espnId": 4424141,
           "positionId": 1
         },
         {
-          "name": "Michael McGreevy",
-          "espnId": 4424141,
+          "name": "Connor Prielipp",
+          "espnId": 4620001,
           "positionId": 1
         }
       ]
@@ -858,6 +858,10 @@
       "espnId": 4424862
     },
     {
+      "name": "Robert Gasser",
+      "espnId": 4918251
+    },
+    {
       "name": "Jason Adam",
       "espnId": 32145
     },
@@ -1084,10 +1088,6 @@
     {
       "name": "Jameson Taillon",
       "espnId": 31258
-    },
-    {
-      "name": "Connor Prielipp",
-      "espnId": 4620001
     },
     {
       "name": "Tyler Mahle",
