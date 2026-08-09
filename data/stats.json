@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-09",
-  "updatedAt": "2026-08-09T01:42:56+00:00",
+  "updatedAt": "2026-08-09T03:42:11+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -28,11 +28,11 @@
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
-      "rpg": 3.92,
-      "kpg": 8.55,
-      "hpg": 7.56,
-      "bbpg": 3.28,
-      "score": 9.3,
+      "rpg": 3.9,
+      "kpg": 8.5,
+      "hpg": 7.53,
+      "bbpg": 3.26,
+      "score": 9.5,
       "rank": 3
     },
     {
@@ -52,7 +52,7 @@
       "teamId": 114,
       "rpg": 3.98,
       "kpg": 8.31,
-      "hpg": 7.71,
+      "hpg": 7.73,
       "bbpg": 3.6,
       "score": 7.9,
       "rank": 5
@@ -61,11 +61,11 @@
       "team": "Texas Rangers",
       "abbr": "TEX",
       "teamId": 140,
-      "rpg": 4.11,
-      "kpg": 8.5,
-      "hpg": 8.11,
-      "bbpg": 3.17,
-      "score": 7.8,
+      "rpg": 4.14,
+      "kpg": 8.51,
+      "hpg": 8.12,
+      "bbpg": 3.19,
+      "score": 7.7,
       "rank": 6
     },
     {
@@ -73,11 +73,22 @@
       "abbr": "PHI",
       "teamId": 143,
       "rpg": 4.42,
-      "kpg": 8.59,
+      "kpg": 8.6,
       "hpg": 7.96,
       "bbpg": 3.04,
       "score": 7.4,
       "rank": 7
+    },
+    {
+      "team": "Baltimore Orioles",
+      "abbr": "BAL",
+      "teamId": 110,
+      "rpg": 4.43,
+      "kpg": 9.19,
+      "hpg": 7.73,
+      "bbpg": 3.87,
+      "score": 7.4,
+      "rank": 8
     },
     {
       "team": "New York Yankees",
@@ -88,28 +99,17 @@
       "hpg": 7.66,
       "bbpg": 3.68,
       "score": 7.4,
-      "rank": 8
-    },
-    {
-      "team": "Baltimore Orioles",
-      "abbr": "BAL",
-      "teamId": 110,
-      "rpg": 4.43,
-      "kpg": 9.19,
-      "hpg": 7.73,
-      "bbpg": 3.87,
-      "score": 7.3,
       "rank": 9
     },
     {
       "team": "Toronto Blue Jays",
       "abbr": "TOR",
       "teamId": 141,
-      "rpg": 3.91,
+      "rpg": 3.92,
       "kpg": 7.27,
-      "hpg": 8.12,
+      "hpg": 8.13,
       "bbpg": 2.74,
-      "score": 7.1,
+      "score": 7.0,
       "rank": 10
     },
     {
@@ -146,17 +146,6 @@
       "rank": 13
     },
     {
-      "team": "Chicago White Sox",
-      "abbr": "CWS",
-      "teamId": 145,
-      "rpg": 4.75,
-      "kpg": 9.11,
-      "hpg": 7.95,
-      "bbpg": 3.37,
-      "score": 6.5,
-      "rank": 14
-    },
-    {
       "team": "Kansas City Royals",
       "abbr": "KC",
       "teamId": 118,
@@ -164,7 +153,18 @@
       "kpg": 7.86,
       "hpg": 8.23,
       "bbpg": 3.08,
-      "score": 6.4,
+      "score": 6.5,
+      "rank": 14
+    },
+    {
+      "team": "Chicago White Sox",
+      "abbr": "CWS",
+      "teamId": 145,
+      "rpg": 4.76,
+      "kpg": 9.11,
+      "hpg": 7.97,
+      "bbpg": 3.38,
+      "score": 6.5,
       "rank": 15
     },
     {
@@ -175,7 +175,7 @@
       "kpg": 8.25,
       "hpg": 8.33,
       "bbpg": 3.09,
-      "score": 5.7,
+      "score": 5.8,
       "rank": 16
     },
     {
@@ -193,10 +193,10 @@
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
-      "rpg": 4.32,
-      "kpg": 7.69,
-      "hpg": 7.98,
-      "bbpg": 3.25,
+      "rpg": 4.34,
+      "kpg": 7.71,
+      "hpg": 8.02,
+      "bbpg": 3.26,
       "score": 5.6,
       "rank": 18
     },
@@ -204,10 +204,10 @@
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
-      "rpg": 4.57,
+      "rpg": 4.58,
       "kpg": 8.64,
-      "hpg": 8.25,
-      "bbpg": 3.59,
+      "hpg": 8.26,
+      "bbpg": 3.6,
       "score": 5.4,
       "rank": 19
     },
@@ -215,9 +215,9 @@
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 4.81,
+      "rpg": 4.82,
       "kpg": 8.67,
-      "hpg": 8.7,
+      "hpg": 8.71,
       "bbpg": 3.06,
       "score": 4.7,
       "rank": 20
@@ -230,7 +230,7 @@
       "kpg": 8.03,
       "hpg": 8.2,
       "bbpg": 3.27,
-      "score": 4.6,
+      "score": 4.7,
       "rank": 21
     },
     {
@@ -238,22 +238,11 @@
       "abbr": "HOU",
       "teamId": 117,
       "rpg": 4.64,
-      "kpg": 8.16,
+      "kpg": 8.17,
       "hpg": 8.31,
       "bbpg": 3.41,
       "score": 4.5,
       "rank": 22
-    },
-    {
-      "team": "Arizona Diamondbacks",
-      "abbr": "AZ",
-      "teamId": 109,
-      "rpg": 4.51,
-      "kpg": 7.28,
-      "hpg": 8.09,
-      "bbpg": 3.28,
-      "score": 4.0,
-      "rank": 23
     },
     {
       "team": "Atlanta Braves",
@@ -263,7 +252,18 @@
       "kpg": 8.03,
       "hpg": 8.49,
       "bbpg": 2.96,
-      "score": 3.8,
+      "score": 3.9,
+      "rank": 23
+    },
+    {
+      "team": "Arizona Diamondbacks",
+      "abbr": "AZ",
+      "teamId": 109,
+      "rpg": 4.52,
+      "kpg": 7.31,
+      "hpg": 8.13,
+      "bbpg": 3.33,
+      "score": 3.9,
       "rank": 24
     },
     {
@@ -274,29 +274,29 @@
       "kpg": 9.43,
       "hpg": 8.91,
       "bbpg": 3.66,
-      "score": 3.7,
+      "score": 3.8,
       "rank": 25
     },
     {
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 4.45,
-      "kpg": 7.19,
-      "hpg": 8.61,
-      "bbpg": 3.29,
-      "score": 3.1,
+      "rpg": 4.42,
+      "kpg": 7.16,
+      "hpg": 8.58,
+      "bbpg": 3.28,
+      "score": 3.3,
       "rank": 26
     },
     {
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
-      "rpg": 4.96,
+      "rpg": 4.97,
       "kpg": 8.26,
-      "hpg": 8.52,
+      "hpg": 8.53,
       "bbpg": 4.12,
-      "score": 1.8,
+      "score": 1.9,
       "rank": 27
     },
     {
@@ -307,7 +307,7 @@
       "kpg": 8.59,
       "hpg": 8.51,
       "bbpg": 4.28,
-      "score": 1.6,
+      "score": 1.7,
       "rank": 28
     },
     {
@@ -318,17 +318,17 @@
       "kpg": 8.31,
       "hpg": 8.58,
       "bbpg": 3.55,
-      "score": 1.4,
+      "score": 1.6,
       "rank": 29
     },
     {
       "team": "Los Angeles Dodgers",
       "abbr": "LAD",
       "teamId": 119,
-      "rpg": 5.02,
-      "kpg": 7.79,
-      "hpg": 8.76,
-      "bbpg": 3.74,
+      "rpg": 5.03,
+      "kpg": 7.82,
+      "hpg": 8.8,
+      "bbpg": 3.77,
       "score": 1.0,
       "rank": 30
     }
@@ -357,6 +357,17 @@
       "rank": 2
     },
     {
+      "team": "Miami Marlins",
+      "abbr": "MIA",
+      "teamId": 146,
+      "rpg": 3.25,
+      "kpg": 8.21,
+      "hpg": 7.54,
+      "bbpg": 2.96,
+      "score": 7.7,
+      "rank": 3
+    },
+    {
       "team": "Athletics",
       "abbr": "ATH",
       "teamId": 133,
@@ -365,18 +376,18 @@
       "hpg": 7.71,
       "bbpg": 2.38,
       "score": 7.6,
-      "rank": 3
+      "rank": 4
     },
     {
-      "team": "Miami Marlins",
-      "abbr": "MIA",
-      "teamId": 146,
-      "rpg": 3.25,
-      "kpg": 8.21,
-      "hpg": 7.54,
-      "bbpg": 2.96,
-      "score": 7.6,
-      "rank": 4
+      "team": "Seattle Mariners",
+      "abbr": "SEA",
+      "teamId": 136,
+      "rpg": 3.29,
+      "kpg": 7.75,
+      "hpg": 7.21,
+      "bbpg": 2.92,
+      "score": 7.5,
+      "rank": 5
     },
     {
       "team": "Baltimore Orioles",
@@ -387,17 +398,6 @@
       "hpg": 6.96,
       "bbpg": 3.96,
       "score": 7.4,
-      "rank": 5
-    },
-    {
-      "team": "Seattle Mariners",
-      "abbr": "SEA",
-      "teamId": 136,
-      "rpg": 3.39,
-      "kpg": 7.96,
-      "hpg": 7.35,
-      "bbpg": 3.0,
-      "score": 7.3,
       "rank": 6
     },
     {
@@ -419,30 +419,8 @@
       "kpg": 9.5,
       "hpg": 7.83,
       "bbpg": 3.33,
-      "score": 6.8,
+      "score": 6.9,
       "rank": 8
-    },
-    {
-      "team": "Texas Rangers",
-      "abbr": "TEX",
-      "teamId": 140,
-      "rpg": 4.08,
-      "kpg": 9.04,
-      "hpg": 8.0,
-      "bbpg": 2.79,
-      "score": 6.7,
-      "rank": 9
-    },
-    {
-      "team": "St. Louis Cardinals",
-      "abbr": "STL",
-      "teamId": 138,
-      "rpg": 3.44,
-      "kpg": 7.64,
-      "hpg": 7.24,
-      "bbpg": 3.4,
-      "score": 6.7,
-      "rank": 10
     },
     {
       "team": "Kansas City Royals",
@@ -452,7 +430,29 @@
       "kpg": 7.12,
       "hpg": 7.83,
       "bbpg": 2.33,
+      "score": 6.6,
+      "rank": 9
+    },
+    {
+      "team": "St. Louis Cardinals",
+      "abbr": "STL",
+      "teamId": 138,
+      "rpg": 3.52,
+      "kpg": 7.72,
+      "hpg": 7.4,
+      "bbpg": 3.44,
       "score": 6.5,
+      "rank": 10
+    },
+    {
+      "team": "Texas Rangers",
+      "abbr": "TEX",
+      "teamId": 140,
+      "rpg": 4.21,
+      "kpg": 9.08,
+      "hpg": 8.04,
+      "bbpg": 2.88,
+      "score": 6.4,
       "rank": 11
     },
     {
@@ -470,23 +470,34 @@
       "team": "Toronto Blue Jays",
       "abbr": "TOR",
       "teamId": 141,
-      "rpg": 3.4,
+      "rpg": 3.48,
       "kpg": 7.04,
-      "hpg": 7.88,
+      "hpg": 7.92,
       "bbpg": 2.76,
-      "score": 6.3,
+      "score": 6.2,
       "rank": 13
     },
     {
       "team": "Los Angeles Dodgers",
       "abbr": "LAD",
       "teamId": 119,
-      "rpg": 3.87,
-      "kpg": 7.61,
-      "hpg": 8.22,
-      "bbpg": 2.39,
-      "score": 6.0,
+      "rpg": 3.96,
+      "kpg": 7.78,
+      "hpg": 8.43,
+      "bbpg": 2.52,
+      "score": 5.8,
       "rank": 14
+    },
+    {
+      "team": "San Francisco Giants",
+      "abbr": "SF",
+      "teamId": 137,
+      "rpg": 4.12,
+      "kpg": 7.88,
+      "hpg": 7.5,
+      "bbpg": 3.29,
+      "score": 5.7,
+      "rank": 15
     },
     {
       "team": "Minnesota Twins",
@@ -497,28 +508,17 @@
       "hpg": 7.54,
       "bbpg": 3.04,
       "score": 5.6,
-      "rank": 15
-    },
-    {
-      "team": "San Francisco Giants",
-      "abbr": "SF",
-      "teamId": 137,
-      "rpg": 4.12,
-      "kpg": 7.88,
-      "hpg": 7.5,
-      "bbpg": 3.29,
-      "score": 5.6,
       "rank": 16
     },
     {
       "team": "Chicago White Sox",
       "abbr": "CWS",
       "teamId": 145,
-      "rpg": 5.04,
+      "rpg": 5.08,
       "kpg": 9.71,
-      "hpg": 7.79,
-      "bbpg": 3.29,
-      "score": 5.4,
+      "hpg": 7.88,
+      "bbpg": 3.33,
+      "score": 5.3,
       "rank": 17
     },
     {
@@ -527,31 +527,31 @@
       "teamId": 114,
       "rpg": 4.04,
       "kpg": 8.21,
-      "hpg": 8.54,
+      "hpg": 8.62,
       "bbpg": 3.21,
-      "score": 5.3,
+      "score": 5.2,
       "rank": 18
-    },
-    {
-      "team": "Milwaukee Brewers",
-      "abbr": "MIL",
-      "teamId": 158,
-      "rpg": 4.33,
-      "kpg": 8.62,
-      "hpg": 7.88,
-      "bbpg": 4.17,
-      "score": 4.9,
-      "rank": 19
     },
     {
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 4.25,
-      "kpg": 7.25,
-      "hpg": 8.71,
-      "bbpg": 2.33,
-      "score": 4.7,
+      "rpg": 4.12,
+      "kpg": 7.08,
+      "hpg": 8.56,
+      "bbpg": 2.32,
+      "score": 5.0,
+      "rank": 19
+    },
+    {
+      "team": "Milwaukee Brewers",
+      "abbr": "MIL",
+      "teamId": 158,
+      "rpg": 4.38,
+      "kpg": 8.67,
+      "hpg": 7.92,
+      "bbpg": 4.17,
+      "score": 4.9,
       "rank": 20
     },
     {
@@ -559,19 +559,19 @@
       "abbr": "PHI",
       "teamId": 143,
       "rpg": 4.5,
-      "kpg": 7.96,
+      "kpg": 8.0,
       "hpg": 7.88,
       "bbpg": 3.33,
-      "score": 4.7,
+      "score": 4.8,
       "rank": 21
     },
     {
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 4.73,
+      "rpg": 4.77,
       "kpg": 8.32,
-      "hpg": 8.68,
+      "hpg": 8.73,
       "bbpg": 2.55,
       "score": 4.6,
       "rank": 22
@@ -584,7 +584,7 @@
       "kpg": 7.96,
       "hpg": 8.56,
       "bbpg": 2.76,
-      "score": 4.1,
+      "score": 4.2,
       "rank": 23
     },
     {
@@ -595,7 +595,7 @@
       "kpg": 8.48,
       "hpg": 8.48,
       "bbpg": 3.92,
-      "score": 3.1,
+      "score": 3.2,
       "rank": 24
     },
     {
@@ -606,16 +606,16 @@
       "kpg": 9.44,
       "hpg": 9.12,
       "bbpg": 3.96,
-      "score": 3.0,
+      "score": 3.1,
       "rank": 25
     },
     {
       "team": "Houston Astros",
       "abbr": "HOU",
       "teamId": 117,
-      "rpg": 5.0,
-      "kpg": 8.04,
-      "hpg": 9.13,
+      "rpg": 5.04,
+      "kpg": 8.09,
+      "hpg": 9.17,
       "bbpg": 3.91,
       "score": 2.4,
       "rank": 26
@@ -628,30 +628,19 @@
       "kpg": 8.28,
       "hpg": 8.92,
       "bbpg": 3.48,
-      "score": 1.6,
+      "score": 1.7,
       "rank": 27
     },
     {
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
-      "rpg": 5.83,
+      "rpg": 5.88,
       "kpg": 8.46,
-      "hpg": 9.79,
-      "bbpg": 3.5,
-      "score": 1.2,
+      "hpg": 9.83,
+      "bbpg": 3.54,
+      "score": 1.1,
       "rank": 28
-    },
-    {
-      "team": "Arizona Diamondbacks",
-      "abbr": "AZ",
-      "teamId": 109,
-      "rpg": 5.56,
-      "kpg": 7.44,
-      "hpg": 8.92,
-      "bbpg": 3.88,
-      "score": 1.2,
-      "rank": 29
     },
     {
       "team": "San Diego Padres",
@@ -661,6 +650,17 @@
       "kpg": 7.16,
       "hpg": 9.24,
       "bbpg": 3.92,
+      "score": 1.1,
+      "rank": 29
+    },
+    {
+      "team": "Arizona Diamondbacks",
+      "abbr": "AZ",
+      "teamId": 109,
+      "rpg": 5.6,
+      "kpg": 7.56,
+      "hpg": 9.08,
+      "bbpg": 4.12,
       "score": 1.0,
       "rank": 30
     }
@@ -711,17 +711,6 @@
       "rank": 4
     },
     {
-      "team": "Texas Rangers",
-      "abbr": "TEX",
-      "teamId": 140,
-      "rpg": 3.5,
-      "kpg": 9.5,
-      "hpg": 7.0,
-      "bbpg": 2.93,
-      "score": 8.7,
-      "rank": 5
-    },
-    {
       "team": "Cincinnati Reds",
       "abbr": "CIN",
       "teamId": 113,
@@ -729,17 +718,28 @@
       "kpg": 11.14,
       "hpg": 7.0,
       "bbpg": 4.0,
-      "score": 8.6,
-      "rank": 6
+      "score": 8.7,
+      "rank": 5
     },
     {
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
-      "rpg": 3.08,
-      "kpg": 8.38,
-      "hpg": 7.38,
-      "bbpg": 2.92,
+      "rpg": 2.93,
+      "kpg": 8.0,
+      "hpg": 7.14,
+      "bbpg": 2.79,
+      "score": 8.5,
+      "rank": 6
+    },
+    {
+      "team": "Texas Rangers",
+      "abbr": "TEX",
+      "teamId": 140,
+      "rpg": 3.71,
+      "kpg": 9.57,
+      "hpg": 7.07,
+      "bbpg": 3.07,
       "score": 8.4,
       "rank": 7
     },
@@ -747,22 +747,22 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 3.5,
-      "kpg": 7.25,
-      "hpg": 7.58,
+      "rpg": 3.31,
+      "kpg": 6.92,
+      "hpg": 7.38,
       "bbpg": 2.08,
-      "score": 7.7,
+      "score": 7.9,
       "rank": 8
     },
     {
       "team": "Chicago White Sox",
       "abbr": "CWS",
       "teamId": 145,
-      "rpg": 4.5,
+      "rpg": 4.57,
       "kpg": 10.21,
-      "hpg": 7.5,
-      "bbpg": 3.21,
-      "score": 7.7,
+      "hpg": 7.64,
+      "bbpg": 3.29,
+      "score": 7.5,
       "rank": 9
     },
     {
@@ -777,48 +777,15 @@
       "rank": 10
     },
     {
-      "team": "Los Angeles Dodgers",
-      "abbr": "LAD",
-      "teamId": 119,
-      "rpg": 3.69,
-      "kpg": 6.92,
-      "hpg": 8.77,
-      "bbpg": 2.08,
-      "score": 6.8,
-      "rank": 11
-    },
-    {
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
       "rpg": 3.85,
       "kpg": 8.08,
-      "hpg": 7.92,
+      "hpg": 8.08,
       "bbpg": 3.62,
       "score": 6.8,
-      "rank": 12
-    },
-    {
-      "team": "St. Louis Cardinals",
-      "abbr": "STL",
-      "teamId": 138,
-      "rpg": 3.57,
-      "kpg": 7.36,
-      "hpg": 7.79,
-      "bbpg": 3.57,
-      "score": 6.8,
-      "rank": 13
-    },
-    {
-      "team": "Toronto Blue Jays",
-      "abbr": "TOR",
-      "teamId": 141,
-      "rpg": 3.71,
-      "kpg": 7.36,
-      "hpg": 8.57,
-      "bbpg": 2.86,
-      "score": 6.7,
-      "rank": 14
+      "rank": 11
     },
     {
       "team": "Kansas City Royals",
@@ -828,8 +795,30 @@
       "kpg": 6.08,
       "hpg": 7.62,
       "bbpg": 2.46,
+      "score": 6.8,
+      "rank": 12
+    },
+    {
+      "team": "Miami Marlins",
+      "abbr": "MIA",
+      "teamId": 146,
+      "rpg": 3.79,
+      "kpg": 7.14,
+      "hpg": 7.79,
+      "bbpg": 3.36,
       "score": 6.7,
-      "rank": 15
+      "rank": 13
+    },
+    {
+      "team": "New York Mets",
+      "abbr": "NYM",
+      "teamId": 121,
+      "rpg": 4.79,
+      "kpg": 9.5,
+      "hpg": 8.0,
+      "bbpg": 3.5,
+      "score": 6.7,
+      "rank": 14
     },
     {
       "team": "Atlanta Braves",
@@ -840,28 +829,39 @@
       "hpg": 8.14,
       "bbpg": 2.57,
       "score": 6.6,
+      "rank": 15
+    },
+    {
+      "team": "St. Louis Cardinals",
+      "abbr": "STL",
+      "teamId": 138,
+      "rpg": 3.71,
+      "kpg": 7.5,
+      "hpg": 8.07,
+      "bbpg": 3.64,
+      "score": 6.6,
       "rank": 16
     },
     {
-      "team": "Miami Marlins",
-      "abbr": "MIA",
-      "teamId": 146,
-      "rpg": 3.79,
-      "kpg": 7.14,
-      "hpg": 7.79,
-      "bbpg": 3.36,
-      "score": 6.6,
+      "team": "Los Angeles Dodgers",
+      "abbr": "LAD",
+      "teamId": 119,
+      "rpg": 3.85,
+      "kpg": 7.23,
+      "hpg": 9.15,
+      "bbpg": 2.31,
+      "score": 6.5,
       "rank": 17
     },
     {
-      "team": "New York Mets",
-      "abbr": "NYM",
-      "teamId": 121,
-      "rpg": 4.79,
-      "kpg": 9.5,
-      "hpg": 8.0,
-      "bbpg": 3.5,
-      "score": 6.6,
+      "team": "Toronto Blue Jays",
+      "abbr": "TOR",
+      "teamId": 141,
+      "rpg": 3.86,
+      "kpg": 7.36,
+      "hpg": 8.64,
+      "bbpg": 2.86,
+      "score": 6.5,
       "rank": 18
     },
     {
@@ -872,7 +872,7 @@
       "kpg": 6.46,
       "hpg": 7.62,
       "bbpg": 2.85,
-      "score": 6.4,
+      "score": 6.5,
       "rank": 19
     },
     {
@@ -883,30 +883,8 @@
       "kpg": 7.43,
       "hpg": 7.57,
       "bbpg": 3.43,
-      "score": 6.3,
+      "score": 6.4,
       "rank": 20
-    },
-    {
-      "team": "Colorado Rockies",
-      "abbr": "COL",
-      "teamId": 115,
-      "rpg": 5.25,
-      "kpg": 9.17,
-      "hpg": 9.17,
-      "bbpg": 2.25,
-      "score": 6.0,
-      "rank": 21
-    },
-    {
-      "team": "Milwaukee Brewers",
-      "abbr": "MIL",
-      "teamId": 158,
-      "rpg": 4.57,
-      "kpg": 8.5,
-      "hpg": 8.14,
-      "bbpg": 4.0,
-      "score": 6.0,
-      "rank": 22
     },
     {
       "team": "Washington Nationals",
@@ -916,6 +894,28 @@
       "kpg": 8.27,
       "hpg": 7.73,
       "bbpg": 4.33,
+      "score": 6.1,
+      "rank": 21
+    },
+    {
+      "team": "Colorado Rockies",
+      "abbr": "COL",
+      "teamId": 115,
+      "rpg": 5.33,
+      "kpg": 9.17,
+      "hpg": 9.25,
+      "bbpg": 2.25,
+      "score": 6.0,
+      "rank": 22
+    },
+    {
+      "team": "Milwaukee Brewers",
+      "abbr": "MIL",
+      "teamId": 158,
+      "rpg": 4.64,
+      "kpg": 8.57,
+      "hpg": 8.21,
+      "bbpg": 4.0,
       "score": 6.0,
       "rank": 23
     },
@@ -923,11 +923,11 @@
       "team": "Arizona Diamondbacks",
       "abbr": "AZ",
       "teamId": 109,
-      "rpg": 4.5,
-      "kpg": 6.86,
-      "hpg": 8.29,
-      "bbpg": 3.07,
-      "score": 5.7,
+      "rpg": 4.57,
+      "kpg": 7.07,
+      "hpg": 8.57,
+      "bbpg": 3.5,
+      "score": 5.4,
       "rank": 24
     },
     {
@@ -938,16 +938,16 @@
       "kpg": 9.0,
       "hpg": 9.67,
       "bbpg": 3.6,
-      "score": 4.9,
+      "score": 5.0,
       "rank": 25
     },
     {
       "team": "Houston Astros",
       "abbr": "HOU",
       "teamId": 117,
-      "rpg": 5.0,
-      "kpg": 8.69,
-      "hpg": 9.54,
+      "rpg": 5.08,
+      "kpg": 8.77,
+      "hpg": 9.62,
       "bbpg": 4.38,
       "score": 4.8,
       "rank": 26
@@ -960,7 +960,7 @@
       "kpg": 6.64,
       "hpg": 9.36,
       "bbpg": 3.29,
-      "score": 4.6,
+      "score": 4.7,
       "rank": 27
     },
     {
@@ -968,10 +968,10 @@
       "abbr": "PHI",
       "teamId": 143,
       "rpg": 5.21,
-      "kpg": 6.29,
+      "kpg": 6.36,
       "hpg": 8.43,
       "bbpg": 4.07,
-      "score": 4.1,
+      "score": 4.2,
       "rank": 28
     },
     {
@@ -982,17 +982,17 @@
       "kpg": 8.71,
       "hpg": 9.43,
       "bbpg": 3.93,
-      "score": 3.8,
+      "score": 3.9,
       "rank": 29
     },
     {
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
-      "rpg": 7.38,
+      "rpg": 7.46,
       "kpg": 8.0,
-      "hpg": 11.62,
-      "bbpg": 4.38,
+      "hpg": 11.69,
+      "bbpg": 4.46,
       "score": 1.0,
       "rank": 30
     }
@@ -1032,17 +1032,6 @@
       "rank": 3
     },
     {
-      "team": "Texas Rangers",
-      "abbr": "TEX",
-      "teamId": 140,
-      "rpg": 3.17,
-      "kpg": 8.83,
-      "hpg": 6.83,
-      "bbpg": 2.67,
-      "score": 8.6,
-      "rank": 4
-    },
-    {
       "team": "New York Yankees",
       "abbr": "NYY",
       "teamId": 147,
@@ -1051,7 +1040,7 @@
       "hpg": 6.5,
       "bbpg": 4.0,
       "score": 8.6,
-      "rank": 5
+      "rank": 4
     },
     {
       "team": "San Francisco Giants",
@@ -1062,40 +1051,40 @@
       "hpg": 5.67,
       "bbpg": 3.17,
       "score": 8.6,
+      "rank": 5
+    },
+    {
+      "team": "Seattle Mariners",
+      "abbr": "SEA",
+      "teamId": 136,
+      "rpg": 2.17,
+      "kpg": 6.33,
+      "hpg": 6.67,
+      "bbpg": 2.67,
+      "score": 8.5,
       "rank": 6
     },
     {
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
-      "rpg": 3.57,
-      "kpg": 10.43,
-      "hpg": 7.0,
+      "rpg": 3.71,
+      "kpg": 10.57,
+      "hpg": 7.14,
       "bbpg": 3.86,
-      "score": 8.4,
+      "score": 8.3,
       "rank": 7
     },
     {
-      "team": "Toronto Blue Jays",
-      "abbr": "TOR",
-      "teamId": 141,
-      "rpg": 3.29,
+      "team": "Texas Rangers",
+      "abbr": "TEX",
+      "teamId": 140,
+      "rpg": 3.67,
       "kpg": 9.0,
-      "hpg": 7.29,
-      "bbpg": 2.86,
-      "score": 8.3,
-      "rank": 8
-    },
-    {
-      "team": "Seattle Mariners",
-      "abbr": "SEA",
-      "teamId": 136,
-      "rpg": 2.4,
-      "kpg": 7.0,
-      "hpg": 7.2,
+      "hpg": 7.0,
       "bbpg": 3.0,
-      "score": 8.2,
-      "rank": 9
+      "score": 8.1,
+      "rank": 8
     },
     {
       "team": "Pittsburgh Pirates",
@@ -1106,29 +1095,18 @@
       "hpg": 7.14,
       "bbpg": 4.14,
       "score": 8.1,
+      "rank": 9
+    },
+    {
+      "team": "Toronto Blue Jays",
+      "abbr": "TOR",
+      "teamId": 141,
+      "rpg": 3.57,
+      "kpg": 9.0,
+      "hpg": 7.43,
+      "bbpg": 2.86,
+      "score": 8.0,
       "rank": 10
-    },
-    {
-      "team": "Arizona Diamondbacks",
-      "abbr": "AZ",
-      "teamId": 109,
-      "rpg": 3.43,
-      "kpg": 7.86,
-      "hpg": 7.14,
-      "bbpg": 3.29,
-      "score": 7.6,
-      "rank": 11
-    },
-    {
-      "team": "Chicago White Sox",
-      "abbr": "CWS",
-      "teamId": 145,
-      "rpg": 4.83,
-      "kpg": 11.17,
-      "hpg": 7.5,
-      "bbpg": 3.5,
-      "score": 7.6,
-      "rank": 12
     },
     {
       "team": "Miami Marlins",
@@ -1139,7 +1117,7 @@
       "hpg": 7.67,
       "bbpg": 3.17,
       "score": 7.5,
-      "rank": 13
+      "rank": 11
     },
     {
       "team": "Washington Nationals",
@@ -1150,18 +1128,29 @@
       "hpg": 7.14,
       "bbpg": 3.86,
       "score": 7.5,
-      "rank": 14
+      "rank": 12
     },
     {
-      "team": "Los Angeles Dodgers",
-      "abbr": "LAD",
-      "teamId": 119,
-      "rpg": 3.17,
-      "kpg": 5.5,
-      "hpg": 7.5,
-      "bbpg": 1.83,
+      "team": "Chicago White Sox",
+      "abbr": "CWS",
+      "teamId": 145,
+      "rpg": 5.0,
+      "kpg": 11.17,
+      "hpg": 7.83,
+      "bbpg": 3.67,
       "score": 7.3,
-      "rank": 15
+      "rank": 13
+    },
+    {
+      "team": "Arizona Diamondbacks",
+      "abbr": "AZ",
+      "teamId": 109,
+      "rpg": 3.57,
+      "kpg": 8.29,
+      "hpg": 7.71,
+      "bbpg": 4.14,
+      "score": 7.1,
+      "rank": 14
     },
     {
       "team": "Cincinnati Reds",
@@ -1172,6 +1161,17 @@
       "hpg": 6.83,
       "bbpg": 4.0,
       "score": 6.9,
+      "rank": 15
+    },
+    {
+      "team": "Los Angeles Dodgers",
+      "abbr": "LAD",
+      "teamId": 119,
+      "rpg": 3.5,
+      "kpg": 6.17,
+      "hpg": 8.33,
+      "bbpg": 2.33,
+      "score": 6.8,
       "rank": 16
     },
     {
@@ -1241,58 +1241,58 @@
       "rank": 22
     },
     {
-      "team": "St. Louis Cardinals",
-      "abbr": "STL",
-      "teamId": 138,
-      "rpg": 4.67,
-      "kpg": 7.5,
-      "hpg": 7.67,
-      "bbpg": 4.17,
-      "score": 5.9,
-      "rank": 23
-    },
-    {
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
       "rpg": 4.83,
       "kpg": 8.83,
-      "hpg": 9.17,
+      "hpg": 9.5,
       "bbpg": 4.0,
-      "score": 5.8,
+      "score": 5.7,
+      "rank": 23
+    },
+    {
+      "team": "St. Louis Cardinals",
+      "abbr": "STL",
+      "teamId": 138,
+      "rpg": 5.0,
+      "kpg": 7.83,
+      "hpg": 8.33,
+      "bbpg": 4.33,
+      "score": 5.5,
       "rank": 24
     },
     {
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 5.5,
+      "rpg": 5.67,
       "kpg": 7.83,
-      "hpg": 10.17,
+      "hpg": 10.33,
       "bbpg": 2.17,
-      "score": 5.2,
+      "score": 5.0,
       "rank": 25
     },
     {
       "team": "Houston Astros",
       "abbr": "HOU",
       "teamId": 117,
-      "rpg": 4.33,
-      "kpg": 7.0,
-      "hpg": 9.83,
+      "rpg": 4.5,
+      "kpg": 7.17,
+      "hpg": 10.0,
       "bbpg": 4.5,
-      "score": 5.0,
+      "score": 4.9,
       "rank": 26
     },
     {
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 5.8,
-      "kpg": 6.4,
-      "hpg": 9.8,
-      "bbpg": 3.4,
-      "score": 4.0,
+      "rpg": 5.0,
+      "kpg": 5.83,
+      "hpg": 9.0,
+      "bbpg": 3.17,
+      "score": 4.9,
       "rank": 27
     },
     {
@@ -1300,21 +1300,21 @@
       "abbr": "PHI",
       "teamId": 143,
       "rpg": 5.57,
-      "kpg": 4.86,
+      "kpg": 5.0,
       "hpg": 8.57,
       "bbpg": 4.86,
-      "score": 3.5,
+      "score": 3.6,
       "rank": 28
     },
     {
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
-      "rpg": 6.83,
+      "rpg": 7.0,
       "kpg": 8.33,
-      "hpg": 10.83,
-      "bbpg": 5.17,
-      "score": 2.9,
+      "hpg": 11.0,
+      "bbpg": 5.33,
+      "score": 2.6,
       "rank": 29
     },
     {
@@ -1331,25 +1331,25 @@
   ],
   "vslhp": [
     {
-      "team": "Toronto Blue Jays",
-      "abbr": "TOR",
-      "teamId": 141,
-      "rpg": 1.05,
-      "kpg": 2.57,
-      "hpg": 2.34,
-      "bbpg": 1.02,
+      "team": "San Francisco Giants",
+      "abbr": "SF",
+      "teamId": 137,
+      "rpg": 1.12,
+      "kpg": 2.73,
+      "hpg": 2.64,
+      "bbpg": 0.78,
       "score": 10.0,
       "rank": 1
     },
     {
-      "team": "San Francisco Giants",
-      "abbr": "SF",
-      "teamId": 137,
-      "rpg": 1.13,
-      "kpg": 2.74,
-      "hpg": 2.67,
-      "bbpg": 0.79,
-      "score": 9.7,
+      "team": "Toronto Blue Jays",
+      "abbr": "TOR",
+      "teamId": 141,
+      "rpg": 1.06,
+      "kpg": 2.57,
+      "hpg": 2.32,
+      "bbpg": 1.04,
+      "score": 10.0,
       "rank": 2
     },
     {
@@ -1360,7 +1360,7 @@
       "kpg": 3.14,
       "hpg": 2.57,
       "bbpg": 1.18,
-      "score": 9.6,
+      "score": 9.7,
       "rank": 3
     },
     {
@@ -1371,8 +1371,19 @@
       "kpg": 2.7,
       "hpg": 2.43,
       "bbpg": 1.02,
-      "score": 9.3,
+      "score": 9.4,
       "rank": 4
+    },
+    {
+      "team": "San Diego Padres",
+      "abbr": "SD",
+      "teamId": 135,
+      "rpg": 1.09,
+      "kpg": 2.59,
+      "hpg": 2.58,
+      "bbpg": 0.98,
+      "score": 9.2,
+      "rank": 5
     },
     {
       "team": "Chicago White Sox",
@@ -1380,32 +1391,10 @@
       "teamId": 145,
       "rpg": 1.27,
       "kpg": 3.11,
-      "hpg": 2.59,
-      "bbpg": 1.11,
-      "score": 9.1,
-      "rank": 5
-    },
-    {
-      "team": "San Diego Padres",
-      "abbr": "SD",
-      "teamId": 135,
-      "rpg": 1.1,
-      "kpg": 2.62,
-      "hpg": 2.61,
-      "bbpg": 0.98,
-      "score": 9.0,
+      "hpg": 2.6,
+      "bbpg": 1.12,
+      "score": 9.2,
       "rank": 6
-    },
-    {
-      "team": "Texas Rangers",
-      "abbr": "TEX",
-      "teamId": 140,
-      "rpg": 1.29,
-      "kpg": 2.86,
-      "hpg": 2.56,
-      "bbpg": 0.99,
-      "score": 8.7,
-      "rank": 7
     },
     {
       "team": "Los Angeles Angels",
@@ -1415,8 +1404,30 @@
       "kpg": 3.4,
       "hpg": 2.75,
       "bbpg": 1.16,
+      "score": 8.6,
+      "rank": 7
+    },
+    {
+      "team": "Texas Rangers",
+      "abbr": "TEX",
+      "teamId": 140,
+      "rpg": 1.32,
+      "kpg": 2.88,
+      "hpg": 2.57,
+      "bbpg": 1.01,
       "score": 8.5,
       "rank": 8
+    },
+    {
+      "team": "Baltimore Orioles",
+      "abbr": "BAL",
+      "teamId": 110,
+      "rpg": 1.39,
+      "kpg": 3.46,
+      "hpg": 2.77,
+      "bbpg": 1.3,
+      "score": 8.3,
+      "rank": 9
     },
     {
       "team": "Cincinnati Reds",
@@ -1427,28 +1438,17 @@
       "hpg": 2.4,
       "bbpg": 1.28,
       "score": 8.2,
-      "rank": 9
-    },
-    {
-      "team": "Baltimore Orioles",
-      "abbr": "BAL",
-      "teamId": 110,
-      "rpg": 1.39,
-      "kpg": 3.46,
-      "hpg": 2.77,
-      "bbpg": 1.3,
-      "score": 8.2,
       "rank": 10
     },
     {
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
-      "rpg": 1.34,
-      "kpg": 2.88,
-      "hpg": 2.42,
+      "rpg": 1.35,
+      "kpg": 2.9,
+      "hpg": 2.47,
       "bbpg": 1.35,
-      "score": 7.6,
+      "score": 7.5,
       "rank": 11
     },
     {
@@ -1459,19 +1459,8 @@
       "kpg": 3.2,
       "hpg": 2.77,
       "bbpg": 1.21,
-      "score": 7.3,
+      "score": 7.4,
       "rank": 12
-    },
-    {
-      "team": "Colorado Rockies",
-      "abbr": "COL",
-      "teamId": 115,
-      "rpg": 1.55,
-      "kpg": 3.34,
-      "hpg": 3.05,
-      "bbpg": 0.93,
-      "score": 7.0,
-      "rank": 13
     },
     {
       "team": "New York Mets",
@@ -1481,8 +1470,8 @@
       "kpg": 2.93,
       "hpg": 2.72,
       "bbpg": 1.09,
-      "score": 6.8,
-      "rank": 14
+      "score": 6.9,
+      "rank": 13
     },
     {
       "team": "Pittsburgh Pirates",
@@ -1493,62 +1482,51 @@
       "hpg": 3.06,
       "bbpg": 1.16,
       "score": 6.7,
-      "rank": 15
-    },
-    {
-      "team": "Detroit Tigers",
-      "abbr": "DET",
-      "teamId": 116,
-      "rpg": 1.41,
-      "kpg": 2.78,
-      "hpg": 2.46,
-      "bbpg": 1.37,
-      "score": 6.5,
-      "rank": 16
+      "rank": 14
     },
     {
       "team": "Houston Astros",
       "abbr": "HOU",
       "teamId": 117,
-      "rpg": 1.38,
+      "rpg": 1.37,
       "kpg": 2.66,
-      "hpg": 2.72,
+      "hpg": 2.69,
       "bbpg": 1.09,
-      "score": 6.4,
-      "rank": 17
+      "score": 6.6,
+      "rank": 15
+    },
+    {
+      "team": "Colorado Rockies",
+      "abbr": "COL",
+      "teamId": 115,
+      "rpg": 1.58,
+      "kpg": 3.34,
+      "hpg": 3.11,
+      "bbpg": 0.94,
+      "score": 6.5,
+      "rank": 16
     },
     {
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
-      "rpg": 1.29,
+      "rpg": 1.28,
       "kpg": 2.72,
-      "hpg": 2.66,
-      "bbpg": 1.41,
-      "score": 6.3,
-      "rank": 18
+      "hpg": 2.64,
+      "bbpg": 1.4,
+      "score": 6.5,
+      "rank": 17
     },
     {
-      "team": "St. Louis Cardinals",
-      "abbr": "STL",
-      "teamId": 138,
-      "rpg": 1.26,
-      "kpg": 2.19,
-      "hpg": 2.5,
-      "bbpg": 1.14,
-      "score": 6.2,
-      "rank": 19
-    },
-    {
-      "team": "Minnesota Twins",
-      "abbr": "MIN",
-      "teamId": 142,
+      "team": "Detroit Tigers",
+      "abbr": "DET",
+      "teamId": 116,
       "rpg": 1.44,
-      "kpg": 3.04,
-      "hpg": 2.77,
-      "bbpg": 1.35,
+      "kpg": 2.76,
+      "hpg": 2.48,
+      "bbpg": 1.36,
       "score": 6.2,
-      "rank": 20
+      "rank": 18
     },
     {
       "team": "Kansas City Royals",
@@ -1559,7 +1537,18 @@
       "hpg": 3.06,
       "bbpg": 1.01,
       "score": 6.1,
-      "rank": 21
+      "rank": 19
+    },
+    {
+      "team": "Minnesota Twins",
+      "abbr": "MIN",
+      "teamId": 142,
+      "rpg": 1.46,
+      "kpg": 3.06,
+      "hpg": 2.81,
+      "bbpg": 1.35,
+      "score": 6.0,
+      "rank": 20
     },
     {
       "team": "Athletics",
@@ -1569,7 +1558,18 @@
       "kpg": 3.92,
       "hpg": 3.48,
       "bbpg": 1.12,
-      "score": 6.0,
+      "score": 5.9,
+      "rank": 21
+    },
+    {
+      "team": "St. Louis Cardinals",
+      "abbr": "STL",
+      "teamId": 138,
+      "rpg": 1.27,
+      "kpg": 2.21,
+      "hpg": 2.54,
+      "bbpg": 1.16,
+      "score": 5.9,
       "rank": 22
     },
     {
@@ -1580,7 +1580,7 @@
       "kpg": 3.73,
       "hpg": 3.17,
       "bbpg": 1.32,
-      "score": 5.8,
+      "score": 5.7,
       "rank": 23
     },
     {
@@ -1602,7 +1602,7 @@
       "kpg": 3.17,
       "hpg": 3.33,
       "bbpg": 1.08,
-      "score": 4.3,
+      "score": 4.2,
       "rank": 25
     },
     {
@@ -1610,10 +1610,10 @@
       "abbr": "LAD",
       "teamId": 119,
       "rpg": 1.56,
-      "kpg": 2.76,
-      "hpg": 3.16,
-      "bbpg": 1.25,
-      "score": 3.4,
+      "kpg": 2.73,
+      "hpg": 3.13,
+      "bbpg": 1.24,
+      "score": 3.3,
       "rank": 26
     },
     {
@@ -1624,7 +1624,7 @@
       "kpg": 3.14,
       "hpg": 3.11,
       "bbpg": 1.31,
-      "score": 3.3,
+      "score": 3.2,
       "rank": 27
     },
     {
@@ -1635,7 +1635,7 @@
       "kpg": 2.7,
       "hpg": 2.89,
       "bbpg": 1.13,
-      "score": 3.2,
+      "score": 3.1,
       "rank": 28
     },
     {
@@ -1646,17 +1646,17 @@
       "kpg": 2.65,
       "hpg": 2.88,
       "bbpg": 1.31,
-      "score": 3.1,
+      "score": 2.9,
       "rank": 29
     },
     {
       "team": "Arizona Diamondbacks",
       "abbr": "AZ",
       "teamId": 109,
-      "rpg": 1.69,
-      "kpg": 2.24,
-      "hpg": 3.19,
-      "bbpg": 1.11,
+      "rpg": 1.67,
+      "kpg": 2.23,
+      "hpg": 3.17,
+      "bbpg": 1.12,
       "score": 1.0,
       "rank": 30
     }
@@ -1721,23 +1721,12 @@
       "team": "Cleveland Guardians",
       "abbr": "CLE",
       "teamId": 114,
-      "rpg": 2.67,
-      "kpg": 5.83,
-      "hpg": 5.6,
-      "bbpg": 2.44,
-      "score": 8.3,
+      "rpg": 2.66,
+      "kpg": 5.78,
+      "hpg": 5.59,
+      "bbpg": 2.42,
+      "score": 8.4,
       "rank": 6
-    },
-    {
-      "team": "Philadelphia Phillies",
-      "abbr": "PHI",
-      "teamId": 143,
-      "rpg": 3.07,
-      "kpg": 5.93,
-      "hpg": 5.63,
-      "bbpg": 2.03,
-      "score": 7.6,
-      "rank": 7
     },
     {
       "team": "Boston Red Sox",
@@ -1748,18 +1737,18 @@
       "hpg": 6.03,
       "bbpg": 2.2,
       "score": 7.5,
-      "rank": 8
+      "rank": 7
     },
     {
-      "team": "Kansas City Royals",
-      "abbr": "KC",
-      "teamId": 118,
-      "rpg": 2.79,
-      "kpg": 5.56,
-      "hpg": 5.7,
-      "bbpg": 2.24,
-      "score": 7.4,
-      "rank": 9
+      "team": "Philadelphia Phillies",
+      "abbr": "PHI",
+      "teamId": 143,
+      "rpg": 3.09,
+      "kpg": 5.94,
+      "hpg": 5.66,
+      "bbpg": 2.03,
+      "score": 7.5,
+      "rank": 8
     },
     {
       "team": "Athletics",
@@ -1770,7 +1759,7 @@
       "hpg": 5.43,
       "bbpg": 2.45,
       "score": 7.4,
-      "rank": 10
+      "rank": 9
     },
     {
       "team": "Texas Rangers",
@@ -1781,16 +1770,27 @@
       "hpg": 5.99,
       "bbpg": 2.35,
       "score": 7.3,
-      "rank": 11
+      "rank": 10
     },
     {
       "team": "Baltimore Orioles",
       "abbr": "BAL",
       "teamId": 110,
-      "rpg": 3.11,
-      "kpg": 6.22,
+      "rpg": 3.09,
+      "kpg": 6.26,
       "hpg": 5.38,
       "bbpg": 2.77,
+      "score": 7.1,
+      "rank": 11
+    },
+    {
+      "team": "Kansas City Royals",
+      "abbr": "KC",
+      "teamId": 118,
+      "rpg": 2.82,
+      "kpg": 5.52,
+      "hpg": 5.74,
+      "bbpg": 2.26,
       "score": 7.0,
       "rank": 12
     },
@@ -1799,8 +1799,8 @@
       "abbr": "STL",
       "teamId": 138,
       "rpg": 3.06,
-      "kpg": 5.72,
-      "hpg": 5.7,
+      "kpg": 5.68,
+      "hpg": 5.68,
       "bbpg": 2.18,
       "score": 6.6,
       "rank": 13
@@ -1809,42 +1809,42 @@
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
-      "rpg": 3.1,
-      "kpg": 6.22,
+      "rpg": 3.11,
+      "kpg": 6.21,
       "hpg": 6.08,
-      "bbpg": 2.34,
-      "score": 6.4,
+      "bbpg": 2.4,
+      "score": 6.1,
       "rank": 14
     },
     {
       "team": "Chicago White Sox",
       "abbr": "CWS",
       "teamId": 145,
-      "rpg": 3.42,
+      "rpg": 3.43,
       "kpg": 6.41,
-      "hpg": 5.69,
+      "hpg": 5.7,
       "bbpg": 2.41,
-      "score": 6.0,
+      "score": 5.9,
       "rank": 15
     },
     {
       "team": "Toronto Blue Jays",
       "abbr": "TOR",
       "teamId": 141,
-      "rpg": 2.85,
-      "kpg": 5.07,
-      "hpg": 6.15,
-      "bbpg": 1.85,
-      "score": 5.8,
+      "rpg": 2.86,
+      "kpg": 5.12,
+      "hpg": 6.18,
+      "bbpg": 1.86,
+      "score": 5.7,
       "rank": 16
     },
     {
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 3.23,
-      "kpg": 6.15,
-      "hpg": 5.77,
+      "rpg": 3.22,
+      "kpg": 6.14,
+      "hpg": 5.76,
       "bbpg": 2.66,
       "score": 5.6,
       "rank": 17
@@ -1853,12 +1853,23 @@
       "team": "Arizona Diamondbacks",
       "abbr": "AZ",
       "teamId": 109,
-      "rpg": 3.07,
-      "kpg": 5.64,
+      "rpg": 3.05,
+      "kpg": 5.65,
       "hpg": 5.76,
-      "bbpg": 2.47,
+      "bbpg": 2.5,
       "score": 5.6,
       "rank": 18
+    },
+    {
+      "team": "San Francisco Giants",
+      "abbr": "SF",
+      "teamId": 137,
+      "rpg": 3.03,
+      "kpg": 5.52,
+      "hpg": 6.27,
+      "bbpg": 1.97,
+      "score": 5.4,
+      "rank": 19
     },
     {
       "team": "Atlanta Braves",
@@ -1868,40 +1879,29 @@
       "kpg": 5.23,
       "hpg": 5.54,
       "bbpg": 2.01,
-      "score": 5.3,
-      "rank": 19
-    },
-    {
-      "team": "San Francisco Giants",
-      "abbr": "SF",
-      "teamId": 137,
-      "rpg": 3.06,
-      "kpg": 5.52,
-      "hpg": 6.3,
-      "bbpg": 1.97,
       "score": 5.2,
       "rank": 20
-    },
-    {
-      "team": "Colorado Rockies",
-      "abbr": "COL",
-      "teamId": 115,
-      "rpg": 3.28,
-      "kpg": 5.84,
-      "hpg": 6.09,
-      "bbpg": 2.27,
-      "score": 4.8,
-      "rank": 21
     },
     {
       "team": "Minnesota Twins",
       "abbr": "MIN",
       "teamId": 142,
-      "rpg": 3.26,
-      "kpg": 5.58,
-      "hpg": 5.97,
-      "bbpg": 2.18,
-      "score": 4.7,
+      "rpg": 3.24,
+      "kpg": 5.54,
+      "hpg": 5.92,
+      "bbpg": 2.17,
+      "score": 4.9,
+      "rank": 21
+    },
+    {
+      "team": "Colorado Rockies",
+      "abbr": "COL",
+      "teamId": 115,
+      "rpg": 3.27,
+      "kpg": 5.81,
+      "hpg": 6.05,
+      "bbpg": 2.26,
+      "score": 4.8,
       "rank": 22
     },
     {
@@ -1919,11 +1919,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 3.04,
-      "kpg": 5.05,
-      "hpg": 6.03,
-      "bbpg": 2.37,
-      "score": 4.0,
+      "rpg": 3.01,
+      "kpg": 5.02,
+      "hpg": 5.97,
+      "bbpg": 2.35,
+      "score": 4.1,
       "rank": 24
     },
     {
@@ -1931,21 +1931,21 @@
       "abbr": "CHC",
       "teamId": 112,
       "rpg": 3.37,
-      "kpg": 6.28,
-      "hpg": 6.02,
-      "bbpg": 3.16,
-      "score": 3.4,
+      "kpg": 6.31,
+      "hpg": 6.03,
+      "bbpg": 3.15,
+      "score": 3.5,
       "rank": 25
     },
     {
       "team": "Houston Astros",
       "abbr": "HOU",
       "teamId": 117,
-      "rpg": 3.45,
-      "kpg": 6.24,
-      "hpg": 6.4,
-      "bbpg": 2.63,
-      "score": 3.3,
+      "rpg": 3.44,
+      "kpg": 6.26,
+      "hpg": 6.38,
+      "bbpg": 2.62,
+      "score": 3.4,
       "rank": 26
     },
     {
@@ -1956,7 +1956,7 @@
       "kpg": 6.64,
       "hpg": 6.5,
       "bbpg": 2.75,
-      "score": 3.0,
+      "score": 2.9,
       "rank": 27
     },
     {
@@ -1967,17 +1967,17 @@
       "kpg": 5.56,
       "hpg": 5.87,
       "bbpg": 2.4,
-      "score": 3.0,
+      "score": 2.9,
       "rank": 28
     },
     {
       "team": "Los Angeles Dodgers",
       "abbr": "LAD",
       "teamId": 119,
-      "rpg": 3.53,
-      "kpg": 5.66,
-      "hpg": 6.32,
-      "bbpg": 2.78,
+      "rpg": 3.5,
+      "kpg": 5.65,
+      "hpg": 6.31,
+      "bbpg": 2.79,
       "score": 1.4,
       "rank": 29
     },
@@ -1986,9 +1986,9 @@
       "abbr": "MIL",
       "teamId": 158,
       "rpg": 3.66,
-      "kpg": 5.99,
+      "kpg": 6.03,
       "hpg": 6.37,
-      "bbpg": 2.98,
+      "bbpg": 2.97,
       "score": 1.0,
       "rank": 30
     }
