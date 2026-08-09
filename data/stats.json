@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-09",
-  "updatedAt": "2026-08-09T03:42:11+00:00",
+  "updatedAt": "2026-08-09T05:04:40+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -28,11 +28,11 @@
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
-      "rpg": 3.9,
-      "kpg": 8.5,
-      "hpg": 7.53,
+      "rpg": 3.91,
+      "kpg": 8.52,
+      "hpg": 7.57,
       "bbpg": 3.26,
-      "score": 9.5,
+      "score": 9.4,
       "rank": 3
     },
     {
@@ -281,11 +281,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 4.42,
-      "kpg": 7.16,
-      "hpg": 8.58,
+      "rpg": 4.44,
+      "kpg": 7.19,
+      "hpg": 8.59,
       "bbpg": 3.28,
-      "score": 3.3,
+      "score": 3.2,
       "rank": 26
     },
     {
@@ -382,11 +382,11 @@
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
-      "rpg": 3.29,
-      "kpg": 7.75,
-      "hpg": 7.21,
+      "rpg": 3.33,
+      "kpg": 7.83,
+      "hpg": 7.38,
       "bbpg": 2.92,
-      "score": 7.5,
+      "score": 7.4,
       "rank": 5
     },
     {
@@ -536,11 +536,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 4.12,
-      "kpg": 7.08,
-      "hpg": 8.56,
-      "bbpg": 2.32,
-      "score": 5.0,
+      "rpg": 4.2,
+      "kpg": 7.24,
+      "hpg": 8.64,
+      "bbpg": 2.36,
+      "score": 4.9,
       "rank": 19
     },
     {
@@ -725,11 +725,11 @@
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
-      "rpg": 2.93,
-      "kpg": 8.0,
-      "hpg": 7.14,
+      "rpg": 3.0,
+      "kpg": 8.14,
+      "hpg": 7.43,
       "bbpg": 2.79,
-      "score": 8.5,
+      "score": 8.4,
       "rank": 6
     },
     {
@@ -747,11 +747,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 3.31,
-      "kpg": 6.92,
-      "hpg": 7.38,
-      "bbpg": 2.08,
-      "score": 7.9,
+      "rpg": 3.46,
+      "kpg": 7.23,
+      "hpg": 7.54,
+      "bbpg": 2.15,
+      "score": 7.8,
       "rank": 8
     },
     {
@@ -1054,17 +1054,6 @@
       "rank": 5
     },
     {
-      "team": "Seattle Mariners",
-      "abbr": "SEA",
-      "teamId": 136,
-      "rpg": 2.17,
-      "kpg": 6.33,
-      "hpg": 6.67,
-      "bbpg": 2.67,
-      "score": 8.5,
-      "rank": 6
-    },
-    {
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
@@ -1073,6 +1062,17 @@
       "hpg": 7.14,
       "bbpg": 3.86,
       "score": 8.3,
+      "rank": 6
+    },
+    {
+      "team": "Seattle Mariners",
+      "abbr": "SEA",
+      "teamId": 136,
+      "rpg": 2.33,
+      "kpg": 6.67,
+      "hpg": 7.33,
+      "bbpg": 2.67,
+      "score": 8.2,
       "rank": 7
     },
     {
@@ -1288,11 +1288,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 5.0,
-      "kpg": 5.83,
-      "hpg": 9.0,
-      "bbpg": 3.17,
-      "score": 4.9,
+      "rpg": 5.33,
+      "kpg": 6.5,
+      "hpg": 9.33,
+      "bbpg": 3.33,
+      "score": 4.7,
       "rank": 27
     },
     {
@@ -1358,9 +1358,9 @@
       "teamId": 136,
       "rpg": 1.21,
       "kpg": 3.14,
-      "hpg": 2.57,
-      "bbpg": 1.18,
-      "score": 9.7,
+      "hpg": 2.58,
+      "bbpg": 1.17,
+      "score": 9.6,
       "rank": 3
     },
     {
@@ -1587,11 +1587,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 1.4,
-      "kpg": 2.49,
-      "hpg": 3.0,
-      "bbpg": 1.07,
-      "score": 4.7,
+      "rpg": 1.38,
+      "kpg": 2.47,
+      "hpg": 2.97,
+      "bbpg": 1.06,
+      "score": 4.9,
       "rank": 24
     },
     {
@@ -1696,6 +1696,17 @@
       "rank": 3
     },
     {
+      "team": "Seattle Mariners",
+      "abbr": "SEA",
+      "teamId": 136,
+      "rpg": 2.79,
+      "kpg": 5.96,
+      "hpg": 5.47,
+      "bbpg": 2.31,
+      "score": 8.7,
+      "rank": 4
+    },
+    {
       "team": "New York Mets",
       "abbr": "NYM",
       "teamId": 121,
@@ -1704,17 +1715,6 @@
       "hpg": 5.7,
       "bbpg": 2.31,
       "score": 8.7,
-      "rank": 4
-    },
-    {
-      "team": "Seattle Mariners",
-      "abbr": "SEA",
-      "teamId": 136,
-      "rpg": 2.81,
-      "kpg": 5.99,
-      "hpg": 5.48,
-      "bbpg": 2.33,
-      "score": 8.6,
       "rank": 5
     },
     {
@@ -1919,11 +1919,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 3.01,
-      "kpg": 5.02,
-      "hpg": 5.97,
-      "bbpg": 2.35,
-      "score": 4.1,
+      "rpg": 3.03,
+      "kpg": 5.06,
+      "hpg": 6.03,
+      "bbpg": 2.37,
+      "score": 3.9,
       "rank": 24
     },
     {
