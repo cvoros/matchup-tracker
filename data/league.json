@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-09",
-  "updatedAt": "2026-08-09T09:38:47+00:00",
+  "updatedAt": "2026-08-09T10:33:57+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -911,12 +911,12 @@
       "espnId": 5116839
     },
     {
-      "name": "David Peterson",
-      "espnId": 40921
-    },
-    {
       "name": "Cade Horton",
       "espnId": 4692526
+    },
+    {
+      "name": "David Peterson",
+      "espnId": 40921
     },
     {
       "name": "Kade Anderson",
@@ -1287,12 +1287,12 @@
       "espnId": 33793
     },
     {
-      "name": "Andrew Alvarez",
-      "espnId": 4300668
-    },
-    {
       "name": "Paul Blackburn",
       "espnId": 32776
+    },
+    {
+      "name": "Andrew Alvarez",
+      "espnId": 4300668
     },
     {
       "name": "Kevin Ginkel",
@@ -1307,6 +1307,10 @@
       "espnId": 40327
     },
     {
+      "name": "Ryan Gusto",
+      "espnId": 5131986
+    },
+    {
       "name": "Caleb Kilian",
       "espnId": 4875969
     },
@@ -1317,10 +1321,6 @@
     {
       "name": "Jose Ferrer",
       "espnId": 5119607
-    },
-    {
-      "name": "Ryan Gusto",
-      "espnId": 5131986
     },
     {
       "name": "Tyler Tolbert",
@@ -1351,24 +1351,20 @@
       "espnId": 4833671
     },
     {
-      "name": "Jack Dreyer",
-      "espnId": 5136082
-    },
-    {
       "name": "Cody Bradford",
       "espnId": 4142539
     },
     {
-      "name": "Robert Stock",
-      "espnId": 30577
+      "name": "Jack Dreyer",
+      "espnId": 5136082
     },
     {
       "name": "Brad Lord",
       "espnId": 4866810
     },
     {
-      "name": "Brooks Raley",
-      "espnId": 32005
+      "name": "Robert Stock",
+      "espnId": 30577
     },
     {
       "name": "Luis Gil",
@@ -1381,6 +1377,10 @@
     {
       "name": "Dylan Dodd",
       "espnId": 4416462
+    },
+    {
+      "name": "Brooks Raley",
+      "espnId": 32005
     },
     {
       "name": "Seth Hernandez",
@@ -1455,16 +1455,16 @@
       "espnId": 40855
     },
     {
+      "name": "Ryne Stanek",
+      "espnId": 33301
+    },
+    {
       "name": "Jack Kochanowicz",
       "espnId": 4917819
     },
     {
       "name": "Carson Whisenhunt",
       "espnId": 4626232
-    },
-    {
-      "name": "Ryne Stanek",
-      "espnId": 33301
     },
     {
       "name": "Kai-Wei Teng",
@@ -2083,10 +2083,6 @@
       "espnId": 38796
     },
     {
-      "name": "Kody Funderburk",
-      "espnId": 4348166
-    },
-    {
       "name": "Juan Mejia",
       "espnId": 5185107
     },
@@ -2121,6 +2117,10 @@
     {
       "name": "Kyle Hurt",
       "espnId": 4306800
+    },
+    {
+      "name": "Kody Funderburk",
+      "espnId": 4348166
     },
     {
       "name": "Richard Lovelady",
