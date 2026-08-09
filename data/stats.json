@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-09",
-  "updatedAt": "2026-08-09T16:34:25+00:00",
+  "updatedAt": "2026-08-09T17:30:57+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -17,9 +17,9 @@
       "team": "Cincinnati Reds",
       "abbr": "CIN",
       "teamId": 113,
-      "rpg": 4.11,
-      "kpg": 9.46,
-      "hpg": 7.58,
+      "rpg": 4.12,
+      "kpg": 9.48,
+      "hpg": 7.59,
       "bbpg": 3.62,
       "score": 9.7,
       "rank": 2
@@ -300,17 +300,6 @@
       "rank": 27
     },
     {
-      "team": "Washington Nationals",
-      "abbr": "WSH",
-      "teamId": 120,
-      "rpg": 5.3,
-      "kpg": 8.24,
-      "hpg": 8.51,
-      "bbpg": 3.52,
-      "score": 1.8,
-      "rank": 28
-    },
-    {
       "team": "Chicago Cubs",
       "abbr": "CHC",
       "teamId": 112,
@@ -319,6 +308,17 @@
       "hpg": 8.51,
       "bbpg": 4.28,
       "score": 1.7,
+      "rank": 28
+    },
+    {
+      "team": "Washington Nationals",
+      "abbr": "WSH",
+      "teamId": 120,
+      "rpg": 5.33,
+      "kpg": 8.27,
+      "hpg": 8.55,
+      "bbpg": 3.52,
+      "score": 1.6,
       "rank": 29
     },
     {
@@ -404,11 +404,11 @@
       "team": "Cincinnati Reds",
       "abbr": "CIN",
       "teamId": 113,
-      "rpg": 3.88,
-      "kpg": 9.24,
-      "hpg": 7.56,
+      "rpg": 3.92,
+      "kpg": 9.32,
+      "hpg": 7.6,
       "bbpg": 3.2,
-      "score": 7.3,
+      "score": 7.2,
       "rank": 7
     },
     {
@@ -591,11 +591,11 @@
       "team": "Washington Nationals",
       "abbr": "WSH",
       "teamId": 120,
-      "rpg": 4.92,
-      "kpg": 8.15,
-      "hpg": 8.15,
+      "rpg": 5.04,
+      "kpg": 8.27,
+      "hpg": 8.35,
       "bbpg": 3.81,
-      "score": 3.6,
+      "score": 3.4,
       "rank": 24
     },
     {
@@ -678,17 +678,6 @@
       "rank": 1
     },
     {
-      "team": "Cincinnati Reds",
-      "abbr": "CIN",
-      "teamId": 113,
-      "rpg": 3.6,
-      "kpg": 10.6,
-      "hpg": 6.6,
-      "bbpg": 3.73,
-      "score": 9.0,
-      "rank": 2
-    },
-    {
       "team": "Baltimore Orioles",
       "abbr": "BAL",
       "teamId": 110,
@@ -697,6 +686,17 @@
       "hpg": 5.92,
       "bbpg": 3.92,
       "score": 9.0,
+      "rank": 2
+    },
+    {
+      "team": "Cincinnati Reds",
+      "abbr": "CIN",
+      "teamId": 113,
+      "rpg": 3.67,
+      "kpg": 10.73,
+      "hpg": 6.67,
+      "bbpg": 3.73,
+      "score": 8.9,
       "rank": 3
     },
     {
@@ -876,17 +876,6 @@
       "rank": 19
     },
     {
-      "team": "Washington Nationals",
-      "abbr": "WSH",
-      "teamId": 120,
-      "rpg": 4.19,
-      "kpg": 7.75,
-      "hpg": 7.25,
-      "bbpg": 4.12,
-      "score": 6.5,
-      "rank": 20
-    },
-    {
       "team": "San Francisco Giants",
       "abbr": "SF",
       "teamId": 137,
@@ -895,6 +884,17 @@
       "hpg": 7.57,
       "bbpg": 3.43,
       "score": 6.4,
+      "rank": 20
+    },
+    {
+      "team": "Washington Nationals",
+      "abbr": "WSH",
+      "teamId": 120,
+      "rpg": 4.38,
+      "kpg": 7.94,
+      "hpg": 7.56,
+      "bbpg": 4.12,
+      "score": 6.2,
       "rank": 21
     },
     {
@@ -1109,26 +1109,15 @@
       "rank": 10
     },
     {
-      "team": "Washington Nationals",
-      "abbr": "WSH",
-      "teamId": 120,
-      "rpg": 3.88,
-      "kpg": 8.75,
-      "hpg": 6.25,
-      "bbpg": 3.5,
-      "score": 7.9,
-      "rank": 11
-    },
-    {
       "team": "Cincinnati Reds",
       "abbr": "CIN",
       "teamId": 113,
-      "rpg": 4.14,
-      "kpg": 8.43,
-      "hpg": 6.0,
+      "rpg": 4.29,
+      "kpg": 8.71,
+      "hpg": 6.14,
       "bbpg": 3.43,
-      "score": 7.7,
-      "rank": 12
+      "score": 7.6,
+      "rank": 11
     },
     {
       "team": "Miami Marlins",
@@ -1138,6 +1127,17 @@
       "kpg": 7.17,
       "hpg": 7.67,
       "bbpg": 3.17,
+      "score": 7.5,
+      "rank": 12
+    },
+    {
+      "team": "Washington Nationals",
+      "abbr": "WSH",
+      "teamId": 120,
+      "rpg": 4.25,
+      "kpg": 9.12,
+      "hpg": 6.88,
+      "bbpg": 3.5,
       "score": 7.5,
       "rank": 13
     },
