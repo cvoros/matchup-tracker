@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-14",
-  "updatedAt": "2026-08-14T19:47:54+00:00",
+  "updatedAt": "2026-08-14T20:30:17+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -402,11 +402,6 @@
           "positionId": 1
         },
         {
-          "name": "Michael Soroka",
-          "espnId": 34984,
-          "positionId": 1
-        },
-        {
           "name": "Blake Snell",
           "espnId": 33748,
           "positionId": 1
@@ -419,6 +414,11 @@
         {
           "name": "Bubba Chandler",
           "espnId": 4683325,
+          "positionId": 1
+        },
+        {
+          "name": "Noah Cameron",
+          "espnId": 4417208,
           "positionId": 1
         }
       ]
@@ -631,6 +631,10 @@
       "espnId": 33403
     },
     {
+      "name": "Michael Soroka",
+      "espnId": 34984
+    },
+    {
       "name": "Bryce Miller",
       "espnId": 4654313
     },
@@ -721,10 +725,6 @@
     {
       "name": "Seth Lugo",
       "espnId": 34873
-    },
-    {
-      "name": "Noah Cameron",
-      "espnId": 4417208
     },
     {
       "name": "Clay Holmes",
