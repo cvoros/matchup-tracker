@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-14",
-  "updatedAt": "2026-08-14T20:30:16+00:00",
+  "updatedAt": "2026-08-14T21:23:57+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -194,9 +194,9 @@
       "abbr": "STL",
       "teamId": 138,
       "rpg": 4.34,
-      "kpg": 7.68,
-      "hpg": 8.0,
-      "bbpg": 3.23,
+      "kpg": 7.7,
+      "hpg": 8.01,
+      "bbpg": 3.24,
       "score": 5.5,
       "rank": 18
     },
@@ -306,7 +306,7 @@
       "rpg": 5.18,
       "kpg": 8.6,
       "hpg": 8.54,
-      "bbpg": 4.25,
+      "bbpg": 4.26,
       "score": 1.2,
       "rank": 28
     },
@@ -482,9 +482,9 @@
       "abbr": "STL",
       "teamId": 138,
       "rpg": 3.7,
-      "kpg": 7.48,
-      "hpg": 7.74,
-      "bbpg": 3.33,
+      "kpg": 7.56,
+      "hpg": 7.78,
+      "bbpg": 3.37,
       "score": 6.1,
       "rank": 14
     },
@@ -604,9 +604,9 @@
       "teamId": 112,
       "rpg": 5.67,
       "kpg": 9.26,
-      "hpg": 9.33,
-      "bbpg": 3.93,
-      "score": 2.5,
+      "hpg": 9.37,
+      "bbpg": 3.96,
+      "score": 2.4,
       "rank": 25
     },
     {
@@ -836,9 +836,9 @@
       "abbr": "STL",
       "teamId": 138,
       "rpg": 3.93,
-      "kpg": 7.71,
-      "hpg": 8.14,
-      "bbpg": 3.43,
+      "kpg": 7.86,
+      "hpg": 8.21,
+      "bbpg": 3.5,
       "score": 5.8,
       "rank": 16
     },
@@ -892,9 +892,9 @@
       "teamId": 112,
       "rpg": 5.13,
       "kpg": 8.47,
-      "hpg": 8.53,
-      "bbpg": 3.6,
-      "score": 4.4,
+      "hpg": 8.6,
+      "bbpg": 3.67,
+      "score": 4.3,
       "rank": 21
     },
     {
@@ -1168,9 +1168,9 @@
       "abbr": "STL",
       "teamId": 138,
       "rpg": 4.29,
-      "kpg": 6.71,
-      "hpg": 7.43,
-      "bbpg": 3.29,
+      "kpg": 7.0,
+      "hpg": 7.57,
+      "bbpg": 3.43,
       "score": 5.5,
       "rank": 16
     },
@@ -1301,9 +1301,9 @@
       "teamId": 112,
       "rpg": 6.0,
       "kpg": 8.43,
-      "hpg": 8.86,
-      "bbpg": 3.71,
-      "score": 3.7,
+      "hpg": 9.0,
+      "bbpg": 3.86,
+      "score": 3.5,
       "rank": 28
     },
     {
@@ -1518,6 +1518,17 @@
       "rank": 17
     },
     {
+      "team": "St. Louis Cardinals",
+      "abbr": "STL",
+      "teamId": 138,
+      "rpg": 1.27,
+      "kpg": 2.22,
+      "hpg": 2.52,
+      "bbpg": 1.15,
+      "score": 5.9,
+      "rank": 18
+    },
+    {
       "team": "Detroit Tigers",
       "abbr": "DET",
       "teamId": 116,
@@ -1526,7 +1537,7 @@
       "hpg": 2.49,
       "bbpg": 1.35,
       "score": 5.9,
-      "rank": 18
+      "rank": 19
     },
     {
       "team": "Athletics",
@@ -1537,7 +1548,7 @@
       "hpg": 3.45,
       "bbpg": 1.11,
       "score": 5.8,
-      "rank": 19
+      "rank": 20
     },
     {
       "team": "New York Yankees",
@@ -1548,7 +1559,7 @@
       "hpg": 3.08,
       "bbpg": 1.3,
       "score": 5.8,
-      "rank": 20
+      "rank": 21
     },
     {
       "team": "Minnesota Twins",
@@ -1559,7 +1570,7 @@
       "hpg": 2.82,
       "bbpg": 1.34,
       "score": 5.8,
-      "rank": 21
+      "rank": 22
     },
     {
       "team": "Kansas City Royals",
@@ -1569,17 +1580,6 @@
       "kpg": 3.04,
       "hpg": 3.12,
       "bbpg": 1.08,
-      "score": 5.7,
-      "rank": 22
-    },
-    {
-      "team": "St. Louis Cardinals",
-      "abbr": "STL",
-      "teamId": 138,
-      "rpg": 1.28,
-      "kpg": 2.24,
-      "hpg": 2.54,
-      "bbpg": 1.16,
       "score": 5.7,
       "rank": 23
     },
@@ -1810,9 +1810,9 @@
       "abbr": "STL",
       "teamId": 138,
       "rpg": 3.07,
-      "kpg": 5.64,
-      "hpg": 5.69,
-      "bbpg": 2.17,
+      "kpg": 5.67,
+      "hpg": 5.7,
+      "bbpg": 2.18,
       "score": 6.2,
       "rank": 14
     },
@@ -1949,17 +1949,6 @@
       "rank": 26
     },
     {
-      "team": "Chicago Cubs",
-      "abbr": "CHC",
-      "teamId": 112,
-      "rpg": 3.48,
-      "kpg": 6.35,
-      "hpg": 6.12,
-      "bbpg": 3.14,
-      "score": 2.5,
-      "rank": 27
-    },
-    {
       "team": "Washington Nationals",
       "abbr": "WSH",
       "teamId": 120,
@@ -1967,6 +1956,17 @@
       "kpg": 5.54,
       "hpg": 5.89,
       "bbpg": 2.37,
+      "score": 2.4,
+      "rank": 27
+    },
+    {
+      "team": "Chicago Cubs",
+      "abbr": "CHC",
+      "teamId": 112,
+      "rpg": 3.48,
+      "kpg": 6.3,
+      "hpg": 6.1,
+      "bbpg": 3.13,
       "score": 2.4,
       "rank": 28
     },
