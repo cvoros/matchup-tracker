@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-15",
-  "updatedAt": "2026-08-15T03:38:21+00:00",
+  "updatedAt": "2026-08-15T04:30:06+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -469,11 +469,6 @@
           "positionId": 11
         },
         {
-          "name": "Jacob Webb",
-          "espnId": 40384,
-          "positionId": 11
-        },
-        {
           "name": "Andre Pallante",
           "espnId": 4109034,
           "positionId": 1
@@ -481,6 +476,11 @@
         {
           "name": "Clay Holmes",
           "espnId": 32827,
+          "positionId": 1
+        },
+        {
+          "name": "Hayden Wesneski",
+          "espnId": 42996,
           "positionId": 1
         }
       ]
@@ -595,11 +595,6 @@
         {
           "name": "Jackson Jobe",
           "espnId": 4872647,
-          "positionId": 1
-        },
-        {
-          "name": "Landen Roupp",
-          "espnId": 4345404,
           "positionId": 1
         }
       ]
@@ -727,6 +722,10 @@
       "espnId": 35135
     },
     {
+      "name": "Landen Roupp",
+      "espnId": 4345404
+    },
+    {
       "name": "Seth Lugo",
       "espnId": 34873
     },
@@ -851,6 +850,10 @@
       "espnId": 37793
     },
     {
+      "name": "Jacob Webb",
+      "espnId": 40384
+    },
+    {
       "name": "Brady Singer",
       "espnId": 41172
     },
@@ -885,10 +888,6 @@
     {
       "name": "Rico Garcia",
       "espnId": 41382
-    },
-    {
-      "name": "Hayden Wesneski",
-      "espnId": 42996
     },
     {
       "name": "Joe Musgrove",
