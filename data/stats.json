@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-16",
-  "updatedAt": "2026-08-16T03:54:35+00:00",
+  "updatedAt": "2026-08-16T04:34:48+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -39,11 +39,11 @@
       "team": "Texas Rangers",
       "abbr": "TEX",
       "teamId": 140,
-      "rpg": 4.06,
-      "kpg": 8.49,
-      "hpg": 8.04,
-      "bbpg": 3.19,
-      "score": 8.0,
+      "rpg": 4.07,
+      "kpg": 8.5,
+      "hpg": 8.06,
+      "bbpg": 3.2,
+      "score": 7.9,
       "rank": 4
     },
     {
@@ -139,9 +139,9 @@
       "abbr": "ATH",
       "teamId": 133,
       "rpg": 4.35,
-      "kpg": 8.63,
+      "kpg": 8.64,
       "hpg": 8.26,
-      "bbpg": 3.29,
+      "bbpg": 3.3,
       "score": 6.5,
       "rank": 13
     },
@@ -382,11 +382,11 @@
       "team": "Texas Rangers",
       "abbr": "TEX",
       "teamId": 140,
-      "rpg": 3.75,
-      "kpg": 8.86,
-      "hpg": 7.64,
-      "bbpg": 2.82,
-      "score": 7.7,
+      "rpg": 3.79,
+      "kpg": 8.89,
+      "hpg": 7.71,
+      "bbpg": 2.86,
+      "score": 7.5,
       "rank": 5
     },
     {
@@ -471,9 +471,9 @@
       "abbr": "ATH",
       "teamId": 133,
       "rpg": 4.19,
-      "kpg": 8.15,
+      "kpg": 8.22,
       "hpg": 8.19,
-      "bbpg": 2.41,
+      "bbpg": 2.44,
       "score": 6.2,
       "rank": 13
     },
@@ -714,11 +714,11 @@
       "team": "Texas Rangers",
       "abbr": "TEX",
       "teamId": 140,
-      "rpg": 3.29,
-      "kpg": 8.64,
-      "hpg": 6.86,
-      "bbpg": 3.21,
-      "score": 8.8,
+      "rpg": 3.36,
+      "kpg": 8.71,
+      "hpg": 7.0,
+      "bbpg": 3.29,
+      "score": 8.6,
       "rank": 5
     },
     {
@@ -792,10 +792,10 @@
       "abbr": "ATH",
       "teamId": 133,
       "rpg": 4.15,
-      "kpg": 8.08,
+      "kpg": 8.23,
       "hpg": 8.0,
-      "bbpg": 2.23,
-      "score": 7.0,
+      "bbpg": 2.31,
+      "score": 7.1,
       "rank": 12
     },
     {
@@ -1043,17 +1043,6 @@
       "rank": 4
     },
     {
-      "team": "Texas Rangers",
-      "abbr": "TEX",
-      "teamId": 140,
-      "rpg": 2.86,
-      "kpg": 8.14,
-      "hpg": 6.71,
-      "bbpg": 3.29,
-      "score": 9.0,
-      "rank": 5
-    },
-    {
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
@@ -1062,7 +1051,7 @@
       "hpg": 6.57,
       "bbpg": 5.14,
       "score": 9.0,
-      "rank": 6
+      "rank": 5
     },
     {
       "team": "Pittsburgh Pirates",
@@ -1072,6 +1061,17 @@
       "kpg": 9.17,
       "hpg": 7.5,
       "bbpg": 1.67,
+      "score": 8.8,
+      "rank": 6
+    },
+    {
+      "team": "Texas Rangers",
+      "abbr": "TEX",
+      "teamId": 140,
+      "rpg": 3.0,
+      "kpg": 8.29,
+      "hpg": 7.0,
+      "bbpg": 3.43,
       "score": 8.8,
       "rank": 7
     },
@@ -1201,10 +1201,10 @@
       "abbr": "ATH",
       "teamId": 133,
       "rpg": 4.83,
-      "kpg": 7.33,
+      "kpg": 7.67,
       "hpg": 8.5,
-      "bbpg": 2.17,
-      "score": 6.5,
+      "bbpg": 2.33,
+      "score": 6.6,
       "rank": 19
     },
     {
@@ -1397,6 +1397,17 @@
       "rank": 6
     },
     {
+      "team": "Texas Rangers",
+      "abbr": "TEX",
+      "teamId": 140,
+      "rpg": 1.33,
+      "kpg": 2.88,
+      "hpg": 2.59,
+      "bbpg": 1.05,
+      "score": 8.2,
+      "rank": 7
+    },
+    {
       "team": "Chicago White Sox",
       "abbr": "CWS",
       "teamId": 145,
@@ -1405,7 +1416,7 @@
       "hpg": 2.7,
       "bbpg": 1.15,
       "score": 8.2,
-      "rank": 7
+      "rank": 8
     },
     {
       "team": "Baltimore Orioles",
@@ -1416,17 +1427,6 @@
       "hpg": 2.8,
       "bbpg": 1.28,
       "score": 8.1,
-      "rank": 8
-    },
-    {
-      "team": "Texas Rangers",
-      "abbr": "TEX",
-      "teamId": 140,
-      "rpg": 1.34,
-      "kpg": 2.89,
-      "hpg": 2.6,
-      "bbpg": 1.06,
-      "score": 8.0,
       "rank": 9
     },
     {
@@ -1565,11 +1565,11 @@
       "team": "Athletics",
       "abbr": "ATH",
       "teamId": 133,
-      "rpg": 1.67,
-      "kpg": 3.87,
-      "hpg": 3.46,
-      "bbpg": 1.12,
-      "score": 5.9,
+      "rpg": 1.69,
+      "kpg": 3.9,
+      "hpg": 3.5,
+      "bbpg": 1.14,
+      "score": 5.7,
       "rank": 22
     },
     {
@@ -1729,17 +1729,6 @@
       "rank": 6
     },
     {
-      "team": "Texas Rangers",
-      "abbr": "TEX",
-      "teamId": 140,
-      "rpg": 2.8,
-      "kpg": 6.07,
-      "hpg": 5.85,
-      "bbpg": 2.33,
-      "score": 7.6,
-      "rank": 7
-    },
-    {
       "team": "Kansas City Royals",
       "abbr": "KC",
       "teamId": 118,
@@ -1748,17 +1737,28 @@
       "hpg": 5.54,
       "bbpg": 2.18,
       "score": 7.5,
+      "rank": 7
+    },
+    {
+      "team": "Texas Rangers",
+      "abbr": "TEX",
+      "teamId": 140,
+      "rpg": 2.82,
+      "kpg": 6.08,
+      "hpg": 5.89,
+      "bbpg": 2.32,
+      "score": 7.5,
       "rank": 8
     },
     {
       "team": "Athletics",
       "abbr": "ATH",
       "teamId": 133,
-      "rpg": 2.83,
-      "kpg": 5.54,
-      "hpg": 5.49,
-      "bbpg": 2.42,
-      "score": 6.8,
+      "rpg": 2.81,
+      "kpg": 5.5,
+      "hpg": 5.45,
+      "bbpg": 2.4,
+      "score": 7.0,
       "rank": 9
     },
     {
