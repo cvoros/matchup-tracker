@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-17",
-  "updatedAt": "2026-08-17T18:38:37+00:00",
+  "updatedAt": "2026-08-17T19:27:15+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -236,8 +236,8 @@
           "positionId": 1
         },
         {
-          "name": "Brandon Young",
-          "espnId": 4414339,
+          "name": "Shane Baz",
+          "espnId": 39639,
           "positionId": 1
         }
       ]
@@ -479,9 +479,9 @@
           "positionId": 11
         },
         {
-          "name": "Grant Taylor",
-          "espnId": 4927630,
-          "positionId": 11
+          "name": "Eric Lauer",
+          "espnId": 39915,
+          "positionId": 1
         }
       ]
     },
@@ -593,23 +593,19 @@
           "positionId": 1
         },
         {
-          "name": "Casey Mize",
-          "espnId": 41167,
+          "name": "Jose Soriano",
+          "espnId": 40973,
           "positionId": 1
         },
         {
-          "name": "Martin Perez",
-          "espnId": 31098,
+          "name": "Bryce Miller",
+          "espnId": 4654313,
           "positionId": 1
         }
       ]
     }
   ],
   "freeAgents": [
-    {
-      "name": "Jose Soriano",
-      "espnId": 40973
-    },
     {
       "name": "Raisel Iglesias",
       "espnId": 33618
@@ -637,10 +633,6 @@
     {
       "name": "Ryan Weathers",
       "espnId": 41178
-    },
-    {
-      "name": "Bryce Miller",
-      "espnId": 4654313
     },
     {
       "name": "Cole Ragans",
@@ -681,6 +673,10 @@
     {
       "name": "Jeff Hoffman",
       "espnId": 33841
+    },
+    {
+      "name": "Casey Mize",
+      "espnId": 41167
     },
     {
       "name": "Will Warren",
@@ -727,10 +723,6 @@
       "espnId": 4109034
     },
     {
-      "name": "Shane Baz",
-      "espnId": 39639
-    },
-    {
       "name": "Hunter Greene",
       "espnId": 39635
     },
@@ -763,12 +755,20 @@
       "espnId": 40944
     },
     {
+      "name": "Brandon Young",
+      "espnId": 4414339
+    },
+    {
       "name": "Gregory Soto",
       "espnId": 39804
     },
     {
       "name": "Merrill Kelly",
       "espnId": 32968
+    },
+    {
+      "name": "Martin Perez",
+      "espnId": 31098
     },
     {
       "name": "Shane Bieber",
@@ -797,6 +797,10 @@
     {
       "name": "Tyler Rogers",
       "espnId": 34026
+    },
+    {
+      "name": "Grant Taylor",
+      "espnId": 4927630
     },
     {
       "name": "Bailey Ober",
@@ -993,10 +997,6 @@
     {
       "name": "Reynaldo Lopez",
       "espnId": 33860
-    },
-    {
-      "name": "Eric Lauer",
-      "espnId": 39915
     },
     {
       "name": "Chad Patrick",
