@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-17",
-  "updatedAt": "2026-08-17T17:26:05+00:00",
+  "updatedAt": "2026-08-17T18:38:36+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -17,11 +17,11 @@
       "team": "Cincinnati Reds",
       "abbr": "CIN",
       "teamId": 113,
-      "rpg": 4.08,
-      "kpg": 9.48,
-      "hpg": 7.52,
-      "bbpg": 3.6,
-      "score": 9.8,
+      "rpg": 4.05,
+      "kpg": 9.44,
+      "hpg": 7.47,
+      "bbpg": 3.59,
+      "score": 9.9,
       "rank": 2
     },
     {
@@ -204,11 +204,11 @@
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
-      "rpg": 4.42,
-      "kpg": 7.68,
-      "hpg": 8.04,
-      "bbpg": 3.25,
-      "score": 4.8,
+      "rpg": 4.4,
+      "kpg": 7.64,
+      "hpg": 8.0,
+      "bbpg": 3.24,
+      "score": 4.9,
       "rank": 19
     },
     {
@@ -360,11 +360,11 @@
       "team": "Cincinnati Reds",
       "abbr": "CIN",
       "teamId": 113,
-      "rpg": 3.7,
-      "kpg": 9.59,
-      "hpg": 6.78,
-      "bbpg": 3.37,
-      "score": 8.6,
+      "rpg": 3.57,
+      "kpg": 9.43,
+      "hpg": 6.57,
+      "bbpg": 3.32,
+      "score": 8.9,
       "rank": 3
     },
     {
@@ -536,11 +536,11 @@
       "team": "St. Louis Cardinals",
       "abbr": "STL",
       "teamId": 138,
-      "rpg": 4.07,
-      "kpg": 7.57,
-      "hpg": 7.93,
-      "bbpg": 3.36,
-      "score": 5.2,
+      "rpg": 4.0,
+      "kpg": 7.41,
+      "hpg": 7.76,
+      "bbpg": 3.31,
+      "score": 5.4,
       "rank": 19
     },
     {
@@ -689,6 +689,17 @@
       "rank": 2
     },
     {
+      "team": "Cincinnati Reds",
+      "abbr": "CIN",
+      "teamId": 113,
+      "rpg": 3.57,
+      "kpg": 8.79,
+      "hpg": 5.79,
+      "bbpg": 3.21,
+      "score": 9.1,
+      "rank": 3
+    },
+    {
       "team": "Texas Rangers",
       "abbr": "TEX",
       "teamId": 140,
@@ -697,17 +708,6 @@
       "hpg": 7.0,
       "bbpg": 3.14,
       "score": 8.9,
-      "rank": 3
-    },
-    {
-      "team": "Cincinnati Reds",
-      "abbr": "CIN",
-      "teamId": 113,
-      "rpg": 3.85,
-      "kpg": 9.08,
-      "hpg": 6.15,
-      "bbpg": 3.31,
-      "score": 8.7,
       "rank": 4
     },
     {
@@ -931,6 +931,17 @@
       "rank": 24
     },
     {
+      "team": "St. Louis Cardinals",
+      "abbr": "STL",
+      "teamId": 138,
+      "rpg": 5.14,
+      "kpg": 7.14,
+      "hpg": 8.0,
+      "bbpg": 3.57,
+      "score": 4.2,
+      "rank": 25
+    },
+    {
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
@@ -939,17 +950,6 @@
       "hpg": 8.64,
       "bbpg": 3.43,
       "score": 4.0,
-      "rank": 25
-    },
-    {
-      "team": "St. Louis Cardinals",
-      "abbr": "STL",
-      "teamId": 138,
-      "rpg": 5.38,
-      "kpg": 7.46,
-      "hpg": 8.38,
-      "bbpg": 3.69,
-      "score": 3.7,
       "rank": 26
     },
     {
@@ -1010,6 +1010,17 @@
       "rank": 1
     },
     {
+      "team": "Cincinnati Reds",
+      "abbr": "CIN",
+      "teamId": 113,
+      "rpg": 2.86,
+      "kpg": 8.29,
+      "hpg": 5.14,
+      "bbpg": 3.0,
+      "score": 10.0,
+      "rank": 2
+    },
+    {
       "team": "Texas Rangers",
       "abbr": "TEX",
       "teamId": 140,
@@ -1018,17 +1029,6 @@
       "hpg": 6.86,
       "bbpg": 3.14,
       "score": 9.7,
-      "rank": 2
-    },
-    {
-      "team": "Cincinnati Reds",
-      "abbr": "CIN",
-      "teamId": 113,
-      "rpg": 3.33,
-      "kpg": 8.83,
-      "hpg": 5.83,
-      "bbpg": 3.17,
-      "score": 9.3,
       "rank": 3
     },
     {
@@ -1175,6 +1175,17 @@
       "rank": 16
     },
     {
+      "team": "St. Louis Cardinals",
+      "abbr": "STL",
+      "teamId": 138,
+      "rpg": 5.0,
+      "kpg": 7.14,
+      "hpg": 6.86,
+      "bbpg": 3.0,
+      "score": 6.1,
+      "rank": 17
+    },
+    {
       "team": "Chicago Cubs",
       "abbr": "CHC",
       "teamId": 112,
@@ -1183,7 +1194,7 @@
       "hpg": 7.17,
       "bbpg": 3.83,
       "score": 6.1,
-      "rank": 17
+      "rank": 18
     },
     {
       "team": "Seattle Mariners",
@@ -1194,7 +1205,7 @@
       "hpg": 8.67,
       "bbpg": 4.33,
       "score": 6.0,
-      "rank": 18
+      "rank": 19
     },
     {
       "team": "San Francisco Giants",
@@ -1205,7 +1216,7 @@
       "hpg": 8.0,
       "bbpg": 3.0,
       "score": 6.0,
-      "rank": 19
+      "rank": 20
     },
     {
       "team": "Colorado Rockies",
@@ -1216,7 +1227,7 @@
       "hpg": 6.5,
       "bbpg": 4.67,
       "score": 6.0,
-      "rank": 20
+      "rank": 21
     },
     {
       "team": "Cleveland Guardians",
@@ -1227,7 +1238,7 @@
       "hpg": 7.83,
       "bbpg": 3.67,
       "score": 5.9,
-      "rank": 21
+      "rank": 22
     },
     {
       "team": "Pittsburgh Pirates",
@@ -1238,17 +1249,6 @@
       "hpg": 8.67,
       "bbpg": 2.33,
       "score": 5.8,
-      "rank": 22
-    },
-    {
-      "team": "St. Louis Cardinals",
-      "abbr": "STL",
-      "teamId": 138,
-      "rpg": 5.5,
-      "kpg": 7.83,
-      "hpg": 7.5,
-      "bbpg": 3.17,
-      "score": 5.5,
       "rank": 23
     },
     {
