@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-17",
-  "updatedAt": "2026-08-17T07:52:31+00:00",
+  "updatedAt": "2026-08-17T08:42:07+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -231,13 +231,13 @@
           "positionId": 11
         },
         {
-          "name": "Nick Lodolo",
-          "espnId": 42433,
+          "name": "Dean Kremer",
+          "espnId": 38295,
           "positionId": 1
         },
         {
-          "name": "Dean Kremer",
-          "espnId": 38295,
+          "name": "Brandon Young",
+          "espnId": 4414339,
           "positionId": 1
         }
       ]
@@ -663,6 +663,10 @@
       "espnId": 42180
     },
     {
+      "name": "Nick Lodolo",
+      "espnId": 42433
+    },
+    {
       "name": "Spencer Strider",
       "espnId": 4307825
     },
@@ -765,10 +769,6 @@
     {
       "name": "Merrill Kelly",
       "espnId": 32968
-    },
-    {
-      "name": "Brandon Young",
-      "espnId": 4414339
     },
     {
       "name": "Shane Bieber",
@@ -1083,12 +1083,12 @@
       "espnId": 4424112
     },
     {
-      "name": "Pablo Lopez",
-      "espnId": 39671
-    },
-    {
       "name": "Rhett Lowder",
       "espnId": 4758873
+    },
+    {
+      "name": "Pablo Lopez",
+      "espnId": 39671
     },
     {
       "name": "Edwin Uceta",
@@ -1135,12 +1135,12 @@
       "espnId": 33263
     },
     {
-      "name": "Steven Matz",
-      "espnId": 33106
-    },
-    {
       "name": "Mitch Bratt",
       "espnId": 5123768
+    },
+    {
+      "name": "Steven Matz",
+      "espnId": 33106
     },
     {
       "name": "Hunter Dobbins",
@@ -1275,12 +1275,12 @@
       "espnId": 5007765
     },
     {
-      "name": "Tyler Holton",
-      "espnId": 3983833
-    },
-    {
       "name": "Quinn Mathews",
       "espnId": 4837405
+    },
+    {
+      "name": "Tyler Holton",
+      "espnId": 3983833
     },
     {
       "name": "Alex Lange",
@@ -1375,12 +1375,12 @@
       "espnId": 4152950
     },
     {
-      "name": "Jake Irvin",
-      "espnId": 41290
-    },
-    {
       "name": "Jose Berrios",
       "espnId": 32811
+    },
+    {
+      "name": "Jake Irvin",
+      "espnId": 41290
     },
     {
       "name": "Erick Fedde",
@@ -1411,20 +1411,20 @@
       "espnId": 4866810
     },
     {
-      "name": "Justin Slaten",
-      "espnId": 4917925
-    },
-    {
       "name": "George Soriano",
       "espnId": 4917836
     },
     {
-      "name": "Taylor Clarke",
-      "espnId": 35277
+      "name": "Justin Slaten",
+      "espnId": 4917925
     },
     {
       "name": "Brock Burke",
       "espnId": 39945
+    },
+    {
+      "name": "Taylor Clarke",
+      "espnId": 35277
     },
     {
       "name": "Ronel Blanco",
@@ -1479,10 +1479,6 @@
       "espnId": 42556
     },
     {
-      "name": "Gabriel Hughes",
-      "espnId": 4634930
-    },
-    {
       "name": "Joel Kuhnel",
       "espnId": 40855
     },
@@ -1497,6 +1493,10 @@
     {
       "name": "Hurston Waldrep",
       "espnId": 4740117
+    },
+    {
+      "name": "Gabriel Hughes",
+      "espnId": 4634930
     },
     {
       "name": "Colin Holderman",
@@ -1619,10 +1619,6 @@
       "espnId": 4960696
     },
     {
-      "name": "Simeon Woods Richardson",
-      "espnId": 41383
-    },
-    {
       "name": "Shawn Armstrong",
       "espnId": 33499
     },
@@ -1641,6 +1637,10 @@
     {
       "name": "Justin Sterner",
       "espnId": 4307467
+    },
+    {
+      "name": "Simeon Woods Richardson",
+      "espnId": 41383
     },
     {
       "name": "Jamie Arnold",
@@ -1667,16 +1667,16 @@
       "espnId": 41065
     },
     {
+      "name": "George Klassen",
+      "espnId": 5134517
+    },
+    {
       "name": "Dylan Smith",
       "espnId": 4414123
     },
     {
       "name": "Elvis Alvarado",
       "espnId": 42211
-    },
-    {
-      "name": "George Klassen",
-      "espnId": 5134517
     },
     {
       "name": "Miles Mikolas",
