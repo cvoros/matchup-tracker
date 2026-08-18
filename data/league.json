@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-18",
-  "updatedAt": "2026-08-18T18:37:26+00:00",
+  "updatedAt": "2026-08-18T19:27:04+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -402,11 +402,6 @@
           "positionId": 1
         },
         {
-          "name": "Tanner Bibee",
-          "espnId": 4345278,
-          "positionId": 1
-        },
-        {
           "name": "Noah Cameron",
           "espnId": 4417208,
           "positionId": 1
@@ -414,6 +409,11 @@
         {
           "name": "Keider Montero",
           "espnId": 5182933,
+          "positionId": 1
+        },
+        {
+          "name": "Matthew Liberatore",
+          "espnId": 41173,
           "positionId": 1
         }
       ]
@@ -612,6 +612,10 @@
     {
       "name": "Kyle Bradish",
       "espnId": 4311625
+    },
+    {
+      "name": "Tanner Bibee",
+      "espnId": 4345278
     },
     {
       "name": "Devin Williams",
@@ -1060,10 +1064,6 @@
     {
       "name": "Steven Okert",
       "espnId": 33716
-    },
-    {
-      "name": "Matthew Liberatore",
-      "espnId": 41173
     },
     {
       "name": "Carlos Cortes",
@@ -2052,10 +2052,6 @@
     {
       "name": "Trey Gibson",
       "espnId": 4867802
-    },
-    {
-      "name": "Seth Halvorsen",
-      "espnId": 5204400
     },
     {
       "name": "Jose Urquidy",
@@ -8152,6 +8148,10 @@
     {
       "name": "Justin Lange",
       "espnId": 4717897
+    },
+    {
+      "name": "Seth Halvorsen",
+      "espnId": 4414483
     }
   ]
 }
