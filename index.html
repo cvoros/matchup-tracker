@@ -52,6 +52,30 @@
     color: var(--muted);
   }
 
+  .title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .lock-status {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+  }
+
+  .lock-status .lock-icon { font-size: 1.35rem; }
+
+  .lock-status .lock-sub {
+    font-size: 0.68rem;
+    color: var(--muted);
+    white-space: nowrap;
+    margin-top: 0.1rem;
+  }
+
   .tabs {
     display: flex;
     justify-content: center;
@@ -427,7 +451,10 @@
 <body>
 
 <header>
-  <h1><img src="icons/apple-touch-icon.png" alt="" style="height:1.2em;width:1.2em;vertical-align:-0.28em;border-radius:22%;margin-right:0.35rem" /> Upstream</h1>
+  <div class="title-row">
+    <h1><img src="icons/apple-touch-icon.png" alt="" style="height:1.2em;width:1.2em;vertical-align:-0.28em;border-radius:22%;margin-right:0.35rem" /> Upstream</h1>
+    <div id="lock-status" class="lock-status"></div>
+  </div>
   <p id="updated">Loading…</p>
   <div id="league-bar" style="display:none;margin-top:0.5rem">
     <label for="team-select" style="color:var(--muted);font-size:0.8rem;margin-right:0.4rem">My team:</label>
@@ -489,6 +516,78 @@
   let activeWindow = 'season'; // tracks season / last30 / last15 independently of calendar tab
 
   function pad(n) { return String(n).padStart(2, '0'); }
+  function localDateStr(d) { return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
+
+  // ── Roster lock (add/drop/trade deadline) ──────────────────────
+  // ESPN locks a fantasy roster for the day the moment the earliest MLB
+  // game of that day starts. Adds don't take effect and drops don't clear
+  // until the next day. lockdownTime = kickoff of today's first game.
+  let lockdownTime = null;      // Date, or null if no games today / unknown
+  let lockCheckedForDate = null; // local date string lockdownTime was computed for
+
+  async function fetchLockdownTime(dateStr) {
+    try {
+      const res = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=${dateStr}&endDate=${dateStr}`);
+      if (!res.ok) return null;
+      const data = await res.json();
+      let earliest = null;
+      for (const d of (data.dates || [])) {
+        for (const g of (d.games || [])) {
+          const t = new Date(g.gameDate);
+          if (!isNaN(t) && (!earliest || t < earliest)) earliest = t;
+        }
+      }
+      return earliest;
+    } catch { return null; }
+  }
+
+  async function refreshLockStatus() {
+    const todayStr = localDateStr(new Date());
+    if (todayStr !== lockCheckedForDate) {
+      lockdownTime = await fetchLockdownTime(todayStr);
+      lockCheckedForDate = todayStr;
+    }
+    renderLockStatus();
+  }
+
+  function renderLockStatus() {
+    const el = document.getElementById('lock-status');
+    if (!el) return;
+    if (!lockdownTime) { el.style.display = 'none'; return; }
+
+    const now = new Date();
+    const locked = now >= lockdownTime;
+    const timeStr = lockdownTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+
+    if (locked) {
+      el.innerHTML = `<div class="lock-icon">🔒</div><div class="lock-sub">Locked until tomorrow</div>`;
+    } else {
+      const diffMs = lockdownTime - now;
+      const hh = Math.floor(diffMs / 3600000);
+      const mm = Math.floor((diffMs % 3600000) / 60000);
+      el.innerHTML = `<div class="lock-icon">🔓</div><div class="lock-sub">🕐 ${timeStr} · ${pad(hh)}:${pad(mm)} to lockdown</div>`;
+    }
+    el.style.display = 'flex';
+  }
+
+  // Kicked off once at boot; later calendar renders await this so the
+  // very first render already reflects lock state. The interval below
+  // keeps it live and re-fetches automatically when the date rolls over.
+  const lockStatusReady = refreshLockStatus();
+  setInterval(refreshLockStatus, 20000);
+
+  // Returns the calendar's "day 1" anchor: today, unless today's roster
+  // lock has already passed, in which case tomorrow (today's slate is no
+  // longer actionable for adds/drops).
+  function calendarAnchorDate() {
+    const now = new Date();
+    if (lockdownTime && now >= lockdownTime) {
+      const d = new Date(now);
+      d.setDate(d.getDate() + 1);
+      return d;
+    }
+    return now;
+  }
 
   // Batch-fetch pitchHand for a list of pitcher IDs from the People API
   async function fetchPitchHands(ids) {
@@ -778,7 +877,11 @@
       }
     }
 
-    const today = new Date();
+    // Skip today's slate once its roster lock has passed — any add/drop
+    // made now won't take effect until tomorrow, so today is no longer
+    // an actionable streaming day.
+    await lockStatusReady;
+    const today = calendarAnchorDate();
     const end = new Date(today);
     end.setDate(end.getDate() + 4);
     const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
