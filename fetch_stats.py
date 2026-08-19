@@ -3,7 +3,9 @@ import os
 import requests
 from datetime import date, datetime, timedelta, timezone
 
-SEASON = 2026
+# MLB seasons never span a calendar-year boundary, so "the season" is
+# always just whatever year it currently is — no manual bump needed.
+SEASON = date.today().year
 BASE = "https://statsapi.mlb.com/api/v1/teams/stats"
 TEAMS_URL = "https://statsapi.mlb.com/api/v1/teams?sportId=1&activeStatus=Y"
 
@@ -83,6 +85,9 @@ def compute_scores(rows: list[dict]) -> list[dict]:
             }
         )
 
+    if not results:
+        return []  # no team has played yet (e.g. season hasn't started)
+
     # Normalize raw scores to 1.0–10.0 scale
     raw_scores = [r["_raw"] for r in results]
     lo, hi = min(raw_scores), max(raw_scores)
@@ -140,6 +145,14 @@ def main():
     vslhp = build_window(vslhp_params, abbr_map, use_rbi=True)
     print("Fetching vs RHP stats...")
     vsrhp = build_window(vsrhp_params, abbr_map, use_rbi=True)
+
+    # Nobody's played yet (season hasn't started — e.g. a lockout pushed
+    # Opening Day back). Leave the last known-good data/stats.json alone
+    # rather than overwrite it with an empty/broken file.
+    if not season:
+        print("No teams have played yet this season — skipping write, "
+              "leaving existing data/stats.json untouched.")
+        return
 
     output = {
         "updated": today.strftime("%Y-%m-%d"),

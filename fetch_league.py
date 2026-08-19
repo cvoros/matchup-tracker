@@ -19,7 +19,11 @@ import sys
 import requests
 from datetime import date, datetime, timezone
 
-SEASON = 2026
+# MLB seasons never span a calendar-year boundary, so "the season" is
+# always just whatever year it currently is — no manual bump needed.
+# (If ESPN issues a new league ID on renewal, ESPN_LEAGUE_ID still needs
+# updating by hand — see README "Start of season" checklist.)
+SEASON = date.today().year
 BASE = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/{lid}"
 
 
@@ -84,10 +88,11 @@ def fetch_fa_pitcher_ids(base_url, cookies) -> list[dict]:
     return out
 
 
-def main():
-    league_id, espn_s2, swid = get_env()
-    cookies = {"espn_s2": espn_s2, "SWID": swid}
+def fetch_league_data(league_id, cookies):
+    """Does the actual ESPN calls. Raised exceptions (expired cookies,
+    league not found, network issues, etc.) are handled by the caller."""
     base_url = BASE.format(season=SEASON, lid=league_id)
+    swid = cookies["SWID"]
 
     # ESPN returns rosters as of a given scoring period. The default
     # (current) period lags behind pending moves — managers add pitchers
@@ -122,6 +127,26 @@ def main():
     print("Fetching free-agent SP ids (for name links)...")
     free_agents = fetch_fa_pitcher_ids(base_url, cookies)
     print(f"  {len(free_agents)} FA/waiver SP ids")
+
+    return default_team_id, teams, free_agents
+
+
+def main():
+    league_id, espn_s2, swid = get_env()
+    cookies = {"espn_s2": espn_s2, "SWID": swid}
+
+    # A broken ESPN session (expired cookie, league gone/renewed under a
+    # new ID, ESPN outage, etc.) shouldn't be a hard failure — treat it
+    # the same as "not configured" so it can't block the stats.json
+    # commit in the same workflow run. See README "Start of season"
+    # checklist for how to notice and fix an actually-expired session.
+    try:
+        default_team_id, teams, free_agents = fetch_league_data(league_id, cookies)
+    except requests.exceptions.RequestException as e:
+        print(f"ESPN league fetch failed ({e}) — leaving existing "
+              f"data/league.json untouched. Cookies may have expired; "
+              f"see README.")
+        sys.exit(0)
 
     # Ownership (mine / opponent / free agent) is derived in the UI from
     # the rosters — anyone not rostered by any team is a free agent. The

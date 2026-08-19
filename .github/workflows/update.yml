@@ -2,8 +2,12 @@ name: Update Matchup Stats
 
 on:
   schedule:
-    # Every hour, on the hour (UTC)
-    - cron: '0 * * * *'
+    # Every hour, on the hour (UTC), March–November only. This is a
+    # FAILSAFE against firing all winter if it's ever left enabled by
+    # mistake — it is NOT the season on/off switch. The real switch is
+    # disabling/re-enabling this workflow itself (Actions tab → Update
+    # Matchup Stats → "..." → Disable/Enable workflow); see README.
+    - cron: '0 * * 3-11 *'
   workflow_dispatch:
 
 jobs:
@@ -26,6 +30,10 @@ jobs:
         run: python fetch_stats.py
 
       - name: Fetch league data
+        # Belt-and-suspenders on top of fetch_league.py's own graceful
+        # exit(0): even an unexpected crash here must not block the
+        # stats.json commit below.
+        continue-on-error: true
         env:
           ESPN_LEAGUE_ID: ${{ secrets.ESPN_LEAGUE_ID }}
           ESPN_S2: ${{ secrets.ESPN_S2 }}
@@ -33,6 +41,7 @@ jobs:
         run: python fetch_league.py
 
       - name: Commit and push if changed
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
