@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-19",
-  "updatedAt": "2026-08-19T21:30:54+00:00",
+  "updatedAt": "2026-08-19T22:30:37+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -288,13 +288,13 @@
           "positionId": 1
         },
         {
-          "name": "J.T. Ginn",
-          "espnId": 4414002,
+          "name": "Jacob Lopez",
+          "espnId": 42239,
           "positionId": 1
         },
         {
-          "name": "Jacob Lopez",
-          "espnId": 42239,
+          "name": "Casey Mize",
+          "espnId": 41167,
           "positionId": 1
         }
       ]
@@ -682,10 +682,6 @@
       "espnId": 33841
     },
     {
-      "name": "Casey Mize",
-      "espnId": 41167
-    },
-    {
       "name": "Davis Martin",
       "espnId": 42823
     },
@@ -780,6 +776,10 @@
     {
       "name": "Shane Bieber",
       "espnId": 40912
+    },
+    {
+      "name": "J.T. Ginn",
+      "espnId": 4414002
     },
     {
       "name": "Carlos Estevez",
@@ -1210,16 +1210,16 @@
       "espnId": 4722057
     },
     {
-      "name": "Lance McCullers Jr.",
-      "espnId": 32764
-    },
-    {
       "name": "Andrew Kittredge",
       "espnId": 35872
     },
     {
       "name": "Mitch Bratt",
       "espnId": 5123768
+    },
+    {
+      "name": "Lance McCullers Jr.",
+      "espnId": 32764
     },
     {
       "name": "Steven Cruz",
@@ -1290,12 +1290,12 @@
       "espnId": 4718970
     },
     {
-      "name": "Sean Newcomb",
-      "espnId": 33856
-    },
-    {
       "name": "Samy Natera Jr.",
       "espnId": 5207461
+    },
+    {
+      "name": "Sean Newcomb",
+      "espnId": 33856
     },
     {
       "name": "Andrew Morris",
@@ -2706,10 +2706,6 @@
       "espnId": 32589
     },
     {
-      "name": "Eiberson Castellano",
-      "espnId": 5259072
-    },
-    {
       "name": "Bryse Wilson",
       "espnId": 40922
     },
@@ -2940,6 +2936,10 @@
     {
       "name": "Kevin Defrank",
       "espnId": 5332855
+    },
+    {
+      "name": "Eiberson Castellano",
+      "espnId": 5259072
     },
     {
       "name": "Kade Morris",
