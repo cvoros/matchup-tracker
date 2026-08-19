@@ -1112,7 +1112,10 @@ function refreshView() {
 
     const abbrMap = buildAbbrMap();
 
-    const today = new Date();
+    // Same lockdown-skip as the calendar view: once today's roster lock
+    // has passed, today is no longer actionable, so start from tomorrow.
+    await lockStatusReady;
+    const today = calendarAnchorDate();
     const end = new Date(today);
     end.setDate(end.getDate() + 4);
     const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
@@ -1132,11 +1135,10 @@ function refreshView() {
         return;
       }
 
-      // Fetch ESPN fallback and MLB pitcher IDs in parallel
-      const fmtModal = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
-      const todayModal = new Date();
-      const endModal = new Date(todayModal); endModal.setDate(endModal.getDate() + 4);
-      const espnMap = await fetchEspnProbables(fmtModal(todayModal), fmtModal(endModal));
+      // Fetch ESPN fallback and MLB pitcher IDs in parallel — reuse the
+      // same lockdown-aware anchor as the primary fetch above so both
+      // date ranges stay in sync.
+      const espnMap = await fetchEspnProbables(fmt(today), fmt(end));
 
       // Collect MLB pitcher IDs; find ESPN-only pitchers by name
       const pitcherIds = [];
