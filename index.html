@@ -564,7 +564,7 @@
     const timeStr = lockdownTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
 
     if (locked) {
-      el.innerHTML = `<div class="lock-icon">🔒</div><div class="lock-sub">Locked until tomorrow</div>`;
+      el.innerHTML = `<div class="lock-icon">🔒</div><div class="lock-sub">Rosters locked</div>`;
     } else {
       const diffMs = lockdownTime - now;
       const hh = Math.floor(diffMs / 3600000);
