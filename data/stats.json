@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-19",
-  "updatedAt": "2026-08-19T02:56:22+00:00",
+  "updatedAt": "2026-08-19T03:48:46+00:00",
   "season": [
     {
       "team": "Cincinnati Reds",
@@ -237,11 +237,11 @@
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 4.8,
-      "kpg": 8.58,
-      "hpg": 8.57,
+      "rpg": 4.82,
+      "kpg": 8.59,
+      "hpg": 8.6,
       "bbpg": 3.13,
-      "score": 4.4,
+      "score": 4.3,
       "rank": 22
     },
     {
@@ -326,8 +326,8 @@
       "abbr": "LAD",
       "teamId": 119,
       "rpg": 4.99,
-      "kpg": 7.77,
-      "hpg": 8.73,
+      "kpg": 7.78,
+      "hpg": 8.74,
       "bbpg": 3.68,
       "score": 1.0,
       "rank": 30
@@ -526,8 +526,8 @@
       "abbr": "LAD",
       "teamId": 119,
       "rpg": 4.33,
-      "kpg": 7.37,
-      "hpg": 8.74,
+      "kpg": 7.41,
+      "hpg": 8.78,
       "bbpg": 2.41,
       "score": 4.9,
       "rank": 18
@@ -544,17 +544,6 @@
       "rank": 19
     },
     {
-      "team": "Colorado Rockies",
-      "abbr": "COL",
-      "teamId": 115,
-      "rpg": 4.84,
-      "kpg": 8.16,
-      "hpg": 8.2,
-      "bbpg": 3.08,
-      "score": 4.5,
-      "rank": 20
-    },
-    {
       "team": "Milwaukee Brewers",
       "abbr": "MIL",
       "teamId": 158,
@@ -562,6 +551,17 @@
       "kpg": 8.78,
       "hpg": 8.3,
       "bbpg": 4.11,
+      "score": 4.3,
+      "rank": 20
+    },
+    {
+      "team": "Colorado Rockies",
+      "abbr": "COL",
+      "teamId": 115,
+      "rpg": 4.92,
+      "kpg": 8.2,
+      "hpg": 8.36,
+      "bbpg": 3.12,
       "score": 4.3,
       "rank": 21
     },
@@ -781,8 +781,8 @@
       "abbr": "LAD",
       "teamId": 119,
       "rpg": 4.07,
-      "kpg": 7.07,
-      "hpg": 7.86,
+      "kpg": 7.14,
+      "hpg": 7.93,
       "bbpg": 2.57,
       "score": 6.3,
       "rank": 11
@@ -832,17 +832,6 @@
       "rank": 15
     },
     {
-      "team": "Colorado Rockies",
-      "abbr": "COL",
-      "teamId": 115,
-      "rpg": 4.46,
-      "kpg": 7.69,
-      "hpg": 7.62,
-      "bbpg": 3.38,
-      "score": 5.8,
-      "rank": 16
-    },
-    {
       "team": "Toronto Blue Jays",
       "abbr": "TOR",
       "teamId": 141,
@@ -851,7 +840,7 @@
       "hpg": 8.79,
       "bbpg": 3.21,
       "score": 5.6,
-      "rank": 17
+      "rank": 16
     },
     {
       "team": "St. Louis Cardinals",
@@ -862,7 +851,7 @@
       "hpg": 8.14,
       "bbpg": 3.43,
       "score": 5.6,
-      "rank": 18
+      "rank": 17
     },
     {
       "team": "Miami Marlins",
@@ -873,7 +862,7 @@
       "hpg": 8.36,
       "bbpg": 3.86,
       "score": 5.4,
-      "rank": 19
+      "rank": 18
     },
     {
       "team": "Chicago White Sox",
@@ -883,6 +872,17 @@
       "kpg": 10.0,
       "hpg": 8.64,
       "bbpg": 4.14,
+      "score": 5.4,
+      "rank": 19
+    },
+    {
+      "team": "Colorado Rockies",
+      "abbr": "COL",
+      "teamId": 115,
+      "rpg": 4.62,
+      "kpg": 7.77,
+      "hpg": 7.92,
+      "bbpg": 3.46,
       "score": 5.4,
       "rank": 20
     },
@@ -1146,8 +1146,8 @@
       "abbr": "LAD",
       "teamId": 119,
       "rpg": 4.57,
-      "kpg": 7.0,
-      "hpg": 7.71,
+      "kpg": 7.14,
+      "hpg": 7.86,
       "bbpg": 2.57,
       "score": 5.4,
       "rank": 14
@@ -1230,17 +1230,6 @@
       "rank": 21
     },
     {
-      "team": "Colorado Rockies",
-      "abbr": "COL",
-      "teamId": 115,
-      "rpg": 5.67,
-      "kpg": 8.17,
-      "hpg": 6.67,
-      "bbpg": 4.33,
-      "score": 4.4,
-      "rank": 22
-    },
-    {
       "team": "Toronto Blue Jays",
       "abbr": "TOR",
       "teamId": 141,
@@ -1249,7 +1238,7 @@
       "hpg": 9.33,
       "bbpg": 3.17,
       "score": 4.1,
-      "rank": 23
+      "rank": 22
     },
     {
       "team": "Pittsburgh Pirates",
@@ -1260,6 +1249,17 @@
       "hpg": 8.57,
       "bbpg": 2.57,
       "score": 4.1,
+      "rank": 23
+    },
+    {
+      "team": "Colorado Rockies",
+      "abbr": "COL",
+      "teamId": 115,
+      "rpg": 6.0,
+      "kpg": 8.33,
+      "hpg": 7.33,
+      "bbpg": 4.5,
+      "score": 3.6,
       "rank": 24
     },
     {
@@ -1499,11 +1499,11 @@
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 1.59,
-      "kpg": 3.3,
-      "hpg": 3.06,
-      "bbpg": 0.94,
-      "score": 6.3,
+      "rpg": 1.6,
+      "kpg": 3.32,
+      "hpg": 3.07,
+      "bbpg": 0.95,
+      "score": 6.2,
       "rank": 16
     },
     {
@@ -1621,10 +1621,10 @@
       "abbr": "LAD",
       "teamId": 119,
       "rpg": 1.55,
-      "kpg": 2.83,
-      "hpg": 3.14,
-      "bbpg": 1.24,
-      "score": 3.5,
+      "kpg": 2.8,
+      "hpg": 3.12,
+      "bbpg": 1.23,
+      "score": 3.6,
       "rank": 27
     },
     {
@@ -1897,11 +1897,11 @@
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 3.29,
-      "kpg": 5.79,
-      "hpg": 6.02,
-      "bbpg": 2.34,
-      "score": 4.2,
+      "rpg": 3.27,
+      "kpg": 5.77,
+      "hpg": 5.99,
+      "bbpg": 2.33,
+      "score": 4.4,
       "rank": 22
     },
     {
@@ -1974,11 +1974,11 @@
       "team": "Los Angeles Dodgers",
       "abbr": "LAD",
       "teamId": 119,
-      "rpg": 3.46,
+      "rpg": 3.48,
       "kpg": 5.53,
-      "hpg": 6.21,
-      "bbpg": 2.69,
-      "score": 1.4,
+      "hpg": 6.23,
+      "bbpg": 2.7,
+      "score": 1.2,
       "rank": 29
     },
     {
