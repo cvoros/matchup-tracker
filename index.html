@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
 <title>⚾ Upstream</title>
 <meta name="apple-mobile-web-app-title" content="Upstream" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -1226,6 +1229,14 @@ function refreshView() {
       document.getElementById('table-wrap').innerHTML =
         `<div class="error">Failed to load stats.json — run fetch_stats.py first.<br><small>${err.message}</small></div>`;
     });
+
+  // Keeps the installed (home-screen / standalone) app from ever serving a
+  // stale page — see sw.js for why this is needed on iOS.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    });
+  }
 </script>
 </body>
 </html>
