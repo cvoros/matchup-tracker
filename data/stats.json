@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-19",
-  "updatedAt": "2026-08-19T04:35:47+00:00",
+  "updatedAt": "2026-08-19T05:29:27+00:00",
   "season": [
     {
       "team": "Cincinnati Reds",
@@ -314,9 +314,9 @@
       "team": "Chicago Cubs",
       "abbr": "CHC",
       "teamId": 112,
-      "rpg": 5.16,
+      "rpg": 5.17,
       "kpg": 8.58,
-      "hpg": 8.55,
+      "hpg": 8.56,
       "bbpg": 4.26,
       "score": 1.1,
       "rank": 29
@@ -602,11 +602,11 @@
       "team": "Chicago Cubs",
       "abbr": "CHC",
       "teamId": 112,
-      "rpg": 5.46,
+      "rpg": 5.5,
       "kpg": 9.04,
-      "hpg": 9.25,
+      "hpg": 9.29,
       "bbpg": 3.93,
-      "score": 2.6,
+      "score": 2.5,
       "rank": 25
     },
     {
@@ -942,23 +942,23 @@
       "rank": 25
     },
     {
-      "team": "Chicago Cubs",
-      "abbr": "CHC",
-      "teamId": 112,
-      "rpg": 5.36,
-      "kpg": 8.36,
-      "hpg": 9.07,
-      "bbpg": 3.57,
-      "score": 4.1,
-      "rank": 26
-    },
-    {
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
       "rpg": 4.86,
       "kpg": 6.93,
       "hpg": 8.86,
+      "bbpg": 3.57,
+      "score": 4.0,
+      "rank": 26
+    },
+    {
+      "team": "Chicago Cubs",
+      "abbr": "CHC",
+      "teamId": 112,
+      "rpg": 5.43,
+      "kpg": 8.36,
+      "hpg": 9.14,
       "bbpg": 3.57,
       "score": 4.0,
       "rank": 27
@@ -1175,17 +1175,6 @@
       "rank": 16
     },
     {
-      "team": "Chicago Cubs",
-      "abbr": "CHC",
-      "teamId": 112,
-      "rpg": 4.71,
-      "kpg": 8.57,
-      "hpg": 7.86,
-      "bbpg": 4.0,
-      "score": 5.2,
-      "rank": 17
-    },
-    {
       "team": "Miami Marlins",
       "abbr": "MIA",
       "teamId": 146,
@@ -1193,6 +1182,17 @@
       "kpg": 8.57,
       "hpg": 8.14,
       "bbpg": 4.14,
+      "score": 5.0,
+      "rank": 17
+    },
+    {
+      "team": "Chicago Cubs",
+      "abbr": "CHC",
+      "teamId": 112,
+      "rpg": 4.86,
+      "kpg": 8.57,
+      "hpg": 8.0,
+      "bbpg": 4.0,
       "score": 5.0,
       "rank": 18
     },
@@ -1411,11 +1411,11 @@
       "team": "Chicago White Sox",
       "abbr": "CWS",
       "teamId": 145,
-      "rpg": 1.37,
-      "kpg": 3.19,
-      "hpg": 2.7,
-      "bbpg": 1.19,
-      "score": 7.9,
+      "rpg": 1.35,
+      "kpg": 3.16,
+      "hpg": 2.68,
+      "bbpg": 1.18,
+      "score": 8.0,
       "rank": 8
     },
     {
@@ -1632,10 +1632,10 @@
       "abbr": "CHC",
       "teamId": 112,
       "rpg": 1.63,
-      "kpg": 2.66,
-      "hpg": 2.84,
-      "bbpg": 1.3,
-      "score": 3.3,
+      "kpg": 2.65,
+      "hpg": 2.83,
+      "bbpg": 1.29,
+      "score": 3.2,
       "rank": 28
     },
     {
@@ -1844,8 +1844,8 @@
       "teamId": 145,
       "rpg": 3.41,
       "kpg": 6.35,
-      "hpg": 5.67,
-      "bbpg": 2.4,
+      "hpg": 5.7,
+      "bbpg": 2.41,
       "score": 5.7,
       "rank": 17
     },
@@ -1952,11 +1952,11 @@
       "team": "Chicago Cubs",
       "abbr": "CHC",
       "teamId": 112,
-      "rpg": 3.47,
-      "kpg": 6.3,
-      "hpg": 6.14,
-      "bbpg": 3.14,
-      "score": 2.3,
+      "rpg": 3.46,
+      "kpg": 6.32,
+      "hpg": 6.13,
+      "bbpg": 3.16,
+      "score": 2.4,
       "rank": 27
     },
     {
