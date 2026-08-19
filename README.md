@@ -13,36 +13,6 @@ step, no framework — one HTML file with inline CSS/JS.
 
 ---
 
-## Start of season checklist
-
-The app is designed to sit completely untouched all winter and mostly
-just work again once turned back on — `SEASON` is derived from today's
-date automatically in both fetch scripts, so there's nothing to bump
-there. Still, a few things need a human:
-
-- [ ] **Re-enable the workflow.** Actions tab → "Update Matchup Stats" →
-      "..." menu (top right) → **Enable workflow**. It's disabled at the
-      end of each season on purpose (see "End of season" below) — the
-      cron's own month restriction (March–November) is only a failsafe,
-      not the actual switch, so this step doesn't happen automatically.
-- [ ] **Confirm the ESPN league ID hasn't changed.** ESPN sometimes
-      issues a new league ID on renewal rather than reusing last year's.
-      Check the URL at `fantasy.espn.com/baseball/league?leagueId=...`
-      and update the `ESPN_LEAGUE_ID` repo secret if it differs.
-- [ ] **Refresh `ESPN_S2` / `ESPN_SWID` if the fantasy integration comes
-      back empty.** These are session cookies and can expire over the
-      winter. Pull fresh values from the browser while logged into
-      `fantasy.espn.com` (DevTools → Application/Storage → Cookies) and
-      update the repo secrets. `fetch_league.py` fails gracefully and
-      leaves `data/league.json` untouched if these are stale, so a dead
-      integration won't break the rest of the site — it'll just show no
-      fantasy badges/team picker until fixed.
-- [ ] **Manually trigger the workflow once** (Actions tab → "Update
-      Matchup Stats" → "Run workflow") before relying on it, to confirm
-      everything runs clean ahead of Opening Day.
-
----
-
 ## What it shows
 
 Every MLB team gets a **composite score from 1.0 (worst matchup) to 10.0
@@ -281,3 +251,33 @@ Then open `index.html` directly, or serve the folder locally
   Personal Access Token needs the **`workflow`** scope — without it,
   GitHub rejects the push outright (classic tokens: Settings → Developer
   settings → Personal access tokens → check the `workflow` box).
+
+---
+
+## Start of season checklist
+
+The app is designed to sit completely untouched all winter and mostly
+just work again once turned back on — `SEASON` is derived from today's
+date automatically in both fetch scripts, so there's nothing to bump
+there. Still, a few things need a human:
+
+- [ ] **Re-enable the workflow.** Actions tab → "Update Matchup Stats" →
+      "..." menu (top right) → **Enable workflow**. It's disabled at the
+      end of each season on purpose (see "End of season" below) — the
+      cron's own month restriction (March–November) is only a failsafe,
+      not the actual switch, so this step doesn't happen automatically.
+- [ ] **Confirm the ESPN league ID hasn't changed.** ESPN sometimes
+      issues a new league ID on renewal rather than reusing last year's.
+      Check the URL at `fantasy.espn.com/baseball/league?leagueId=...`
+      and update the `ESPN_LEAGUE_ID` repo secret if it differs.
+- [ ] **Refresh `ESPN_S2` / `ESPN_SWID` if the fantasy integration comes
+      back empty.** These are session cookies and can expire over the
+      winter. Pull fresh values from the browser while logged into
+      `fantasy.espn.com` (DevTools → Application/Storage → Cookies) and
+      update the repo secrets. `fetch_league.py` fails gracefully and
+      leaves `data/league.json` untouched if these are stale, so a dead
+      integration won't break the rest of the site — it'll just show no
+      fantasy badges/team picker until fixed.
+- [ ] **Manually trigger the workflow once** (Actions tab → "Update
+      Matchup Stats" → "Run workflow") before relying on it, to confirm
+      everything runs clean ahead of Opening Day.
