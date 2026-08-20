@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-20",
-  "updatedAt": "2026-08-20T05:36:56+00:00",
+  "updatedAt": "2026-08-20T06:55:41+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -402,11 +402,6 @@
           "positionId": 1
         },
         {
-          "name": "Matthew Liberatore",
-          "espnId": 41173,
-          "positionId": 1
-        },
-        {
           "name": "Kyle Bradish",
           "espnId": 4311625,
           "positionId": 1
@@ -414,6 +409,11 @@
         {
           "name": "Matthew Boyd",
           "espnId": 34401,
+          "positionId": 1
+        },
+        {
+          "name": "Cal Quantrill",
+          "espnId": 39875,
           "positionId": 1
         }
       ]
@@ -951,12 +951,12 @@
       "espnId": 39801
     },
     {
-      "name": "Hunter Gaddis",
-      "espnId": 4187661
-    },
-    {
       "name": "Randy Dobnak",
       "espnId": 42214
+    },
+    {
+      "name": "Hunter Gaddis",
+      "espnId": 4187661
     },
     {
       "name": "Walker Buehler",
@@ -1029,6 +1029,10 @@
     {
       "name": "Garrett Cleavinger",
       "espnId": 36429
+    },
+    {
+      "name": "Matthew Liberatore",
+      "espnId": 41173
     },
     {
       "name": "Brandyn Garcia",
@@ -1163,10 +1167,6 @@
       "espnId": 5002950
     },
     {
-      "name": "Cal Quantrill",
-      "espnId": 39875
-    },
-    {
       "name": "Bryan King",
       "espnId": 5201821
     },
@@ -1203,12 +1203,12 @@
       "espnId": 4894467
     },
     {
-      "name": "Michael Petersen",
-      "espnId": 41824
-    },
-    {
       "name": "Andrew Alvarez",
       "espnId": 4300668
+    },
+    {
+      "name": "Michael Petersen",
+      "espnId": 41824
     },
     {
       "name": "Andrew Kittredge",
@@ -1523,16 +1523,16 @@
       "espnId": 41085
     },
     {
-      "name": "Ethan Pecko",
-      "espnId": 4944276
-    },
-    {
       "name": "Yohan Ramirez",
       "espnId": 41893
     },
     {
       "name": "Colin Holderman",
       "espnId": 4917897
+    },
+    {
+      "name": "Ethan Pecko",
+      "espnId": 4944276
     },
     {
       "name": "Carson Whisenhunt",
@@ -1639,10 +1639,6 @@
       "espnId": 42171
     },
     {
-      "name": "Jose Urquidy",
-      "espnId": 35759
-    },
-    {
       "name": "Jordan Hicks",
       "espnId": 37909
     },
@@ -1657,6 +1653,10 @@
     {
       "name": "Bryan Hudson",
       "espnId": 4991171
+    },
+    {
+      "name": "Jose Urquidy",
+      "espnId": 35759
     },
     {
       "name": "Yuki Matsui",
@@ -2407,10 +2407,6 @@
       "espnId": 3961066
     },
     {
-      "name": "Jonathan Santucci",
-      "espnId": 5001823
-    },
-    {
       "name": "Tink Hence",
       "espnId": 4920836
     },
@@ -2509,6 +2505,10 @@
     {
       "name": "Evan Sisk",
       "espnId": 3994084
+    },
+    {
+      "name": "Jonathan Santucci",
+      "espnId": 5001823
     },
     {
       "name": "Jordan Wicks",
