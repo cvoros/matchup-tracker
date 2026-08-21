@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-21",
-  "updatedAt": "2026-08-21T18:45:10+00:00",
+  "updatedAt": "2026-08-21T19:29:58+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -223,11 +223,6 @@
         {
           "name": "Joey Cantillo",
           "espnId": 42488,
-          "positionId": 11
-        },
-        {
-          "name": "Robert Suarez",
-          "espnId": 4148749,
           "positionId": 11
         },
         {
@@ -672,6 +667,10 @@
     {
       "name": "Jeff Hoffman",
       "espnId": 33841
+    },
+    {
+      "name": "Robert Suarez",
+      "espnId": 4148749
     },
     {
       "name": "Tanner Scott",
