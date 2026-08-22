@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-22",
-  "updatedAt": "2026-08-22T05:32:34+00:00",
+  "updatedAt": "2026-08-22T06:49:52+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -397,11 +397,6 @@
           "positionId": 1
         },
         {
-          "name": "Kyle Bradish",
-          "espnId": 4311625,
-          "positionId": 1
-        },
-        {
           "name": "Cal Quantrill",
           "espnId": 39875,
           "positionId": 1
@@ -409,6 +404,11 @@
         {
           "name": "Bubba Chandler",
           "espnId": 4683325,
+          "positionId": 1
+        },
+        {
+          "name": "Dustin May",
+          "espnId": 40937,
           "positionId": 1
         }
       ]
@@ -605,6 +605,10 @@
       "espnId": 39825
     },
     {
+      "name": "Kyle Bradish",
+      "espnId": 4311625
+    },
+    {
       "name": "Tanner Bibee",
       "espnId": 4345278
     },
@@ -677,12 +681,12 @@
       "espnId": 35135
     },
     {
-      "name": "Davis Martin",
-      "espnId": 42823
-    },
-    {
       "name": "Kade Anderson",
       "espnId": 5198748
+    },
+    {
+      "name": "Davis Martin",
+      "espnId": 42823
     },
     {
       "name": "Ryan Helsley",
@@ -725,12 +729,12 @@
       "espnId": 41201
     },
     {
-      "name": "Landen Roupp",
-      "espnId": 4345404
-    },
-    {
       "name": "Shane Bieber",
       "espnId": 40912
+    },
+    {
+      "name": "Landen Roupp",
+      "espnId": 4345404
     },
     {
       "name": "Dylan Lee",
@@ -773,10 +777,6 @@
       "espnId": 34861
     },
     {
-      "name": "Dustin May",
-      "espnId": 40937
-    },
-    {
       "name": "Adrian Morejon",
       "espnId": 40917
     },
@@ -809,12 +809,12 @@
       "espnId": 5330833
     },
     {
-      "name": "Sean Manaea",
-      "espnId": 33244
-    },
-    {
       "name": "Jacob Webb",
       "espnId": 40384
+    },
+    {
+      "name": "Sean Manaea",
+      "espnId": 33244
     },
     {
       "name": "Mitch Keller",
@@ -1269,12 +1269,12 @@
       "espnId": 40934
     },
     {
-      "name": "Dylan Dodd",
-      "espnId": 4416462
-    },
-    {
       "name": "Quinn Mathews",
       "espnId": 4837405
+    },
+    {
+      "name": "Dylan Dodd",
+      "espnId": 4416462
     },
     {
       "name": "Zack Littell",
@@ -1385,12 +1385,12 @@
       "espnId": 32811
     },
     {
-      "name": "Luis Gil",
-      "espnId": 40626
-    },
-    {
       "name": "Erick Fedde",
       "espnId": 33793
+    },
+    {
+      "name": "Luis Gil",
+      "espnId": 40626
     },
     {
       "name": "Spencer Miles",
@@ -1445,16 +1445,16 @@
       "espnId": 5214984
     },
     {
-      "name": "Samy Natera Jr.",
-      "espnId": 5207461
-    },
-    {
       "name": "Brock Burke",
       "espnId": 39945
     },
     {
       "name": "Kirby Yates",
       "espnId": 32623
+    },
+    {
+      "name": "Samy Natera Jr.",
+      "espnId": 5207461
     },
     {
       "name": "Will Dion",
@@ -1513,12 +1513,12 @@
       "espnId": 41829
     },
     {
-      "name": "Ryan Gusto",
-      "espnId": 5131986
-    },
-    {
       "name": "Justin Slaten",
       "espnId": 4917925
+    },
+    {
+      "name": "Ryan Gusto",
+      "espnId": 5131986
     },
     {
       "name": "Kai-Wei Teng",
@@ -1533,12 +1533,12 @@
       "espnId": 41085
     },
     {
-      "name": "Yohan Ramirez",
-      "espnId": 41893
-    },
-    {
       "name": "Ryan Johnson",
       "espnId": 5007859
+    },
+    {
+      "name": "Yohan Ramirez",
+      "espnId": 41893
     },
     {
       "name": "Dylan Smith",
@@ -1785,6 +1785,10 @@
       "espnId": 33735
     },
     {
+      "name": "Luis Mey",
+      "espnId": 4722939
+    },
+    {
       "name": "Ethan Pecko",
       "espnId": 4944276
     },
@@ -1803,10 +1807,6 @@
     {
       "name": "German Marquez",
       "espnId": 34874
-    },
-    {
-      "name": "Luis Mey",
-      "espnId": 4722939
     },
     {
       "name": "Travis Sykora",
@@ -2329,6 +2329,10 @@
       "espnId": 4705673
     },
     {
+      "name": "Luis Gastelum",
+      "espnId": 5205835
+    },
+    {
       "name": "Noble Meyer",
       "espnId": 5148967
     },
@@ -2395,10 +2399,6 @@
     {
       "name": "Jake Bird",
       "espnId": 3459223
-    },
-    {
-      "name": "Luis Gastelum",
-      "espnId": 5205835
     },
     {
       "name": "David Festa",
