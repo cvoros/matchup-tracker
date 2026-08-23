@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-23",
-  "updatedAt": "2026-08-23T03:08:35+00:00",
+  "updatedAt": "2026-08-23T04:43:16+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -116,9 +116,9 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 4.27,
-      "kpg": 8.1,
-      "hpg": 7.82,
+      "rpg": 4.28,
+      "kpg": 8.12,
+      "hpg": 7.85,
       "bbpg": 3.43,
       "score": 6.4,
       "rank": 11
@@ -249,7 +249,7 @@
       "abbr": "MIN",
       "teamId": 142,
       "rpg": 4.61,
-      "kpg": 8.02,
+      "kpg": 8.04,
       "hpg": 8.26,
       "bbpg": 3.25,
       "score": 4.5,
@@ -482,7 +482,7 @@
       "abbr": "MIN",
       "teamId": 142,
       "rpg": 3.88,
-      "kpg": 7.12,
+      "kpg": 7.19,
       "hpg": 7.96,
       "bbpg": 3.08,
       "score": 5.7,
@@ -613,11 +613,11 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 4.78,
-      "kpg": 7.15,
-      "hpg": 8.81,
+      "rpg": 4.81,
+      "kpg": 7.26,
+      "hpg": 8.93,
       "bbpg": 3.56,
-      "score": 3.2,
+      "score": 3.1,
       "rank": 26
     },
     {
@@ -799,6 +799,17 @@
       "rank": 12
     },
     {
+      "team": "Minnesota Twins",
+      "abbr": "MIN",
+      "teamId": 142,
+      "rpg": 4.0,
+      "kpg": 7.92,
+      "hpg": 8.69,
+      "bbpg": 3.0,
+      "score": 6.3,
+      "rank": 13
+    },
+    {
       "team": "Los Angeles Dodgers",
       "abbr": "LAD",
       "teamId": 119,
@@ -807,17 +818,6 @@
       "hpg": 7.86,
       "bbpg": 3.14,
       "score": 6.3,
-      "rank": 13
-    },
-    {
-      "team": "Minnesota Twins",
-      "abbr": "MIN",
-      "teamId": 142,
-      "rpg": 4.0,
-      "kpg": 7.77,
-      "hpg": 8.69,
-      "bbpg": 3.0,
-      "score": 6.2,
       "rank": 14
     },
     {
@@ -909,17 +909,6 @@
       "rank": 22
     },
     {
-      "team": "San Diego Padres",
-      "abbr": "SD",
-      "teamId": 135,
-      "rpg": 4.69,
-      "kpg": 7.46,
-      "hpg": 8.23,
-      "bbpg": 3.62,
-      "score": 5.0,
-      "rank": 23
-    },
-    {
       "team": "Athletics",
       "abbr": "ATH",
       "teamId": 133,
@@ -928,6 +917,17 @@
       "hpg": 8.36,
       "bbpg": 3.29,
       "score": 5.0,
+      "rank": 23
+    },
+    {
+      "team": "San Diego Padres",
+      "abbr": "SD",
+      "teamId": 135,
+      "rpg": 4.77,
+      "kpg": 7.69,
+      "hpg": 8.46,
+      "bbpg": 3.62,
+      "score": 4.9,
       "rank": 24
     },
     {
@@ -1189,11 +1189,11 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 4.17,
-      "kpg": 7.83,
-      "hpg": 8.0,
+      "rpg": 4.33,
+      "kpg": 8.33,
+      "hpg": 8.5,
       "bbpg": 4.0,
-      "score": 6.1,
+      "score": 6.0,
       "rank": 18
     },
     {
@@ -1234,10 +1234,10 @@
       "abbr": "MIN",
       "teamId": 142,
       "rpg": 4.33,
-      "kpg": 5.17,
+      "kpg": 5.5,
       "hpg": 8.17,
       "bbpg": 2.5,
-      "score": 5.4,
+      "score": 5.5,
       "rank": 22
     },
     {
@@ -1379,9 +1379,9 @@
       "abbr": "SD",
       "teamId": 135,
       "rpg": 1.21,
-      "kpg": 2.71,
-      "hpg": 2.64,
-      "bbpg": 0.98,
+      "kpg": 2.7,
+      "hpg": 2.63,
+      "bbpg": 0.97,
       "score": 8.2,
       "rank": 5
     },
@@ -1555,10 +1555,10 @@
       "abbr": "MIN",
       "teamId": 142,
       "rpg": 1.49,
-      "kpg": 3.1,
+      "kpg": 3.08,
       "hpg": 2.89,
-      "bbpg": 1.32,
-      "score": 5.9,
+      "bbpg": 1.31,
+      "score": 5.8,
       "rank": 21
     },
     {
@@ -1875,11 +1875,11 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 3.16,
-      "kpg": 5.99,
-      "hpg": 5.76,
+      "rpg": 3.18,
+      "kpg": 6.01,
+      "hpg": 5.78,
       "bbpg": 2.67,
-      "score": 5.1,
+      "score": 5.0,
       "rank": 20
     },
     {
@@ -1887,8 +1887,8 @@
       "abbr": "MIN",
       "teamId": 142,
       "rpg": 3.18,
-      "kpg": 5.56,
-      "hpg": 5.9,
+      "kpg": 5.53,
+      "hpg": 5.91,
       "bbpg": 2.18,
       "score": 4.8,
       "rank": 21
