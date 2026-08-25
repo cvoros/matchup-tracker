@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-25",
-  "updatedAt": "2026-08-25T04:44:58+00:00",
+  "updatedAt": "2026-08-25T05:36:47+00:00",
   "season": [
     {
       "team": "Cincinnati Reds",
@@ -139,9 +139,9 @@
       "abbr": "SD",
       "teamId": 135,
       "rpg": 4.29,
-      "kpg": 8.08,
-      "hpg": 7.85,
-      "bbpg": 3.47,
+      "kpg": 8.09,
+      "hpg": 7.86,
+      "bbpg": 3.48,
       "score": 6.2,
       "rank": 13
     },
@@ -234,17 +234,6 @@
       "rank": 21
     },
     {
-      "team": "Pittsburgh Pirates",
-      "abbr": "PIT",
-      "teamId": 134,
-      "rpg": 4.92,
-      "kpg": 9.47,
-      "hpg": 8.71,
-      "bbpg": 3.54,
-      "score": 4.8,
-      "rank": 22
-    },
-    {
       "team": "Boston Red Sox",
       "abbr": "BOS",
       "teamId": 111,
@@ -253,6 +242,17 @@
       "hpg": 8.42,
       "bbpg": 3.2,
       "score": 4.8,
+      "rank": 22
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "abbr": "PIT",
+      "teamId": 134,
+      "rpg": 4.93,
+      "kpg": 9.48,
+      "hpg": 8.73,
+      "bbpg": 3.56,
+      "score": 4.7,
       "rank": 23
     },
     {
@@ -379,17 +379,6 @@
       "rank": 4
     },
     {
-      "team": "Pittsburgh Pirates",
-      "abbr": "PIT",
-      "teamId": 134,
-      "rpg": 3.93,
-      "kpg": 9.32,
-      "hpg": 7.61,
-      "bbpg": 3.04,
-      "score": 8.3,
-      "rank": 5
-    },
-    {
       "team": "Atlanta Braves",
       "abbr": "ATL",
       "teamId": 144,
@@ -397,6 +386,17 @@
       "kpg": 8.07,
       "hpg": 7.67,
       "bbpg": 2.59,
+      "score": 8.2,
+      "rank": 5
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "abbr": "PIT",
+      "teamId": 134,
+      "rpg": 3.96,
+      "kpg": 9.39,
+      "hpg": 7.68,
+      "bbpg": 3.11,
       "score": 8.2,
       "rank": 6
     },
@@ -614,9 +614,9 @@
       "abbr": "SD",
       "teamId": 135,
       "rpg": 4.78,
-      "kpg": 7.22,
-      "hpg": 8.93,
-      "bbpg": 3.59,
+      "kpg": 7.3,
+      "hpg": 8.96,
+      "bbpg": 3.67,
       "score": 3.8,
       "rank": 26
     },
@@ -722,17 +722,6 @@
       "rank": 5
     },
     {
-      "team": "Pittsburgh Pirates",
-      "abbr": "PIT",
-      "teamId": 134,
-      "rpg": 4.08,
-      "kpg": 9.54,
-      "hpg": 7.31,
-      "bbpg": 2.69,
-      "score": 9.2,
-      "rank": 6
-    },
-    {
       "team": "Houston Astros",
       "abbr": "HOU",
       "teamId": 117,
@@ -741,6 +730,17 @@
       "hpg": 6.92,
       "bbpg": 2.83,
       "score": 9.0,
+      "rank": 6
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "abbr": "PIT",
+      "teamId": 134,
+      "rpg": 4.15,
+      "kpg": 9.69,
+      "hpg": 7.46,
+      "bbpg": 2.85,
+      "score": 8.9,
       "rank": 7
     },
     {
@@ -924,9 +924,9 @@
       "abbr": "SD",
       "teamId": 135,
       "rpg": 4.77,
-      "kpg": 7.62,
-      "hpg": 8.38,
-      "bbpg": 4.15,
+      "kpg": 7.77,
+      "hpg": 8.46,
+      "bbpg": 4.31,
       "score": 4.4,
       "rank": 24
     },
@@ -1013,11 +1013,11 @@
       "team": "Pittsburgh Pirates",
       "abbr": "PIT",
       "teamId": 134,
-      "rpg": 2.83,
-      "kpg": 10.67,
-      "hpg": 6.17,
-      "bbpg": 2.67,
-      "score": 9.6,
+      "rpg": 3.0,
+      "kpg": 11.0,
+      "hpg": 6.5,
+      "bbpg": 3.0,
+      "score": 9.3,
       "rank": 2
     },
     {
@@ -1219,17 +1219,6 @@
       "rank": 20
     },
     {
-      "team": "San Diego Padres",
-      "abbr": "SD",
-      "teamId": 135,
-      "rpg": 5.0,
-      "kpg": 8.33,
-      "hpg": 8.33,
-      "bbpg": 4.5,
-      "score": 4.4,
-      "rank": 21
-    },
-    {
       "team": "Minnesota Twins",
       "abbr": "MIN",
       "teamId": 142,
@@ -1237,6 +1226,17 @@
       "kpg": 5.0,
       "hpg": 9.0,
       "bbpg": 1.67,
+      "score": 4.3,
+      "rank": 21
+    },
+    {
+      "team": "San Diego Padres",
+      "abbr": "SD",
+      "teamId": 135,
+      "rpg": 5.0,
+      "kpg": 8.67,
+      "hpg": 8.5,
+      "bbpg": 4.83,
       "score": 4.3,
       "rank": 22
     },
