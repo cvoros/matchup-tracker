@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-25",
-  "updatedAt": "2026-08-25T22:33:21+00:00",
+  "updatedAt": "2026-08-25T23:29:56+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -449,19 +449,19 @@
           "positionId": 11
         },
         {
-          "name": "Ian Seymour",
-          "espnId": 4669425,
-          "positionId": 11
-        },
-        {
           "name": "Aaron Nola",
           "espnId": 33709,
           "positionId": 1
         },
         {
-          "name": "Anthony Kay",
-          "espnId": 40947,
+          "name": "Randy Vasquez",
+          "espnId": 4722847,
           "positionId": 1
+        },
+        {
+          "name": "Tanner Scott",
+          "espnId": 35135,
+          "positionId": 11
         }
       ]
     },
@@ -635,6 +635,10 @@
       "espnId": 41054
     },
     {
+      "name": "Ian Seymour",
+      "espnId": 4669425
+    },
+    {
       "name": "Trey Yesavage",
       "espnId": 4949041
     },
@@ -669,10 +673,6 @@
     {
       "name": "Will Warren",
       "espnId": 5132011
-    },
-    {
-      "name": "Tanner Scott",
-      "espnId": 35135
     },
     {
       "name": "Robert Suarez",
@@ -815,10 +815,6 @@
       "espnId": 5330833
     },
     {
-      "name": "Randy Vasquez",
-      "espnId": 4722847
-    },
-    {
       "name": "Mitch Keller",
       "espnId": 33722
     },
@@ -845,6 +841,10 @@
     {
       "name": "Jack Leiter",
       "espnId": 4622181
+    },
+    {
+      "name": "Anthony Kay",
+      "espnId": 40947
     },
     {
       "name": "Kodai Senga",
