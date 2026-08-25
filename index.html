@@ -68,16 +68,20 @@
     flex-direction: column;
     align-items: center;
     line-height: 1.2;
+    margin-top: 0.75rem;
   }
 
-  .lock-status .lock-icon { font-size: 1.35rem; }
+  .lock-status .lock-icon { width: 30px; height: 30px; }
+  .lock-status .lock-icon.locked   { color: var(--red); }
+  .lock-status .lock-icon.unlocked { color: var(--green); }
 
   .lock-status .lock-sub {
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     color: var(--muted);
-    white-space: nowrap;
-    margin-top: 0.1rem;
+    margin-top: 0.3rem;
   }
+
+  .lock-status .lock-sub div + div { margin-top: 0.15rem; }
 
   .tabs {
     display: flex;
@@ -456,8 +460,8 @@
 <header>
   <div class="title-row">
     <h1><img src="icons/apple-touch-icon.png" alt="" style="height:1.2em;width:1.2em;vertical-align:-0.28em;border-radius:22%;margin-right:0.35rem" /> Upstream</h1>
-    <div id="lock-status" class="lock-status"></div>
   </div>
+  <div id="lock-status" class="lock-status"></div>
   <div id="league-bar" style="display:none;margin-top:0.5rem">
     <label for="team-select" style="color:var(--muted);font-size:0.8rem;margin-right:0.4rem">My team:</label>
     <select id="team-select"></select>
@@ -563,13 +567,28 @@
     const locked = now >= lockdownTime;
     const timeStr = lockdownTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
 
+    // Custom padlock icons instead of 🔒/🔓 — the emoji's "unlocked" glyph
+    // renders with such a subtle gap on iOS that it reads as locked at a
+    // glance. This one has the shackle swung fully open on one hinge, so
+    // there's no mistaking it.
+    const closedIcon = `<svg class="lock-icon locked" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="11" width="16" height="10" rx="2" fill="currentColor"/>
+      <path d="M8 11V7a4 4 0 018 0v4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>`;
+    const openIcon = `<svg class="lock-icon unlocked" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="11" width="16" height="10" rx="2" fill="currentColor"/>
+      <g transform="rotate(45 16 11)">
+        <path d="M8 11V7a4 4 0 018 0v4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      </g>
+    </svg>`;
+
     if (locked) {
-      el.innerHTML = `<div class="lock-icon">🔒</div><div class="lock-sub">Rosters locked</div>`;
+      el.innerHTML = `${closedIcon}<div class="lock-sub">Rosters locked</div>`;
     } else {
       const diffMs = lockdownTime - now;
       const hh = Math.floor(diffMs / 3600000);
       const mm = Math.floor((diffMs % 3600000) / 60000);
-      el.innerHTML = `<div class="lock-icon">🔓</div><div class="lock-sub">🕐 ${timeStr} · ${pad(hh)}:${pad(mm)} to lockdown</div>`;
+      el.innerHTML = `${openIcon}<div class="lock-sub"><div>🕐 ${timeStr}</div><div>${pad(hh)}:${pad(mm)} to lockdown</div></div>`;
     }
     el.style.display = 'flex';
   }
