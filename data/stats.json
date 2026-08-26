@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-26",
-  "updatedAt": "2026-08-26T16:22:46+00:00",
+  "updatedAt": "2026-08-26T19:09:52+00:00",
   "season": [
     {
       "team": "Cincinnati Reds",
@@ -146,6 +146,17 @@
       "rank": 13
     },
     {
+      "team": "Detroit Tigers",
+      "abbr": "DET",
+      "teamId": 116,
+      "rpg": 4.45,
+      "kpg": 8.52,
+      "hpg": 8.08,
+      "bbpg": 3.5,
+      "score": 5.9,
+      "rank": 14
+    },
+    {
       "team": "Philadelphia Phillies",
       "abbr": "PHI",
       "teamId": 143,
@@ -154,7 +165,7 @@
       "hpg": 8.11,
       "bbpg": 3.2,
       "score": 5.8,
-      "rank": 14
+      "rank": 15
     },
     {
       "team": "Kansas City Royals",
@@ -164,17 +175,6 @@
       "kpg": 7.84,
       "hpg": 8.26,
       "bbpg": 3.15,
-      "score": 5.7,
-      "rank": 15
-    },
-    {
-      "team": "Detroit Tigers",
-      "abbr": "DET",
-      "teamId": 116,
-      "rpg": 4.48,
-      "kpg": 8.55,
-      "hpg": 8.13,
-      "bbpg": 3.53,
       "score": 5.7,
       "rank": 16
     },
@@ -281,11 +281,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 4.48,
-      "kpg": 7.02,
-      "hpg": 8.72,
-      "bbpg": 3.25,
-      "score": 2.4,
+      "rpg": 4.47,
+      "kpg": 6.99,
+      "hpg": 8.71,
+      "bbpg": 3.23,
+      "score": 2.5,
       "rank": 26
     },
     {
@@ -580,11 +580,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 4.37,
-      "kpg": 6.33,
-      "hpg": 8.78,
-      "bbpg": 2.74,
-      "score": 4.1,
+      "rpg": 4.32,
+      "kpg": 6.25,
+      "hpg": 8.75,
+      "bbpg": 2.64,
+      "score": 4.2,
       "rank": 23
     },
     {
@@ -621,6 +621,17 @@
       "rank": 26
     },
     {
+      "team": "Detroit Tigers",
+      "abbr": "DET",
+      "teamId": 116,
+      "rpg": 5.44,
+      "kpg": 8.0,
+      "hpg": 9.04,
+      "bbpg": 3.48,
+      "score": 2.8,
+      "rank": 27
+    },
+    {
       "team": "Chicago Cubs",
       "abbr": "CHC",
       "teamId": 112,
@@ -629,17 +640,6 @@
       "hpg": 9.11,
       "bbpg": 3.82,
       "score": 2.7,
-      "rank": 27
-    },
-    {
-      "team": "Detroit Tigers",
-      "abbr": "DET",
-      "teamId": 116,
-      "rpg": 5.65,
-      "kpg": 8.12,
-      "hpg": 9.31,
-      "bbpg": 3.62,
-      "score": 2.2,
       "rank": 28
     },
     {
@@ -722,6 +722,17 @@
       "rank": 5
     },
     {
+      "team": "Detroit Tigers",
+      "abbr": "DET",
+      "teamId": 116,
+      "rpg": 3.53,
+      "kpg": 7.67,
+      "hpg": 6.87,
+      "bbpg": 2.87,
+      "score": 8.4,
+      "rank": 6
+    },
+    {
       "team": "Washington Nationals",
       "abbr": "WSH",
       "teamId": 120,
@@ -730,7 +741,7 @@
       "hpg": 7.21,
       "bbpg": 3.07,
       "score": 8.3,
-      "rank": 6
+      "rank": 7
     },
     {
       "team": "Houston Astros",
@@ -741,7 +752,7 @@
       "hpg": 7.42,
       "bbpg": 2.75,
       "score": 8.0,
-      "rank": 7
+      "rank": 8
     },
     {
       "team": "New York Yankees",
@@ -752,7 +763,7 @@
       "hpg": 7.31,
       "bbpg": 3.38,
       "score": 7.9,
-      "rank": 8
+      "rank": 9
     },
     {
       "team": "New York Mets",
@@ -762,17 +773,6 @@
       "kpg": 8.0,
       "hpg": 8.0,
       "bbpg": 3.0,
-      "score": 7.6,
-      "rank": 9
-    },
-    {
-      "team": "Detroit Tigers",
-      "abbr": "DET",
-      "teamId": 116,
-      "rpg": 3.79,
-      "kpg": 7.86,
-      "hpg": 7.21,
-      "bbpg": 3.07,
       "score": 7.6,
       "rank": 10
     },
@@ -931,6 +931,17 @@
       "rank": 24
     },
     {
+      "team": "Tampa Bay Rays",
+      "abbr": "TB",
+      "teamId": 139,
+      "rpg": 4.4,
+      "kpg": 5.73,
+      "hpg": 9.07,
+      "bbpg": 2.87,
+      "score": 3.1,
+      "rank": 25
+    },
+    {
       "team": "Kansas City Royals",
       "abbr": "KC",
       "teamId": 118,
@@ -939,17 +950,6 @@
       "hpg": 8.85,
       "bbpg": 3.77,
       "score": 2.9,
-      "rank": 25
-    },
-    {
-      "team": "Tampa Bay Rays",
-      "abbr": "TB",
-      "teamId": 139,
-      "rpg": 4.5,
-      "kpg": 5.86,
-      "hpg": 9.14,
-      "bbpg": 3.07,
-      "score": 2.8,
       "rank": 26
     },
     {
@@ -1021,6 +1021,17 @@
       "rank": 2
     },
     {
+      "team": "Detroit Tigers",
+      "abbr": "DET",
+      "teamId": 116,
+      "rpg": 2.57,
+      "kpg": 7.86,
+      "hpg": 5.86,
+      "bbpg": 2.86,
+      "score": 8.5,
+      "rank": 3
+    },
+    {
       "team": "San Francisco Giants",
       "abbr": "SF",
       "teamId": 137,
@@ -1029,7 +1040,7 @@
       "hpg": 7.57,
       "bbpg": 2.71,
       "score": 8.4,
-      "rank": 3
+      "rank": 4
     },
     {
       "team": "Atlanta Braves",
@@ -1040,17 +1051,6 @@
       "hpg": 8.33,
       "bbpg": 2.83,
       "score": 8.0,
-      "rank": 4
-    },
-    {
-      "team": "Detroit Tigers",
-      "abbr": "DET",
-      "teamId": 116,
-      "rpg": 3.0,
-      "kpg": 8.33,
-      "hpg": 6.5,
-      "bbpg": 3.33,
-      "score": 7.8,
       "rank": 5
     },
     {
@@ -1102,9 +1102,9 @@
       "abbr": "TB",
       "teamId": 139,
       "rpg": 3.0,
-      "kpg": 5.71,
-      "hpg": 6.86,
-      "bbpg": 3.0,
+      "kpg": 5.5,
+      "hpg": 7.0,
+      "bbpg": 2.62,
       "score": 6.5,
       "rank": 10
     },
@@ -1952,11 +1952,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 3.07,
-      "kpg": 4.92,
-      "hpg": 6.15,
-      "bbpg": 2.39,
-      "score": 2.5,
+      "rpg": 3.05,
+      "kpg": 4.89,
+      "hpg": 6.11,
+      "bbpg": 2.37,
+      "score": 2.7,
       "rank": 27
     },
     {
