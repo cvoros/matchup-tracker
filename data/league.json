@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-26",
-  "updatedAt": "2026-08-26T07:54:08+00:00",
+  "updatedAt": "2026-08-26T08:51:55+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -576,6 +576,11 @@
           "name": "Nick Martinez",
           "espnId": 33372,
           "positionId": 1
+        },
+        {
+          "name": "Dustin May",
+          "espnId": 40937,
+          "positionId": 1
         }
       ]
     }
@@ -762,10 +767,6 @@
       "espnId": 40917
     },
     {
-      "name": "Dustin May",
-      "espnId": 40937
-    },
-    {
       "name": "Carlos Estevez",
       "espnId": 34861
     },
@@ -914,12 +915,12 @@
       "espnId": 5194333
     },
     {
-      "name": "George Klassen",
-      "espnId": 5134517
-    },
-    {
       "name": "Shane Drohan",
       "espnId": 4315203
+    },
+    {
+      "name": "George Klassen",
+      "espnId": 5134517
     },
     {
       "name": "Luke Weaver",
@@ -1086,10 +1087,6 @@
       "espnId": 39671
     },
     {
-      "name": "Adrian Houser",
-      "espnId": 32157
-    },
-    {
       "name": "Edwin Uceta",
       "espnId": 41308
     },
@@ -1098,12 +1095,16 @@
       "espnId": 33950
     },
     {
-      "name": "Max Scherzer",
-      "espnId": 28976
+      "name": "Adrian Houser",
+      "espnId": 32157
     },
     {
       "name": "Jakob Junis",
       "espnId": 36056
+    },
+    {
+      "name": "Max Scherzer",
+      "espnId": 28976
     },
     {
       "name": "Tony Santillan",
@@ -1194,12 +1195,12 @@
       "espnId": 5002950
     },
     {
-      "name": "Stephen Kolek",
-      "espnId": 5190073
-    },
-    {
       "name": "Connor Prielipp",
       "espnId": 4620001
+    },
+    {
+      "name": "Stephen Kolek",
+      "espnId": 5190073
     },
     {
       "name": "Michael Petersen",
@@ -1230,16 +1231,16 @@
       "espnId": 35872
     },
     {
-      "name": "Jose Urquidy",
-      "espnId": 35759
-    },
-    {
       "name": "Justin Martinez",
       "espnId": 5116851
     },
     {
       "name": "Shane Smith",
       "espnId": 5201814
+    },
+    {
+      "name": "Jose Urquidy",
+      "espnId": 35759
     },
     {
       "name": "Brad Keller",
@@ -1742,10 +1743,6 @@
       "espnId": 4758424
     },
     {
-      "name": "Miles Mikolas",
-      "espnId": 32116
-    },
-    {
       "name": "Caleb Thielbar",
       "espnId": 32440
     },
@@ -1762,12 +1759,12 @@
       "espnId": 5132121
     },
     {
-      "name": "Cam Caminiti",
-      "espnId": 5218289
+      "name": "Miles Mikolas",
+      "espnId": 32116
     },
     {
-      "name": "Lake Bachar",
-      "espnId": 42592
+      "name": "Cam Caminiti",
+      "espnId": 5218289
     },
     {
       "name": "Jaxon Wiggins",
@@ -1780,6 +1777,10 @@
     {
       "name": "Reese Olson",
       "espnId": 4734319
+    },
+    {
+      "name": "Lake Bachar",
+      "espnId": 42592
     },
     {
       "name": "Enyel De Los Santos",
@@ -1846,16 +1847,16 @@
       "espnId": 4683350
     },
     {
-      "name": "Matt Wilkinson",
-      "espnId": 5339226
-    },
-    {
       "name": "Jared Koenig",
       "espnId": 4995802
     },
     {
       "name": "Drew Thorpe",
       "espnId": 4629086
+    },
+    {
+      "name": "Matt Wilkinson",
+      "espnId": 5339226
     },
     {
       "name": "Emmanuel Clase",
