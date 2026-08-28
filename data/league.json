@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-28",
-  "updatedAt": "2026-08-28T04:08:33+00:00",
+  "updatedAt": "2026-08-28T17:15:39+00:00",
   "leagueId": 1282609845,
   "defaultTeamId": 7,
   "teams": [
@@ -439,11 +439,6 @@
           "positionId": 1
         },
         {
-          "name": "Grant Taylor",
-          "espnId": 4927630,
-          "positionId": 11
-        },
-        {
           "name": "Cal Quantrill",
           "espnId": 39875,
           "positionId": 1
@@ -701,12 +696,12 @@
       "espnId": 42823
     },
     {
-      "name": "Bryan Abreu",
-      "espnId": 41208
-    },
-    {
       "name": "Casey Mize",
       "espnId": 41167
+    },
+    {
+      "name": "Bryan Abreu",
+      "espnId": 41208
     },
     {
       "name": "Daniel Palencia",
@@ -733,12 +728,12 @@
       "espnId": 39635
     },
     {
-      "name": "Landen Roupp",
-      "espnId": 4345404
-    },
-    {
       "name": "Seth Lugo",
       "espnId": 34873
+    },
+    {
+      "name": "Landen Roupp",
+      "espnId": 4345404
     },
     {
       "name": "Kris Bubic",
@@ -761,16 +756,24 @@
       "espnId": 39804
     },
     {
+      "name": "Grant Taylor",
+      "espnId": 4927630
+    },
+    {
       "name": "Shane Bieber",
       "espnId": 40912
+    },
+    {
+      "name": "Edward Cabrera",
+      "espnId": 40944
     },
     {
       "name": "Walbert Urena",
       "espnId": 5197476
     },
     {
-      "name": "Edward Cabrera",
-      "espnId": 40944
+      "name": "Brandon Young",
+      "espnId": 4414339
     },
     {
       "name": "Michael McGreevy",
@@ -785,10 +788,6 @@
       "espnId": 41325
     },
     {
-      "name": "Brandon Young",
-      "espnId": 4414339
-    },
-    {
       "name": "Tyler Rogers",
       "espnId": 34026
     },
@@ -801,12 +800,12 @@
       "espnId": 5182933
     },
     {
-      "name": "Dustin May",
-      "espnId": 40937
-    },
-    {
       "name": "Yoendrys Gomez",
       "espnId": 42898
+    },
+    {
+      "name": "Dustin May",
+      "espnId": 40937
     },
     {
       "name": "Tatsuya Imai",
@@ -817,10 +816,6 @@
       "espnId": 4109034
     },
     {
-      "name": "Spencer Arrighetti",
-      "espnId": 4726080
-    },
-    {
       "name": "Kevin Kelly",
       "espnId": 5001153
     },
@@ -829,16 +824,16 @@
       "espnId": 33722
     },
     {
-      "name": "Garrett Whitlock",
-      "espnId": 39674
-    },
-    {
-      "name": "Sean Manaea",
-      "espnId": 33244
+      "name": "Spencer Arrighetti",
+      "espnId": 4726080
     },
     {
       "name": "Christian Scott",
       "espnId": 4414215
+    },
+    {
+      "name": "Garrett Whitlock",
+      "espnId": 39674
     },
     {
       "name": "Jack Leiter",
@@ -849,12 +844,16 @@
       "espnId": 5116839
     },
     {
-      "name": "Kodai Senga",
-      "espnId": 4142421
+      "name": "Sean Manaea",
+      "espnId": 33244
     },
     {
       "name": "Walker Buehler",
       "espnId": 39251
+    },
+    {
+      "name": "Kodai Senga",
+      "espnId": 4142421
     },
     {
       "name": "Jacob Webb",
@@ -881,10 +880,6 @@
       "espnId": 4424862
     },
     {
-      "name": "Jackson Jobe",
-      "espnId": 4872647
-    },
-    {
       "name": "Rico Garcia",
       "espnId": 41382
     },
@@ -893,12 +888,16 @@
       "espnId": 5000950
     },
     {
-      "name": "Javier Sanoja",
-      "espnId": 5073992
+      "name": "Jackson Jobe",
+      "espnId": 4872647
     },
     {
       "name": "Erik Sabrowski",
       "espnId": 5194333
+    },
+    {
+      "name": "Javier Sanoja",
+      "espnId": 5073992
     },
     {
       "name": "Mason Montgomery",
@@ -925,20 +924,20 @@
       "espnId": 35397
     },
     {
-      "name": "Luke Weaver",
-      "espnId": 33770
-    },
-    {
       "name": "Zebby Matthews",
       "espnId": 4791597
     },
     {
-      "name": "Lucas Erceg",
-      "espnId": 36618
+      "name": "Luke Weaver",
+      "espnId": 33770
     },
     {
       "name": "Hunter Gaddis",
       "espnId": 4187661
+    },
+    {
+      "name": "Lucas Erceg",
+      "espnId": 36618
     },
     {
       "name": "Yusei Kikuchi",
@@ -957,12 +956,12 @@
       "espnId": 40947
     },
     {
-      "name": "Hayden Wesneski",
-      "espnId": 42996
-    },
-    {
       "name": "Dennis Santana",
       "espnId": 39801
+    },
+    {
+      "name": "Hayden Wesneski",
+      "espnId": 42996
     },
     {
       "name": "Jeremiah Estrada",
@@ -971,10 +970,6 @@
     {
       "name": "Corbin Burnes",
       "espnId": 39878
-    },
-    {
-      "name": "George Klassen",
-      "espnId": 5134517
     },
     {
       "name": "Hogan Harris",
@@ -989,16 +984,24 @@
       "espnId": 40456
     },
     {
+      "name": "George Klassen",
+      "espnId": 5134517
+    },
+    {
       "name": "Brayan Bello",
       "espnId": 4720856
     },
     {
-      "name": "Chad Patrick",
-      "espnId": 5131708
+      "name": "Dean Kremer",
+      "espnId": 38295
     },
     {
       "name": "Reynaldo Lopez",
       "espnId": 33860
+    },
+    {
+      "name": "Chad Patrick",
+      "espnId": 5131708
     },
     {
       "name": "Kumar Rocker",
@@ -1007,10 +1010,6 @@
     {
       "name": "Randy Dobnak",
       "espnId": 42214
-    },
-    {
-      "name": "Dean Kremer",
-      "espnId": 38295
     },
     {
       "name": "Clayton Beeter",
@@ -1033,48 +1032,52 @@
       "espnId": 5125167
     },
     {
-      "name": "Paul Blackburn",
-      "espnId": 32776
-    },
-    {
       "name": "Tomoyuki Sugano",
       "espnId": 4142423
     },
     {
-      "name": "Garrett Cleavinger",
-      "espnId": 36429
+      "name": "Paul Blackburn",
+      "espnId": 32776
     },
     {
       "name": "Chris Bassitt",
       "espnId": 33148
     },
     {
-      "name": "Will Vest",
-      "espnId": 41606
+      "name": "Garrett Cleavinger",
+      "espnId": 36429
     },
     {
       "name": "Robert Gasser",
       "espnId": 4918251
     },
     {
-      "name": "Steven Okert",
-      "espnId": 33716
+      "name": "Will Vest",
+      "espnId": 41606
     },
     {
       "name": "Ryne Nelson",
       "espnId": 4916269
     },
     {
-      "name": "Grayson Rodriguez",
-      "espnId": 41196
+      "name": "Steven Okert",
+      "espnId": 33716
+    },
+    {
+      "name": "Brandyn Garcia",
+      "espnId": 5202600
     },
     {
       "name": "Fernando Cruz",
       "espnId": 34068
     },
     {
-      "name": "Brandyn Garcia",
-      "espnId": 5202600
+      "name": "Grayson Rodriguez",
+      "espnId": 41196
+    },
+    {
+      "name": "Rhett Lowder",
+      "espnId": 4758873
     },
     {
       "name": "Carlos Cortes",
@@ -1085,16 +1088,12 @@
       "espnId": 39671
     },
     {
-      "name": "Andrew Alvarez",
-      "espnId": 4300668
-    },
-    {
       "name": "Edwin Uceta",
       "espnId": 41308
     },
     {
-      "name": "Rhett Lowder",
-      "espnId": 4758873
+      "name": "Andrew Alvarez",
+      "espnId": 4300668
     },
     {
       "name": "Colin Rea",
@@ -1105,8 +1104,8 @@
       "espnId": 36056
     },
     {
-      "name": "Tony Santillan",
-      "espnId": 40950
+      "name": "Juan Morillo",
+      "espnId": 4722925
     },
     {
       "name": "Max Scherzer",
@@ -1117,28 +1116,28 @@
       "espnId": 4298378
     },
     {
-      "name": "Juan Morillo",
-      "espnId": 4722925
-    },
-    {
-      "name": "Antonio Senzatela",
-      "espnId": 33750
+      "name": "Tony Santillan",
+      "espnId": 40950
     },
     {
       "name": "Justin Steele",
       "espnId": 41022
     },
     {
+      "name": "Antonio Senzatela",
+      "espnId": 33750
+    },
+    {
       "name": "Camilo Doval",
       "espnId": 41337
     },
     {
-      "name": "Jameson Taillon",
-      "espnId": 31258
-    },
-    {
       "name": "Tyler Wells",
       "espnId": 4717904
+    },
+    {
+      "name": "Jameson Taillon",
+      "espnId": 31258
     },
     {
       "name": "Chase Dollander",
@@ -1147,6 +1146,10 @@
     {
       "name": "Janson Junk",
       "espnId": 4881980
+    },
+    {
+      "name": "Patrick Sandoval",
+      "espnId": 40975
     },
     {
       "name": "Steven Matz",
@@ -1161,20 +1164,16 @@
       "espnId": 4142539
     },
     {
-      "name": "Patrick Sandoval",
-      "espnId": 40975
-    },
-    {
-      "name": "Daniel Duarte",
-      "espnId": 41094
+      "name": "Noah Schultz",
+      "espnId": 5080754
     },
     {
       "name": "Cristian Javier",
       "espnId": 41261
     },
     {
-      "name": "Noah Schultz",
-      "espnId": 5080754
+      "name": "Daniel Duarte",
+      "espnId": 41094
     },
     {
       "name": "AJ Smith-Shawver",
@@ -1189,12 +1188,16 @@
       "espnId": 5002950
     },
     {
+      "name": "Michael Petersen",
+      "espnId": 41824
+    },
+    {
       "name": "Stephen Kolek",
       "espnId": 5190073
     },
     {
-      "name": "Michael Petersen",
-      "espnId": 41824
+      "name": "Quinn Mathews",
+      "espnId": 4837405
     },
     {
       "name": "Connor Prielipp",
@@ -1205,16 +1208,20 @@
       "espnId": 35872
     },
     {
+      "name": "Elvis Alvarado",
+      "espnId": 42211
+    },
+    {
+      "name": "Tyler Phillips",
+      "espnId": 41247
+    },
+    {
       "name": "Matt Brash",
       "espnId": 4894467
     },
     {
       "name": "Justin Martinez",
       "espnId": 5116851
-    },
-    {
-      "name": "Tyler Phillips",
-      "espnId": 41247
     },
     {
       "name": "Lance McCullers Jr.",
@@ -1237,28 +1244,20 @@
       "espnId": 34999
     },
     {
-      "name": "Brad Keller",
-      "espnId": 35292
-    },
-    {
       "name": "Mike Burrows",
       "espnId": 4918155
     },
     {
-      "name": "Jake Irvin",
-      "espnId": 41290
-    },
-    {
-      "name": "Ryne Stanek",
-      "espnId": 33301
-    },
-    {
-      "name": "Quinn Mathews",
-      "espnId": 4837405
+      "name": "Brad Keller",
+      "espnId": 35292
     },
     {
       "name": "Aaron Civale",
       "espnId": 40934
+    },
+    {
+      "name": "Ryne Stanek",
+      "espnId": 33301
     },
     {
       "name": "Matt Strahm",
@@ -1269,84 +1268,68 @@
       "espnId": 5136082
     },
     {
-      "name": "Steven Cruz",
-      "espnId": 5002931
-    },
-    {
       "name": "JR Ritchie",
       "espnId": 5080757
     },
     {
-      "name": "Slade Cecconi",
-      "espnId": 41462
-    },
-    {
-      "name": "Tyler Alexander",
-      "espnId": 40360
-    },
-    {
-      "name": "Mick Abel",
-      "espnId": 4718970
-    },
-    {
-      "name": "Zack Littell",
-      "espnId": 36052
+      "name": "Steven Cruz",
+      "espnId": 5002931
     },
     {
       "name": "Erik Miller",
       "espnId": 4152950
     },
     {
-      "name": "Orion Kerkering",
-      "espnId": 4630789
+      "name": "Slade Cecconi",
+      "espnId": 41462
     },
     {
-      "name": "Kevin Ginkel",
-      "espnId": 41432
+      "name": "Mick Abel",
+      "espnId": 4718970
     },
     {
-      "name": "Elvis Alvarado",
-      "espnId": 42211
+      "name": "Tyler Alexander",
+      "espnId": 40360
     },
     {
-      "name": "Jack Perkins",
-      "espnId": 4418686
+      "name": "Zack Littell",
+      "espnId": 36052
     },
     {
       "name": "Bradgley Rodriguez",
       "espnId": 5266086
     },
     {
+      "name": "Orion Kerkering",
+      "espnId": 4630789
+    },
+    {
+      "name": "Jack Perkins",
+      "espnId": 4418686
+    },
+    {
       "name": "Dylan Dodd",
       "espnId": 4416462
+    },
+    {
+      "name": "Kevin Ginkel",
+      "espnId": 41432
+    },
+    {
+      "name": "Jake Irvin",
+      "espnId": 41290
     },
     {
       "name": "Tyron Guerrero",
       "espnId": 33654
     },
     {
-      "name": "Ryan Zeferjahn",
-      "espnId": 4722057
-    },
-    {
       "name": "Hagen Smith",
       "espnId": 5023126
     },
     {
-      "name": "Jose Urquidy",
-      "espnId": 35759
-    },
-    {
-      "name": "Mitch Bratt",
-      "espnId": 5123768
-    },
-    {
-      "name": "Adrian Houser",
-      "espnId": 32157
-    },
-    {
-      "name": "Alex Lange",
-      "espnId": 40976
+      "name": "Ryan Zeferjahn",
+      "espnId": 4722057
     },
     {
       "name": "Erick Fedde",
@@ -1357,16 +1340,28 @@
       "espnId": 3983833
     },
     {
-      "name": "Spencer Miles",
-      "espnId": 4833671
+      "name": "Alex Lange",
+      "espnId": 40976
+    },
+    {
+      "name": "Mitch Bratt",
+      "espnId": 5123768
+    },
+    {
+      "name": "Jose Urquidy",
+      "espnId": 35759
     },
     {
       "name": "Andrew Morris",
       "espnId": 5007765
     },
     {
-      "name": "Hunter Dobbins",
-      "espnId": 4415836
+      "name": "Spencer Miles",
+      "espnId": 4833671
+    },
+    {
+      "name": "Adrian Houser",
+      "espnId": 32157
     },
     {
       "name": "Gabe Speier",
@@ -1377,12 +1372,20 @@
       "espnId": 5293137
     },
     {
+      "name": "Hunter Dobbins",
+      "espnId": 4415836
+    },
+    {
       "name": "Jose Ferrer",
       "espnId": 5119607
     },
     {
       "name": "Quinn Priester",
       "espnId": 42449
+    },
+    {
+      "name": "Tyler Tolbert",
+      "espnId": 4151063
     },
     {
       "name": "Brooks Raley",
@@ -1401,72 +1404,68 @@
       "espnId": 5185136
     },
     {
-      "name": "Tyler Tolbert",
-      "espnId": 4151063
-    },
-    {
       "name": "Lucas Giolito",
       "espnId": 32697
-    },
-    {
-      "name": "A.J. Minter",
-      "espnId": 36133
     },
     {
       "name": "Drew Anderson",
       "espnId": 41125
     },
     {
-      "name": "Ryan Sloan",
-      "espnId": 5218293
+      "name": "A.J. Minter",
+      "espnId": 36133
     },
     {
-      "name": "Jonathan Bowlan",
-      "espnId": 41344
+      "name": "Ryan Sloan",
+      "espnId": 5218293
     },
     {
       "name": "Daniel Lynch IV",
       "espnId": 41227
     },
     {
+      "name": "Jonathan Bowlan",
+      "espnId": 41344
+    },
+    {
       "name": "Brad Lord",
       "espnId": 4866810
-    },
-    {
-      "name": "Kyle Freeland",
-      "espnId": 33839
-    },
-    {
-      "name": "Taylor Clarke",
-      "espnId": 35277
-    },
-    {
-      "name": "George Soriano",
-      "espnId": 4917836
-    },
-    {
-      "name": "Calvin Faucher",
-      "espnId": 3978173
-    },
-    {
-      "name": "AJ Blubaugh",
-      "espnId": 42556
     },
     {
       "name": "Nate Lavender",
       "espnId": 4424442
     },
     {
+      "name": "Kyle Freeland",
+      "espnId": 33839
+    },
+    {
+      "name": "Calvin Faucher",
+      "espnId": 3978173
+    },
+    {
+      "name": "George Soriano",
+      "espnId": 4917836
+    },
+    {
       "name": "Robby Snelling",
       "espnId": 5080753
     },
     {
-      "name": "Yennier Cano",
-      "espnId": 35536
+      "name": "Taylor Clarke",
+      "espnId": 35277
     },
     {
       "name": "Jonah Tong",
       "espnId": 5214984
+    },
+    {
+      "name": "AJ Blubaugh",
+      "espnId": 42556
+    },
+    {
+      "name": "Yennier Cano",
+      "espnId": 35536
     },
     {
       "name": "Elmer Rodriguez",
@@ -1485,6 +1484,14 @@
       "espnId": 4905859
     },
     {
+      "name": "Nate Pearson",
+      "espnId": 39646
+    },
+    {
+      "name": "Thomas White",
+      "espnId": 5149065
+    },
+    {
       "name": "Brock Burke",
       "espnId": 39945
     },
@@ -1497,16 +1504,12 @@
       "espnId": 5007605
     },
     {
-      "name": "Thomas White",
-      "espnId": 5149065
-    },
-    {
       "name": "Jack Kochanowicz",
       "espnId": 4917819
     },
     {
-      "name": "Nate Pearson",
-      "espnId": 39646
+      "name": "Ryan Johnson",
+      "espnId": 5007859
     },
     {
       "name": "Joel Kuhnel",
@@ -1515,10 +1518,6 @@
     {
       "name": "Kai-Wei Teng",
       "espnId": 42242
-    },
-    {
-      "name": "Ryan Johnson",
-      "espnId": 5007859
     },
     {
       "name": "Hurston Waldrep",
@@ -1533,28 +1532,20 @@
       "espnId": 4875969
     },
     {
-      "name": "Jose Alvarado",
-      "espnId": 36063
-    },
-    {
-      "name": "Will Dion",
-      "espnId": 4420174
-    },
-    {
       "name": "Clarke Schmidt",
       "espnId": 41085
     },
     {
-      "name": "Justin Slaten",
-      "espnId": 4917925
+      "name": "Jose Alvarado",
+      "espnId": 36063
     },
     {
       "name": "Yohan Ramirez",
       "espnId": 41893
     },
     {
-      "name": "Dylan Smith",
-      "espnId": 4414123
+      "name": "Justin Slaten",
+      "espnId": 4917925
     },
     {
       "name": "Ronel Blanco",
@@ -1569,16 +1560,28 @@
       "espnId": 4917897
     },
     {
-      "name": "DL Hall",
-      "espnId": 41018
+      "name": "Dylan Smith",
+      "espnId": 4414123
     },
     {
       "name": "Tim Hill",
       "espnId": 37005
     },
     {
+      "name": "Will Dion",
+      "espnId": 4420174
+    },
+    {
       "name": "Ryan Gusto",
       "espnId": 5131986
+    },
+    {
+      "name": "Ryan Feltner",
+      "espnId": 4019484
+    },
+    {
+      "name": "Carlos Lagrange",
+      "espnId": 5201825
     },
     {
       "name": "Braxton Garrett",
@@ -1593,32 +1596,20 @@
       "espnId": 36161
     },
     {
-      "name": "Ryan Feltner",
-      "espnId": 4019484
-    },
-    {
-      "name": "Carlos Lagrange",
-      "espnId": 5201825
-    },
-    {
-      "name": "Simeon Woods Richardson",
-      "espnId": 41383
-    },
-    {
-      "name": "Gabriel Hughes",
-      "espnId": 4634930
+      "name": "DL Hall",
+      "espnId": 41018
     },
     {
       "name": "Cade Povich",
       "espnId": 5085743
     },
     {
-      "name": "Patrick Corbin",
-      "espnId": 31313
-    },
-    {
       "name": "Anthony Eyanson",
       "espnId": 5129725
+    },
+    {
+      "name": "Patrick Corbin",
+      "espnId": 31313
     },
     {
       "name": "Michael Lorenzen",
@@ -1629,16 +1620,16 @@
       "espnId": 4298087
     },
     {
-      "name": "Brett Sullivan",
-      "espnId": 39913
+      "name": "Gabriel Hughes",
+      "espnId": 4634930
+    },
+    {
+      "name": "Simeon Woods Richardson",
+      "espnId": 41383
     },
     {
       "name": "Jamie Arnold",
       "espnId": 5128820
-    },
-    {
-      "name": "Shawn Armstrong",
-      "espnId": 33499
     },
     {
       "name": "Taylor Rogers",
@@ -1649,12 +1640,20 @@
       "espnId": 4722599
     },
     {
-      "name": "Carson Whisenhunt",
-      "espnId": 4626232
+      "name": "Shawn Armstrong",
+      "espnId": 33499
     },
     {
       "name": "Ryan Yarbrough",
       "espnId": 33735
+    },
+    {
+      "name": "Jackson Kent",
+      "espnId": 5007807
+    },
+    {
+      "name": "Zach Eflin",
+      "espnId": 32804
     },
     {
       "name": "Edgardo Henriquez",
@@ -1665,20 +1664,28 @@
       "espnId": 42171
     },
     {
+      "name": "Bryan Hudson",
+      "espnId": 4991171
+    },
+    {
       "name": "David Sandlin",
       "espnId": 4960696
+    },
+    {
+      "name": "Drew Sommers",
+      "espnId": 5272008
     },
     {
       "name": "Yuki Matsui",
       "espnId": 4142414
     },
     {
-      "name": "Zach Eflin",
-      "espnId": 32804
+      "name": "Carson Whisenhunt",
+      "espnId": 4626232
     },
     {
-      "name": "Bryan Hudson",
-      "espnId": 4991171
+      "name": "Brett Sullivan",
+      "espnId": 39913
     },
     {
       "name": "Justin Sterner",
@@ -1701,14 +1708,6 @@
       "espnId": 41065
     },
     {
-      "name": "Jackson Kent",
-      "espnId": 5007807
-    },
-    {
-      "name": "Drew Sommers",
-      "espnId": 5272008
-    },
-    {
       "name": "Jordan Hicks",
       "espnId": 37909
     },
@@ -1717,12 +1716,12 @@
       "espnId": 39716
     },
     {
-      "name": "Blake Treinen",
-      "espnId": 32185
-    },
-    {
       "name": "Robert Stephenson",
       "espnId": 32134
+    },
+    {
+      "name": "Blake Treinen",
+      "espnId": 32185
     },
     {
       "name": "Gage Wood",
@@ -1737,24 +1736,24 @@
       "espnId": 4313163
     },
     {
-      "name": "Robert Stock",
-      "espnId": 30577
+      "name": "Karson Milbrandt",
+      "espnId": 5080781
     },
     {
       "name": "Mason Fluharty",
       "espnId": 4622501
     },
     {
-      "name": "Karson Milbrandt",
-      "espnId": 5080781
-    },
-    {
-      "name": "Miles Mikolas",
-      "espnId": 32116
+      "name": "Robert Stock",
+      "espnId": 30577
     },
     {
       "name": "Cam Caminiti",
       "espnId": 5218289
+    },
+    {
+      "name": "Miles Mikolas",
+      "espnId": 32116
     },
     {
       "name": "Caleb Thielbar",
@@ -1765,24 +1764,8 @@
       "espnId": 4721030
     },
     {
-      "name": "Jordan Leasure",
-      "espnId": 5132121
-    },
-    {
       "name": "Reese Olson",
       "espnId": 4734319
-    },
-    {
-      "name": "Anthony Nunez",
-      "espnId": 5275196
-    },
-    {
-      "name": "Gus Varland",
-      "espnId": 41552
-    },
-    {
-      "name": "Lake Bachar",
-      "espnId": 42592
     },
     {
       "name": "Enyel De Los Santos",
@@ -1793,28 +1776,36 @@
       "espnId": 3983841
     },
     {
-      "name": "Gordon Graceffo",
-      "espnId": 5123582
-    },
-    {
-      "name": "Ben Williamson",
-      "espnId": 4626239
+      "name": "Jordan Leasure",
+      "espnId": 5132121
     },
     {
       "name": "John Schreiber",
       "espnId": 39949
     },
     {
+      "name": "Anthony Nunez",
+      "espnId": 5275196
+    },
+    {
       "name": "Luinder Avila",
       "espnId": 5201985
     },
     {
-      "name": "Jose Cabrera",
-      "espnId": 5270084
+      "name": "Gus Varland",
+      "espnId": 41552
+    },
+    {
+      "name": "Lake Bachar",
+      "espnId": 42592
     },
     {
       "name": "Travis Sykora",
       "espnId": 5149082
+    },
+    {
+      "name": "Ben Williamson",
+      "espnId": 4626239
     },
     {
       "name": "Jarlin Susana",
@@ -1829,8 +1820,8 @@
       "espnId": 34166
     },
     {
-      "name": "Matt Svanson",
-      "espnId": 4649953
+      "name": "Gordon Graceffo",
+      "espnId": 5123582
     },
     {
       "name": "Johan Oviedo",
@@ -1841,16 +1832,20 @@
       "espnId": 4629086
     },
     {
-      "name": "German Marquez",
-      "espnId": 34874
+      "name": "Gavin Stone",
+      "espnId": 4417230
     },
     {
       "name": "Ricky Tiedemann",
       "espnId": 4917902
     },
     {
-      "name": "Luis Mey",
-      "espnId": 4722939
+      "name": "Matt Svanson",
+      "espnId": 4649953
+    },
+    {
+      "name": "Kohl Drake",
+      "espnId": 5264737
     },
     {
       "name": "Logan Allen",
@@ -1861,24 +1856,28 @@
       "espnId": 41743
     },
     {
-      "name": "Gavin Stone",
-      "espnId": 4417230
+      "name": "German Marquez",
+      "espnId": 34874
+    },
+    {
+      "name": "Luis Mey",
+      "espnId": 4722939
     },
     {
       "name": "Jared Koenig",
       "espnId": 4995802
     },
     {
-      "name": "Jesse Scholtens",
-      "espnId": 41452
+      "name": "Mason Adams",
+      "espnId": 4758424
     },
     {
       "name": "Kendry Chourio",
       "espnId": 5303971
     },
     {
-      "name": "Mason Adams",
-      "espnId": 4758424
+      "name": "Jesse Scholtens",
+      "espnId": 41452
     },
     {
       "name": "Sam Bachman",
@@ -1897,12 +1896,16 @@
       "espnId": 2560565
     },
     {
+      "name": "Brendon Little",
+      "espnId": 39645
+    },
+    {
       "name": "Jefry Yan",
       "espnId": 5125168
     },
     {
-      "name": "Brendon Little",
-      "espnId": 39645
+      "name": "Jose Cabrera",
+      "espnId": 5270084
     },
     {
       "name": "Brent Suter",
@@ -1913,36 +1916,24 @@
       "espnId": 5339226
     },
     {
-      "name": "Jonathan Loaisiga",
-      "espnId": 39807
+      "name": "Ethan Pecko",
+      "espnId": 4944276
     },
     {
       "name": "Chase Silseth",
       "espnId": 4413990
     },
     {
+      "name": "Jonathan Loaisiga",
+      "espnId": 39807
+    },
+    {
+      "name": "Luis Medina",
+      "espnId": 40949
+    },
+    {
       "name": "Jurrangelo Cijntje",
       "espnId": 5128581
-    },
-    {
-      "name": "Ethan Pecko",
-      "espnId": 4944276
-    },
-    {
-      "name": "Christian Zazueta",
-      "espnId": 5272144
-    },
-    {
-      "name": "Kohl Drake",
-      "espnId": 5264737
-    },
-    {
-      "name": "Jose Quintana",
-      "espnId": 32106
-    },
-    {
-      "name": "Tanner Gordon",
-      "espnId": 4415658
     },
     {
       "name": "Greg Weissert",
@@ -1957,28 +1948,20 @@
       "espnId": 5140488
     },
     {
-      "name": "Luis Medina",
-      "espnId": 40949
+      "name": "Christian Zazueta",
+      "espnId": 5272144
     },
     {
-      "name": "Yimi Garcia",
-      "espnId": 32888
+      "name": "Jose Quintana",
+      "espnId": 32106
     },
     {
-      "name": "Kutter Crawford",
-      "espnId": 41277
+      "name": "Tanner Gordon",
+      "espnId": 4415658
     },
     {
       "name": "Tyler Heineman",
       "espnId": 33142
-    },
-    {
-      "name": "Bobby Miller",
-      "espnId": 4326703
-    },
-    {
-      "name": "Andrew Sears",
-      "espnId": 5140040
     },
     {
       "name": "Jovani Moran",
@@ -1993,12 +1976,20 @@
       "espnId": 30653
     },
     {
-      "name": "Kody Funderburk",
-      "espnId": 4348166
+      "name": "Yimi Garcia",
+      "espnId": 32888
     },
     {
-      "name": "Hunter Barco",
-      "espnId": 4621029
+      "name": "Kutter Crawford",
+      "espnId": 41277
+    },
+    {
+      "name": "Alex McFarlane",
+      "espnId": 4621422
+    },
+    {
+      "name": "Bobby Miller",
+      "espnId": 4326703
     },
     {
       "name": "Brandon Williamson",
@@ -2009,44 +2000,28 @@
       "espnId": 5204350
     },
     {
-      "name": "Trent Thornton",
-      "espnId": 36728
+      "name": "Andrew Sears",
+      "espnId": 5140040
     },
     {
       "name": "Evan Phillips",
       "espnId": 37911
     },
     {
-      "name": "Luis Morales",
-      "espnId": 5150939
+      "name": "Kody Funderburk",
+      "espnId": 4348166
     },
     {
-      "name": "Tanner Banks",
-      "espnId": 40437
-    },
-    {
-      "name": "Caleb Ferguson",
-      "espnId": 41017
-    },
-    {
-      "name": "John King",
-      "espnId": 41763
+      "name": "Hunter Barco",
+      "espnId": 4621029
     },
     {
       "name": "Isaac Mattson",
       "espnId": 42063
     },
     {
-      "name": "Chris Paddack",
-      "espnId": 35999
-    },
-    {
-      "name": "A.J. Puk",
-      "espnId": 36201
-    },
-    {
-      "name": "Mark Leiter Jr.",
-      "espnId": 36202
+      "name": "Trent Thornton",
+      "espnId": 36728
     },
     {
       "name": "Jordan Montgomery",
@@ -2057,28 +2032,28 @@
       "espnId": 38628
     },
     {
-      "name": "Jaden Hill",
-      "espnId": 4414362
+      "name": "Luis Morales",
+      "espnId": 5150939
     },
     {
       "name": "Taijuan Walker",
       "espnId": 31864
     },
     {
-      "name": "Juan Mejia",
-      "espnId": 5185107
+      "name": "Tanner Banks",
+      "espnId": 40437
     },
     {
-      "name": "Chris Martin",
-      "espnId": 32903
+      "name": "Caleb Ferguson",
+      "espnId": 41017
     },
     {
       "name": "Sheng-En Lin",
       "espnId": 5333237
     },
     {
-      "name": "Alex McFarlane",
-      "espnId": 4621422
+      "name": "John King",
+      "espnId": 41763
     },
     {
       "name": "Owen Murphy",
@@ -2093,20 +2068,24 @@
       "espnId": 5213263
     },
     {
-      "name": "Brennan Bernardino",
-      "espnId": 35876
-    },
-    {
       "name": "Brock Stewart",
       "espnId": 35997
     },
     {
-      "name": "Hoby Milner",
-      "espnId": 36088
+      "name": "Chris Paddack",
+      "espnId": 35999
     },
     {
       "name": "Jimmy Herget",
       "espnId": 36093
+    },
+    {
+      "name": "A.J. Puk",
+      "espnId": 36201
+    },
+    {
+      "name": "Mark Leiter Jr.",
+      "espnId": 36202
     },
     {
       "name": "Clayton Kershaw",
@@ -2117,12 +2096,20 @@
       "espnId": 38796
     },
     {
-      "name": "Seth Halvorsen",
-      "espnId": 4414483
+      "name": "Jaden Hill",
+      "espnId": 4414362
     },
     {
       "name": "Ty Johnson",
       "espnId": 4742411
+    },
+    {
+      "name": "Juan Mejia",
+      "espnId": 5185107
+    },
+    {
+      "name": "Chris Martin",
+      "espnId": 32903
     },
     {
       "name": "Josiah Gray",
@@ -2133,60 +2120,44 @@
       "espnId": 41177
     },
     {
-      "name": "Grant Anderson",
-      "espnId": 42161
+      "name": "Gerardo Carrillo",
+      "espnId": 41357
     },
     {
       "name": "Trey Gibson",
       "espnId": 4867802
     },
     {
+      "name": "Hoby Milner",
+      "espnId": 36088
+    },
+    {
       "name": "Brant Hurter",
       "espnId": 5197093
     },
     {
-      "name": "Kyle Hurt",
-      "espnId": 4306800
-    },
-    {
-      "name": "Chase Petty",
-      "espnId": 4872687
-    },
-    {
-      "name": "Pierce Johnson",
-      "espnId": 32777
+      "name": "Seth Halvorsen",
+      "espnId": 4414483
     },
     {
       "name": "Tanner Houck",
       "espnId": 41009
     },
     {
-      "name": "Gerardo Carrillo",
-      "espnId": 41357
-    },
-    {
       "name": "Mason Barnett",
       "espnId": 4620704
-    },
-    {
-      "name": "Bennett Sousa",
-      "espnId": 41776
     },
     {
       "name": "Kruz Schoolcraft",
       "espnId": 5293150
     },
     {
+      "name": "Grant Anderson",
+      "espnId": 42161
+    },
+    {
       "name": "Tejay Antone",
       "espnId": 42355
-    },
-    {
-      "name": "Ben Casparius",
-      "espnId": 4326800
-    },
-    {
-      "name": "Anthony Banda",
-      "espnId": 34542
     },
     {
       "name": "DJ Herz",
@@ -2195,6 +2166,10 @@
     {
       "name": "Tanner McDougal",
       "espnId": 4917778
+    },
+    {
+      "name": "Brennan Bernardino",
+      "espnId": 35876
     },
     {
       "name": "Wandy Peralta",
@@ -2217,16 +2192,12 @@
       "espnId": 37825
     },
     {
-      "name": "Drew Pomeranz",
-      "espnId": 31010
+      "name": "Kyle Hurt",
+      "espnId": 4306800
     },
     {
-      "name": "Albert Suarez",
-      "espnId": 31109
-    },
-    {
-      "name": "Kyle Hart",
-      "espnId": 39936
+      "name": "Chase Petty",
+      "espnId": 4872687
     },
     {
       "name": "Alexis Diaz",
@@ -2241,52 +2212,52 @@
       "espnId": 32156
     },
     {
-      "name": "Jose Suarez",
-      "espnId": 40981
+      "name": "Pierce Johnson",
+      "espnId": 32777
     },
     {
-      "name": "Hunter Harvey",
-      "espnId": 33191
+      "name": "Bennett Sousa",
+      "espnId": 41776
     },
     {
       "name": "Daniel Espino",
       "espnId": 42438
     },
     {
-      "name": "Cooper Criswell",
-      "espnId": 4326801
+      "name": "Ben Casparius",
+      "espnId": 4326800
     },
     {
       "name": "Peyton Gray",
       "espnId": 4187628
     },
     {
-      "name": "Justin Bruihl",
-      "espnId": 42735
+      "name": "Anthony Banda",
+      "espnId": 34542
     },
     {
       "name": "Jackson Ferris",
       "espnId": 5080752
     },
     {
-      "name": "Cionel Perez",
-      "espnId": 36089
-    },
-    {
       "name": "Hayden Birdsong",
       "espnId": 5197166
+    },
+    {
+      "name": "Luis Gastelum",
+      "espnId": 5205835
     },
     {
       "name": "Luis Perales",
       "espnId": 4722916
     },
     {
-      "name": "PJ Poulin",
-      "espnId": 4019760
+      "name": "Drew Pomeranz",
+      "espnId": 31010
     },
     {
-      "name": "Cooper Hjerpe",
-      "espnId": 4635332
+      "name": "Albert Suarez",
+      "espnId": 31109
     },
     {
       "name": "Richard Lovelady",
@@ -2297,12 +2268,16 @@
       "espnId": 39871
     },
     {
-      "name": "Cole Henry",
-      "espnId": 4414361
+      "name": "Kyle Hart",
+      "espnId": 39936
     },
     {
       "name": "Braylon Doughty",
       "espnId": 5218306
+    },
+    {
+      "name": "Jose Suarez",
+      "espnId": 40981
     },
     {
       "name": "Caden Scarborough",
@@ -2313,8 +2288,8 @@
       "espnId": 5333162
     },
     {
-      "name": "JT Brubaker",
-      "espnId": 41460
+      "name": "Hunter Harvey",
+      "espnId": 33191
     },
     {
       "name": "Trevor Williams",
@@ -2323,6 +2298,10 @@
     {
       "name": "Khristian Curtis",
       "espnId": 4719635
+    },
+    {
+      "name": "Cooper Criswell",
+      "espnId": 4326801
     },
     {
       "name": "Julian Garcia",
@@ -2337,32 +2316,36 @@
       "espnId": 4917631
     },
     {
-      "name": "Sam Aldegheri",
-      "espnId": 5221123
-    },
-    {
       "name": "Connor Phillips",
       "espnId": 4918160
+    },
+    {
+      "name": "Cionel Perez",
+      "espnId": 36089
     },
     {
       "name": "Nestor Cortes",
       "espnId": 36480
     },
     {
-      "name": "Luis Gastelum",
-      "espnId": 5205835
-    },
-    {
       "name": "Noble Meyer",
       "espnId": 5148967
+    },
+    {
+      "name": "PJ Poulin",
+      "espnId": 4019760
     },
     {
       "name": "Matt Waldron",
       "espnId": 4020158
     },
     {
-      "name": "Coleman Crow",
-      "espnId": 5127100
+      "name": "Alec Gamboa",
+      "espnId": 5200550
+    },
+    {
+      "name": "Cole Henry",
+      "espnId": 4414361
     },
     {
       "name": "Yu Darvish",
@@ -2373,16 +2356,20 @@
       "espnId": 32151
     },
     {
-      "name": "Enmanuel De Jesus",
-      "espnId": 41513
+      "name": "JT Brubaker",
+      "espnId": 41460
+    },
+    {
+      "name": "Justin Bruihl",
+      "espnId": 42735
     },
     {
       "name": "Craig Yoho",
       "espnId": 4417465
     },
     {
-      "name": "Jake Bird",
-      "espnId": 3459223
+      "name": "Sam Aldegheri",
+      "espnId": 5221123
     },
     {
       "name": "Aaron Bummer",
@@ -2395,10 +2382,6 @@
     {
       "name": "Tommy Nance",
       "espnId": 36385
-    },
-    {
-      "name": "Orlando Ribalta",
-      "espnId": 5132036
     },
     {
       "name": "David Festa",
@@ -2417,20 +2400,8 @@
       "espnId": 4411979
     },
     {
-      "name": "Zach Agnos",
-      "espnId": 5207459
-    },
-    {
-      "name": "Ryan Watson",
-      "espnId": 5125911
-    },
-    {
-      "name": "Cam Sanders",
-      "espnId": 5126205
-    },
-    {
-      "name": "Alec Gamboa",
-      "espnId": 5200550
+      "name": "Cooper Hjerpe",
+      "espnId": 4635332
     },
     {
       "name": "Richard Fitts",
@@ -2441,8 +2412,8 @@
       "espnId": 4905900
     },
     {
-      "name": "Matt Gage",
-      "espnId": 40337
+      "name": "Coleman Crow",
+      "espnId": 5127100
     },
     {
       "name": "Porter Hodge",
@@ -2455,10 +2426,6 @@
     {
       "name": "Ryan Weiss",
       "espnId": 3964917
-    },
-    {
-      "name": "Jose Corniell",
-      "espnId": 4710478
     },
     {
       "name": "Wei-En Lin",
@@ -2477,20 +2444,20 @@
       "espnId": 41407
     },
     {
+      "name": "Enmanuel De Jesus",
+      "espnId": 41513
+    },
+    {
       "name": "Connor Brogdon",
       "espnId": 41515
     },
     {
-      "name": "Carlos Vargas",
-      "espnId": 42504
+      "name": "Jake Bird",
+      "espnId": 3459223
     },
     {
-      "name": "Sam Moll",
-      "espnId": 34928
-    },
-    {
-      "name": "Caden Dana",
-      "espnId": 5197473
+      "name": "Orlando Ribalta",
+      "espnId": 5132036
     },
     {
       "name": "Jalen Beeks",
@@ -2499,10 +2466,6 @@
     {
       "name": "Nolan Perry",
       "espnId": 5369741
-    },
-    {
-      "name": "Evan Sisk",
-      "espnId": 3994084
     },
     {
       "name": "Mason Black",
@@ -2525,8 +2488,16 @@
       "espnId": 4920836
     },
     {
-      "name": "Austin Warren",
-      "espnId": 4093773
+      "name": "Zach Agnos",
+      "espnId": 5207459
+    },
+    {
+      "name": "Ryan Watson",
+      "espnId": 5125911
+    },
+    {
+      "name": "Cam Sanders",
+      "espnId": 5126205
     },
     {
       "name": "Mitch Spence",
@@ -2541,8 +2512,8 @@
       "espnId": 4905923
     },
     {
-      "name": "Tommy Kahnle",
-      "espnId": 31867
+      "name": "Matt Gage",
+      "espnId": 40337
     },
     {
       "name": "Angel Chivilli",
@@ -2569,6 +2540,10 @@
       "espnId": 5332991
     },
     {
+      "name": "Jose Corniell",
+      "espnId": 4710478
+    },
+    {
       "name": "Marcus Stroman",
       "espnId": 32815
     },
@@ -2579,14 +2554,6 @@
     {
       "name": "Ryan Pressly",
       "espnId": 33072
-    },
-    {
-      "name": "Justin Lawrence",
-      "espnId": 41310
-    },
-    {
-      "name": "Mason Englert",
-      "espnId": 41386
     },
     {
       "name": "Logan Evans",
@@ -2613,6 +2580,10 @@
       "espnId": 42436
     },
     {
+      "name": "Carlos Vargas",
+      "espnId": 42504
+    },
+    {
       "name": "Brady Basso",
       "espnId": 4179551
     },
@@ -2621,8 +2592,8 @@
       "espnId": 42620
     },
     {
-      "name": "Jason Foley",
-      "espnId": 42698
+      "name": "Sam Moll",
+      "espnId": 34928
     },
     {
       "name": "Landon Knack",
@@ -2633,14 +2604,6 @@
       "espnId": 5196250
     },
     {
-      "name": "Adam Macko",
-      "espnId": 4918157
-    },
-    {
-      "name": "David Morgan",
-      "espnId": 5270578
-    },
-    {
       "name": "Chris Flexen",
       "espnId": 36067
     },
@@ -2649,12 +2612,20 @@
       "espnId": 4705677
     },
     {
+      "name": "Caden Dana",
+      "espnId": 5197473
+    },
+    {
       "name": "Carlos Rodriguez",
       "espnId": 5123999
     },
     {
       "name": "Charlie Morton",
       "espnId": 29155
+    },
+    {
+      "name": "Evan Sisk",
+      "espnId": 3994084
     },
     {
       "name": "Carson Seymour",
@@ -2669,16 +2640,16 @@
       "espnId": 4683391
     },
     {
+      "name": "Austin Warren",
+      "espnId": 4093773
+    },
+    {
       "name": "Tylor Megill",
       "espnId": 3332018
     },
     {
       "name": "Jose Fermin",
       "espnId": 5265417
-    },
-    {
-      "name": "Cade Gibson",
-      "espnId": 5273591
     },
     {
       "name": "Shelby Miller",
@@ -2697,12 +2668,12 @@
       "espnId": 40021
     },
     {
-      "name": "Yerry De los Santos",
-      "espnId": 4717834
+      "name": "Tommy Kahnle",
+      "espnId": 31867
     },
     {
-      "name": "Tyler Gilbert",
-      "espnId": 40559
+      "name": "Yerry De los Santos",
+      "espnId": 4717834
     },
     {
       "name": "Spencer Bivens",
@@ -2741,12 +2712,12 @@
       "espnId": 4415756
     },
     {
-      "name": "Tristan Beck",
-      "espnId": 41309
+      "name": "Justin Lawrence",
+      "espnId": 41310
     },
     {
-      "name": "Eli Morgan",
-      "espnId": 41324
+      "name": "Mason Englert",
+      "espnId": 41386
     },
     {
       "name": "Carl Edwards Jr.",
@@ -2789,10 +2760,6 @@
       "espnId": 4990069
     },
     {
-      "name": "Travis Adams",
-      "espnId": 4424951
-    },
-    {
       "name": "Brandon Eisert",
       "espnId": 4228247
     },
@@ -2813,16 +2780,20 @@
       "espnId": 42596
     },
     {
-      "name": "Thomas Harrington",
-      "espnId": 4736800
+      "name": "Jason Foley",
+      "espnId": 42698
     },
     {
       "name": "Peyton Pallette",
       "espnId": 4622229
     },
     {
-      "name": "Andrew Nardi",
-      "espnId": 3975840
+      "name": "Adam Macko",
+      "espnId": 4918157
+    },
+    {
+      "name": "David Morgan",
+      "espnId": 5270578
     },
     {
       "name": "Anthony Molina",
@@ -2831,10 +2802,6 @@
     {
       "name": "Andrew Saalfrank",
       "espnId": 5001155
-    },
-    {
-      "name": "Paxton Schultz",
-      "espnId": 4313208
     },
     {
       "name": "Joel Peguero",
@@ -2865,6 +2832,10 @@
       "espnId": 5002952
     },
     {
+      "name": "Cade Gibson",
+      "espnId": 5273591
+    },
+    {
       "name": "Luis De Leon",
       "espnId": 5273820
     },
@@ -2875,10 +2846,6 @@
     {
       "name": "Tayler Scott",
       "espnId": 39711
-    },
-    {
-      "name": "Elieser Hernandez",
-      "espnId": 39836
     },
     {
       "name": "Liam Hendriks",
@@ -2911,6 +2878,10 @@
     {
       "name": "Yohemy Nolasco",
       "espnId": 5332367
+    },
+    {
+      "name": "Tyler Gilbert",
+      "espnId": 40559
     },
     {
       "name": "James Karinchak",
@@ -2953,10 +2924,6 @@
       "espnId": 5333065
     },
     {
-      "name": "Keegan Thompson",
-      "espnId": 41086
-    },
-    {
       "name": "Zach Pop",
       "espnId": 41103
     },
@@ -2977,6 +2944,14 @@
       "espnId": 5128586
     },
     {
+      "name": "Tristan Beck",
+      "espnId": 41309
+    },
+    {
+      "name": "Eli Morgan",
+      "espnId": 41324
+    },
+    {
       "name": "Derek Law",
       "espnId": 33139
     },
@@ -2991,10 +2966,6 @@
     {
       "name": "Jon Gray",
       "espnId": 33203
-    },
-    {
-      "name": "Jack Ralston",
-      "espnId": 3965342
     },
     {
       "name": "Julio Urias",
@@ -3017,6 +2988,10 @@
       "espnId": 42155
     },
     {
+      "name": "Travis Adams",
+      "espnId": 4424951
+    },
+    {
       "name": "Matthew Bruce Allan",
       "espnId": 42192
     },
@@ -3031,10 +3006,6 @@
     {
       "name": "Jackson Rutledge",
       "espnId": 42434
-    },
-    {
-      "name": "Tom Cosgrove",
-      "espnId": 4990459
     },
     {
       "name": "Nick Frasso",
@@ -3055,6 +3026,10 @@
     {
       "name": "Riley Martin",
       "espnId": 5138178
+    },
+    {
+      "name": "Thomas Harrington",
+      "espnId": 4736800
     },
     {
       "name": "Xzavion Curry",
@@ -3109,16 +3084,12 @@
       "espnId": 4917779
     },
     {
-      "name": "Joe Rock",
-      "espnId": 4917788
-    },
-    {
       "name": "Wyatt Olds",
       "espnId": 5130977
     },
     {
-      "name": "Rob Zastryzny",
-      "espnId": 36025
+      "name": "Andrew Nardi",
+      "espnId": 3975840
     },
     {
       "name": "Dietrich Enns",
@@ -3141,6 +3112,10 @@
       "espnId": 5132219
     },
     {
+      "name": "Paxton Schultz",
+      "espnId": 4313208
+    },
+    {
       "name": "Miguel Ullola",
       "espnId": 5124163
     },
@@ -3151,10 +3126,6 @@
     {
       "name": "Carlos Carrasco",
       "espnId": 28968
-    },
-    {
-      "name": "Daysbel Hernandez",
-      "espnId": 4722960
     },
     {
       "name": "Mike Paredes",
@@ -3225,12 +3196,12 @@
       "espnId": 31549
     },
     {
-      "name": "Reiver Sanmartin",
-      "espnId": 39799
-    },
-    {
       "name": "Adbert Alzolay",
       "espnId": 39802
+    },
+    {
+      "name": "Elieser Hernandez",
+      "espnId": 39836
     },
     {
       "name": "Robby Ahlstrom",
@@ -3251,10 +3222,6 @@
     {
       "name": "Dedniel Nunez",
       "espnId": 4717899
-    },
-    {
-      "name": "Chris Roycroft",
-      "espnId": 5201199
     },
     {
       "name": "Nick Ramirez",
@@ -3307,10 +3274,6 @@
     {
       "name": "Tommy Henry",
       "espnId": 4423337
-    },
-    {
-      "name": "Chris Devenski",
-      "espnId": 32511
     },
     {
       "name": "Sawyer Gipson-Long",
@@ -3421,6 +3384,10 @@
       "espnId": 41081
     },
     {
+      "name": "Keegan Thompson",
+      "espnId": 41086
+    },
+    {
       "name": "Patrick Forbes",
       "espnId": 5128252
     },
@@ -3497,10 +3464,6 @@
       "espnId": 4424061
     },
     {
-      "name": "Austin Cox",
-      "espnId": 41283
-    },
-    {
       "name": "Kyle Nicolas",
       "espnId": 4415762
     },
@@ -3515,10 +3478,6 @@
     {
       "name": "Konnor Pilkington",
       "espnId": 41329
-    },
-    {
-      "name": "Lyon Richardson",
-      "espnId": 41333
     },
     {
       "name": "Marco Gonzales",
@@ -3555,6 +3514,10 @@
     {
       "name": "Dylan Coleman",
       "espnId": 41393
+    },
+    {
+      "name": "Jack Ralston",
+      "espnId": 3965342
     },
     {
       "name": "Frankie Montas",
@@ -3677,10 +3640,6 @@
       "espnId": 4916585
     },
     {
-      "name": "Jack Weisenburger",
-      "espnId": 4228387
-    },
-    {
       "name": "Zak Kent",
       "espnId": 5014989
     },
@@ -3695,6 +3654,10 @@
     {
       "name": "Thaddeus Ward",
       "espnId": 42439
+    },
+    {
+      "name": "Tom Cosgrove",
+      "espnId": 4990459
     },
     {
       "name": "Ricky Vanasco",
@@ -3857,20 +3820,16 @@
       "espnId": 4917796
     },
     {
+      "name": "Joe Rock",
+      "espnId": 4917788
+    },
+    {
       "name": "Jose Cuas",
       "espnId": 35432
     },
     {
-      "name": "Ben Kudrna",
-      "espnId": 4917813
-    },
-    {
       "name": "Ky Bush",
       "espnId": 4917816
-    },
-    {
-      "name": "Taylor Rashi",
-      "espnId": 4999871
     },
     {
       "name": "Philip Abner",
@@ -3923,6 +3882,10 @@
     {
       "name": "Matt Ball",
       "espnId": 35975
+    },
+    {
+      "name": "Rob Zastryzny",
+      "espnId": 36025
     },
     {
       "name": "Ryan Lambert",
@@ -4009,10 +3972,6 @@
       "espnId": 5124007
     },
     {
-      "name": "Andre Granillo",
-      "espnId": 5132192
-    },
-    {
       "name": "Winston Santos",
       "espnId": 5255100
     },
@@ -4033,10 +3992,6 @@
       "espnId": 4927620
     },
     {
-      "name": "Erik Tolman",
-      "espnId": 5337128
-    },
-    {
       "name": "Carson Spiers",
       "espnId": 5165292
     },
@@ -4055,6 +4010,10 @@
     {
       "name": "Carlos Duran",
       "espnId": 4722955
+    },
+    {
+      "name": "Daysbel Hernandez",
+      "espnId": 4722960
     },
     {
       "name": "Gage Ziehl",
@@ -4121,10 +4080,6 @@
       "espnId": 38101
     },
     {
-      "name": "Hayden Harris",
-      "espnId": 4297882
-    },
-    {
       "name": "Shinnosuke Ogasawara",
       "espnId": 5264585
     },
@@ -4135,10 +4090,6 @@
     {
       "name": "Caleb Freeman",
       "espnId": 4085111
-    },
-    {
-      "name": "Kevin Herget",
-      "espnId": 38314
     },
     {
       "name": "Ryan Brasier",
@@ -4269,10 +4220,6 @@
       "espnId": 39527
     },
     {
-      "name": "Eric Cerantola",
-      "espnId": 4413997
-    },
-    {
       "name": "Brody Brecht",
       "espnId": 5061178
     },
@@ -4307,6 +4254,10 @@
     {
       "name": "Andres Machado",
       "espnId": 39776
+    },
+    {
+      "name": "Reiver Sanmartin",
+      "espnId": 39799
     },
     {
       "name": "Jonathan Hernandez",
@@ -4375,6 +4326,10 @@
     {
       "name": "Juan Burgos",
       "espnId": 5201272
+    },
+    {
+      "name": "Chris Roycroft",
+      "espnId": 5201199
     },
     {
       "name": "Matt Barnes",
@@ -4491,6 +4446,10 @@
     {
       "name": "Steven Hajjar",
       "espnId": 4423336
+    },
+    {
+      "name": "Chris Devenski",
+      "espnId": 32511
     },
     {
       "name": "Matt Foster",
@@ -5133,6 +5092,10 @@
       "espnId": 5128555
     },
     {
+      "name": "Austin Cox",
+      "espnId": 41283
+    },
+    {
       "name": "Ben Bowden",
       "espnId": 41289
     },
@@ -5199,6 +5162,10 @@
     {
       "name": "John Rooney",
       "espnId": 41330
+    },
+    {
+      "name": "Lyon Richardson",
+      "espnId": 41333
     },
     {
       "name": "Carlos Herrera",
@@ -5815,6 +5782,10 @@
     {
       "name": "AJ Russell",
       "espnId": 5129595
+    },
+    {
+      "name": "Jack Weisenburger",
+      "espnId": 4228387
     },
     {
       "name": "Victor Gonzalez",
@@ -6565,6 +6536,10 @@
       "espnId": 5007908
     },
     {
+      "name": "Ben Kudrna",
+      "espnId": 4917813
+    },
+    {
       "name": "Shane Panzini",
       "espnId": 4917811
     },
@@ -6643,6 +6618,10 @@
     {
       "name": "Marc Church",
       "espnId": 4999877
+    },
+    {
+      "name": "Taylor Rashi",
+      "espnId": 4999871
     },
     {
       "name": "Alejandro Carrillo",
@@ -7061,6 +7040,10 @@
       "espnId": 5124093
     },
     {
+      "name": "Andre Granillo",
+      "espnId": 5132192
+    },
+    {
       "name": "Ronan Kopp",
       "espnId": 5123998
     },
@@ -7107,6 +7090,10 @@
     {
       "name": "Luis Serna",
       "espnId": 5124112
+    },
+    {
+      "name": "Erik Tolman",
+      "espnId": 5337128
     },
     {
       "name": "Burl Carraway",
@@ -7425,6 +7412,10 @@
       "espnId": 5133456
     },
     {
+      "name": "Hayden Harris",
+      "espnId": 4297882
+    },
+    {
       "name": "Ryan Webb",
       "espnId": 4297904
     },
@@ -7463,6 +7454,10 @@
     {
       "name": "Vinny Nittoli",
       "espnId": 38291
+    },
+    {
+      "name": "Kevin Herget",
+      "espnId": 38314
     },
     {
       "name": "Matt Frisbee",
@@ -7835,6 +7830,10 @@
     {
       "name": "Dugan Darnell",
       "espnId": 4987419
+    },
+    {
+      "name": "Eric Cerantola",
+      "espnId": 4413997
     },
     {
       "name": "Carlson Reed",

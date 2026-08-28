@@ -1,6 +1,6 @@
 {
   "updated": "2026-08-28",
-  "updatedAt": "2026-08-28T04:08:32+00:00",
+  "updatedAt": "2026-08-28T17:15:38+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -271,8 +271,8 @@
       "abbr": "AZ",
       "teamId": 109,
       "rpg": 4.49,
-      "kpg": 7.21,
-      "hpg": 8.13,
+      "kpg": 7.22,
+      "hpg": 8.14,
       "bbpg": 3.36,
       "score": 3.5,
       "rank": 25
@@ -426,11 +426,11 @@
       "team": "San Francisco Giants",
       "abbr": "SF",
       "teamId": 137,
-      "rpg": 3.85,
+      "rpg": 3.89,
       "kpg": 8.22,
       "hpg": 7.74,
       "bbpg": 3.0,
-      "score": 7.5,
+      "score": 7.4,
       "rank": 9
     },
     {
@@ -581,8 +581,8 @@
       "abbr": "AZ",
       "teamId": 109,
       "rpg": 4.33,
-      "kpg": 6.96,
-      "hpg": 8.15,
+      "kpg": 7.0,
+      "hpg": 8.22,
       "bbpg": 3.56,
       "score": 4.8,
       "rank": 23
@@ -755,17 +755,6 @@
       "rank": 8
     },
     {
-      "team": "San Francisco Giants",
-      "abbr": "SF",
-      "teamId": 137,
-      "rpg": 4.0,
-      "kpg": 8.77,
-      "hpg": 8.23,
-      "bbpg": 2.69,
-      "score": 7.3,
-      "rank": 9
-    },
-    {
       "team": "Houston Astros",
       "abbr": "HOU",
       "teamId": 117,
@@ -774,6 +763,17 @@
       "hpg": 7.75,
       "bbpg": 2.83,
       "score": 7.3,
+      "rank": 9
+    },
+    {
+      "team": "San Francisco Giants",
+      "abbr": "SF",
+      "teamId": 137,
+      "rpg": 4.08,
+      "kpg": 8.77,
+      "hpg": 8.23,
+      "bbpg": 2.69,
+      "score": 7.2,
       "rank": 10
     },
     {
@@ -891,8 +891,8 @@
       "abbr": "AZ",
       "teamId": 109,
       "rpg": 4.15,
-      "kpg": 6.92,
-      "hpg": 7.92,
+      "kpg": 7.0,
+      "hpg": 8.08,
       "bbpg": 3.31,
       "score": 5.6,
       "rank": 21
@@ -1167,11 +1167,11 @@
       "team": "San Francisco Giants",
       "abbr": "SF",
       "teamId": 137,
-      "rpg": 4.57,
+      "rpg": 4.71,
       "kpg": 8.57,
       "hpg": 8.57,
       "bbpg": 2.71,
-      "score": 4.9,
+      "score": 4.8,
       "rank": 16
     },
     {
@@ -1208,17 +1208,6 @@
       "rank": 19
     },
     {
-      "team": "Arizona Diamondbacks",
-      "abbr": "AZ",
-      "teamId": 109,
-      "rpg": 3.86,
-      "kpg": 5.43,
-      "hpg": 7.57,
-      "bbpg": 3.14,
-      "score": 4.4,
-      "rank": 20
-    },
-    {
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
@@ -1227,6 +1216,17 @@
       "hpg": 7.5,
       "bbpg": 4.5,
       "score": 4.4,
+      "rank": 20
+    },
+    {
+      "team": "Arizona Diamondbacks",
+      "abbr": "AZ",
+      "teamId": 109,
+      "rpg": 3.86,
+      "kpg": 5.57,
+      "hpg": 7.86,
+      "bbpg": 3.14,
+      "score": 4.3,
       "rank": 21
     },
     {
@@ -1850,24 +1850,24 @@
       "rank": 17
     },
     {
-      "team": "San Francisco Giants",
-      "abbr": "SF",
-      "teamId": 137,
-      "rpg": 2.98,
-      "kpg": 5.52,
-      "hpg": 6.16,
-      "bbpg": 1.97,
-      "score": 5.5,
-      "rank": 18
-    },
-    {
       "team": "Arizona Diamondbacks",
       "abbr": "AZ",
       "teamId": 109,
-      "rpg": 3.0,
-      "kpg": 5.42,
-      "hpg": 5.62,
-      "bbpg": 2.44,
+      "rpg": 2.99,
+      "kpg": 5.43,
+      "hpg": 5.63,
+      "bbpg": 2.45,
+      "score": 5.4,
+      "rank": 18
+    },
+    {
+      "team": "San Francisco Giants",
+      "abbr": "SF",
+      "teamId": 137,
+      "rpg": 3.01,
+      "kpg": 5.52,
+      "hpg": 6.17,
+      "bbpg": 1.97,
       "score": 5.3,
       "rank": 19
     },
