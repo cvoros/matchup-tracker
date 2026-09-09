@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-09",
-  "updatedAt": "2026-09-09T04:28:50+00:00",
+  "updatedAt": "2026-09-09T09:31:14+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -18,7 +18,7 @@
       "abbr": "CIN",
       "teamId": 113,
       "rpg": 4.21,
-      "kpg": 9.52,
+      "kpg": 9.54,
       "hpg": 7.66,
       "bbpg": 3.58,
       "score": 8.9,
@@ -28,9 +28,9 @@
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
-      "rpg": 3.95,
-      "kpg": 8.72,
-      "hpg": 7.59,
+      "rpg": 3.96,
+      "kpg": 8.74,
+      "hpg": 7.6,
       "bbpg": 3.37,
       "score": 8.9,
       "rank": 3
@@ -73,7 +73,7 @@
       "abbr": "TEX",
       "teamId": 140,
       "rpg": 4.17,
-      "kpg": 8.48,
+      "kpg": 8.49,
       "hpg": 8.1,
       "bbpg": 3.28,
       "score": 7.1,
@@ -415,9 +415,9 @@
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
-      "rpg": 4.27,
-      "kpg": 9.65,
-      "hpg": 7.73,
+      "rpg": 4.31,
+      "kpg": 9.73,
+      "hpg": 7.81,
       "bbpg": 3.92,
       "score": 7.2,
       "rank": 8
@@ -427,7 +427,7 @@
       "abbr": "CIN",
       "teamId": 113,
       "rpg": 4.57,
-      "kpg": 9.57,
+      "kpg": 9.64,
       "hpg": 7.86,
       "bbpg": 3.39,
       "score": 7.0,
@@ -467,6 +467,17 @@
       "rank": 12
     },
     {
+      "team": "Texas Rangers",
+      "abbr": "TEX",
+      "teamId": 140,
+      "rpg": 4.3,
+      "kpg": 8.48,
+      "hpg": 8.0,
+      "bbpg": 3.63,
+      "score": 6.1,
+      "rank": 13
+    },
+    {
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
@@ -475,17 +486,6 @@
       "hpg": 7.65,
       "bbpg": 3.77,
       "score": 6.1,
-      "rank": 13
-    },
-    {
-      "team": "Texas Rangers",
-      "abbr": "TEX",
-      "teamId": 140,
-      "rpg": 4.3,
-      "kpg": 8.41,
-      "hpg": 8.0,
-      "bbpg": 3.63,
-      "score": 6.0,
       "rank": 14
     },
     {
@@ -700,17 +700,6 @@
       "rank": 3
     },
     {
-      "team": "Seattle Mariners",
-      "abbr": "SEA",
-      "teamId": 136,
-      "rpg": 3.92,
-      "kpg": 9.62,
-      "hpg": 7.31,
-      "bbpg": 3.62,
-      "score": 7.3,
-      "rank": 4
-    },
-    {
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
@@ -719,6 +708,17 @@
       "hpg": 6.85,
       "bbpg": 3.23,
       "score": 7.3,
+      "rank": 4
+    },
+    {
+      "team": "Seattle Mariners",
+      "abbr": "SEA",
+      "teamId": 136,
+      "rpg": 4.0,
+      "kpg": 9.77,
+      "hpg": 7.46,
+      "bbpg": 3.62,
+      "score": 7.2,
       "rank": 5
     },
     {
@@ -902,10 +902,10 @@
       "abbr": "CIN",
       "teamId": 113,
       "rpg": 5.62,
-      "kpg": 9.46,
+      "kpg": 9.62,
       "hpg": 9.15,
       "bbpg": 3.54,
-      "score": 3.3,
+      "score": 3.4,
       "rank": 22
     },
     {
@@ -957,10 +957,10 @@
       "abbr": "TEX",
       "teamId": 140,
       "rpg": 5.62,
-      "kpg": 8.08,
+      "kpg": 8.23,
       "hpg": 8.69,
       "bbpg": 3.92,
-      "score": 2.3,
+      "score": 2.4,
       "rank": 27
     },
     {
@@ -1175,17 +1175,6 @@
       "rank": 16
     },
     {
-      "team": "Seattle Mariners",
-      "abbr": "SEA",
-      "teamId": 136,
-      "rpg": 4.33,
-      "kpg": 8.83,
-      "hpg": 8.5,
-      "bbpg": 3.67,
-      "score": 6.0,
-      "rank": 17
-    },
-    {
       "team": "Pittsburgh Pirates",
       "abbr": "PIT",
       "teamId": 134,
@@ -1194,6 +1183,17 @@
       "hpg": 7.83,
       "bbpg": 3.83,
       "score": 6.0,
+      "rank": 17
+    },
+    {
+      "team": "Seattle Mariners",
+      "abbr": "SEA",
+      "teamId": 136,
+      "rpg": 4.5,
+      "kpg": 9.17,
+      "hpg": 8.83,
+      "bbpg": 3.67,
+      "score": 5.8,
       "rank": 18
     },
     {
@@ -1252,6 +1252,17 @@
       "rank": 23
     },
     {
+      "team": "Cincinnati Reds",
+      "abbr": "CIN",
+      "teamId": 113,
+      "rpg": 6.0,
+      "kpg": 10.17,
+      "hpg": 9.33,
+      "bbpg": 3.67,
+      "score": 4.6,
+      "rank": 24
+    },
+    {
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
@@ -1260,17 +1271,6 @@
       "hpg": 8.83,
       "bbpg": 3.0,
       "score": 4.6,
-      "rank": 24
-    },
-    {
-      "team": "Cincinnati Reds",
-      "abbr": "CIN",
-      "teamId": 113,
-      "rpg": 6.0,
-      "kpg": 9.83,
-      "hpg": 9.33,
-      "bbpg": 3.67,
-      "score": 4.5,
       "rank": 25
     },
     {
@@ -1289,10 +1289,10 @@
       "abbr": "TEX",
       "teamId": 140,
       "rpg": 5.83,
-      "kpg": 8.5,
+      "kpg": 8.83,
       "hpg": 8.83,
       "bbpg": 3.33,
-      "score": 4.4,
+      "score": 4.5,
       "rank": 27
     },
     {
@@ -1334,10 +1334,10 @@
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
-      "rpg": 1.17,
-      "kpg": 3.47,
-      "hpg": 2.65,
-      "bbpg": 1.28,
+      "rpg": 1.18,
+      "kpg": 3.48,
+      "hpg": 2.66,
+      "bbpg": 1.27,
       "score": 10.0,
       "rank": 1
     },
@@ -1382,7 +1382,7 @@
       "kpg": 3.07,
       "hpg": 2.61,
       "bbpg": 1.19,
-      "score": 7.7,
+      "score": 7.8,
       "rank": 5
     },
     {
@@ -1415,8 +1415,19 @@
       "kpg": 3.61,
       "hpg": 2.9,
       "bbpg": 1.28,
-      "score": 7.4,
+      "score": 7.5,
       "rank": 8
+    },
+    {
+      "team": "Houston Astros",
+      "abbr": "HOU",
+      "teamId": 117,
+      "rpg": 1.32,
+      "kpg": 2.59,
+      "hpg": 2.56,
+      "bbpg": 0.99,
+      "score": 7.2,
+      "rank": 9
     },
     {
       "team": "Toronto Blue Jays",
@@ -1427,17 +1438,6 @@
       "hpg": 2.71,
       "bbpg": 1.06,
       "score": 7.2,
-      "rank": 9
-    },
-    {
-      "team": "Houston Astros",
-      "abbr": "HOU",
-      "teamId": 117,
-      "rpg": 1.32,
-      "kpg": 2.59,
-      "hpg": 2.56,
-      "bbpg": 0.99,
-      "score": 7.1,
       "rank": 10
     },
     {
@@ -1455,10 +1455,10 @@
       "team": "Cincinnati Reds",
       "abbr": "CIN",
       "teamId": 113,
-      "rpg": 1.38,
-      "kpg": 2.97,
-      "hpg": 2.59,
-      "bbpg": 1.32,
+      "rpg": 1.39,
+      "kpg": 3.01,
+      "hpg": 2.6,
+      "bbpg": 1.33,
       "score": 6.8,
       "rank": 12
     },
@@ -1514,7 +1514,7 @@
       "kpg": 2.98,
       "hpg": 2.9,
       "bbpg": 1.22,
-      "score": 5.4,
+      "score": 5.5,
       "rank": 17
     },
     {
@@ -1522,10 +1522,10 @@
       "abbr": "TEX",
       "teamId": 140,
       "rpg": 1.52,
-      "kpg": 3.01,
-      "hpg": 2.95,
+      "kpg": 3.02,
+      "hpg": 2.93,
       "bbpg": 1.12,
-      "score": 5.3,
+      "score": 5.4,
       "rank": 18
     },
     {
@@ -1631,11 +1631,11 @@
       "team": "Los Angeles Dodgers",
       "abbr": "LAD",
       "teamId": 119,
-      "rpg": 1.55,
-      "kpg": 2.9,
-      "hpg": 3.15,
-      "bbpg": 1.32,
-      "score": 3.3,
+      "rpg": 1.57,
+      "kpg": 2.93,
+      "hpg": 3.16,
+      "bbpg": 1.34,
+      "score": 3.2,
       "rank": 28
     },
     {
@@ -1688,32 +1688,32 @@
       "team": "Cincinnati Reds",
       "abbr": "CIN",
       "teamId": 113,
-      "rpg": 2.99,
-      "kpg": 7.33,
-      "hpg": 5.73,
-      "bbpg": 2.59,
-      "score": 8.7,
+      "rpg": 2.97,
+      "kpg": 7.28,
+      "hpg": 5.7,
+      "bbpg": 2.58,
+      "score": 8.9,
       "rank": 3
-    },
-    {
-      "team": "Texas Rangers",
-      "abbr": "TEX",
-      "teamId": 140,
-      "rpg": 2.71,
-      "kpg": 5.89,
-      "hpg": 5.58,
-      "bbpg": 2.31,
-      "score": 7.8,
-      "rank": 4
     },
     {
       "team": "Seattle Mariners",
       "abbr": "SEA",
       "teamId": 136,
       "rpg": 2.82,
-      "kpg": 5.82,
+      "kpg": 5.81,
       "hpg": 5.36,
       "bbpg": 2.31,
+      "score": 7.6,
+      "rank": 4
+    },
+    {
+      "team": "Texas Rangers",
+      "abbr": "TEX",
+      "teamId": 140,
+      "rpg": 2.74,
+      "kpg": 5.93,
+      "hpg": 5.61,
+      "bbpg": 2.32,
       "score": 7.6,
       "rank": 5
     },
@@ -1963,11 +1963,11 @@
       "team": "Los Angeles Dodgers",
       "abbr": "LAD",
       "teamId": 119,
-      "rpg": 3.41,
-      "kpg": 5.57,
-      "hpg": 6.09,
-      "bbpg": 2.74,
-      "score": 1.6,
+      "rpg": 3.39,
+      "kpg": 5.54,
+      "hpg": 6.06,
+      "bbpg": 2.73,
+      "score": 1.8,
       "rank": 28
     },
     {
