@@ -2,12 +2,23 @@ name: Update Matchup Stats
 
 on:
   schedule:
-    # Every hour, on the hour (UTC), March–November only. This is a
+    # Hourly at :37 past (UTC), March–November only. This is a
     # FAILSAFE against firing all winter if it's ever left enabled by
     # mistake — it is NOT the season on/off switch. The real switch is
     # disabling/re-enabling this workflow itself (Actions tab → Update
     # Matchup Stats → "..." → Disable/Enable workflow); see README.
-    - cron: '0 * * 3-11 *'
+    #
+    # :37 is deliberate — do NOT "tidy" this back to :00. GitHub's
+    # scheduler is best-effort and queues `schedule` events on shared
+    # infrastructure, and load is heaviest at the top of every hour
+    # because that's where every naive cron on the platform sits. While
+    # this was on '0 * * 3-11 *', exactly 1 of ~55 runs actually started
+    # at :00 — the rest were delayed 1–59 minutes, and any run pushed
+    # past the next hour's event collided with it and was dropped. Net
+    # effect was ~6 runs/day instead of 24. An off-peak minute avoids
+    # that herd. It still buys no guarantee; only an external
+    # workflow_dispatch trigger would.
+    - cron: '37 * * 3-11 *'
   workflow_dispatch:
 
 jobs:
