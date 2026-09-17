@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-17",
-  "updatedAt": "2026-09-17T20:31:57+00:00",
+  "updatedAt": "2026-09-17T23:02:53+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -193,10 +193,10 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 4.35,
-      "kpg": 8.01,
-      "hpg": 8.0,
-      "bbpg": 3.43,
+      "rpg": 4.37,
+      "kpg": 8.04,
+      "hpg": 8.03,
+      "bbpg": 3.44,
       "score": 5.8,
       "rank": 18
     },
@@ -226,10 +226,10 @@
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 4.68,
-      "kpg": 8.66,
-      "hpg": 8.61,
-      "bbpg": 3.13,
+      "rpg": 4.69,
+      "kpg": 8.69,
+      "hpg": 8.64,
+      "bbpg": 3.15,
       "score": 5.3,
       "rank": 21
     },
@@ -437,11 +437,11 @@
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 4.11,
-      "kpg": 9.07,
-      "hpg": 8.68,
-      "bbpg": 3.11,
-      "score": 8.0,
+      "rpg": 4.14,
+      "kpg": 9.25,
+      "hpg": 8.86,
+      "bbpg": 3.21,
+      "score": 7.8,
       "rank": 10
     },
     {
@@ -577,17 +577,6 @@
       "rank": 22
     },
     {
-      "team": "San Diego Padres",
-      "abbr": "SD",
-      "teamId": 135,
-      "rpg": 4.81,
-      "kpg": 7.74,
-      "hpg": 8.81,
-      "bbpg": 3.48,
-      "score": 5.2,
-      "rank": 23
-    },
-    {
       "team": "Kansas City Royals",
       "abbr": "KC",
       "teamId": 118,
@@ -596,6 +585,17 @@
       "hpg": 8.5,
       "bbpg": 4.0,
       "score": 5.2,
+      "rank": 23
+    },
+    {
+      "team": "San Diego Padres",
+      "abbr": "SD",
+      "teamId": 135,
+      "rpg": 4.89,
+      "kpg": 7.93,
+      "hpg": 8.96,
+      "bbpg": 3.52,
+      "score": 5.1,
       "rank": 24
     },
     {
@@ -821,17 +821,6 @@
       "rank": 14
     },
     {
-      "team": "Colorado Rockies",
-      "abbr": "COL",
-      "teamId": 115,
-      "rpg": 4.79,
-      "kpg": 8.71,
-      "hpg": 8.93,
-      "bbpg": 2.36,
-      "score": 6.2,
-      "rank": 15
-    },
-    {
       "team": "Texas Rangers",
       "abbr": "TEX",
       "teamId": 140,
@@ -840,6 +829,17 @@
       "hpg": 8.62,
       "bbpg": 2.92,
       "score": 6.1,
+      "rank": 15
+    },
+    {
+      "team": "Colorado Rockies",
+      "abbr": "COL",
+      "teamId": 115,
+      "rpg": 4.86,
+      "kpg": 9.07,
+      "hpg": 9.29,
+      "bbpg": 2.57,
+      "score": 5.9,
       "rank": 16
     },
     {
@@ -956,11 +956,11 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 5.36,
-      "kpg": 6.86,
-      "hpg": 9.64,
-      "bbpg": 3.14,
-      "score": 2.8,
+      "rpg": 5.5,
+      "kpg": 7.21,
+      "hpg": 9.93,
+      "bbpg": 3.21,
+      "score": 2.6,
       "rank": 27
     },
     {
@@ -1178,11 +1178,11 @@
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 4.12,
-      "kpg": 6.88,
-      "hpg": 9.12,
-      "bbpg": 2.38,
-      "score": 6.4,
+      "rpg": 4.25,
+      "kpg": 7.5,
+      "hpg": 9.75,
+      "bbpg": 2.75,
+      "score": 6.1,
       "rank": 17
     },
     {
@@ -1299,11 +1299,11 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 6.71,
-      "kpg": 6.71,
-      "hpg": 11.71,
-      "bbpg": 2.86,
-      "score": 2.4,
+      "rpg": 7.0,
+      "kpg": 7.43,
+      "hpg": 12.29,
+      "bbpg": 3.0,
+      "score": 2.2,
       "rank": 28
     },
     {
@@ -1422,11 +1422,11 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 1.27,
-      "kpg": 2.67,
-      "hpg": 2.74,
+      "rpg": 1.26,
+      "kpg": 2.66,
+      "hpg": 2.72,
       "bbpg": 1.02,
-      "score": 7.4,
+      "score": 7.6,
       "rank": 9
     },
     {
@@ -1532,11 +1532,11 @@
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 1.66,
-      "kpg": 3.45,
-      "hpg": 3.2,
-      "bbpg": 1.08,
-      "score": 5.5,
+      "rpg": 1.65,
+      "kpg": 3.44,
+      "hpg": 3.17,
+      "bbpg": 1.07,
+      "score": 5.7,
       "rank": 19
     },
     {
@@ -1831,9 +1831,9 @@
       "team": "Colorado Rockies",
       "abbr": "COL",
       "teamId": 115,
-      "rpg": 3.07,
-      "kpg": 5.7,
-      "hpg": 5.86,
+      "rpg": 3.06,
+      "kpg": 5.71,
+      "hpg": 5.88,
       "bbpg": 2.22,
       "score": 5.5,
       "rank": 16
@@ -1908,11 +1908,11 @@
       "team": "San Diego Padres",
       "abbr": "SD",
       "teamId": 135,
-      "rpg": 3.18,
+      "rpg": 3.22,
       "kpg": 5.93,
-      "hpg": 5.82,
+      "hpg": 5.88,
       "bbpg": 2.63,
-      "score": 4.7,
+      "score": 4.4,
       "rank": 23
     },
     {
