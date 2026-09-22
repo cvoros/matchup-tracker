@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-22",
-  "updatedAt": "2026-09-22T15:08:45+00:00",
+  "updatedAt": "2026-09-22T19:05:15+00:00",
   "season": [
     {
       "team": "Los Angeles Angels",
@@ -69,6 +69,17 @@
       "rank": 6
     },
     {
+      "team": "New York Yankees",
+      "abbr": "NYY",
+      "teamId": 147,
+      "rpg": 4.58,
+      "kpg": 9.14,
+      "hpg": 7.76,
+      "bbpg": 3.56,
+      "score": 6.9,
+      "rank": 7
+    },
+    {
       "team": "New York Mets",
       "abbr": "NYM",
       "teamId": 121,
@@ -76,17 +87,6 @@
       "kpg": 8.42,
       "hpg": 8.06,
       "bbpg": 3.23,
-      "score": 6.8,
-      "rank": 7
-    },
-    {
-      "team": "New York Yankees",
-      "abbr": "NYY",
-      "teamId": 147,
-      "rpg": 4.6,
-      "kpg": 9.13,
-      "hpg": 7.78,
-      "bbpg": 3.57,
       "score": 6.8,
       "rank": 8
     },
@@ -292,11 +292,11 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 4.56,
-      "kpg": 7.0,
-      "hpg": 8.68,
-      "bbpg": 3.19,
-      "score": 2.9,
+      "rpg": 4.53,
+      "kpg": 7.01,
+      "hpg": 8.64,
+      "bbpg": 3.17,
+      "score": 3.1,
       "rank": 27
     },
     {
@@ -569,12 +569,23 @@
       "team": "Tampa Bay Rays",
       "abbr": "TB",
       "teamId": 139,
-      "rpg": 4.73,
-      "kpg": 6.62,
-      "hpg": 8.27,
-      "bbpg": 3.04,
-      "score": 5.0,
+      "rpg": 4.56,
+      "kpg": 6.67,
+      "hpg": 8.07,
+      "bbpg": 2.93,
+      "score": 5.5,
       "rank": 22
+    },
+    {
+      "team": "New York Yankees",
+      "abbr": "NYY",
+      "teamId": 147,
+      "rpg": 5.33,
+      "kpg": 8.67,
+      "hpg": 8.78,
+      "bbpg": 3.19,
+      "score": 5.1,
+      "rank": 23
     },
     {
       "team": "Texas Rangers",
@@ -585,7 +596,7 @@
       "hpg": 8.42,
       "bbpg": 3.88,
       "score": 4.9,
-      "rank": 23
+      "rank": 24
     },
     {
       "team": "Toronto Blue Jays",
@@ -596,17 +607,6 @@
       "hpg": 8.62,
       "bbpg": 3.23,
       "score": 4.8,
-      "rank": 24
-    },
-    {
-      "team": "New York Yankees",
-      "abbr": "NYY",
-      "teamId": 147,
-      "rpg": 5.46,
-      "kpg": 8.58,
-      "hpg": 8.92,
-      "bbpg": 3.27,
-      "score": 4.7,
       "rank": 25
     },
     {
@@ -832,6 +832,17 @@
       "rank": 15
     },
     {
+      "team": "Tampa Bay Rays",
+      "abbr": "TB",
+      "teamId": 139,
+      "rpg": 4.62,
+      "kpg": 7.46,
+      "hpg": 7.23,
+      "bbpg": 3.0,
+      "score": 6.0,
+      "rank": 16
+    },
+    {
       "team": "Philadelphia Phillies",
       "abbr": "PHI",
       "teamId": 143,
@@ -840,7 +851,7 @@
       "hpg": 7.62,
       "bbpg": 3.77,
       "score": 5.8,
-      "rank": 16
+      "rank": 17
     },
     {
       "team": "Miami Marlins",
@@ -851,7 +862,7 @@
       "hpg": 9.33,
       "bbpg": 3.17,
       "score": 5.5,
-      "rank": 17
+      "rank": 18
     },
     {
       "team": "Toronto Blue Jays",
@@ -862,18 +873,18 @@
       "hpg": 8.31,
       "bbpg": 3.38,
       "score": 5.3,
-      "rank": 18
+      "rank": 19
     },
     {
-      "team": "Tampa Bay Rays",
-      "abbr": "TB",
-      "teamId": 139,
-      "rpg": 5.0,
-      "kpg": 7.42,
-      "hpg": 7.58,
-      "bbpg": 3.25,
-      "score": 5.2,
-      "rank": 19
+      "team": "New York Yankees",
+      "abbr": "NYY",
+      "teamId": 147,
+      "rpg": 5.31,
+      "kpg": 8.23,
+      "hpg": 8.23,
+      "bbpg": 3.0,
+      "score": 5.1,
+      "rank": 20
     },
     {
       "team": "Arizona Diamondbacks",
@@ -884,7 +895,7 @@
       "hpg": 9.33,
       "bbpg": 3.58,
       "score": 5.0,
-      "rank": 20
+      "rank": 21
     },
     {
       "team": "Pittsburgh Pirates",
@@ -895,17 +906,6 @@
       "hpg": 9.83,
       "bbpg": 3.17,
       "score": 4.6,
-      "rank": 21
-    },
-    {
-      "team": "New York Yankees",
-      "abbr": "NYY",
-      "teamId": 147,
-      "rpg": 5.58,
-      "kpg": 8.0,
-      "hpg": 8.5,
-      "bbpg": 3.17,
-      "score": 4.4,
       "rank": 22
     },
     {
@@ -1054,6 +1054,17 @@
       "rank": 5
     },
     {
+      "team": "Tampa Bay Rays",
+      "abbr": "TB",
+      "teamId": 139,
+      "rpg": 3.57,
+      "kpg": 8.86,
+      "hpg": 6.0,
+      "bbpg": 3.0,
+      "score": 8.3,
+      "rank": 6
+    },
+    {
       "team": "Houston Astros",
       "abbr": "HOU",
       "teamId": 117,
@@ -1062,7 +1073,7 @@
       "hpg": 7.67,
       "bbpg": 1.83,
       "score": 8.1,
-      "rank": 6
+      "rank": 7
     },
     {
       "team": "Kansas City Royals",
@@ -1073,7 +1084,7 @@
       "hpg": 7.5,
       "bbpg": 2.83,
       "score": 7.8,
-      "rank": 7
+      "rank": 8
     },
     {
       "team": "St. Louis Cardinals",
@@ -1084,7 +1095,7 @@
       "hpg": 7.4,
       "bbpg": 2.8,
       "score": 7.5,
-      "rank": 8
+      "rank": 9
     },
     {
       "team": "San Francisco Giants",
@@ -1095,7 +1106,7 @@
       "hpg": 8.33,
       "bbpg": 2.83,
       "score": 7.3,
-      "rank": 9
+      "rank": 10
     },
     {
       "team": "Minnesota Twins",
@@ -1105,17 +1116,6 @@
       "kpg": 9.57,
       "hpg": 9.14,
       "bbpg": 1.71,
-      "score": 7.2,
-      "rank": 10
-    },
-    {
-      "team": "Tampa Bay Rays",
-      "abbr": "TB",
-      "teamId": 139,
-      "rpg": 4.17,
-      "kpg": 9.0,
-      "hpg": 6.5,
-      "bbpg": 3.5,
       "score": 7.2,
       "rank": 11
     },
@@ -1230,6 +1230,17 @@
       "rank": 21
     },
     {
+      "team": "New York Yankees",
+      "abbr": "NYY",
+      "teamId": 147,
+      "rpg": 5.0,
+      "kpg": 9.17,
+      "hpg": 8.33,
+      "bbpg": 3.5,
+      "score": 5.4,
+      "rank": 22
+    },
+    {
       "team": "New York Mets",
       "abbr": "NYM",
       "teamId": 121,
@@ -1238,7 +1249,7 @@
       "hpg": 9.5,
       "bbpg": 3.33,
       "score": 5.3,
-      "rank": 22
+      "rank": 23
     },
     {
       "team": "Atlanta Braves",
@@ -1249,7 +1260,7 @@
       "hpg": 9.0,
       "bbpg": 2.8,
       "score": 5.2,
-      "rank": 23
+      "rank": 24
     },
     {
       "team": "Pittsburgh Pirates",
@@ -1260,17 +1271,6 @@
       "hpg": 10.17,
       "bbpg": 3.0,
       "score": 4.9,
-      "rank": 24
-    },
-    {
-      "team": "New York Yankees",
-      "abbr": "NYY",
-      "teamId": 147,
-      "rpg": 5.6,
-      "kpg": 8.8,
-      "hpg": 9.0,
-      "bbpg": 4.0,
-      "score": 4.0,
       "rank": 25
     },
     {
