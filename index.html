@@ -515,7 +515,7 @@
 </div>
 
 <footer>
-  Full Season/30/15/7: vs starting pitchers only &nbsp;·&nbsp; vs LHP/vs RHP: all pitcher appearances &nbsp;·&nbsp; Score = 1.0–10.0 (K/G − H/G − BB/G − 2×R/G, normalized) &nbsp;·&nbsp; Higher = better streaming matchup for ESPN H2H points leagues. &nbsp;·&nbsp; Fantasy league data updates hourly.
+  Full Season/30/15/7: vs starting pitchers only &nbsp;·&nbsp; vs LHP/vs RHP: all pitcher appearances &nbsp;·&nbsp; Score = 1.0–10.0 (K/G − H/G − BB/G − 2×R/G, normalized) &nbsp;·&nbsp; Higher = better streaming matchup for ESPN H2H points leagues.<span id="hourly-note"> &nbsp;·&nbsp; Fantasy league data updates hourly.</span>
 </footer>
 
 <script>
@@ -530,12 +530,17 @@
   // ESPN locks a fantasy roster for the day the moment the earliest MLB
   // game of that day starts. Adds don't take effect and drops don't clear
   // until the next day. lockdownTime = kickoff of today's first game.
+  //
+  // Every schedule fetch in this file is gameType=R (regular season only):
+  // fantasy scoring ignores spring training and the postseason, and
+  // without the filter those games show up as streaming options and drive
+  // phantom lockdowns in Feb–Mar and Oct.
   let lockdownTime = null;      // Date, or null if no games today / unknown
   let lockCheckedForDate = null; // local date string lockdownTime was computed for
 
   async function fetchLockdownTime(dateStr) {
     try {
-      const res = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=${dateStr}&endDate=${dateStr}`);
+      const res = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&gameType=R&startDate=${dateStr}&endDate=${dateStr}`);
       if (!res.ok) return null;
       const data = await res.json();
       let earliest = null;
@@ -639,6 +644,30 @@
       timeZone: 'America/Denver', month: 'short', day: 'numeric', year: 'numeric',
       hour: 'numeric', minute: '2-digit', timeZoneName: 'short',
     });
+  }
+
+  // In season the workflow refreshes hourly, so data more than two days
+  // old means updates have stopped — normally because the workflow was
+  // disabled for the winter. Keyed off data age rather than a calendar
+  // date so it clears itself the first time the workflow runs in spring.
+  const FROZEN_AFTER_MS = 48 * 3600000;
+  function isFrozen(data) {
+    const dt = new Date(data.updatedAt || data.updated);
+    return !isNaN(dt) && Date.now() - dt > FROZEN_AFTER_MS;
+  }
+
+  function updatedLine(data) {
+    if (!isFrozen(data)) return `Updated: ${fmtUpdated(data)}`;
+    // Oct–Feb can only be the off-season; any other month, a stall
+    // mid-season, which shouldn't be passed off as the off-season.
+    const month = new Date().getMonth() + 1;
+    if (month >= 10 || month <= 2) {
+      const day = new Date(data.updatedAt || data.updated).toLocaleDateString('en-US', {
+        timeZone: 'America/Denver', month: 'short', day: 'numeric', year: 'numeric',
+      });
+      return `Off-season — stats frozen as of ${day}`;
+    }
+    return `Updates paused — last updated ${fmtUpdated(data)}`;
   }
 
   // Build teamId → abbr from loaded statsData
@@ -909,7 +938,7 @@
     end.setDate(end.getDate() + 4);
     const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 
-    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1` +
+    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&gameType=R` +
       `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher`;
 
     let data;
@@ -1143,7 +1172,7 @@ function refreshView() {
     end.setDate(end.getDate() + 4);
     const fmt = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 
-    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${teamId}` +
+    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&gameType=R&teamId=${teamId}` +
       `&startDate=${fmt(today)}&endDate=${fmt(end)}&hydrate=probablePitcher`;
 
     try {
@@ -1241,7 +1270,8 @@ function refreshView() {
     })
     .then(async data => {
       statsData = data;
-      document.getElementById('updated').textContent = `Updated: ${fmtUpdated(data)}`;
+      document.getElementById('updated').textContent = updatedLine(data);
+      if (isFrozen(data)) document.getElementById('hourly-note').style.display = 'none';
       await leagueReady; // ensure badges render on first paint
       renderTable(data[activeDataKey()]);
     })
